@@ -1,0 +1,333 @@
+
+
+HTML {
+	OVERFLOW-Y: scroll
+}
+BODY {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px;  border:1px solid #a7a6aa; font-size:16px;
+}
+
+textinput {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px;  border:1px solid #a7a6aa; font-size:16px;
+}
+
+SELECT {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+TEXTAREA {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px;  border:1px solid #a7a6aa; font-size:16px;
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; LIST-STYLE-IMAGE: none; BORDER-RIGHT: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT: 12px/18px "Î¢ÈíÑÅºÚ", microsoft yahei, Arial, Verdana, Sans-Serif; BACKGROUND: url(bg.png) #eee 0px 0px; COLOR: #333
+}
+A {
+	COLOR: #bd0f5c; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #8f144b; TEXT-DECORATION: none
+}
+.u {
+	TEXT-DECORATION: underline
+}
+.u:hover {
+	TEXT-DECORATION: underline
+}
+.hui {
+	COLOR: #999; font-size:12px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;
+}
+.clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.clearfix {
+	DISPLAY: inline-block
+}
+.clearfix {
+	DISPLAY: block
+}
+.clear {
+	FONT: 0px/0 arial; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; OVERFLOW: hidden
+}
+.hidden {
+	DISPLAY: none
+}
+.l {
+	FLOAT: left
+}
+.r {
+	FLOAT: right
+}
+.middle {
+	MARGIN: 0px auto; FLOAT: none; CLEAR: both
+}
+.cl:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.cl {
+	ZOOM: 1
+}
+.vm {
+	VERTICAL-ALIGN: middle
+}
+.tc {
+	TEXT-ALIGN: center
+}
+
+.cx999 {
+	BORDER-BOTTOM: #d1d1d1 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #d1d1d1 1px solid; LINE-HEIGHT: 35px; MARGIN: 0px auto; WIDTH: 90%; DISPLAY: block; BACKGROUND: #eeeeee; HEIGHT: 35px; COLOR: #535353; FONT-SIZE: 18px; BORDER-TOP: #d1d1d1 1px solid; BORDER-RIGHT: #d1d1d1 1px solid; TEXT-DECORATION: none; border-radius: 4px
+}
+
+
+.text_999 {
+	COLOR: #999
+}
+.font_12 {
+	font-size:12px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;
+}
+.font_14 {
+	font-size:14px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;
+}
+.writing_body {
+	FONT-FAMILY: "Î¢ÈíÑÅºÚ", Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Tohoma, Arial; BACKGROUND: #efefef; COLOR: #222
+}
+.main {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; PADDING-TOP: 19px
+}
+.ad IMG {
+	WIDTH: 100%
+}
+H1.writing_til {
+	LINE-HEIGHT: 25px; WORD-WRAP: break-word; COLOR: #000; FONT-SIZE: 20px; WORD-BREAK: normal; FONT-WEIGHT: bold
+}
+.writer {
+	MARGIN: 3px 0px 10px; COLOR: #8c8b89
+}
+.writer A {
+	COLOR: #496688; MARGIN-LEFT: 5px
+}
+.writer A:hover {
+	COLOR: #496688; MARGIN-LEFT: 5px
+}
+.writer SPAN {
+	BORDER-BOTTOM: #ccc 1px solid; LINE-HEIGHT: 22px; DISPLAY: inline-block; COLOR: #a7a7a7; font-size:14px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;
+}
+.writer SPAN A {
+	MARGIN-LEFT: 20px
+}
+.users {
+	PADDING-BOTTOM: 0px; MARGIN: 0px auto 15px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; BACKGROUND: url(2000.png) no-repeat center center; PADDING-TOP: 10px; background-size: 100% 100%
+}
+
+.users .lef {
+	FLOAT: left
+}
+.users SPAN.photos {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #fff; PADDING-LEFT: 5px; WIDTH: 65px; PADDING-RIGHT: 5px; DISPLAY: block; FLOAT: left; HEIGHT: 65px; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; PADDING-TOP: 5px; border-radius: 5px; box-shadow: 0 0 1px #ccc
+}
+.users SPAN.photos IMG {
+	WIDTH: 65px; HEIGHT: 65px; border-radius: 5px
+}
+
+.photos2 {
+	padding:4px; border:1px solid #eaeaea; margin-bottom:0px; WIDTH: 240px; HEIGHT: 180px; border-radius: 5px
+}
+
+.users DIV.userd {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; FLOAT: left; COLOR: #454545; FONT-SIZE: 15px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial; FONT-WEIGHT: bold; PADDING-TOP: 9px; text-shadow: 0 1px 1px #fff
+}
+.users DIV.userd P.gray {
+	COLOR: #a3a3a3; font-size:14px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;
+}
+
+.users DIV.userd P.abc {
+	COLOR: #030303; font-size:24px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial; PADDING-BOTTOM: 8px;
+}
+
+.users DIV.userd2 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 13px; PADDING-RIGHT: 0px; FLOAT: left; COLOR: #454545; FONT-SIZE: 15px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial; FONT-WEIGHT: bold; PADDING-TOP: 0px; text-shadow: 0 1px 1px #fff
+}
+.users DIV.userd2 P.gray {
+	COLOR: #454545; font-size:12px; 
+}
+.usershh {
+	COLOR: #454545; FONT-SIZE: 16px; PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px;
+}
+.WirteUsers {
+	MARGIN: 0px 0px 15px; WIDTH: 80%
+}
+.WirteUsers P {
+	PADDING-BOTTOM: 0px
+}
+.text {
+	LINE-HEIGHT: 25px; WORD-WRAP: break-word; OVERFLOW: hidden
+}
+.text IMG {
+	MAX-WIDTH: 100%
+}
+.share {
+	BORDER-BOTTOM: #d9d9d9 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #d9d9d9 1px solid; LINE-HEIGHT: 37px; MARGIN: 18px auto 10px; WIDTH: 165px; HEIGHT: 37px; FONT-SIZE: 16px; BORDER-TOP: #d9d9d9 1px solid; CURSOR: pointer; BORDER-RIGHT: #d9d9d9 1px solid; border-radius: 20px
+}
+.recommend_til {
+	BORDER-BOTTOM: #c5c5c5 1px solid; LINE-HEIGHT: 25px; MARGIN-TOP: 13px; PADDING-LEFT: 5px; COLOR: #999; font-size:12px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;; box-shadow: 0 1px 0 #fff
+}
+.recommend {
+	BORDER-BOTTOM: medium none
+}
+.recommend LI {
+	BORDER-BOTTOM: #c5c5c5 1px solid; PADDING-BOTTOM: 12px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; ZOOM: 1; PADDING-TOP: 12px; box-shadow: 0 1px 0 #fff
+}
+.recommend LI:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.recommend LI .a_box {
+	WIDTH: auto; DISPLAY: block; FLOAT: none; COLOR: #444; font-size:14px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;
+}
+.recommend LI .a_box:hover {
+	COLOR: #444
+}
+.recommend LI IMG {
+	WIDTH: 50px; FLOAT: left; HEIGHT: 50px; border-radius: 55px
+}
+.recommend LI DIV {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 12px; PADDING-RIGHT: 0px; ZOOM: 1; WORD-WRAP: break-word; OVERFLOW: hidden; PADDING-TOP: 2px
+}
+.recommend LI DIV P.summary {
+	LINE-HEIGHT: 20px; COLOR: #999; font-size:12px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;; PADDING-TOP: 3px
+}
+.recommend_photos {
+	PADDING-TOP: 12px
+}
+.recommend_photos LI {
+	TEXT-ALIGN: center; WIDTH: 70px; FLOAT: left; HEIGHT: 90px
+}
+.recommend_photos LI A {
+	COLOR: #808080
+}
+.recommend_photos LI IMG {
+	WIDTH: 50px; HEIGHT: 50px; border-radius: 25px
+}
+.recommend_photos LI P.name {
+	WIDTH: 100%; HEIGHT: 18px; font-size:12px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;; OVERFLOW: hidden; PADDING-TOP: 5px
+}
+.erweima {
+	FONT-FAMILY: microsoft yahei; font-size:14px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;
+}
+.erweima P {
+	TEXT-ALIGN: center; PADDING-TOP: 15px
+}
+.erweima P A {
+	COLOR: #496688
+}
+.erweima P A:hover {
+	COLOR: #496688
+}
+.text_foot {
+	TEXT-ALIGN: center; MARGIN: 10px 0px 15px
+}
+.text_foot A {
+	COLOR: #ccc; FONT-SIZE: 11px; TEXT-DECORATION: underline
+}
+.app_box {
+	BORDER-BOTTOM: #dbdbdb 1px solid; POSITION: relative; BORDER-LEFT: #dbdbdb 1px solid; PADDING-BOTTOM: 12px; MARGIN: 20px auto 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #fff; BORDER-TOP: #dbdbdb 1px solid; BORDER-RIGHT: #dbdbdb 1px solid; PADDING-TOP: 12px
+}
+.app_box DT {
+	PADDING-RIGHT: 5px
+}
+.app_box DT H4 {
+	MARGIN-BOTTOM: 5px; FONT-SIZE: 16px
+}
+.app_box DT IMG {
+	WIDTH: 100px; HEIGHT: 100px; border-radius: 5px
+}
+.app_box DD {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 40px
+}
+.public_index {
+	
+}
+.public_index UL {
+	ALIGN: center; LINE-HEIGHT: 20px; font-size:15px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;
+} 
+.public_index LI {
+	  
+          BACKGROUND: #fff;border-radius: 4px; box-shadow: 0px 0px 4px #aaa;margin:5px 0;width:100%;
+}
+.public_index LI .meta{font-size:12px;color:#666;padding-top:5px;}
+.public_index LI img{float:right;margin-left:15px;}
+.public_index LI:after{ content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.public_index LI A {
+	PADDING-LEFT: 0px; COLOR: #444;font-size:14px;padding:15px;display:block;
+}
+
+
+
+.public_index2 {
+	BACKGROUND: #fff; border-radius: 4px; box-shadow: 0px 0px 4px #aaa
+}
+.public_index2 UL {
+	LINE-HEIGHT: 110px; font-size:16px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;
+}
+.public_index2 LI {
+	BORDER-BOTTOM: #eee 1px solid; BACKGROUND: url(wxminihome_right.gif) no-repeat 98% 14px; HEIGHT: 110px; OVERFLOW: hidden
+}
+.public_index2 LI A {
+	PADDING-LEFT: 0px; COLOR: #444
+}
+
+
+.public_list_more {
+	BORDER-BOTTOM: #dedede 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #dedede 1px solid; LINE-HEIGHT: 36px; MARGIN: 12px 10px; WIDTH: 160px; DISPLAY: inline-block; HEIGHT: 36px; COLOR: #444; font-size:14px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;; BORDER-TOP: #dedede 1px solid; BORDER-RIGHT: #dedede 1px solid; border-radius: 18px
+}
+.public_list_back {
+	BORDER-BOTTOM: #dedede 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #dedede 1px solid; LINE-HEIGHT: 36px; MARGIN: 12px 10px; WIDTH: 160px; DISPLAY: inline-block; HEIGHT: 36px; COLOR: #444; font-size:14px; font-family:"Î¢ÈíÑÅºÚ",Verdana, Arial;; BORDER-TOP: #dedede 1px solid; BORDER-RIGHT: #dedede 1px solid; border-radius: 18px
+}
+.public_list_back {
+	WIDTH: 70px
+}
+.public_index DIV {
+	TEXT-ALIGN: center; MARGIN: 0px auto; WIDTH: 300px
+}
+
+
+#infscr-loading{text-align:center;padding:5px;background:#000;opacity:0.8;filter:alpha(opacity=80);color:#FFF;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+#infscr-loading{position:fixed;bottom:5px;z-index:9999;width:100px;left:50%;margin-left: -55px;}
+#infscr-loading img{float:left;margin-right:3px;}
+#infscr-loading div{width:auto;text-align:left;margin:auto;font-size:12px;line-height:16px;}
