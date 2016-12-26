@@ -1,0 +1,34 @@
+.index_p8{background-image:url(../images/index/png_8.png);background-size:21px}.index_p24{background-image:url(../../images/index/png_24.png?99889);background-size:60px}#index_hd{width:100%;height:210px;background-color:#fff;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.5)}#hd_name{font-size:20px;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.5);left:0;top:136px;width:100%;text-indent:82px}#hd_weixin{font-size:13px;text-indent:25px;background-position:0 2px;background-repeat:no-repeat;left:82px;top:170px}#vshop_icon{width:55px;height:55px;left:8px;top:134px;box-shadow:0 0 3px 0 rgba(0,0,0,.6);border:1px solid #5e5e5e}#hd_bg{height:165px;background-repeat:no-repeat;background-position:center top;background-size:100%}#hd_intro{width:84%;font-size:14px;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.4);padding-top:20px}#hd_i_l,#hd_i_r{font-size:30px;color:rgba(255,255,255,.8)}#hd_i_l{left:10px;top:28px}#hd_i_r{right:14px;top:44px}#index_sec{padding-top:13px}.i_wrap{width:303px;padding-top:31px;background-color:#fff;border:1px solid #ddd;border-radius:5px;overflow:hidden;margin-bottom:22px}.i_ul{width:304px;top:1px}.i_title{width:100%;height:32px;line-height:32px;background-color:#f0efef;text-indent:10px;font-size:15px;color:#333;top:0;left:0;z-index:2}.i_li{width:137px;padding:7px;border-bottom:1px solid #ddd;border-right:1px solid #ddd;position:relative}.i_a{display:block}.i_txt{font-size:14px;color:#666;height:36px;line-height:18px;margin:12px 0 6px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}#index_loading{height:200px}#scroll_loading_txt{height:40px;vertical-align:middle}#item_empty{height:250px;line-height:220px;font-size:16px}#noShopShow{height:300px;line-height:360px}#iWantAShopIndex{width:70%;margin:10px auto;height:30px;line-height:30px;color:#ff5000;border:1px solid #ccc}.item_empty_icon{background:url(../../images/index/item_empty.png) center 50px no-repeat;background-size:45px}.noShopShow_icon{background-image:url(../../images/common/404_icon.png);background-position:center;background-repeat:no-repeat;background-size:32px 33px}.i_pri{overflow:hidden;text-overflow:ellipsis}#weixin_arrow{padding-left:30px;background:url(../../images/index/weixin_arrow.png) 0 0 no-repeat;background-size:29px;left:190px;bottom:-1px;font-size:13px}#andr_weixin{color:blue;text-decoration:underline}
+#my_frd{
+	width:300px;
+}
+#frd_tle,.frd_name{
+	font-size:15px
+}
+#frd_tle{
+	line-height:30px;
+}
+#frd_ul{
+	padding-bottom:20px;
+}
+.frd_li{
+	margin-bottom:10px;
+	border:1px solid #ddd;
+	border-radius:5px;
+	overflow:hidden;
+	background-color:#fff;
+	padding:15px 15px 15px 85px;
+	height:60px;
+	display:block;
+}
+.frd_a{
+	width:100%;
+	height:40px;
+	line-height:20px;
+	padding:10px 0;
+	display:block
+}
+.frd_img{
+	top:0;
+	left:-70px;
+}

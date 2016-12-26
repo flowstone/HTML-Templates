@@ -1,0 +1,192 @@
+
+.index_p8 {
+    background-image: url("../images/index/png_8.png");
+    background-size: 21px auto;
+}
+.index_p24 {
+    background-image: url("../images/index/png_24.png?99889");
+    background-size: 60px auto;
+}
+#index_hd {
+    background-color: #FFFFFF;
+    height: 210px;
+    width: 100%;
+}
+#hd_name {
+    color: #FFFFFF;
+    font-size: 20px;
+    left: 0;
+    text-indent: 82px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    top: 136px;
+    width: 100%;
+}
+#hd_weixin {
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+    font-size: 13px;
+    left: 82px;
+    text-indent: 25px;
+    top: 170px;
+}
+#vshop_icon {
+    border: 1px solid #5E5E5E;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.6);
+    height: 55px;
+    left: 8px;
+    top: 134px;
+    width: 55px;
+}
+#hd_bg {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 165px;
+}
+#hd_intro {
+    color: #FFFFFF;
+    font-size: 14px;
+    padding-top: 20px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    width: 84%;
+}
+#hd_i_l, #hd_i_r {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+}
+#hd_i_l {
+    left: 10px;
+    top: 28px;
+}
+#hd_i_r {
+    right: 14px;
+    top: 44px;
+}
+#index_sec {
+    padding-top: 13px;
+}
+.i_wrap {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    padding-top: 31px;
+    width: 303px;
+}
+.i_ul {
+    top: 1px;
+    width: 304px;
+}
+.i_title {
+    background-color: #F0EFEF;
+    color: #333333;
+    font-size: 15px;
+    height: 32px;
+    left: 0;
+    line-height: 32px;
+    text-indent: 10px;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.i_li {
+    border-bottom: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    padding: 7px;
+    position: relative;
+    width: 137px;
+}
+.i_a {
+    display: block;
+}
+.i_txt {
+    color: #666666;
+    font-size: 14px;
+    height: 36px;
+    line-height: 18px;
+    margin: 12px 0 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#index_loading {
+    height: 200px;
+}
+#scroll_loading_txt {
+    height: 40px;
+    vertical-align: middle;
+}
+#item_empty {
+    font-size: 16px;
+    height: 250px;
+    line-height: 220px;
+}
+#noShopShow {
+    height: 300px;
+    line-height: 360px;
+}
+#iWantAShopIndex {
+    border: 1px solid #CCCCCC;
+    color: #FF5000;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px auto;
+    width: 70%;
+}
+.item_empty_icon {
+    background: url("../../images/index/item_empty.png") no-repeat scroll center 50px / 45px auto rgba(0, 0, 0, 0);
+}
+.noShopShow_icon {
+    background-image: url("../../images/common/404_icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 32px 33px;
+}
+.i_pri {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#weixin_arrow {
+    background: url("../../images/index/weixin_arrow.png") no-repeat scroll 0 0 / 29px auto rgba(0, 0, 0, 0);
+    bottom: -1px;
+    font-size: 13px;
+    left: 190px;
+    padding-left: 30px;
+}
+#andr_weixin {
+    color: #0000FF;
+    text-decoration: underline;
+}
+#my_frd {
+    width: 300px;
+}
+#frd_tle, .frd_name {
+    font-size: 15px;
+}
+#frd_tle {
+    line-height: 30px;
+}
+#frd_ul {
+    padding-bottom: 20px;
+}
+.frd_li {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    display: block;
+    height: 60px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 15px 15px 15px 85px;
+}
+.frd_a {
+    display: block;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px 0;
+    width: 100%;
+}
+.frd_img {
+    left: -70px;
+    top: 0;
+}
