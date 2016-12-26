@@ -1,0 +1,921 @@
+body {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin:0 auto;
+	color: #666;
+	background:#eeeeee url(../images/bg.jpg) no-repeat top center;
+	position:relative;
+
+}
+body div, body table {
+	margin:0 auto;
+}
+h1, h2 {
+	padding:0px;
+	margin:0px;
+}
+ul{ list-style:none;}
+img {
+	border:0;
+}
+TD {
+	font-size:12px;
+	color:#666;
+}
+TH {
+	font-size:12px;
+	color:#666;
+}
+form {
+	margin:0px;
+	padding:0px;
+}
+select, input, textarea {
+	color:#666;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,code,del,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+th,td{vertical-align:middle;}
+.clearfix:after{content:'.';display:block;height:0;clear:both;overflow:hidden;}
+.clearfix{*zoom:1;}
+.clear{clear:both;}
+a{text-decoration:none; color:#666666;}
+a:hover{text-decoration:underline;}
+a:hover img{text-decoration:none;}
+
+A {
+	
+	TEXT-DECORATION: none;
+	font-size: 12px;
+	behavior: url(focus.htc);
+}
+A img{ border:0px}
+a:active {
+	TEXT-DECORATION: none;
+	font-style: normal;
+}
+A:hover {
+	TEXT-DECORATION: none;
+	color:#ff5400;
+}
+a:link {
+	TEXT-DECORATION: none;
+	font-style: normal;
+	font-variant: normal;
+	DISPLAY: inline;
+}
+a:visited {
+	TEXT-DECORATION: none;
+	font-style: normal;
+}
+.clearfix{ clear:both}
+.w{ width:920px;margint:0 auto;}
+.r{text-align:right!important;}
+.c{text-align:center!important;}
+.l{text-align:left!important;}
+
+.Right{ float:right}
+.Left{ float:left}
+.none{display:none;}
+.H6{ width:100%; height:6px;}
+.H16{ width:100%; height:16px;}
+.mr13{ margin-right:13px;}
+.mr16{ margin-right:16px;}
+
+
+ #id{background:url(images) ;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src="images");_background:none;}
+
+/*--------------------------翻页样式--------------------------*/
+DIV.meneame {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 80%; PADDING-BOTTOM: 3px; MARGIN: 3px; COLOR: #666666; PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+DIV.meneame A {
+	BORDER-RIGHT: #cacaca 1px solid; PADDING-RIGHT: 7px; BACKGROUND-POSITION: 50% bottom; BORDER-TOP: #cacaca 1px solid; PADDING-LEFT: 7px; BACKGROUND-IMAGE: url(meneame.jpg); PADDING-BOTTOM: 5px; BORDER-LEFT: #cacaca 1px solid; COLOR: #666666;; MARGIN-RIGHT: 3px; PADDING-TOP: 5px; BORDER-BOTTOM: #cacaca 1px solid; TEXT-DECORATION: none
+}
+DIV.meneame A:hover {
+	BORDER-RIGHT: #cacaca 1px solid; BORDER-TOP: #cacaca 1px solid; BACKGROUND-IMAGE: none; BORDER-LEFT: #cacaca 1px solid; COLOR: #fff; BORDER-BOTTOM: #cacaca 1px solid; BACKGROUND-COLOR: #2c95cf
+}
+DIV.meneame A:active {
+	BORDER-RIGHT: #ff9600 1px solid; BORDER-TOP: #ff9600 1px solid; BACKGROUND-IMAGE: none; BORDER-LEFT: #ff9600 1px solid; COLOR: #ff6500; BORDER-BOTTOM: #ff9600 1px solid; BACKGROUND-COLOR: #2c95cf
+}
+DIV.meneame SPAN.current {
+	BORDER-RIGHT: #cacaca 1px solid; PADDING-RIGHT: 7px; BORDER-TOP: #cacaca 1px solid; PADDING-LEFT: 7px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; BORDER-LEFT: #cacaca 1px solid; COLOR: #666666; MARGIN-RIGHT: 3px; PADDING-TOP: 5px; BORDER-BOTTOM: #cacaca 1px solid; BACKGROUND-COLOR: #2c95cd
+}
+DIV.meneame SPAN.disabled {
+	BORDER-RIGHT: #cacaca  1px solid; PADDING-RIGHT: 7px; BORDER-TOP: #cacaca  1px solid; PADDING-LEFT: 7px; PADDING-BOTTOM: 5px; BORDER-LEFT: #cacaca  1px solid; COLOR: #666666; MARGIN-RIGHT: 3px; PADDING-TOP: 5px; BORDER-BOTTOM: #cacaca  1px solid
+}
+
+
+
+
+/* scrollleft */
+.scrollleft{width:450px;}
+.scrollleft li{float:left;margin-right:7px;display:inline;width:158px;text-align:center;line-height:19px}
+.scrollleft img{width:136px;height:100px;padding:10px;border:solid 1px #ddd;}
+
+
+/*--------------------------总体1部分--------------------------*/
+.container{  margin:0px auto; width:1003px;}
+
+/*--------------------------logo部分--------------------------*/
+.top{ width:1003px; height:174px;}
+.top_up{ width:1003px; height:89px; }
+.top_up_l{ width:186px; height:68px; float:left; margin-top:10px; margin-left:30px;}
+.top_up_r{ width:372px; height:40px; float:right; }
+.top_up_r1{ width:206px; height:27px; float:left; margin-top:5px; margin-left:15px;}
+#search_box { width: 201px; height: 31px; background:#FFFFFF; border:#81bc2c solid 1px; } 
+#search_box #s { float: left; padding: 0; margin: 6px 0 0 6px; border: 0; width: 159px; background: none; font-size: .8em; } 
+#search_box #go { float: right; margin: 3px 4px 0 0; } 
+.top_up_r2{ width:116px; height:27px; float:right; margin-top:12px;}
+.top_up_r2 a{ color:#666666;}
+.top_up_r2 a:hover{color:#ff5400;}
+.top_down{ width:1003px; height:77px;}
+.top_down_l{ width:318px; height:52px; float:left; margin-top:10px; margin-left:10px;}
+.top_down_l_u{ width:318px; height:35px;}
+.top_down_l_u span{}
+.top_down_l_d{ width:318px; height:16px; position:relative; top:10px;}
+.top_down_r{ width:606px; height:64px;  float:right; margin-top:10px; margin-left:10px;}
+
+
+
+/*--------------------------菜单部分--------------------------*/
+.muen{ width:1003px; height:40px; background:#2577e3;}
+#navbar{ background:url(../images/muen1.jpg) no-repeat;height:40px;overflow: hidden;clear: both; width:1003px;} 
+#nav{ font-weight:bold;list-style:none; width:1003px;}
+#nav li{width:111px; height:40px;float: left; text-align:center;}
+
+.bi{position: relative;z-index: 0;left:5px;}
+.bi:hover{z-index: 99;}
+
+.bi:hover span{visibility: visible;top: 0;left: 0;cursor: pointer;}
+.bi span{position: absolute;left: -999em;visibility: hidden;}
+#nav li a,.bi:hover span{line-height: 40px;text-decoration: none;color: #fff;display: block;width:98px;height:40px;text-align: center;
+}
+#nav li a:hover,.bi:hover span,#current{ color: #2577e3; background: url(../images/muen.jpg) no-repeat; }
+.bi:hover span{}
+
+
+
+/*--------------------------总体2部分--------------------------*/
+.box{ margin:0px auto; width:1003px;height:3246px;}
+
+/*--------------------------轮换图部分--------------------------*/
+.banner{ width:1003px; height:317px; margin-top:18px; }
+
+/*--------------------------轮换图l部分--------------------------*/
+.banner_l{ width:255px; height:317px; background:#FFFFFF; float:left;}
+.banner_l_main{ width:239px; height:309px; overflow:hidden;}
+.banner_l_top{ width:239px; height:43px; border-bottom:#CCCCCC 1px solid;}
+.banner_l_top_l{ width:168px; height:43px; float:left;}
+.banner_l_top_r{ width:48px; height:23px; float:right; margin-top:20px;}
+.banner_l_top_r a{ color:#2185c1;}
+.banner_l_top_r a:hover{ color:#ff5400;}
+.banner_l_center{ width:231px; height:87px; margin-top:10px;}
+.rm_list{ width:220px;padding:0px;text-align:left;list-style:none; float:left; margin-top:10px; margin-left:5px; overflow:hidden;}
+.rm_list ul{padding:0px;margin:0px;list-style:none; }
+.rm_list ul li{line-height:24px; height:24px; border-bottom:#CCCCCC 1px dashed;}
+.rm_list ul li a{width:220px;line-height:24px; padding-left:15px; background: url(../images/dian2.jpg) 4px 4px no-repeat;  color:#000000;}
+.rm_list ul li a:hover{  width:220px;line-height:24x; padding-left:15px;color:#FF5400;}
+.rm_list ul li span{  float:right; padding-right:10px; text-align:right; color:#ff6c00; font-weight:bold;}
+
+/*--------------------------轮换图r部分--------------------------*/
+.banner_r{ width:727px; height:317px; background:#FFFFFF; float:right;}
+.banner_r_main{ width:705px; height:294px;  position:relative;top:5px;}
+
+
+
+
+
+/*--------------------------桂林旅游部分--------------------------*/
+.main{ width:1003px; height:399px; background:#FFFFFF; margin-top:18px;}
+.main_main{ width:977px; height:376px;position:relative; top:10px;}
+.productlist14{ width:452px; height:100px; margin-top:1px;margin-left:12px; margin-right:13px; float:left; border-bottom:#dddddd solid 1px;}
+.productlist14 a{ width:452px; height:100px; display:block;  background:#ffffff; color:#444444; cursor:hand;}
+.productlist14 a:hover{ color:#FF5400; width:452px; height:100px;}
+.productlist14 div.producttext140{ width:41px; height:43px;z-index:999; position:relative; top:-80px; left:-40px;}
+.productlist14 div.productimg{ width:100px; height:75px;  float:left; margin-top:5px; margin-left:5px; margin-right:5px;}
+.productlist14 div.producttext{ width:238px; height:27px;  float: left; color:#81bc2c; font-weight:bold; margin-left:5px; margin-top:5px; text-align:left; overflow:hidden;}
+.productlist14 div.producttext14{ width:238px; height:52px; float: left; color:#999999;margin-left:5px;margin-top:5px; text-align:left;overflow:hidden;}
+.productlist14 div.producttext24{ width:81px; height:40px;  float: right; overflow:hidden;color:#ff6600;font-size:18px; font-weight:bold; }
+.productlist14 div.producttext34{ width:330px; height:79px;  float: left; margin-top:5px; color:#ff6600;overflow:hidden;}
+
+
+
+
+/*--------------------------广告图1部分--------------------------*/
+.banner1{ width:1003px; height:112px; background:#FFFFFF; margin-top:18px;}
+.banner1 img{ margin-top:12px; margin-bottom:12px; margin-left:14px; margin-right:14px;}
+
+
+
+
+
+/*--------------------------会议旅游部分--------------------------*/
+.main1{ width:1003px; height:263px; background:#fff; margin-top:18px;}
+.main1_main{ width:975px; height:239px; position:relative; top:10px;}
+/*--------------------------会议旅游a部分--------------------------*/
+.main1_a{ width:260px; height:239px; border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid; float:left; overflow:hidden;}
+.main1_a_top{ width:260px; height:41px; background:#dbedf9;}
+.main1_a_top_main{ width:247px; height:17px;  position:relative; top:10px;}
+.main1_a_topl{ width:205px; height:17px; float:left; color:#000; font-weight:bold;}
+.main1_a_topr{ width:40px; height:17px; float:right;}
+.main1_a_topr a{ color:#2185c1;}
+.main1_a_topr a:hover{ color:#ff5400;}
+.main1_bottom{ width:244px; height:175px; position:relative; top:5px; line-height:24px;color:#000000;overflow:hidden;}
+.main1_bottom span{ color:#ff6300;}
+.main1_bottom span a{ color:#ff6300;}
+.main1_bottom span a:hover{ color:#ff5400;}
+.main1_bottom img{ width:109px; height:85px; float:left; border:#c0daea solid 1px; margin-left:5px; margin-right:5px; }
+/*--------------------------会议旅游b部分--------------------------*/
+.main1_b{ width:436px; height:239px; float:left; margin-left:7px; margin-right:7px; background:url(../images/main1_b.jpg) no-repeat;}
+.main1_b_main{ width:391px; height:134px; position:relative; top:70px; }
+.productlist1{ width:112px; height:37px; margin-top:10px; margin-left:8px; margin-right:8px; float:left }
+.productlist1 a{ width:112px; height:37px; display:block;  background:#81bc2c; color:#fff; cursor:hand;}
+.productlist1 a:hover{ background:#81bc2c; color:#FFFFFF;}
+.productlist1 div.producttext{ width:112px; height:37px; background:#81bc2c}
+.productlist1 div.producttext1{ width:83px; height:19px;  float: left; margin-top:10px; margin-left:10px;_margin-left:12px; color:#fff; font-weight:bold;}
+
+/*--------------------------会议旅游c部分--------------------------*/
+.main1_c{ width:258px; height:239px; float:left; border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid; overflow:hidden;}
+.main1_c_top{ width:258px; height:41px; background:#dbedf9;}
+.main1_c_top_main{ width:247px; height:17px;  position:relative; top:10px;}
+.main1_c_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.main1_c_topr{ width:40px; height:17px; float:right;}
+.main1_c_topr a{ color:#2185c1;}
+.main1_c_topr a:hover{ color:#ff5400;}
+.jdlist_list{ width:210px;padding:0px;text-align:left;list-style:none; float:left; margin-top:15px; margin-left:10px; }
+.jdlist_list ul{padding:0px;margin:0px;list-style:none; }
+.jdlist_list ul li{line-height:26px; height:26px; }
+.jdlist_list ul li a{width:210px;line-height:26px;   color:#000000;}
+.jdlist_list ul li a:hover{  width:210px;line-height:26px; color:#FF5400;}
+
+
+
+/*--------------------------广告图2部分--------------------------*/
+.banner2{ width:1003px; height:112px; background:#ffffff; margin-top:18px;}
+.banner2 img{ margin-top:12px; margin-bottom:12px; margin-left:14px; margin-right:14px;}
+
+
+
+/*--------------------------星级酒店部分--------------------------*/
+.main2{ width:1003px; height:385px; background:#fff;margin-top:18px;}
+.main2_main{ width:976px; height:367px; position:relative; top:10px;}
+.main2_top{ width:976px; height:38px;}
+.main2_top_l{ width:116px; height:33px; float:left;}
+.main2_top_l1{ width:399px; height:22px; float:left; position:relative; top:10px; left:5px; font-weight:bold; color:#666666;}
+.main2_top_r{ width:50px; height:22px; float:right;position:relative; top:10px; left:5px;}
+.main2_top_r a{ color:#2185c1;}
+.main2_top_r a:hover{ color:#ff5400;}
+.main2_bottom{ width:976px; height:323px; border-top:#81bc2c 2px solid; border-right:#CCCCCC solid 1px; border-bottom:#CCCCCC solid 1px; border-left:#CCCCCC solid 1px; border-right:#CCCCCC solid 1px;}
+.main2_bottom_l{ width:281px; height:323px; float:left; border-right:#CCCCCC solid 1px;}
+.main2_bottom_l_main{ width:261px; height:295px; position:relative; top:10px; overflow:hidden;}
+.main2_bottom_l_top{ width:257px; height:129px;}
+.main2_bottom_l_center{ width:105px; height:20px; float:left; margin-top:10px; margin-left:5px; color:#ff6300; font-weight:bold; font-size:14px;}
+.jud_list{ width:250px;padding:0px;text-align:left;list-style:none; float:left; margin-top:10px; margin-left:3px;}
+.jud_list ul{padding:0px;margin:0px;list-style:none; }
+.jud_list ul li{line-height:24px; height:24px; border-bottom:#CCCCCC 1px dashed;}
+.jud_list ul li a{width:250px;line-height:24px; padding-left:15px; background: url(../images/dian1.jpg) 4px 4px no-repeat;  color:#000000;}
+.jud_list ul li a:hover{  width:250px;line-height:24x; padding-left:15px;color:#FF5400;}
+.jud_list span{ color:#ff6300; font-weight:bold; font-size:14px; border-bottom:5px; float:right;}
+.main2_bottom_r{ width:690px; height:315px; float:left; }
+.productlist12{ width:160px; height:185px; margin-left:8px; margin-right:1px; float:left }
+.productlist12 a{ width:160px; height:185px; display:block; cursor:hand;}
+.productlist12 a:hover{  color:#FFFFFF;}
+.productlist12 div.productimg{ width:160px; height:156px;  float:left;}
+.productlist12 div.producttext2{ width:160px; height:29px;  float: left; color:#000; background:#25a3d4;}
+.productlist12 div.producttext12{ width:119px; height:19px;  float: left; margin-top:6px; color:#fff; margin-left:18px;_margin-left:12px; font-weight:bold;}
+.judl_list{ width:313px;padding:0px;text-align:left;list-style:none; float:left; margin-top:10px; margin-left:5px;}
+.judl_list ul{padding:0px;margin:0px;list-style:none; }
+.judl_list ul li{line-height:24px; height:24px; border-bottom:#CCCCCC 1px dashed;}
+.judl_list ul li a{width:313px;line-height:24px; padding-left:15px; background: url(../images/dian1.jpg) 4px 4px no-repeat;  color:#000000;}
+.judl_list ul li a:hover{  width:313px;line-height:24x; padding-left:15px;color:#FF5400;}
+.judl_list span{ color:#ff6300; font-weight:bold; font-size:14px; border-bottom:5px; float:right;}
+
+.judr_list{ width:313px;padding:0px;text-align:left;list-style:none; float: right; margin-top:10px; margin-right:15px;_margin-right:10px;}
+.judr_list ul{padding:0px;margin:0px;list-style:none; }
+.judr_list ul li{line-height:24px; height:24px; border-bottom:#CCCCCC 1px dashed;}
+.judr_list ul li a{width:313px;line-height:24px; padding-left:15px; background: url(../images/dian1.jpg) 4px 4px no-repeat;  color:#000000;}
+.judr_list ul li a:hover{  width:313px;line-height:24x; padding-left:15px;color:#FF5400;}
+.judr_list span{ color:#ff6300; font-weight:bold; font-size:14px; border-bottom:5px; float:right;}
+
+
+
+
+/*--------------------------旅游用车部分--------------------------*/
+.main3{ width:1003px; height:311px; background:#fff; margin-top:18px;}
+.main3_main{ width:973px; height:282px; position:relative; top:10px;}
+.productlist13{ width:227px; height:205px; margin-top:10px; margin-left:4px; margin-right:4px; float:left; border-right:#CCCCCC dashed 1px; }
+.productlist13 a{ width:227px; height:210px; display:block;  background:#ffffff; color:#444444; cursor:hand;}
+.productlist13 a:hover{ color:#FFFFFF;}
+.productlist13 div.productimg{ width:206px; height:106px;  float:left; margin-top:5px;}
+.productlist13 div.producttext{ width:208px; height:41px;  float: left; background:#ffeed2; margin-left:10px;_margin-left:5px; margin-bottom:5px;}
+.productlist13 div.producttext13{ width:100px; height:20px;  float: left; margin-top:10px; color:#0470b1; font-weight:bold;}
+.productlist13 div.producttext23{ width:100px; height:20px;  float: right; margin-top:10px; color:#ff6300;}
+.productlist13 div.producttext23 span{ font-weight:bold; font-size:14px;}
+.productlist13 div.producttext33{ width:208px; height:70px;  float: left; margin-top:5px; color:#000000; text-align:left;margin-left:10px;_margin-left:5px; }
+
+
+
+
+
+/*--------------------------桂林景点部分--------------------------*/
+.main4{ width:1003px; height:444px; background:#FFFFFF; margin-top:18px;}
+.main4_main{ width:976px; height:420px; position:relative; top:10px;}
+.main4_top{ width:976px; height:38px;}
+.main4_top_l{ width:116px; height:33px; float:left;}
+.main4_top_l1{ width:399px; height:22px; float:left; position:relative; top:10px; left:5px; font-weight:bold; color:#666666;}
+.main4_top_r{ width:50px; height:22px; float:right;position:relative; top:10px; left:5px;}
+.main4_top_r a{ color:#2185c1;}
+.main4_top_r a:hover{ color:#ff5400;}
+.main4_center{ width:145px; height:20px; float:left; margin-top:10px; margin-left:5px; color:#ff6300; font-weight:bold; font-size:14px;}
+.main4_bottom{ width:976px; height:381px; border-top:#81bc2c 2px solid; border-right:#CCCCCC solid 1px; border-bottom:#CCCCCC solid 1px; border-left:#CCCCCC solid 1px; border-right:#CCCCCC solid 1px;}
+.main4_bottom_l{ width:281px; height:381px; float:left; border-right:#CCCCCC solid 1px;}
+.main4_bottom_l_main{ width:261px; height:358px; position:relative; top:10px;}
+.main4_bottom_l_top{ width:257x; height:129px;}
+.jjd_list{ width:250px;padding:0px;text-align:left;list-style:none; float:left; margin-left:3px;}
+.jjd_list ul{padding:0px;margin:0px;list-style:none; }
+.jjd_list ul li{line-height:24px; height:24px; border-bottom:#CCCCCC 1px dashed;}
+.jjd_list ul li a{width:250px;line-height:24px; padding-left:15px; background: url(../images/dian1.jpg) 4px 4px no-repeat;  color:#000000;}
+.jjd_list ul li a:hover{  width:250px;line-height:24x; padding-left:15px;color:#FF5400;}
+.jjd_list span{ color:#ff6300; font-weight:bold; font-size:14px; border-bottom:5px;}
+.main4_bottom_r{ width:690px; height:381px; float:left; }
+.productlist11{ width:154px; height:144px; margin-left:10px; margin-right:5px; float:left }
+.productlist11 a{ width:154px; height:144px; display:block; cursor:hand;}
+.productlist11 a:hover{  color:#FFFFFF;}
+.productlist11 div.productimg{ width:154px; height:115px;  float:left;}
+.productlist11 div.producttext1{ width:70px; height:20px;  float: left; margin-top:5px; color:#000;}
+.productlist11 div.producttext11{ width:71px; height:20px;  float: right; margin-top:5px; color:#ed0000;}
+
+
+
+
+
+/*--------------------------接团游记部分--------------------------*/
+.main5{ width:1003px; height:407px; background:#FFFFFF; margin-top:18px;}
+.main5_main{ width:976px; height:382px; position:relative; top:10px;}
+/*--------------------------接团游记a部分--------------------------*/
+.main5_a{ width:238px; height:382px; float:left; border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid;}
+.main5_a_top{ width:238px; height:39px; background:#dbedf9;}
+.main5_a_top_l{ width:88px; height:13px; float:left; margin-top:12px; margin-left:10px; color:#000; font-weight:bold;}
+.main5_a_top_r{ width:46px; height:13px; float:right; margin-top:12px; margin-right:10px; color:#2185c1;}
+.main5_a_top_r a{ color:#2185c1;}
+.main5_a_top_r a:hover{ color:#ff5400;}
+.main5_a_center{ width:218px; height:88px; background:#000; margin-top:12px;}
+.yj_list{ width:220px;padding:0px;text-align:left;list-style:none; float:left; margin-top:10px; margin-left:5px;}
+.yj_list ul{padding:0px;margin:0px;list-style:none; }
+.yj_list ul li{line-height:24px; height:24px; border-bottom:#CCCCCC 1px dashed;}
+.yj_list ul li a{width:220px;line-height:24px; padding-left:15px; background: url(../images/dian1.jpg) 4px 4px no-repeat;  color:#000000;}
+.yj_list ul li a:hover{  width:220px;line-height:24x; padding-left:15px;color:#FF5400;}
+.yj_list ul li span{  float:right; padding-right:10px; text-align:right;}
+/*--------------------------接团游记b部分--------------------------*/
+.main5_b{ width:476px; height:382px; float:left;margin-left:12px; margin-right:10px;}
+.main5_b_top{ width:476px; height:188px;}
+.main5_b_center{ width:476px; height:29px; float:left; margin-top:10px;}
+.main5_b_center_l{ width:79px; height:29px; float:left; font-weight:bold; color:#0470b1;}
+.main5_b_center_r{ width:32px; height:29px; float: right; color:#0470b1; text-decoration:underline;}
+.main5_b_center_r a{ color:#0470b1;}
+.main5_b_center_r a:hover{ color:#ff5400;}
+.main5_b_bottom{ width:476px; height:157px; border-top:#36a3d9 2px solid; float:left;}
+.yyjlist_list{ width:470px;padding:0px;text-align:left;list-style:none; float:left; margin-top:10px; margin-left:5px; }
+.yyjlist_list ul{padding:0px;margin:0px;list-style:none; }
+.yyjlist_list ul li{line-height:24px; height:24px; }
+.yyjlist_list ul li a{width:470px;line-height:24px;   color:#666666;}
+.yyjlist_list ul li a:hover{  width:470px;line-height:24px; color:#FF5400;}
+/*--------------------------接团游记c部分--------------------------*/
+.main5_c{ width:228px; height:382px; float:right; border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid;}
+.main5_c_top{ width:228px; height:39px; background:#dbedf9;}
+.main5_c_top_l{ width:88px; height:13px; float:left; margin-top:10px; margin-left:10px; color:#000; font-weight:bold;}
+.main5_c_top_r{ width:46px; height:13px; float:right; margin-top:10px; margin-right:10px; color:#2185c1;}
+.main5_c_top_r a{ color:#2185c1;}
+.main5_c_top_r a:hover{ color:#ff5400;}
+.main5_c_center{ width:228px; height:81px; border-bottom:#e6e6e6 1px solid;}
+.main5_c_center_top{ width:204px; height:51px;}
+.main5_c_center_topl{ width:77px; height:20px; text-align:center; float:left; margin-top:10px; margin-bottom:17px; color:#666666;}
+.main5_c_center_topr{ width:125px; height:31px; float:right; color:#f56304; font-weight:bold; font-size:28px; }
+.main5_c_center_bottom{ width:204px; height:15px; float:left; margin-left:14px;_margin-left:6px;}
+.main5_c_center_bottom span{ color:#f36300;}
+.main5_c_bottom{width:228px; height:80px; border-bottom:#e6e6e6 1px  dashed;}
+.main5_c_bottom_top{ width:210px; height:19px; margin-top:10px;}
+.main5_c_bottom_topl{ width:31px; height:19px; float:left;}
+.main5_c_bottom_topr{ width:97px; height:19px; float:left; text-align:left; margin-left:5px;}
+.main5_c_bottom_topr a{ color:#0059b3;}
+.main5_c_bottom_topr a:hover{ color:#ff5400;}
+.main5_c_bottom_bottom{ width:210px; height:37px; margin-top:10px;}
+.main5_c_bottom_bottoml{ width:148px; height:37px; float:left; }
+.main5_c_bottom_bottomr{ width:51px; height:37px; float: right; background:url(../images/main5_c1.jpg) no-repeat;}
+.main5_c_bottom_text{ width:47px; height:15px;position:relative; top:18px; text-align:center;}
+.main5_c_bottom{width:228px; height:80px;}
+
+
+/*--------------------------常见问题部分--------------------------*/
+.main6{ width:1003px; height:154px; background:#fff; margin-top:18px;margin-bottom:28px;}
+/*--------------------------常见问题a部分--------------------------*/
+.main6_a{ width:190px; height:154px; float:left; margin-left:10px;_margin-left:3px;}
+.main6_a_main{ width:190px; height:130px; margin-top:13px; border-right:#aaaaaa dashed 1px;}
+.main6_a_top{ width:176px; height:23px; text-align:left; color:#000000;}
+.main6_a_bottom{ width:176px; height:80px;}
+/*--------------------------常见问题b、c、d部分--------------------------*/
+.main6_b{ width:199px; height:154px; float:left;}
+.main6_b_main{ width:190px; height:130px; margin-top:13px; border-right:#aaaaaa dashed 1px;}
+.main6_b_top{ width:180px; height:17px; text-align:left; color:#199b25; font-weight:bold; position:relative; left:3px;}
+.main6_b_top a{ color:#199b25;}
+.main6_b_top a:hover{ color:#ff5400;}
+.cjlist_list{ width:190px;padding:0px;text-align:left;list-style:none; float:left; margin-top:5px; margin-left:5px; }
+.cjlist_list ul{padding:0px;margin:0px;list-style:none; }
+.cjlist_list ul li{line-height:22px; height:22px; }
+.cjlist_list ul li a{width:190px;line-height:22px;   color:#666666;}
+.cjlist_list ul li a:hover{  width:190px;line-height:22px; color:#FF5400;}
+/*--------------------------常见问题e部分--------------------------*/
+.main6_e{ width:199px; height:154px; float:left;}
+.main6_e_main{ width:190px; height:130px; margin-top:13px;}
+.main6_e_top{ width:180px; height:17px; text-align:left; color:#199b25; font-weight:bold;}
+.cjlist_list{ width:190px;padding:0px;text-align:left;list-style:none; float:left; margin-top:5px; margin-left:5px; }
+.cjlist_list ul{padding:0px;margin:0px;list-style:none; }
+.cjlist_list ul li{line-height:22px; height:22px; }
+.cjlist_list ul li a{width:190px;line-height:22px;   color:#666666;}
+.cjlist_list ul li a:hover{  width:190px;line-height:22px; color:#FF5400;}
+
+
+
+/*--------------------------底部部分--------------------------*/
+.bottom{ width:1003px; height:162px; background:#ffffff; margin-top:18px; margin-bottom:28px; border-top:#22ade6 5px solid;}
+.bottom_main{ width:695px; height:155px;}
+
+.bottom_index{ width:1003px; height:auto!important; background:#ffffff; margin-top:18px; margin-bottom:28px; border-top:#22ade6 5px solid;}
+.bottom_main_index{ width:695px; height:auto!important;}
+.bottom_main_index1{ width:676px;height:auto!important; margin-bottom:10px; color:#666666;}
+.bottom_bottom_index1{ width:626px; height:32px; margin-bottom:15px;}
+/*--------------------------底部友情链接部分--------------------------*/
+.bottom_top{ width:434px; height:30px;  margin-top:10px; text-align:center; color:#2185c1; font-weight:bold;}
+.bottom_top a{ color:#2185c1;}
+.bottom_top a:hover{ color:#ff5400;}
+.bottom_top ul{}
+.bottom_top ul li{float: left; width:90px; background:#CCC;list-style-type: none;text-align:left;}
+/*--------------------------底部备注部分--------------------------*/
+.bottom_center{ width:434px; height:66px;color:#666666; position:relative; left:20px;}
+/*--------------------------底部按钮部分--------------------------*/
+.bottom_bottom{ width:626px; height:32px;}
+.bottom_bottom1{ width:51px; height:32px; float:left;}
+.bottom_bottom2{ width:44px; height:32px; float:left;}
+.bottom_bottom3{ width:54px; height:32px; float:left;}
+.bottom_bottom4{ width:77px; height:32px; float:left;}
+.bottom_bottom5{ width:45px; height:32px; float:left;}
+.bottom_bottom6{ width:55px; height:32px; float:left;}
+.bottom_bottom7{ width:92px; height:32px; float:left;}
+.bottom_bottom8{ width:92px; height:32px; float:left;}
+.bottom_bottom9{ width:47px; height:32px; float:left;}
+.bottom_bottom10{ width:60px; height:32px; float:left;}
+
+
+
+/*--------------------------桂林旅游页面部分--------------------------*/
+.about_main{width:1000px; height:auto!important;min-height:1984px; height:1984px; margin-top:18px;}
+.about{ width:1000px; height:auto!important;min-height:1247px;  margin-top:18px;}
+/*--------------------------桂林旅游页面l部分--------------------------*/
+.about_l{ width:250px; height:auto!important;min-height:1247px; float:left;}
+
+/*--------------------------桂林旅游页面l1部分--------------------------*/
+.about_l1{ width:250px; height:297px; float:left; background:#FFFFFF;}
+.about_l1_main{ width:226px; height:273px; background:#ececec; position:relative; top:10px;}
+
+
+
+/*--------------------------桂林旅游页面l2部分--------------------------*/
+.about_l2{ width:250px; height:221px; float:left; background:#FFFFFF; margin-top:17px;}
+.about_l2_main{ width:226px; height:196px;position:relative; top:10px;}
+.a_left1{ width:226px; float:left; margin-top:5px;  }
+.a_left2{ width:226px; }
+.a_left_top{ width:226px;}
+.a_left_top a{ height:30px; display:block; line-height:30px; text-align:left; letter-spacing:1px;color:#666666; padding-left:24px; font-weight:bold; margin-top:1px; background: url(../images/muen2.jpg);}
+.a_left_top a:hover{ background: url(../images/muen3.jpg); color:#fffffd; font-weight:bold;}
+.a_left_top a.c01{ height:40px; display:block; line-height:40px;text-align:left; letter-spacing:1px;background:#21ade5; color:#fffffd; font-weight:bold;padding-left:24px;}
+.aboutshow1{ line-height:24px; text-align:left; padding:0px 0px 0px 0px;  }
+
+
+/*--------------------------桂林旅游页面l3部分--------------------------*/
+.about_l3{ width:250px; height:211px; float:left; background:#FFFFFF; margin-top:17px;}
+.about_l3_main{ width:226px; height:auto!important;height:185px;min-height:185px; position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid;}
+.rxxlu_list{ width:220px;padding:0px;text-align:left;list-style:none; float:left; margin-top:10px; margin-left:5px;}
+.rxxlu_list ul{padding:0px;margin:0px;list-style:none; }
+.rxxlu_list ul li{line-height:28px; height:28px; border-bottom:#CCCCCC 1px dashed;}
+.rxxlu_list ul li a{width:220px;line-height:28px; padding-left:15px;  color:#666666;}
+.rxxlu_list ul li a:hover{  width:220px;line-height:28x; padding-left:15px;color:#FF5400;}
+.rxxlu_list ul li span{  float:right; padding-right:10px; text-align:right; color:#ff6c00; }
+
+
+
+
+
+/*--------------------------桂林旅游页面l4部分--------------------------*/
+.about_l4{ width:250px; height:211px; float:left; background:#FFFFFF; margin-top:17px;}
+.about_l4_main{ width:226px; height:auto!important;height:185px;min-height:185px; position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid;}
+.about_l4_top{width:226px; height:39px; background:#dbedf9;}
+.about_l4_top_main{ width:216px; height:30px;  position:relative; top:10px;}
+.about_l4_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.about_l4_topr{ width:40px; height:17px; float:right;}
+.about_l4_topr a{ color:#2185c1;}
+.about_l4_topr a:hover{ color:#ff5400;}
+
+
+
+/*--------------------------桂林旅游页面l5部分--------------------------*/
+.about_l5{ width:250px; height:236px; float:left; background:#FFFFFF; margin-top:17px;}
+.about_l5_main{ width:226px; height:auto!important;height:212px;min-height:212px;  position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid;}
+.about_l5_top{width:226px; height:39px; background:#dbedf9;}
+.about_l5_top_main{ width:216px; height:30px;  position:relative; top:10px;}
+.about_l5_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.about_l5_topr{ width:40px; height:17px; float:right;}
+.about_l5_topr a{ color:#2185c1;}
+.about_l5_topr a:hover{ color:#ff5400;}
+.cgyj_list{ width:220px;padding:0px;text-align:left;list-style:none; float:left; margin-top:10px; margin-left:5px;}
+.cgyj_list ul{padding:0px;margin:0px;list-style:none; }
+.cgyj_list ul li{line-height:24px; height:24px; border-bottom:#CCCCCC 1px dashed;}
+.cgyj_list ul li a{width:220px;line-height:24px; padding-left:15px; background: url(../images/dian2.jpg) 4px 4px no-repeat;  color:#666666;}
+.cgyj_list ul li a:hover{  width:220px;line-height:24x; padding-left:15px;color:#FF5400;}
+.cgyj_list ul li span{  float:right; padding-right:10px; text-align:right; color:#ff6c00; }
+
+/*--------------------------桂林旅游页面r部分--------------------------*/
+.about_main_r{width:732px; height:auto!important;min-height:1984px; float:right;background:#fff;}
+.about_r{ width:732px; height:auto!important;min-height:1247px; float:right;background:#fff;}
+.about_r_main{ width:708px; height:auto!important;min-height:1235px; }
+.about_r_main1{width:708px; height:auto!important;min-height:1972px;}
+.about_main_a{ width:669px; height:148px; float:left; margin-left:10px; margin-top:10px;}
+.about_main_b{ width:669px; height:auto!important;}
+.about_main_c{ width:669px; height:auto!important; float:left; margin-left:20px;}
+.about_main_cd{ width:669px;height:auto!important; float:left; margin-top:30px;}
+
+
+
+
+
+
+
+
+
+.about_t_top{ width:708px; height:38px;}
+.about_t_top_l{ width:286px; height:17px; float:left; margin-top:10px; margin-left:10px;}
+.about_t_top_l a{ color:#2185c1;}
+.about_t_top_l a:hover{ color:#ff5400;}
+.about_t_down{ width:708px; height:auto!important;min-height:1138px; position:relative;top:-5px;}
+.about_t_down_fanye{ width:466px; height:42px; float: right; margin-top:10px;}
+
+.about_gllv{ width:686px; height:171px; border-bottom:#dddddd dashed 1px; margin-top:5px;}
+.about_gllv_main{ width:681px; height:145px;  margin-top:5px;}
+.about_gllv_c{ width:182px; height:136px; float:left; border:#CCCCCC solid 1px; position:relative; top:5px; left:5px;}
+.about_gllv_c img{ margin:5px;}
+.about_gllv_cl{ width:378px; height:136px; float:left; position:relative; top:5px; left:12px;overflow:hidden;}
+.about_gllv_clt{ width:378px; height:20px; float:left; position:relative; overflow:hidden; color:#0570b2; font-weight:bold; }
+.about_gllv_cld{width:378px; height:auto!important;height:115px;min-height:115px;float:left; position:relative; top:10px;overflow:hidden; line-height:22px; }
+.about_gllv_cld a{ color:#666666;}
+.about_gllv_cld a:hover{ color:#666666;}
+.about_gllv_cll{ width:78px; height:89px; float:left; position:relative; left:20px; top:5px;}
+.about_gllv_cllt{ width:78px; height:40px; overflow:hidden;}
+.about_gllv_clld{ width:78px; height:30px; overflow:hidden;}
+.about_gllv_clld span{ color:#ff6600; font-size:28px; font-weight:bold;}
+
+
+
+/*--------------------------国内游页面部分--------------------------*/
+
+
+
+
+/*--------------------------自驾游页面部分--------------------------*/
+
+
+
+
+
+
+/*--------------------------会议旅游页面部分--------------------------*/
+.conference{ width:1000px; height:auto!important;min-height:1004px;  margin-top:18px;}
+/*--------------------------会议旅游页面l部分--------------------------*/
+.conference_l{ width:250px; height:auto!important;min-height:1004px; float:left;}
+/*--------------------------会议旅游页面l1部分--------------------------*/
+.conference_l1{ width:250px; height:310px; float:left; background:#FFFFFF;}
+.conference_l1_main{ width:226px; height:285px; background:#ececec; position:relative; top:10px;}
+.conference_l2{ width:250px; height:300px; float:left; background:#fff; margin-top:17px; overflow:hidden;}
+.conference_l2_main{ width:226px; height:auto!important;height:275px;min-height:275px;  position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid; overflow:hidden;}
+.conference_l2_top{width:226px; height:39px; background:#dbedf9;}
+.conference_l2_top_main{ width:216px; height:30px;  position:relative; top:10px;}
+.conference_l2_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.conference_l2_topr{ width:40px; height:17px; float:right;}
+.conference_l2_topr a{ color:#2185c1;}
+.conference_l2_topr a:hover{ color:#ff5400;}
+.conference_l3{ width:250px; height:357px; float:left; background:#fff; margin-top:17px;overflow:hidden;}
+.conference_l3_main{ width:226px; height:auto!important;height:333px;min-height:333px; position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid; overflow:hidden;}
+.conference_l3_top{width:226px; height:39px; background:#dbedf9;}
+.conference_l3_top_main{ width:216px; height:30px;  position:relative; top:10px;}
+.conference_l3_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.conference_l3_topr{ width:40px; height:17px; float:right;}
+.conference_l3_topr a{ color:#2185c1;}
+.conference_l3_topr a:hover{ color:#ff5400;}
+
+/*--------------------------会议旅游页面r部分--------------------------*/
+.conference_r{ width:732px; height:auto!important;min-height:1004px; float: right;background:#fff;}
+.conference_r_main{ width:708px; height:auto!important;min-height:1004px;}
+.conference_down{ width:708px; height:auto!important;min-height:955px; border-bottom:#dddddd solid 1px; border-left:#dddddd solid 1px; border-right:#dddddd solid 1px; border-top:#22ade6 solid 2px; overflow:hidden;}
+.conference_down_top{ width:708px; height:44px; border-bottom:#dddddd solid 1px; background:#edf8ff;}
+.conference_a{ width:680px; height:100px; float:left; margin-left:10px; margin-top:5px;}
+.conference_a1{ width:680px;height:auto!important;min-height:40px;}
+.conference_a1t{ width:117px; height:40px;float:left;}
+.conference_a1d{ width:680px; height:54px; float:left; overflow:hidden; margin-top:15px; line-height:22px; color:#666666; border-top:#9a9a9a solid 1px;}
+.conference_a1d span{ color:#ff6c00;}
+.conference_a1d span a{ color:#ff6c00;}
+.conference_a1d span a:hover{ color:#ff5400;}
+
+
+
+
+
+/*--------------------------星级酒店页面部分--------------------------*/
+.star1{ width:1000px; height:auto!important;min-height:1606px;  margin-top:18px;}
+.star{ width:1000px; height:auto!important;min-height:2184px;  margin-top:18px;}
+.star_l{width:250px; height:auto!important;min-height:2184px; float:left;}
+.star_l1{ width:250px; height:190px; float:left; background:#FFFFFF;}
+.star_l1_main{ width:226px; height:166px; background:#ececec; position:relative; top:10px;}
+
+
+.star_l3{ width:250px; height:300px; float:left; background:#fff; margin-top:17px;}
+.star_l3_main{ width:226px; height:auto!important;height:275px;min-height:275px;  position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid;}
+.star_l3_top{width:226px; height:39px; background:#dbedf9;}
+.star_l3_top_main{ width:216px; height:30px;  position:relative; top:10px;}
+.star_l3_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.star_l3_topr{ width:40px; height:17px; float:right;}
+.star_l3_topr a{ color:#2185c1;}
+.star_l3_topr a:hover{ color:#ff5400;}
+
+
+.star_r{width:708px; height:auto!important; background:#fff; float:right; min-height:1606px;}
+.star_t_down{ width:708px; height:auto!important;min-height:2059px; float:right;}
+.star_t_down1{ width:708px; height:auto!important; float:right;}
+
+.star_gllv{ width:686px; height:316px; border-bottom:#dddddd dashed 1px; margin-top:15px; margin-bottom:10px;}
+.star_gllv_main{ width:681px; height:297px;  margin-top:5px;}
+.star_gllv_c{ width:182px; height:136px; float:left; border:#CCCCCC solid 1px; position:relative; top:5px; left:5px;}
+.star_gllv_c img{ margin:5px;}
+.star_gllv_cl{ width:330px; height:136px; float:left; position:relative; top:5px; left:12px;overflow:hidden;}
+.star_gllv_clt{ width:330px; height:20px; float:left; position:relative; overflow:hidden; color:#0570b2; font-weight:bold; }
+.star_gllv_clt span{ color:#ec0000;}
+.star_gllv_cld{width:330px; height:auto!important;height:115px;min-height:115px;float:left; position:relative; top:10px;overflow:hidden; line-height:22px; }
+.star_gllv_cld a{ color:#666666;}
+.star_gllv_cld a:hover{ color:#666666;}
+.star_gllv_cll{ width:78px; height:89px; float:left; position:relative; left:20px; top:5px;}
+.star_gllv_cllt{ width:78px; height:40px; overflow:hidden;}
+.star_gllv_clld{ width:78px; height:30px; overflow:hidden;}
+.star_gllv_clld span{ color:#ff6600; font-size:28px; font-weight:bold;}
+.star_bj{ width:675px; height:147px; float:left; margin-top:15px; margin-left:5px;}
+
+
+.star_main{ width:660px;  height:auto!important; min-height:409px; position:relative; top:5px;}
+.star_main_a{ width:660px; height:30px; color:#0570b2; font-weight:bold;}
+.star_main_b{ width:660px; height:auto!important; min-height:211px;}
+.star_main_bc{ width:239px; height:179px; float:left;}
+.star_main_bl{ width:415px; height:179px; float:right;}
+.star_main_c{ width:660px; height:146px; float:left; margin-top:2px;}
+
+
+
+.star_down_d{ width:657px; height:566px; float:left; margin-top:10px; margin-left:10px;}
+.star_down_dc{ width:657px; height:30px; border-bottom:#dbdbdb dashed 1px; float:left; margin-left:10px;}
+.star_down_e{ width:657px; height:auto!important;min-height:276px; float:left; margin-top:10px; margin-left:10px;}
+.star_down_ea{ width:657px;height:auto!important; float:left; margin-top:30px; line-height:22px;}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------景点景区页面l部分--------------------------*/
+.view_l1{ width:250px; height:280px; float:left; background:#fff;}
+.view_l1_main{ width:226px; height:256px; position:relative;top:10px;background:#ececec;}
+
+.view_l3{ width:250px; height:538px; float:left; background:#fff; margin-top:17px;}
+.view_l3_main{ width:226px; height:auto!important;height:515px;min-height:515px;  position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid;}
+.view_l3_top{width:226px; height:39px; background:#dbedf9;}
+.view_l3_top_main{ width:216px; height:30px;  position:relative; top:10px;}
+.view_l3_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.view_l3_topr{ width:40px; height:17px; float:right;}
+.view_l3_topr a{ color:#2185c1;}
+.view_l3_topr a:hover{ color:#ff5400;}
+
+
+.view_down{ width:708px; height:auto!important;  position:relative; top:-5px; border-bottom:#dddddd solid 1px; border-left:#dddddd solid 1px; border-right:#dddddd solid 1px; border-top:#22ade6 solid 2px;}
+.view_down_a{ width:675px; height:273px; position:relative;top:10px; left:10px;}
+.view_down_at{ width:675px; height:24px; text-align:left; color:#0570b2; font-weight:bold;position:relative;left:10px;}
+.view_down_c{ width:597px; height:224px; float:left;}
+.view_down_cl{ width:297px; height:224px; float:left;}
+.view_down_cr{ width:281px; height:224px; float:right; }
+.view_down_d{ width:657px; height:566px; float:left; margin-top:10px; margin-left:30px;}
+.view_down_dc{ width:657px; height:37px; border-bottom:#dbdbdb dashed 1px;}
+.view_down_dc1{ width:50px; height:40px; float:left;}
+.view_down_dc2{ width:100px; height:15px; float:left; margin-top:10px;font-weight:bold; color:#0570b2;}
+
+.view_down_e{ width:630px; height:500px; position:relative; top:20px;}
+.view_down_f{ width:657px; height:auto!important; float:left; margin-top:10px; margin-left:30px; margin-bottom:10px;}
+.view_down_f1{ width:650px; height:auto!important; margin-top:10px; line-height:22px;}
+
+
+
+
+
+/*--------------------------旅游用车页面l部分--------------------------*/
+.sport_l1{ width:250px; height:190px; float:left; background:#fff;}
+.sport_l1_main{ width:226px; height:166px; position:relative;top:10px;background:#ececec;}
+.sport_l2{ width:250px; height:382px; float:left; background:#fff; margin-top:17px;}
+.sport_l2_main{ width:226px; height:auto!important;height:358px;min-height:358px;  position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid;}
+.sport_l2_top{width:226px; height:39px; background:#dbedf9;}
+.sport_l2_top_main{ width:216px; height:30px;  position:relative; top:10px;}
+.sport_l2_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.sport_l2_topr{ width:40px; height:17px; float:right;}
+.sport_l2_topr a{ color:#2185c1;}
+.sport_l2_topr a:hover{ color:#ff5400;}
+
+.sport_l2_d{ width:95px; height:92px; float:left; margin:6px;}
+.sport_l2_pic{ width:95px; height:71px; border:#dddddd solid 1px;}
+.sport_l2_pic img{ margin:2px;}
+.sport_l2_text{ width:95px; height:15px; margin-top:5px; text-align:center; color:#676767; }
+
+
+
+
+
+
+.sport_l3{ width:250px; height:638px; float:left; background:#fff; margin-top:17px;}
+.sport_l3_main{ width:226px; height:auto!important;height:606px;min-height:606px;  position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid;}
+.sport_l3_top{width:226px; height:39px; background:#dbedf9;}
+.sport_l3_top_main{ width:216px; height:30px;  position:relative; top:10px;}
+.sport_l3_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.sport_l3_topr{ width:40px; height:17px; float:right;}
+.sport_l3_topr a{ color:#2185c1;}
+.sport_l3_topr a:hover{ color:#ff5400;}
+
+
+
+
+
+/*--------------------------旅游用车页面r部分--------------------------*/
+.sport_lvyc{ width:340px; height:136px; float:left; margin-left:10px; margin-top:5px;}
+.sport_lvyc_t{ width:340px; height:29px;}
+.sport_lvyc_t1{ width:122px; height:19px; float:left; margin-top:5px; color:#0570b2; font-weight:bold; margin-left:5px; overflow:hidden;}
+.sport_lvyc_t2{ width:109px; height:19px; float:left; margin-top:5px; margin-left:10px; color:#ef0000; font-weight:bold; overflow:hidden;}
+.sport_lvyc_d{ width:369px; height:103px; overflow:hidden; float:left; margin-left:5px; margin-top:10px; line-height:22px; color:#666666;}
+.sport_lvyc_d a{ color:#666666;}
+.sport_lvyc_d a:hover{ color:#666666;}
+.sport_lvyr{ width:84px; height:85px; float:left; margin-left:30px;_margin-left:10px; margin-top:5px;}
+.sport_lvyr_t{ width:78px; height:38px; overflow:hidden;}
+.sport_lvyr_d{ width:78px; height:21px; color:#ff6500; position:relative;top:20px; font-weight:bold; font-size:18px;}
+
+.sport_down{ width:708px; height:auto!important;min-height:1185px; border-bottom:#dddddd solid 1px; border-left:#dddddd solid 1px; border-right:#dddddd solid 1px; border-top:#22ade6 solid 2px; float:left; margin-bottom:10px;*margin-bottom:15px;margin-top:-5px;}
+
+.sport_down_a{ width:689px; height:211px; border-bottom:dashed #cccccc 1px;  float:left; margin-left:10px;}
+.sport_down_al{ width:229px; height:221px; float:left;}
+.sport_down_al img { margin-top:40px; margin-left:10px;}
+.sport_down_ar{ width:448px; height:173px; float:right; margin-top:30px;}
+.sport_down_ab{ width:625px; height:507px; float:left; margin-left:30px; margin-top:10px; }
+.sport_down_ac{ width:603px;height:auto!important; margin-bottom:5px; float:left; margin-top:10px; margin-left:30px; line-height:22px;   }
+.sport_down_ac1{ width:603px;height:auto!important; margin-bottom:5px; float:left; margin-top:10px; margin-left:30px; line-height:22px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.success{ width:1000px; height:auto!important;min-height:1328px;  margin-top:18px;}
+
+
+
+/*--------------------------成功游记页面l部分--------------------------*/
+.success_l1{ width:250px; height:190px; float:left; background:#fff;}
+.success_l1_main{ width:226px; height:166px; position:relative;top:10px;background:#ececec;}
+.success_l2{ width:250px; height:auto!important;min-height:246px; float:left; background:#fff; margin-top:17px; overflow:hidden;}
+.success_l3{ width:250px;height:auto!important;min-height:244px; float:left; background:#fff; margin-top:17px;overflow:hidden;}
+
+
+
+/*--------------------------成功游记页面r部分--------------------------*/
+.success_r{ width:732px; height:auto!important;min-height:1400px; overflow:hidden;  float:right;background:#fff;}
+.success_down{ width:708px; height:auto!important;min-height:1138px; border-bottom:#dddddd solid 1px; border-left:#dddddd solid 1px; border-right:#dddddd solid 1px; border-top:#22ade6 solid 2px;}
+.success_down_top{ width:708px; height:44px; border-bottom:#dddddd solid 1px; background:#edf8ff;}
+.success_cgyj{ width:94px; height:58px; float:left; position:relative; left:25px; top:5px;}
+.success_cgyjt{ width:94px; height:30px;}
+.success_cgyjt span{ color:#ff6804; font-size:18px; font-weight:bold;}
+.success_cgyjd{ width:94px; height:20x; position:relative;top:5px;}
+.success_main_down{ width:708px; height:auto!important; min-height:1370px; position:relative; top:-8px;  border-bottom:#dddddd solid 1px; border-left:#dddddd solid 1px; border-right:#dddddd solid 1px; border-top:#22ade6 solid 2px; overflow:hidden;}
+.success_main{ width:669px; height:329px; position:relative;top:10px;}
+.success_main_t{ width:669px; height:32px; text-align:left; font-weight:bold; color:#0570b2;}
+.success_main_c{ width:669px; height:305px; float:left; }
+.success_main_l{ width:392px; height:293px; float:left; }
+.success_main_r{ width:248px; float: right; height:305px;}
+.success_main_d{ width:669px; height:28px; border-bottom:#339900 2px solid; position:relative;top:20px;}
+.success_main_dl{ width:100px; height:28px; background:#339900; position:relative; left:-260px;}
+.success_main_dlt{ width:60px; height:15px; float:left; margin-top:5px;_ margin-top:8px; margin-left:15px;_ margin-left:8px; font-weight:bold; color:#FFFFFF;}
+.success_main_dlt1{ width:100px; height:15px; float:left; margin-top:5px; font-weight:bold; color:#FFFFFF; text-align:center;}
+.success_main_e{ width:669px; height:auto!important;min-height:330px;  position:relative;top:20px;}
+.success_main_et{ width:71px; height:14px; float:left;  margin-top:10px; margin-left:10px; font-weight:bold; color:#ff6600;}
+.success_main_ec{ width:667px;  height:auto!important;min-height:100px; position:relative; top:15px;}
+.success_main_ec1{ width:667px;  height:auto!important;min-height:100px; position:relative; top:15px;}
+.success_main_ed{ width:667px; height:104px; background:#f7f7f7; position:relative; top:35px; border:#dedede dashed 1px;}
+.success_main_f{ width:667px;height:auto!important;line-height:24px; position:relative; top:40px; color:#333333;}
+
+
+/*--------------------------常见问题页面部分--------------------------*/
+.question{ width:1000px; height:794px;  margin-top:18px;}
+
+/*--------------------------常见问题页面l部分--------------------------*/
+.question_l{ width:250px; height:794px; float:left;}
+.question_l1{ width:250px; height:185px; float:left; background:#FFFFFF; overflow:hidden; margin-bottom:17px;}
+.question_l1_main{ width:226px; height:auto!important;height:161px;min-height:161px;  position:relative; top:10px;border-bottom:#cbe5fc 1px solid; border-left:#cbe5fc 1px solid; border-right:#cbe5fc solid 1px; border-top:#36a3d9 2px solid; overflow:hidden;}
+.question_l1_top{width:226px; height:39px; background:#dbedf9;}
+.question_l1_top_main{ width:216px; height:30px;  position:relative; top:10px;}
+.question_l1_topl{ width:105px; height:17px; float:left; color:#000; font-weight:bold; margin-left:10px;}
+.question_l1_topr{ width:40px; height:17px; float:right;}
+.question_l1_topr a{ color:#2185c1;}
+.question_l1_topr a:hover{ color:#ff5400;}
+
+
+
+/*--------------------------常见问题页面r部分--------------------------*/
+.question_r{ width:732px; height:794px; float:right;background:#fff;}
+.question_r_main{ width:708px; height:717px;}
+.question_t_top{ width:708px; height:38px;}
+.question_t_top_l{ width:286px; height:17px; float:left; margin-top:10px; margin-left:10px;}
+.question_t_top_l a{ color:#2185c1;}
+.question_t_top_l a:hover{ color:#ff5400;}
+.question_t_down{ width:708px; height:auto!important;min-height:708px; border-top:#21ade7 solid 2px; border-left:#dddddd solid 1px; border-right:#dddddd solid 1px; border-bottom:#dddddd solid 1px;}
+.question_t_down_main{ width:623px;  height:auto!important;min-height:634px; position:relative; top:10px; line-height:24px;}
+.question_list{ width:672px;padding:0px;text-align:left;list-style:none; float:left; margin-top:10px; margin-left:5px;}
+.question_list ul{padding:0px;margin:0px;list-style:none; }
+.question_list ul li{line-height:32px; height:32px; border-bottom:#CCCCCC 1px dashed;}
+.question_list ul li a{width:672px;line-height:32px; padding-left:15px; background: url(../images/dian5.jpg) 4px 4px no-repeat;  color:#2185c1;}
+.question_list ul li a:hover{  width:672px;line-height:32x; padding-left:15px;color:#FF5400;}
+.question_list ul li span{  float:right; padding-right:10px; text-align:right; color:#828282; }
+
+
+
+.hotel{ width:708px; background:#FF0000; margin:0px auto; height:1000px;}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------桂林旅游页面X部分--------------------------*/
+.aboutshow1{ line-height:24px; text-align:left; padding:20px 40px 0px 40px; min-height:400px; background: url(../images/bottm6.jpg) right bottom no-repeat; }
+.aboutshow1 img{float:right; margin-left:30px; margin-bottom:30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

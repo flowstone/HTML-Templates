@@ -1,0 +1,78 @@
+<!--<div class="star_down_d">
+<div class="star_down_dc"><div class="view_down_dc1"><img src="images/star1111.jpg"/></div><div class="view_down_dc2">酒店图片</div></div>
+<div class="view_down_e"><div class="wrap picshow">
+	<!--大图轮换区-->
+	<div id="picarea">
+		<div style="MARGIN: 0px auto; WIDTH: 625px; HEIGHT: 436px; OVERFLOW: hidden">
+			<div style="MARGIN: 0px auto; WIDTH: 625px; HEIGHT: 436px; OVERFLOW: hidden" id="bigpicarea">
+				<p class="bigbtnPrev"><span id="big_play_prev"></span></p>
+				<div id="image_xixi-01" class="image">
+					<a href="#" target="_blank">
+					<img alt="" src="images/aa01.jpg" width="625" height="434"></a>
+					<div class="word">
+						<h3>舞动青春</h3>
+					</div>
+				</div>
+				<div id="image_xixi-02" class="image">
+					<a href="#" target="_blank">
+					<img alt="" src="images/aa02.jpg" width="625" height="434"></a>
+					<div class="word">
+						<h3>台球厅的生活</h3>
+					</div>
+				</div>
+				<div id="image_xixi-03" class="image">
+					<a href="#" target="_blank">
+					<img alt="" src="images/aa03.jpg" width="625" height="434"></a>
+					<div class="word">
+						<h3>采访进行中</h3>
+					</div>
+				</div>
+				<div id="image_xixi-04" class="image">
+					<a href="#" target="_blank">
+					<img alt="" src="images/aa04.jpg" width="625" height="434"></a>
+					<div class="word">
+						<h3>美女代言人</h3>
+					</div>
+				</div>
+				<div id="image_xixi-05" class="image">
+					<a href="#" target="_blank">
+					<img alt="" src="images/aa05.jpg" width="625" height="434"></a>
+					<div class="word">
+						<h3>红色经典</h3>
+					</div>
+				</div>
+				<p class="bigbtnNext"><span id="big_play_next"></span></p>
+			</div>
+		</div>
+		<div id="smallpicarea">
+			<div id="thumbs">
+				<ul>
+					<li class="first btnPrev">
+					<img id="play_prev" src="images/left.png"></li>
+					<li class="slideshowItem"><a id="thumb_xixi-01" href="#">
+					<img src="images/aa001.jpg" width="90" height="60"></a>
+					</li>
+					<li class="slideshowItem"><a id="thumb_xixi-02" href="#">
+					<img src="images/aa002.jpg" width="90" height="60"></a>
+					</li>
+					<li class="slideshowItem"><a id="thumb_xixi-03" href="#">
+					<img src="images/aa003.jpg" width="90" height="60"></a>
+					</li>
+					<li class="slideshowItem"><a id="thumb_xixi-04" href="#">
+					<img src="images/aa004.jpg" width="90" height="60"></a>
+					</li>
+					<li class="slideshowItem"><a id="thumb_xixi-05" href="#">
+					<img src="images/aa005.jpg" width="90" height="60"></a>
+					</li>
+					<li class="last btnNext">
+					<img id="play_next" src="images/right.png"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+var target = ["xixi-01","xixi-02","xixi-03","xixi-04","xixi-05","xixi-06","xixi-07"];
+</script>
+</div></div>
+
+</div>-->

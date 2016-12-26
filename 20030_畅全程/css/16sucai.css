@@ -1,0 +1,164 @@
+
+/*--------------------------桂林景点页面切换部分--------------------------*/
+/*选项卡2*/
+#Tab2{
+width:690px;
+height:381px;
+margin:0px;
+padding:0px;
+margin:0 auto;}
+/*菜单class*/
+.Menubox {
+width:690px;
+height:38px;
+line-height:38px;
+margin-left:3px;
+}
+.Menubox ul{
+margin:0px;
+padding:0px;
+}
+.Menubox li{
+float:left;
+display:block;
+cursor:pointer;
+width:114px;
+text-align:center;
+color:#81bc2c;
+font-weight:bold;
+}
+.Menubox li.hover{
+padding:0px;
+background:#81bc2c;
+width:116px;
+color:#fff;
+font-weight:bold;
+height:38px;
+line-height:38px;
+}
+.Contentbox{
+clear:both;
+margin-top:5px;
+border-top:none;
+height:331px;
+text-align:center;
+padding-top:8px;
+}
+
+/*--------------------------星级酒店页面切换部分--------------------------*/
+/*选项卡2*/
+#Tab21{
+width:690px;
+height:381px;
+margin:0px;
+padding:0px;
+margin:0 auto;}
+/*菜单class*/
+.Menubox1 {
+width:690px;
+height:38px;
+line-height:38px;
+margin-left:3px;
+}
+.Menubox1 ul{
+margin:0px;
+padding:0px;
+}
+.Menubox1 li{
+float:left;
+display:block;
+cursor:pointer;
+width:114px;
+text-align:center;
+color:#81bc2c;
+font-weight:bold;
+}
+.Menubox1 li.hover{
+padding:0px;
+background:#81bc2c;
+width:116px;
+color:#fff;
+font-weight:bold;
+height:38px;
+line-height:38px;
+}
+.Contentbox1{
+clear:both;
+margin-top:5px;
+border-top:none;
+height:331px;
+text-align:center;
+padding-top:8px;
+}
+
+
+
+/*--------------------------首页桂林旅游页面切换部分--------------------------*
+/*选项卡2*/
+#Tab22{
+background: url(../images/texta.jpg) no-repeat top;border-top:#22ade6 2px solid;border-left:#DDDDDD 1px solid;border-right:#DDDDDD 1px solid;border-bottom:#DDDDDD 1px solid;width:977px;height:auto!important;height:376px;min-height:376px;margin:0px;padding:0px;margin:0 auto;}
+/*菜单class*/
+.title{ width:50px; height:20px; position:relative; float:right; top:18px; font-size:12px; color:#2185c1;}
+.title a{ color:#2185c1; text-decoration:none;}
+.title a:hover{ color:#ff5400}
+.Menubox2 {background:#edf8ff;margin-left:180px;width:625px;height:54px;line-height:54px;font-size:12px;}
+.Menubox2 ul{margin:0px;padding:0px;}
+.Menubox2 li{float:left;display:block;cursor:pointer;width:64px;height:54px;text-align:center;color:#666666;}
+.Menubox2 li.hover{position:relative;top:0px;padding:0px;width:64px;background: url(../images/texta.png) no-repeat;color:#fff;height:54px;line-height:54px;z-index:999;}
+.Contentbox2{border-top:#dddddd 1px  solid;clear:both;margin-top:0px;width:977px;text-align:center;padding-top:8px;}
+
+
+/*--------------------------桂林旅游gllv页面切换部分--------------------------*
+/*选项卡2*/
+#Tab2gllv{background:url(../images/texta.jpg) no-repeat top;border-top:#22ade6 2px solid;border-left:#DDDDDD 1px solid;border-right:#DDDDDD 1px solid;border-bottom:#DDDDDD 1px solid;width:708px;height:auto!important;height:1138px;min-height:1138px;margin:0px;padding:0px;margin:0 auto;}
+#Tab2gllv1{background:url(../images/texta.jpg) no-repeat top;border-top:#22ade6 2px solid;border-left:#DDDDDD 1px solid;border-right:#DDDDDD 1px solid;border-bottom:#DDDDDD 1px solid;width:708px;height:auto!important;min-height:1935px;margin:0px;padding:0px;margin:0 auto; }
+/*菜单class*/
+.title{ width:50px; height:20px; position:relative; float:right; top:18px; font-size:12px; color:#2185c1;}
+.title a{ color:#2185c1; text-decoration:none;}
+.title a:hover{ color:#ff5400}
+.Menuboxgllv {background:#edf8ff;width:625px;height:54px;line-height:54px;font-size:12px;}
+.Menuboxgllv ul{margin:0px;padding:0px;}
+.Menuboxgllv li{float:left;display:block;cursor:pointer;width:64px;height:54px;text-align:center;color:#666666;}
+.Menuboxgllv li.hover{position:relative;top:0px;padding:0px;width:64px;background: url(../images/texta.png) no-repeat;color:#fff;height:54px;line-height:54px;z-index:999;
+}
+.Contentboxgllv{border-top:#dddddd 1px  solid;clear:both;margin-top:0px;width:708px;text-align:left;padding-top:8px; height:auto; }
+
+
+/*--------------------------星级酒店xjjd页面切换部分--------------------------*
+
+/*选项卡2*/
+#Tab2xjjd{ background:url(../images/texta.jpg) no-repeat top;border-top:#22ade6 2px solid;border-left:#DDDDDD 1px solid;border-right:#DDDDDD 1px solid;
+border-bottom:#DDDDDD 1px solid;width:690px;height:auto!important;min-height:2059px;margin-top:10px;padding:0px;}
+#Tab2xjjd_1{ background:url(../images/texta.jpg) no-repeat top;border-top:#22ade6 2px solid;border-left:#DDDDDD 1px solid;border-right:#DDDDDD 1px solid;
+border-bottom:#DDDDDD 1px solid;width:690px;height:auto!important;min-height:2029px;margin-top:10px;padding:0px;}
+/*菜单class*/
+.Menuboxxjjd { background:#edf8ff;width:625px;height:54px;line-height:54px;font-size:12px;}
+.Menuboxxjjd ul{margin:0px;padding:0px;}
+.Menuboxxjjd li{float:left;display:block;cursor:pointer;width:64px;height:54px;text-align:center;color:#666666;}
+.Menuboxxjjd li.hover{position:relative;top:0px;padding:0px;width:64px;background: url(../images/texta.png) no-repeat;color:#fff;height:54px;line-height:54px;z-index:999;}
+.Contentboxxjjd{border-top:#dddddd 1px  solid;clear:both;margin-top:0px;text-align:left;padding-top:8px; height:auto; overflow:hidden;}
+
+/*--------------------------旅游用车lvyc页面切换部分--------------------------
+/*选项卡2*/
+#Tab2lvyc{ width:973px;height:282px;margin:0px;padding:0px;margin:0 auto;background:url(../images/cccc.jpg) no-repeat top;}
+/*菜单class*/
+.title{ width:50px; height:20px; position:relative; float:right; top:18px; font-size:12px; color:#2185c1;}
+.title a{ color:#2185c1; text-decoration:none;}
+.title a:hover{ color:#ff5400}
+.Menuboxlvyc {width:673px;height:39px;line-height:39px;font-size:12px; margin-top:-10px;  margin-left:280px;}
+.Menuboxlvyc ul{margin:0px;padding:0px;}
+.Menuboxlvyc li{float:left;display:block;cursor:pointer;width:124px;height:39px;text-align:center;color:#81bc2c; border-left:#81bc2c solid 1px; border-top:#81bc2c solid 1px; border-right:#81bc2c solid 1px; margin-left:5px; font-weight:bold; }
+.Menuboxlvyc li.hover{position:relative;top:0px;padding:0px;width:124px;color:#fff;height:39px;line-height:39px;z-index:999;background:#81bc2c;}
+.Contentboxlvyc{clear:both;margin-top:0px;height:223px;width:973px;text-align:center;padding-top:8px; border-bottom:#ddd solid 1px; border-left:#ddd solid 1px; border-right:#ddd solid 1px; border-top:#81bc2c solid 2px;}
+
+
+
+
+
+
+
+
+
+
+
+
