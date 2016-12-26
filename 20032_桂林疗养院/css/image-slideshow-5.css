@@ -1,0 +1,74 @@
+
+	#mainContainer{
+		margin:0 auto;
+		width:700px;
+		height:259px;
+		text-align:left;
+		padding:3px;	
+	}
+	.clear{
+		clear:both;
+	}
+	/* End of demo CSS */
+	#DHTMLgoodies_panel_one,#DHTMLgoodies_arrows,#DHTMLgoodies_thumbs{	/* Width of divs for thumbnails */
+		width:240px;
+	}
+	#DHTMLgoodies_panel_one{		
+		float:left;	
+	}
+	#DHTMLgoodies_thumbs{
+		overflow:hidden;	/* Don't change this */
+		height:280px;	/* Height of thumbnail div */
+		position:relative;	/* Never change this */
+		float:left;
+	}
+	#DHTMLgoodies_largeImage{	/* Large image div */
+		width:432px;	/* Width of large image div */
+		height:250px;	/* Height of large image div */
+		float:left;
+		padding-left:10px;	/* "Air" */
+		padding-right:10px;
+		padding-top:10px;	
+	}
+	#DHTMLgoodies_largeImage table{	/* Used table to get both horizontal and vertical center alignement of large image */
+		width:432px;
+		height:250px;;
+		text-align:center;
+	}
+	#DHTMLgoodies_largeImage img{	/* Large image */
+		border:1px solid #dedee0;	/* Border around large image */
+	}
+	
+	
+	.strip_of_thumbnails{	/* A vertical strip of thumbnails */
+		width:114px;	/* Width of strip */
+		padding:5px;	/* "Air" inside filmstrip div */
+		position:absolute;
+
+	}
+	.strip_of_thumbnails div{
+		width:110px;
+		height:80px;
+		padding:5px;
+		text-align:center;
+
+	}
+	.strip_of_thumbnails img{
+		border:0px;
+		padding:5px;
+	}
+	.strip_of_thumbnails .activeImage{	/* Active thumbnail */
+		border:1px solid #dedee0;	/* Green border around active thumbnail */
+		padding:0px;
+	
+	}
+	.leftArrow{
+		float:left;
+	}
+	.rightArrow{
+		float:right;
+	}
+	#DHTMLgoodies_thumbs_inner{
+		position:relative;	/* Never change this */
+		width:1000px;
+	}	
