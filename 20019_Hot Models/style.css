@@ -1,0 +1,29 @@
+.fleft {float:left}
+.fright {float:right}
+.fclear {clear:both}
+.fcenter {float:none;text-align:center}
+body {background:#000;margin:0;padding:0;font:Arial, Helvetica, sans-serif;font-size:14px;color:#fff}
+#wrapper {width:960px;margin:0 auto}
+#menu {width:960px;height:30px;margin-top:55px}
+#menu ul {list-style:none;margin:0;padding:0}
+#menu ul li {float:left;width:160px;margin:0;padding:0}
+ul li a {color:#fff}
+#menu ul li a {display:block;text-decoration:none;font-size:16px;text-align:center;cursor:pointer;padding-top:3px;font-weight:lighter}
+#menu ul li a:hover, li.selected a {background:#19d7e3;color:#000}
+#banner {background:url(images/header-img.jpg) center no-repeat;height:196px;width:898px;padding:5px;border:1px solid #19d7e3;margin-top:3px;padding-top:100px;padding-right:60px}
+#logo {float:right}
+.content-box {background:#0f0f0f;width:260px;height:200px;margin-top:15px;padding:10px 25px 10px 25px}
+.inner_copy {border:0;color:#f00;float:left;width:50% !important;margin:-100% 0 0 0;overflow:hidden;line-height:0;padding:0;font-size:11px}
+#welcome {float:left;clear:none}
+#work {float:left;clear:none;margin-left:15px}
+#model {float:left;clear:none;margin-left:15px}
+.more-btn {text-align:right}
+.title {font-size:20px;color:#19d7e3}
+.sub-title {color:#19d7e3;text-decoration:underline;margin-top:10px}
+#pervious {float:left;clear:none;margin-left:40px;margin-right:40px;margin-top:20px;margin-bottom:20px}
+#next {float:right;clear:none;margin-right:40px;margin-left:20px;margin-top:20px;margin-bottom:20px}
+.photos {float:left;clear:none;border:1px solid #19d7e3;padding:5px;margin-right:19px;margin-top:20px;margin-bottom:20px}
+#divider {border-top:1px solid #19d7e3;margin-bottom:20px;width:960px}
+#footer {text-align:center;font-size:12px;margin-bottom:20px}
+#footer div {padding:5px 10px 10px 10px}
+a {color:#19D7E3}

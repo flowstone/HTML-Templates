@@ -1,0 +1,115 @@
+* {margin:0;padding:0}
+html, body {height:100%}
+html {min-width:1000px}
+body {background:#276803;font-family:Arial, Helvetica, sans-serif;font-size:100%;line-height:1.25em;color:#767676}
+img {border:0;vertical-align:top;text-align:left}
+object {vertical-align:top;outline:none}
+ul, ol {list-style:none}
+table, table td {padding:0;border:none;border-collapse:collapse}
+.fleft {float:left}
+.fright {float:right}
+.clear {clear:both}
+.col-1, .col-2, .col-3 {float:left}
+.alignright {text-align:right}
+.aligncenter {text-align:center}
+.wrapper {width:100%;overflow:hidden}
+/* GLOBAL */
+.container {width:1000px;margin:0 auto;font-size:.875em;position:relative}
+#header {height:363px;background:url(images/header-bg.jpg) no-repeat 50% 0}
+#header.small {height:231px;background:url(images/header-bg-small.jpg) no-repeat 50% 0}
+#top-content {background:#f5f5f5;width:100%}
+#content {background:#fff;width:100%}
+#content .mainContent {float:left;width:552px;margin-right:44px;padding:20px 0 20px 0}
+#content .aside {float:left;width:319px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-110% 0 0 0;overflow:hidden;padding:0}
+#footer {height:127px;background:url(images/footer-bg.jpg) 50% 0 repeat-x}
+/* forms parameters */
+input, select, textarea {font-family:Arial, Helvetica, sans-serif;font-size:1em;vertical-align:middle;font-weight:normal}
+/* other */
+.img-indent {margin:0 20px 0 0;float:left}
+.img-box {width:100%;overflow:hidden;padding-bottom:12px}
+.img-box img {float:left;margin:0 20px 0 0}
+.extra-wrap {overflow:hidden}
+p {margin-bottom:20px}
+.p1 {margin-bottom:10px}
+.p2 {margin-bottom:20px}
+.p3 {margin-bottom:30px}
+/* txt, links, lines, titles */
+a {color:#5b990e;outline:none}
+a:hover {text-decoration:none}
+h1 {font-size:45px;line-height:1.2em;color:#fff;text-transform:uppercase;font-weight:300;margin-bottom:4px}
+h1 a {text-decoration:none;color:#fff}
+h1 strong {font-weight:500}
+h2 {font-size:30px;color:#767676;line-height:1.2em;text-transform:uppercase;margin-bottom:20px;font-weight:300}
+h2 span {color:#5b990e}
+h3 {font-size:30px;color:#fff;line-height:1.2em;text-transform:uppercase;margin-bottom:20px;font-weight:300}
+h4 {font-size:13px;color:#ffd9a3;margin-bottom:9px}
+h4 a {color:#ffd9a3 !important;text-decoration:none !important}
+h4 a:hover { text-decoration:underline !important}
+h4 strong {font-size:12px;color:#fff}
+h5 {font-size:13px;color:#5b990e;margin-bottom:12px}
+h6 {font-size:13px;color:#5b990e}
+h6 a {text-decoration:none}
+h6 a:hover {text-decoration:underline}
+.button {display:inline-block;width:145px;height:40px;line-height:36px;font-size:17px;color:#fff;background:url(images/button.jpg) no-repeat 0 0;text-decoration:none}
+/* boxes */
+.box {width:100%}
+.box .left-bot-corner {background:url(images/left-bot-corner.gif) no-repeat left bottom;width:100%}
+.box .right-bot-corner {background:url(images/right-bot-corner.gif) no-repeat right bottom;width:100%}
+.box .inner {padding:0 28px 43px 0}
+.box .inner1 {padding:0 28px 43px 30px}
+.box .img-indent {margin-right:12px}
+.box1 {background:url(images/box-bg.gif) 0 0;width:100%;color:#fff}
+.box1 .top {background:url(images/box1-top.jpg) no-repeat 0 0}
+.box1 .bottom {background:url(images/box1-bottom.jpg) no-repeat 0 100%;width:100%}
+.box1 .inner {padding:20px 30px 35px 30px}
+.address {padding-bottom:20px}
+.address li {width:100%;overflow:hidden;background:none !important;padding:0 0 0 0 !important}
+.address li strong {float:left;width:90px;font-size:13px;color:#ffd9a3}
+/* header */
+#header .nav {position:absolute;left:60px;top:0;width:200px}
+#header .nav li {display:inline;text-indent:-9999em}
+#header .nav li a {float:left;width:40px;height:350px;background-repeat:no-repeat;background-position:0 0}
+#header .nav li a:hover, #header .nav li a.current {background-position:-40px 0}
+#header .nav li.item1 a {background-image:url(images/m1.jpg)}
+#header .nav li.item2 a {background-image:url(images/m2.jpg)}
+#header .nav li.item3 a {background-image:url(images/m3.jpg)}
+#header .nav li.item4 a {background-image:url(images/m4.jpg)}
+#header .nav li.item5 a {background-image:url(images/m5.jpg)}
+/*--- for subpages ---*/
+#header.small .nav li a {height:211px}
+#header.small .nav li.item1 a {background-image:url(images/m1-alt.jpg)}
+#header.small .nav li.item2 a {background-image:url(images/m2-alt.jpg)}
+#header.small .nav li.item3 a {background-image:url(images/m3-alt.jpg)}
+#header.small .nav li.item4 a {background-image:url(images/m4-alt.jpg)}
+#header.small .nav li.item5 a {background-image:url(images/m5-alt.jpg)}
+.logo-box {position:absolute;left:295px;top:70px;text-align:center;width:344px;color:#fff;z-index:2}
+.logo-box p {margin-bottom:24px}
+.logo-box h2 {font-size:20px;line-height:1.2em;color:#fff;text-transform:uppercase;margin-bottom:22px;font-weight:500}
+.extra-img {display:block;position:absolute;right:0;top:10px}
+#header.small .logo-box {left:340px}
+/* content */
+#top-content .indent {padding:2px 25px 0 60px}
+#content .indent {padding:14px 25px 0 60px}
+#content ul {padding-bottom:20px}
+#content ul li {background:url(images/arrow1.gif) no-repeat 0 7px;padding:0 0 0 12px}
+#content ul li a {color:#b4b4b4;text-decoration:none}
+#content ul li a:hover {color:#5b990e}
+#content ul li a {color:#5b990e;text-decoration:underline}
+#content ul li a:hover {text-decoration:none}
+#content ul ul {padding:2px 0 2px 0}
+.img-list {padding-bottom:0 !important}
+.img-list li {padding:0 0 20px 0 !important;background:none !important;width:100%;overflow:hidden}
+.img-list li.last {padding-bottom:0 !important}
+.img-list li img {float:left;margin-right:20px}
+/* footer */
+#footer .inside {font-size:13px;color:#fff;padding:77px 108px 0 66px}
+#footer a {color:#a3c655}
+/* forms */
+#contacts-form {clear:right;width:100%;overflow:hidden}
+#contacts-form fieldset {border:none;float:left}
+#contacts-form .field {clear:both}
+#contacts-form label {float:left;width:107px;line-height:18px;padding-bottom:8px}
+#contacts-form input {width:245px;padding:0 0 0 3px;background:none;border:1px solid #b2b2b2;color:#616161;float:left;font-size:12px}
+#contacts-form textarea {width:420px;height:205px;padding:0 0 0 3px;background:none;border:1px solid #b2b2b2;color:#616161;margin-bottom:10px;overflow:auto;float:left;font-size:12px}
+#contacts-form a {font-size:13px; font-weight:bold}

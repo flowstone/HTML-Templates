@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script>
+		$(document).ready(function(){				   	
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:'.prev',
+				nextBu:'.next',
+				playBu:false,
+				duration:800,
+				preset:'fade',
+				pagination:true,
+				pagNums:false,
+				slideshow:7000,
+				numStatus:false,
+				banners:false,
+				waitBannerAnimation:false,
+				progressBar:false
+			})		
+		});
+	</script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+</head>
+<body>
+  <div class="main">
+  <!--==============================header=================================-->
+    <header>
+        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <nav>  
+            <div id="slide">		
+                <div class="slider">
+                    <ul class="items">
+                        <li><img src="images/slider-1.jpg" alt="" /></li>
+                        <li><img src="images/slider-2.jpg" alt="" /></li>
+                        <li><img src="images/slider-3.jpg" alt="" /></li>
+                    </ul>
+                </div>	
+                <a href="#" class="prev"></a><a href="#" class="next"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="clr-1">Home</a></li>
+                <li class="current"><a href="about.html" class="clr-2">About</a></li>
+                <li><a href="schedule.html" class="clr-3">Schedule</a></li>
+                <li><a href="gallery.html" class="clr-4">Gallery</a></li>
+                <li><a href="contacts.html" class="clr-5">Contacts</a></li>
+            </ul>
+         </nav>
+    </header>   
+  <!--==============================content================================-->
+    <section id="content"><div class="ic"></div>
+        <div class="container_12">	
+          <div class="grid_4 bot-1">
+            <h2 class="top-6 p2">Teachers</h2>
+            <p class="text-1 p3">Peter Stanton</p>
+            <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat <a href="#" class="link">More...</a></p>
+            <p class="text-1 top-2 p3">Helen Perton</p>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est <a href="#" class="link">More...</a></p>
+            <p class="text-1 top-2 p3">Jesica Murray</p>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <br>sed diam <a href="#" class="link">More...</a></p>
+          </div>
+          <div class="grid_8">
+            <div class="block-1 top-5">
+            	<div class="block-1-shadow">
+                	<h2 class="clr-6 p6">A Few Words About Us</h2>
+                    <p class="clr-6"><strong>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor </strong></p>
+					<p class="clr-6">Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et acam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est lorem ipsum dolor sit amet.</p>
+                    <div class="pad-3">
+                    	<img src="images/page2-img1.jpg" alt="" class="img-border img-indent">
+                        <div class="extra-wrap clr-6">
+                        	<p><strong>Lorem ipsum dolor sit amet, consetetur</strong></p>
+                            <p>sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <h2 class="clr-6 p6">What We Offer</h2>
+                    <p class="clr-6"><strong>Nam liber tempor cum soluta nobis eleifend option</strong></p>
+					<p class="clr-6">Congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit:</p>
+                    <div class="lists">
+                    	<ul class="list-2">
+                        	<li><a href="#">Sed diam nonummy nibh euismod</a></li>
+                            <li><a href="#">Tincidunt ut laoreet dolore</a></li>
+                            <li><a href="#">Magna aliquam erat volutpat wisi enim</a></li>
+                            <li><a href="#">Minim veniam, quis nostrud exerci</a></li>
+                        </ul>
+                        <ul class="list-2 last">
+                        	<li><a href="#">Duis autem vel eum iriure dolor</a></li>
+                            <li><a href="#">Hendrerit in vulputate velit molestie</a></li>
+                            <li><a href="#">Consequat vel illum dolore</a></li>
+                            <li><a href="#">Feugiat nulla facilisis at vero eros</a></li>
+                        </ul>
+                    </div>
+                    <div class="pad-2">
+                    	<a href="#" class="link-2">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!--==============================footer=================================-->
+            <footer>
+				<p>Professional free web templates <a href="http://www.websitetemplatesonline.com" target="_blank">at www.websitetemplatesonline.com</a>. | <a href="http://www.flashtemplates.com/" title="Flash Templates">Flashtemplates.com</a>. Flash Design - the Smart Choice.</p>
+                <p>© 2012 Art School</p>
+                <p><a rel="nofollow" href="http://www.templatemonster.com/" target="_blank" class="link">Website Template</a> by TemplateMonster.com</p>
+            </footer>	  
+          </div>
+          <div class="clear"></div>
+        </div>
+    </section>    
+   </div>      
+</body>
+</html>

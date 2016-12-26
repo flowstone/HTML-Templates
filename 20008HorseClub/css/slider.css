@@ -1,0 +1,21 @@
+/*--------- slider ---------*/
+#slide { position:relative; width:1264px; height:585px; margin:0 auto; padding:0px 0px 0 0px; z-index:2; background:#000; overflow:hidden;}
+.slider { width:1264px; height:465px; margin:0 auto; position:relative; z-index:2; overflow:visible !important; }
+.items { display:none;}
+
+.pagination { display:none;}
+.pagination li {}
+.pagination a { }
+.pagination li.current a, .pagination li:hover a {}
+
+.prev {position:absolute; top:504px ; left:90px; z-index:111; display:inline-block; width:22px; height:43px; background:url(../images/prev.gif) 0 0 no-repeat;}
+.prev:hover {background-position:0 bottom;}
+.next {position:absolute; top:504px ; right:90px; z-index:111; display:inline-block; width:22px; height:43px; background:url(../images/next.gif) 0 0 no-repeat;}
+.next:hover {background-position:0 bottom;}
+
+.banner{position:absolute; left:162px; top:465px; width:940px; background:#000; overflow:hidden; padding:10px 0 0px 0;}
+.banner p  {width:740px; float:left;}
+.banner p strong {font-size:50px; line-height:60px; color:#fff; font-weight:normal; letter-spacing:-3px; display:block;}
+.banner p span {font-size:18px; line-height:24px; color:#636f6f; font-weight:normal; letter-spacing:-1px; display:block; margin-top:-1px;}
+.banner a {background:#ef6f53; color:#fff; font-size:26px; line-height:32px; padding:11px 24px 21px 24px; display:inline-block; float:right; margin-top:18px;}
+.banner a:hover {background:#636f6f; }

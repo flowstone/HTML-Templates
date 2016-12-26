@@ -1,0 +1,20 @@
+/*--------- slider ---------*/
+#slide {  position:relative; overflow:hidden; width:920px; padding:44px 40px 0 40px; z-index:2;}
+
+.gallery {width:920px; height:429px; margin:0 auto; position:relative; z-index:2; }
+.items {display:none;}
+
+.pag { position:relative; }
+.img-pags {position:static; left:0px; z-index:1; display:block; overflow:visible !important;}
+.img-pags ul {margin:0}
+.img-pags li { width:270px; height:249px; margin-right:20px; display:block; }
+.img-pags li a {position:relative;display:block;}
+.img-pags li a img {}
+.img-pags li a span{ display:block;}
+.img-pags li a span strong {font-weight:normal; display:block; margin:7px 0 0px 11px;}
+.img-pags li.active a,.img-pags li a:hover{}
+.img-pags li.active a img,.img-pags li a:hover img{border:#c4e7ef 10px solid;}
+.prev {position:absolute; top:242px; left:49px; display:block; width:61px; height:70px; background:url(../images/prev.png) 0 0 no-repeat; z-index:99;}
+.prev:hover {background-position:0 bottom;}
+.next {position:absolute; top:242px; right:49px; display:block; width:61px; height:70px; background:url(../images/next.png) 0 bottom no-repeat; z-index:99;}
+.next:hover {background-position:0 0;}

@@ -1,0 +1,11 @@
+.cycle {width:950px; height:168px; position:relative;}
+#s2 {}
+#s2>div {}
+
+#nav { position:absolute; bottom:0px; left:0px; display:inline-block; z-index:60;width:518px; padding-left:432px; background:url(../images/pagination-bg.gif) 0 11px no-repeat;}
+#nav a { display:block; width:25px; height:25px; background:url(../images/pagination.png) right 0 no-repeat; float:left; margin-left:3px;}
+#nav a.activeSlide { background-position: 0 0; }
+#nav a:focus { background-position: 0 0;}
+
+.cycle .banner {width:950px; padding-top:66px; font-size:26px; line-height:33px; color:#85a09d; font-family: 'Open Sans', sans-serif; font-weight:800; text-align:center; text-transform:uppercase; letter-spacing:-1px;}
+.cycle .banner span {display:block; margin-top:-4px;}

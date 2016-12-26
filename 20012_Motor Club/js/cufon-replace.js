@@ -1,0 +1,1 @@
+Cufon.replace('.site-nav li', { fontFamily: 'Staccato555 BT', hover:true });

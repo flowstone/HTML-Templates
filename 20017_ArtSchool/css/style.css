@@ -1,0 +1,136 @@
+/* Global properties ======================================================== */
+html, body {width:100%; padding:0; margin:0;}
+
+body { 	 
+	font: 14px/22px Georgia, "Times New Roman", Times, serif;
+	color:#838180;
+	min-width:1000px;
+	background: #000000;
+}
+.ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:0 10000% 0 0;overflow:hidden;padding:0}
+.main {width:100%; background:url(../images/bg.jpg) center 0 no-repeat;}
+/***********************************************************************/
+a {text-decoration:none; cursor:pointer;text-decoration:none; }
+a:hover {text-decoration:none;}
+
+.link {color:#dd0a00; }
+.link:hover {text-decoration:underline;}
+
+.link-1 {font-size:30px; line-height:36px; color:#dd0a00; font-weight:bold; font-family: 'Cabin Sketch', cursive; letter-spacing:-1px; display:inline-block;}
+.link-1:hover {color:#fff;}
+.link-2 {font-size:30px; line-height:36px; color:#0072ff; font-weight:bold; font-family: 'Cabin Sketch', cursive; letter-spacing:-1px; display:inline-block;}
+.link-2:hover {color:#b30800;}
+
+.clr-1 { color:#0072ff;}
+.clr-2 { color:#00ae35;}
+.clr-3 { color:#bfaf00;}
+.clr-4 { color:#b30800;}
+.clr-5 { color:#a400b3;}
+.clr-6 { color:#000;}
+.clr-7 { color:#fff;}
+
+.text-1 {font-size:18px; line-height:25px; color:#fff; font-style:italic;}
+.text-2 {font-size:16px; line-height:25px; color:#000; font-style:italic;}
+
+h2 { font-size:40px; line-height:50px; color:#fff; font-weight:bold; font-family: 'Cabin Sketch', cursive; letter-spacing:-1px;}
+
+ul {margin:0; padding:0;list-style-image:none;}
+ul.list-1 li {padding:0px 0 0px 14px; line-height:22px; background:url(../images/marker-1.gif) 0 9px no-repeat;}
+ul.list-1 li a { font-size:14px; color:#838180; line-height:22px;}
+ul.list-1 li a:hover {color:#dd0a00;}
+
+ul.list-2 li {padding:0px 0 0px 14px; line-height:22px; background:url(../images/marker-2.gif) 0 9px no-repeat;}
+ul.list-2 li a { font-size:14px; color:#000; line-height:22px;}
+ul.list-2 li a:hover {color:#0072ff;}
+
+/******************************************************************/
+.clear {clear:both; line-height:0; font-size:0; width:100%;}
+.wrapper {width:100%; overflow:hidden; position:relative}
+.wrap {overflow:hidden; position:relative}
+.extra-wrap {overflow:hidden;}
+.fleft {float:left;}
+.fright {float:right;}
+.img-indent {float:left; margin:3px 20px 0px 0;}	
+.last {margin-right:0px !important;}
+
+.top-1 {margin-top:44px;}
+.top-2 {margin-top:13px;}
+.top-3 {margin-top:12px;}
+.top-4 {margin-top:30px;}
+.top-5 {margin-top:22px;}
+.top-6 {margin-top:40px;}
+
+.left-1 { margin-left:13px;}
+
+.bot-0 {padding-bottom:0 !important; margin-bottom:0 !important;}
+.bot-1 {padding-bottom:411px;}
+.bot-2 {margin-bottom:0px;}
+
+.pad-0 {padding:0px 0px 0px 0px;}
+.pad-1 {padding:10px 0px 44px 30px;}
+.pad-2 {padding:22px 0 22px 0; margin-top:24px; text-align:center; overflow:hidden;}
+.pad-3 {padding:12px 0px 27px 0px;}
+
+.p1 {padding-bottom:22px;}
+.p2 {padding-bottom:6px;}
+.p3 {padding-bottom:7px;}
+.p4 {padding-bottom:13px;}
+.p5 {padding-bottom:19px;}
+.p6 {padding-bottom:5px;}
+.p7 {padding-bottom:12px;}
+
+/*********************************header*************************************/
+header {width:1000px; margin:0 auto; z-index:101; background:url(../images/header.jpg) right 0 no-repeat; }
+
+h1 {margin:27px 0 0 63px; display:inline-block; z-index:100;}
+
+nav { z-index:100; background:url(../images/slider-bg.png) 0 0 no-repeat; margin:17px 0px 0 0px; height:571px; overflow:hidden; padding:0px;}
+
+ul.menu {margin:10px 0px 0 83px; display:inline-block;}
+ul.menu li {float:left; line-height:50px; margin:0px 35px 0px 0px; }
+ul.menu li a {font-size:40px; line-height:50px; font-family: 'Cabin Sketch', cursive; text-transform:uppercase; font-weight:bold; letter-spacing:-2px; display:block;}
+ul.menu li:hover a , ul.menu li.current a { color:#000;}
+
+/*********************************content*************************************/
+#content {width:1000px; margin:0 auto; background:url(../images/content-img.png) 1px bottom no-repeat; }
+.art {background:url(../images/art.png) 0 0 no-repeat; width:320px; height:159px; margin:0 0 0 -30px;}
+
+.block-1 {background: url(../images/block-1.gif) 0 bottom repeat-x #fff;}
+.block-1-shadow {background:url(../images/block-1-shadow.png) 0 0 repeat-y; padding:18px 30px 0 30px;}
+
+.img-border {border:#fff 10px solid; box-shadow: 0 0 5px #c1c1c1; display:inline-block;}
+.box-1 {float:left; margin-right:20px;}
+.box-1 p.text-2 {margin:7px 0 0px 11px;}
+
+.lists {overflow:hidden; margin-top:12px;}
+.lists ul {float:left; width:270px; margin-right:20px;}
+
+.table {width:560px;color:#000; margin-bottom:6px;} 
+.table tr {border-top:#d6d6d6 1px solid;}
+.table tr th {width:145px; text-align:left; font-weight:bold; padding-bottom:13px;}
+.table tr th.last {width:125px;}
+.table tr:first-child {border-top:none;}
+.table tr td {padding:8px 0 13px 0;}
+.table tr td span {display:block;}
+
+.box-2 { float:left; width:270px; margin-right:20px; color:#000;}
+
+/****************************footer************************/
+footer { width:100%; position:relative; overflow:hidden; text-align:center; padding:33px 0 30px 0;}
+
+/**********************form**********************/
+.map {width:250px; height:164px; border:#fff 10px solid; background:#fff; margin-top:8px; }
+.map iframe {width:250px; height:164px; }
+dl {margin:18px 0px 0 0px;}
+dl dt {}
+dl dd span { color:#fff;}
+dl dd {}
+dl dd a {}
+dl dd a:hover {}
+#form { margin: 7px 0 0px 0px; width:560px; }
+#form input {border:#e0e0e1 1px solid; background:#fff; font-size:14px; font-family: Georgia, "Times New Roman", Times, serif; color:#000;padding:3px 10px 5px 10px;outline: medium none;width: 247px; height:17px; float:left; box-shadow: 0 0 3px #c1c1c1;}
+#form textarea {border:#e0e0e1 1px solid; background:#fff;font-size:14px; font-family: Georgia, "Times New Roman", Times, serif;color:#000; height: 370px;outline: medium none;overflow: auto;padding: 3px 0px 0px 10px;width: 465px;resize:none;margin:0px 0 0 0;float:left; box-shadow: 0 0 3px #c1c1c1;}
+#form label {position:relative;display: block;min-height:35px;}
+.btns {text-align:center; margin-left:82px; overflow:hidden;}
+.btns a {display:inline-block; margin:0 15px 0 15px;}
+#form label strong {float:left; display:inline-block; padding-top:3px; width:82px; color:#000; line-height:20px;} 

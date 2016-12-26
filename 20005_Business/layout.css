@@ -1,0 +1,15 @@
+#header .header, #content .content, #footer .footer {font-size:0.75em;width:1000px;margin:0 auto}
+.col-1, .col-2, .col-3 {float:left}
+/* index.html */
+#page1 #content .col-1 {width:391px;margin-right:88px}
+#page1 #content .col-2 {width:404px}
+/* about-us.html */
+#page2 #content .col-1 {width:391px;margin-right:88px}
+#page2 #content .col-2 {width:404px}
+/* contact-us.html */
+#page5 #content .col-1 {width:550px;margin-right:95px}
+#page5 #content .col-2 {width:209px}
+/* sitemap.html */
+#page6 #content .col-1 {width:550px;margin-right:95px}
+#page6 #content .col-2 {width:209px}
+#footer {height:91px;background:url(images/tail-bottom.gif) repeat-x left top;font-family:Arial, Helvetica, sans-serif}

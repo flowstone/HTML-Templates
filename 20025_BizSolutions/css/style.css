@@ -1,0 +1,120 @@
+/* Getting the new tags to behave */
+article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video {display:block}
+mark,rp,rt,ruby,summary,time {display:inline}
+/* Global properties */
+body {background:#fff;font-family:Arial,Helvetica,sans-serif;font-size:100%;line-height:1em;color:#5c5c5c}
+html {min-width:1000px}
+html,body {height:100%}
+/* Global Structure */
+#main {margin:0 auto;width:1000px;font-size:.814em}
+/* Header */
+header {height:208px;position:relative}
+/* Content */
+section#content {width:739px;float:left}
+.ic, .ic a {border:0;float:left;background:#fff;color:#f00;width:50% !important;line-height:10px;font-size:10px;margin:-120% 0 0 0;overflow:hidden;padding:0}
+/* Sidebar */
+aside {float:left;width:261px}
+/* Footer */
+footer {text-align:center;height:111px;line-height:1.538em}
+/* Left & Right alignment */
+.fleft {float:left}
+.fright {float:right}
+.clear {clear:both}
+.col-1,.col-2,.col-3 {float:left}
+.alignright {text-align:right}
+.aligncenter {text-align:center}
+.wrapper {width:100%;overflow:hidden}
+/* tailings */
+.tail-bottom {background:url(../images/tail-bottom.gif) left bottom repeat-x}
+/* form defaults */
+input,select,textarea {font-family:Arial,Helvetica,sans-serif;font-size:1em;vertical-align:middle;font-weight:normal;color:#5c5c5c;margin:0;padding:0}
+fieldset {border:0}
+/* lists */
+.news {margin-top:-20px}
+.news li {line-height:1.538em;padding-top:20px}
+.news li strong {display:block;padding-bottom:6px}
+.recent {margin-bottom:-20px}
+.recent li {width:100%;clear:left;vertical-align:top;line-height:1.538em;padding-bottom:20px} 
+.recent li img {float:left}
+.recent li strong {display:block;padding-bottom:6px}
+.recent li.alt {padding-bottom:0}
+.recent li.alt img {margin:0 -5px 0 -38px;position:relative}
+.insurance {padding-bottom:45px}
+.insurance li {line-height:1.538em;padding-bottom:17px}
+.insurance li strong {color:#f85811;display:block;font-size:1.231em;line-height:1.4em}
+.services {padding-bottom:26px}
+.services li {padding:0 0 9px 13px;background:url(../images/marker.gif) no-repeat left 5px}
+.services li a {color:#5c5c5c}
+.team {width:100%;overflow:hidden}
+.team li {float:left;width:177px;line-height:1.538em;margin-right:54px}
+.team li.last {margin:0}
+.team li strong {color:#f85811;display:block;padding:14px 0 6px 0}
+.articles {margin-top:-30px}
+.articles li {width:100%;overflow:hidden;vertical-align:top;line-height:1.538em;padding-top:30px}
+.articles li img {float:left;margin-right:20px}
+.articles li a {text-decoration:none;font-weight:bold}
+.articles li a:hover {color:#000}
+.sitemap {padding-bottom:15px}
+.sitemap li {padding:0 0 5px 12px;background:url(../images/marker.gif) no-repeat left 5px}
+.sitemap li ul {margin-bottom:-5px;padding-top:5px}
+/* other */
+.img-indent {margin:0 20px 0 0;float:left}
+.img-box {width:100%;overflow:hidden;padding-bottom:12px;line-height:1.538em}
+.img-box img {float:left;margin:0 20px 0 0}
+.extra-wrap {overflow:hidden}
+p {margin-bottom:20px;line-height:1.538em}
+.p0 {margin:0;padding:0}
+dl {}
+dl dt {}
+dl dd {}
+address {font-style:normal;line-height:1.538em;float:left;margin-right:55px}
+address b {width:84px !important;width:81px;float:left}
+#slogan {width:739px;height:270px;background:url(../images/slogan-bg.jpg) no-repeat left top;position:relative}
+#slogan img {position:absolute;right:49px;top:62px}
+.indent {padding-bottom:49px}
+/* txt,links,lines,titles */
+a {color:#f85811;outline:none}
+a:hover {text-decoration:none}
+h1 {text-indent:-9999px}
+h1 a {width:307px;height:78px;position:absolute;left:36px;top:96px;background:url(../images/logo.gif) no-repeat left top}
+h2 {color:#434343;font-family:"trebuchet MS",Helvetica,sans-serif;font-weight:normal;text-transform:uppercase;font-size:2.308em;line-height:1.2em;margin-bottom:20px}
+h2 span {color:#f85811}
+.link1 {display:block;float:right;background:url(../images/link1-bgd.gif) left top repeat-x;color:#fff;text-decoration:none}
+.link1:hover {color:#000}
+.link1 span {display:block;background:url(../images/link1-border.gif) no-repeat left top}
+.link1 span span {background:url(../images/link1-border.gif) no-repeat right top;padding:3px 15px 3px 15px}
+/* boxes */
+.nav-box {width:100%;background:url(../images/nav-box-tail.gif) repeat-x left top}
+.nav-box nav {background:url(../images/nav-box-right.gif) no-repeat right top}
+.nav-box nav ul {height:77px;background:url(../images/nav-box-left.gif) no-repeat left top;overflow:hidden}
+.nav-box nav ul li {float:left;padding:0 36px 0 38px;background:url(../images/divider.gif) no-repeat left top;margin:0 2px 0 -2px}
+.nav-box nav ul li a {color:#434343;font-size:1.231em;line-height:1.2em;text-decoration:none;font-family:"trebuchet MS",Helvetica,sans-serif;text-transform:uppercase;display:block;padding-top:25px}
+.nav-box nav ul li a:hover,.nav-box nav ul li.current a {color:#f85811}
+.nav-box nav ul.fright {background:none;padding-right:34px}
+.nav-box nav ul.fright li {padding:0 23px 0 25px}
+.box {background:url(../images/border-top.gif) repeat-x left top #f7f7f7;width:100%}
+.box .border-bot {background:url(../images/border.gif) repeat-x left bottom}
+.box .border-left {background:url(../images/border.gif) repeat-y left top}
+.box .border-right {background:url(../images/border.gif) repeat-y right top}
+.box .left-top-corner {background:url(../images/left-top-corner.gif) no-repeat left top}
+.box .right-top-corner {background:url(../images/right-top-corner.gif) no-repeat right top;width:100%}
+.box .inner {padding:25px 49px 45px 49px}
+.box h2 {font-size:1.923em;margin-bottom:50px}
+/* content */
+#content .inside {padding:24px 40px 30px 50px}
+/* Sidebar */
+aside .inside {padding:12px 45px 0 40px}
+aside h2 {letter-spacing:-1px}
+/* footer */
+footer .inside {padding-top:36px}
+/* forms */
+#search-form fieldset {position:absolute;right:50px;top:129px}
+#search-form input {width:128px;background:#fff;padding:2px 3px 2px 3px;border:1px solid #d9d9d9;float:left}
+#search-form a {float:left;margin-left:5px}
+#contacts-form {clear:right;width:100%;overflow:hidden}
+#contacts-form fieldset {border:none;float:left;}
+#contacts-form .field {clear:both;min-height:30px;height:auto !important;height:30px}
+#contacts-form label {float:left;width:104px;font-weight:bold}
+#contacts-form input {width:267px;padding:2px 0 2px 3px;border:1px solid #d2d2d2;float:left}
+#contacts-form textarea {width:531px;height:167px;padding:2px 0 2px 3px;border:1px solid #d2d2d2;margin-bottom:15px;overflow:auto;float:left}
+#contacts-form .link1 {float:left}
