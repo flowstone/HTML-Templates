@@ -1,0 +1,110 @@
+*{ margin:0px; padding:0px;}
+body{ font-family:微软雅黑; font-size:14px;}
+a{ text-decoration:none;}
+img{ border:0px; width:100%; height:auto;}
+ul{ list-style:none;}
+.ui-body-c, .ui-dialog.ui-overlay-c{ background:none; text-shadow:none;}
+.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button{ font-family:微软雅黑; }
+
+/*---------头部列表框架-------*/
+.header{ height:40px; position:fixed; top:0px; left:0px; z-index:99; width:100%;}
+.header a{ float:left; width:25%; display:block; height:40px; cursor:pointer; background:url(xt.png) right center no-repeat; background-size:contain;	}
+.header a:last-child{ background:none;}
+.header a p{width: 20px;height: 20px;position: relative;	background: url(weiba-icons.png) no-repeat;  margin:12px auto;}
+.header a:first-child p{ background:url(pic_03.png) center no-repeat;}
+.header a:nth-child(2) p{background:url(pic_07.png) center no-repeat;}
+.header a:nth-child(3) p{background:url(pic_05.png) center no-repeat; }
+.header a:last-child p{background:url(pic_09.png) center no-repeat;}
+
+
+/*---------列表内容页框架-------*/
+.list-content{ min-height:350px; overflow:hidden; margin-top:40px; margin-bottom:0px;}
+.list-content a{   text-shadow: 0 1px 1px #F6F6F6; height:50px; line-height:50px; overflow:hidden; position:relative; display:block; }
+.list-content a div.text{white-space: nowrap;font-weight:400; margin-right:35px; overflow:hidden;}
+.list-content a div.pic{position: absolute;	width: 40px;height: 40px;top: 5px;left: 22px;}
+.list-content a p{ 
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	margin-top: -9px;
+	width: 18px;
+	height: 18px;
+	background-color: #666;
+	background-color: rgba(0,0,0,.4);
+	background-image: url(icons-18-white.png) ;
+	background-repeat: no-repeat;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	background-position: 	-108px -1px;
+
+}
+.list-content a div.text{ margin-left:20px; margin-right:35px; overflow:hidden;}
+.list-content a div.text-img{ margin-left:80px; margin-right:35px; overflow:hidden;}
+
+/*-----------图片列表内容框架------------*/
+.img-content{	 min-height:350px; overflow:hidden; margin:40px auto 0px;}
+.img-content div{ width:95%; height:120px; margin:10px auto 0px;}
+.img-content a{ height:120px; float:left; width:48%; border-radius:5px; overflow:hidden; position:relative;}
+.img-content a:nth-child(2){ float:right;}
+.img-content a div{ width:100%; position:absolute; padding-left:10px; display:block; bottom:0px; height:30px; line-height:30px; background:rgba(0,0,0,0.7); color:#FFF;}
+
+.img-content2{ overflow:hidden; margin:40px auto 0px; padding-bottom:5px;}
+.img-content2 div{ width:95%; height:150px; margin:10px auto 0px;}
+.img-content2 a{ height:150px; float:left; width:48%; border-radius:5px; overflow:hidden; position:relative;}
+.img-content2 div a:nth-child(2){ float:right;}
+.img-content2 a p.img{ width:95%; margin:5px auto 0px;; height:100px;}
+.img-content2 a p.text{ width:90%; margin:0px auto; padding:5px;  font-size:14px; border-bottom:1px solid #ccc; color:#300;}
+
+
+/*---------脚部内容-------*/
+.footer{ line-height:40px; text-align:center; width:100%;}
+.footer-top{ color:#333; font-weight:bold;}
+.footer-bottom{ background:#333; color:#FFF; }
+.footer-bottom a{ color:#fff;}
+
+
+/*----------联系方式弹框内容---------------*/
+.bj{width:100%; height:100%; background:#000;  opacity:0.5; position:fixed; top:0px; z-index:4;}
+.touch-content{ width:250px; height:250px; position:fixed; top:50%; left:50%; margin-left:-125px; margin-top:-125px; z-index:9;}
+.touch-content p.text{ color:#fff; text-align:center; line-height:24px;}
+.touch-content p.text-img{ color:#fff; text-align:center; line-height:24px;}
+.touch-content p.icon{background: url(weiba-icons.png); width:30px; height:30px; margin:0px auto;}
+
+/*<<<<<<<<<<<<<<<一个按钮显示方式>>>>>>>>>>>>>*/
+.touch-bj-1{ background:#000; width:100%; height:100%; position:absolute; left:0px; top:0px; border-radius:10px; opacity:0.7;}
+.touch-bj-1 a{ display:block; width:70px; height:65px; margin:0px auto ; position:relative; top:50%; margin-top:-30px;}
+/*<<<<<<<<<<<<<<<两个按钮显示方式>>>>>>>>>>>>>*/
+.touch-bj-2{ background:#000; width:100%; height:100%; position:absolute; left:0px; top:0px; border-radius:10px; opacity:0.7;}
+.touch-bj-2 a:first-child{ display:block; width:70px; height:65px; float:left; position:relative; top:50%; margin-top:-30px; margin-left:30px;}
+.touch-bj-2 a:last-child{ display:block; width:70px; height:65px; float:right; position:relative; top:50%; margin-top:-30px; margin-right:30px;}
+/*<<<<<<<<<<<<<<<三个按钮显示方式>>>>>>>>>>>>>*/
+.touch-bj-3{ background:#000; width:100%; height:100%; position:absolute; left:0px; top:0px; border-radius:10px; opacity:0.7;}
+.touch-bj-3 a:first-child{  display:block; width:70px; height:65px; position:relative; margin:40px auto 0px;}
+.touch-bj-3 a:nth-child(2){ display:block; width:70px; height:65px; float:left; position:relative; top:20%; margin-top:-30px; margin-left:30px;}
+.touch-bj-3 a:last-child{ display:block; width:70px; height:65px; float:right; position:relative; top:20%; margin-top:-30px; margin-right:30px;}
+/*<<<<<<<<<<<<<<<四个按钮显示方式>>>>>>>>>>>>>*/
+.touch-bj-4{ background:#000; width:100%; height:100%; position:absolute; left:0px; top:0px; border-radius:10px; opacity:0.7;}
+.touch-bj-4 a:first-child{  display:block; width:70px; height:65px; position:relative; margin:20px auto 0px;}
+.touch-bj-4 a:nth-child(2){ display:block; width:70px; height:65px; float:left; position:relative; top:20%; margin-top:-35px; margin-left:30px;}
+.touch-bj-4 a:nth-child(3){ display:block; width:70px; height:65px; float:right; position:relative; top:20%; margin-top:-35px; margin-right:30px;}
+.touch-bj-4 a:last-child{  display:block; width:70px; height:65px; position:relative; margin:90px auto 0px; clear:left;}
+
+
+/*----------侧边栏内容---------------*/
+.sidebar{ width:16em; position:fixed;top:40px;  min-height:320px; right:-100%; display:none;}
+.sidebar a{ display:block; clear:both; height:40px; line-height:40px; color:#fff;  box-shadow:1px 1px 1px #CCC;}
+.sidebar a:last-child{ box-shadow:none;}
+.sidebar p.text,.sidebar p.text-img{ float:left; margin-left:10px;}
+.sidebar p.pic{ float:right; background-image: url(icons-18-white.png) ;	background-position: 	-108px -1px; width:18px; height:18px;background-color: rgba(0,0,0,.4); border-radius:10px; margin-right:10px; margin-top:10px;}
+
+/*---------内容页框架-------*/
+.content{ min-height:350px; overflow:hidden;margin:40px 10px 0px 10px; line-height:21px;}
+
+/*icon坐标*/
+.touch-content p.tel{background-position:-64px 0px; background-repeat:no-repeat;}
+.touch-content p.map{background-position:-190px 0px; background-repeat:no-repeat;}
+
+/*按钮*/
+div.button{ height:40px; margin-top:20px;}
+div.button a{ margin:0px 9.5%; border-radius:15px; width:30%; float:left; display:block; height:30px; text-align:center; line-height:30px; font-weight:bold;}
