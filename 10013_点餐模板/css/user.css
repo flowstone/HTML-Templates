@@ -1,0 +1,158 @@
+/* 用户中心 */
+
+.userinfo{
+margin-left:90px;
+}
+.userinfo strong{
+display:block;
+}
+.userinfo em{
+display:block;
+font-size:14px;
+color:#DE6C12;
+font-weight:bold;
+}
+
+.userinfo font{
+color:#666;
+font-weight:normal;
+}
+.userli li{
+margin-top:5px;
+background-image:url(../images/brand_right.png);
+background-position:right;
+background-repeat:no-repeat;
+}
+.userli li a{
+padding:5px 0;
+display:block;
+}
+
+.structure a{
+display:block;
+
+}
+.Record font{
+color:#666;
+}
+.Record em{
+font-size:14px;
+display:block;
+}
+.Recordname a{
+display:block;
+font-size:13px;
+padding:5px 20px 3px 5px;
+border-top:1px dotted #ddd;
+}
+
+.Recordpic{
+position:absolute;
+right:5px;
+top:5px;
+
+}
+.Recordweb li{
+margin-top:5px;
+}
+.Recordpic img{
+width:80px;
+}
+
+
+.vipcard{
+width:300px;
+height:191px;
+background:url(../images/vip.jpg) no-repeat #fff center;
+overflow:hidden;
+margin:0 auto;
+}
+.vipcard2{
+margin:0 auto;
+}
+.vipname{
+font-size:20px;
+text-shadow:1px 1px 2px #fff;
+font-weight:bold;
+color:#343B08;
+height:70px;
+line-height:70px;
+padding-left:15px;
+
+}
+.viptype {
+height:70px;
+line-height:85px;
+overflow:hidden;
+padding-right:25px;
+font-size:35px;
+font-weight:bold;
+text-shadow:1px 1px 2px #fff;
+text-align:right;
+}
+.vip123{
+height:50px;
+line-height:50px;
+text-align:right;
+padding-right:15px;
+overflow:hidden;
+font-weight:bold;
+text-shadow:1px 1px 2px #fff;
+}
+.vipcard2 .bgstyle{
+margin-top:2px;
+padding:10px 5px;
+}
+
+.vipmm em{
+color:#FB9543;
+font-weight:bold;
+}
+.vipmm  a{
+display:block;
+background:url(../images/brand_right.png) no-repeat #fff right;
+}
+.vippr p{
+color:#555;
+line-height:1.5;
+}
+/* 用户中心 END */
+
+
+
+/* 积分卡详细 */
+.minute{
+margin-top:15px;
+}
+.minute .bgstyle{
+margin-top:2px;
+}
+.minute span{
+display:block;
+padding-bottom:3px;
+font-size:14px;
+padding-left:15px;
+}
+.minute .mi1{
+font-weight:bold;
+font-size:18px;
+color:#EA8C2F;
+}
+.minute .mi3 {
+overflow:hidden;
+color:#666;
+}
+.minutetotal{
+text-align:right;
+padding-right:15px;
+}
+.minutetotal em{
+color:#EA8C2F;
+}
+/* 积分卡详细 END */
+
+
+
+
+
+

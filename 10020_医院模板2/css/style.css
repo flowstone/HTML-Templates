@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body{font-size:medium;font-family:'Microsoft Yahei','Simsun';color:#333;background:#fff6fe;-webkit-text-size-adjust:none;min-width:320px;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+form{display:inline;}
+ul,ol,li{list-style:none;}
+em,i{font-style:normal;}
+a{text-decoration:none;color:#333;}
+a:hover,a:active,a:focus{color:#900;text-decoration:none;}
+a:active{color:#9e9e9e;}
+img{vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+button,input,select,textarea{font-size:100%;vertical-align:middle;outline:none;-webkit-appearance:none;}
+table{border-collapse:collapse;border-spacing:0;}
+textarea{resize:none;}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+
+.wrap{margin:auto;background:#fff;}
+
+.top{height:40px;overflow:hidden;text-align:center;background:url(top_bg.png) repeat-x #f55c78;}
+.top .logo{float:left;overflow:hidden;text-align:left;}
+.top .icon{float:right;overflow:hidden;}
+.top .icon p{width:42px;height:40px;float:left;text-align:right;background:url(t_hr.png) repeat-y;}
+
+.nav{height:85px;font-size:14px;background:url(nav_bg.png) repeat-x #d12e58;}
+.nav ul{overflow:hidden;padding:5px 0;}
+.nav li{width:25%;height:25px;line-height:25px;float:left;text-align:center;overflow:hidden;}
+.nav li a{display:inline-block;color:#fff;font-size:1.1em;text-shadow:0 1px 1px rgba(12,65,172,.75);}
+
+.msgbox{overflow:hidden;padding:10px;background:#ffe9ee;}
+.msgbox ul{overflow:hidden;}
+.msgbox li{float:left;width:33%;text-align:center;overflow:hidden;display:inline;}
+.msgbox li a{overflow:hidden;display:inline;}
+.msgbox li p{height:19px;line-height:19px;cursor:pointer;overflow:hidden;font-size:12px;}
+
+.title{height:30px;padding:0 10px;overflow:hidden;background:url(title.png) repeat-x #f55d79;}
+.title h5{font-size:14px;float:left;color:#fff;line-height:30px;display:inline;}
+.title p{float:right;overflow:hidden;font-size:12px;margin-top:5px;display:inline;background:url(more_ico.png) no-repeat 0 0;height:20px;overflow:hidden;}
+.title p a{float:left;display:block;}
+.title p span{display:block;padding:0 8px;float:left;overflow:hidden;height:20px;line-height:20px;background:url(more_ico.png) no-repeat right -20px;}
+.title em{height:30px;line-height:30px;font-size:12px;float:right;overflow:hidden;background:url(free_tel.png) no-repeat;padding-left:18px;color:#fff !important;}
+.title em a {color:#fff !important;}
+
+.zjtd{overflow:hidden;display:block;}
+
+.list01{padding:10px;overflow:hidden;font-size:14px;}
+.list01 ul li{height:27px;line-height:27px;font-size:1.1em;padding-left:15px;overflow:hidden;border-bottom:1px dotted #ddd;background:url(../images/dian.png) no-repeat 3px center;}
+
+.search{padding:10px;overflow:hidden;}
+.search .txt{width:230px;height:22px;line-height:22px;border:1px solid #d7cfd1;padding:2px;font-size:12px;color:#666;float:left;}
+.search .btn{width:56px;height:28px;border:0;margin-left:3px;font-size:14px;mrgin-left:5px;font-weight:bold;float:left;color:#000;background:url(search.png) no-repeat;}
+
+.view{padding:10px;overflow:hidden;font-size:14px;}
+.view .tit{overflow:hidden;display:block;padding-top:10px;clear:both;}
+.view .tit h1{font-size:1.5em;overflow:hidden;line-height:120%;color:#000;padding:0 0 3px;}
+.view .tit p{border-bottom:1px solid #eee;height:22px;line-height:22px;overflow:hidden;color:#888;font-size:0.9em;}
+.view .txt{font-size:1.2em;overflow:hidden;line-height:170%;padding:15px 0;}
+.view .np{padding:0 0 10px;overflow:hidden;line-height:130%;font-size:1em;}
+
+.page{padding:10px 5px 20px;overflow:hidden;font-size:12px;}
+.page .prev,.page .next{width:56px;height:24px;overflow:hidden;line-height:24px;}
+.page .prev a{color:#fff!important;display:block;width:43px;height:24px;padding-left:13px;font-size:1em;overflow:hidden;background:url(prev.png) no-repeat;}
+.page .next a{color:#fff!important;display:block;width:48px;height:24px;padding-left:8px;font-size:1em;overflow:hidden;background:url(next.png) no-repeat;}
+.page .text{overflow:hidden;font-size:12px;padding:3px;text-align:center;vertical-align:middle;}
+.page .text span{line-height:24px;}
+.page .text .input{width:24px;border:1px solid #ddd;padding:1px;height:20px;line-height:20px;}
+.page .text .btn{width:34px;height:24px;border:0;font-size:1em;background:url(page_bn.png) no-repeat;}
+
+.footer{overflow:hidden;border-top:1px solid #ff9aad;background:#ffeef2;font-size:14px;height:150px;}
+.footer .fnav{height:30px;line-height:30px;overflow:hidden;border-bottom:1px solid #ffc9d3;}
+.footer .fnav li{width:24%;height:30px;float:left;overflow:hidden;text-align:center;font-size:0.9em;}
+.footer .fnav li a{display:block;}
+.footer .fnav li.l{border-left:1px solid #fff;}
+.footer .fnav li.r{border-right:1px solid #ffc9d3;}
+.footer .copy{border-top:1px solid #fff;padding:10px;line-height:140%;font-size:0.8em;overflow:hidden;}
+
+.msgboxx{overflow:hidden;padding:10px;background:#FFF6FE;height:50px; position:fixed;bottom:0;width:100%;}
+.msgboxx ul{margin:0 auto;width:320px;}
+.msgboxx ul li{float:left;width:76px;text-align:center;height:85px;overflow:hidden;line-height:20px;}
+.msgboxx ul li a{font-size:12px;overflow:hidden;}

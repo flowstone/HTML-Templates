@@ -1,0 +1,100 @@
+html, body {
+	color:#222;
+	font-family:Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif;
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+img {
+	border:0;
+}
+ol, ul {
+	list-style: none outside none;
+	margin:0;
+	padding: 0;
+}
+a {
+	color:#000000;
+	text-decoration: none;
+}
+.clr {
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+}
+.copyright{padding:8px 0;text-align:center;font-size:14px;color:#666; position:fixed; bottom:0; width:100%; z-index:3}
+.copyright a{color:#666;}
+/*cate16*/
+#cate16{background-color: #000000;overflow-x: hidden;}
+#nav {
+	float:none;
+	width:100%;
+}
+#scroller li p {
+display: none;
+}
+#wrapper {
+position: fixed;
+}
+#indicator {
+position: fixed;
+left: 0;
+text-align: center;
+bottom: 50px;
+width: 100%;
+}
+#indicator > li {
+display: inline-block;
+float:none;
+}
+#indicator > li.active {
+background: #cccccc;
+}
+#cate16 .mainbg{ 
+	position:fixed;
+	z-index:1;
+	width: 100%;
+}
+#cate16 .mainbg img{
+	width:100%;
+}
+#cate16 .mainmenu {
+  z-index:20;
+  color:#FFF;
+  position: fixed;
+  width: 56%;padding-top: 8px;top: 0;
+}
+#cate16 .mainmenu ul {
+	display: block;
+}
+#cate16 .mainmenu li {
+float: left;
+text-align: center;
+display: block;
+}
+#cate16 .mainmenu li .menubtn{
+width: 77px;
+height: 92px;
+margin-left: 8px;
+margin-bottom: 8px;
+position: relative;
+background-color:rgba(159, 133, 96, 0.45);
+border-radius: 5px;
+}
+#cate16 .mainmenu li img {
+width: 45px;
+height: 45px;
+margin-top: 15px;
+border-radius: 5px;
+}
+#cate16 .menutitle {
+color: #fff;
+font-size: 13px;
+display: block;
+text-align:center;
+}

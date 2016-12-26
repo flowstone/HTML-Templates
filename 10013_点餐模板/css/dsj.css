@@ -1,0 +1,39 @@
+﻿/* 2013-10-30 多店铺 */
+
+.moreshop .bgstyle{
+margin-top:3px;
+background:url(../images/brand_right.png) no-repeat right center #fff;
+}
+.merchantlogo img{
+ -webkit-border-radius: 50px;  
+border-radius: 50px;  
+-moz-border-radius : 50px; 
+box-shadow:0px 0px 6px #666;
+width:50px;
+margin-left:15px;
+}
+.merchantlogo{
+margin-right:-100%;
+overflow:visible;
+}
+.userinfo strong{
+display:block;
+color:#0579C6;
+}
+.userinfo em{
+display:block;
+font-size:12px;
+color:#666;
+font-weight:normal;
+}
+
+.userinfo font{
+color:#666;
+font-weight:normal;
+}
+
+.userinfo{
+margin-left:90px;
+}
+
+/* 2013-10-30 多店铺 END */

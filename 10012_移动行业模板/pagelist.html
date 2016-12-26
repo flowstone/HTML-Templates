@@ -1,0 +1,257 @@
+﻿<!DOCTYPE>
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+ <meta name="MobileOptimized" content="320"/>
+ <meta content="yes" name="apple-mobile-web-app-capable" />
+ <meta name="format-detection" content="telephone=no" />
+<title>仿厦门无线城市手机wap门户网站模板列表页-3v3手机模板资源【3v3.cc】</title>
+<link type="text/css" rel="stylesheet" href="css/xuan_css/touch.css">
+</head>
+<body>
+<div class="container">
+ <!DOCTYPE>
+<html xmlns=" http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+ <meta name="viewport" content="width=device-width;"/>
+ <meta name="MobileOptimized" content="320"/>
+ <meta content="yes" name="apple-mobile-web-app-capable" />
+ <meta name="format-detection" content="telephone=no" />
+<title>厦门无线城市</title>
+<link href="css/xuan_css/touch.css" rel="stylesheet"
+			type="text/css" />
+<link href="css/hdxc_css/wap_style.css" rel="stylesheet" type="text/css" />
+<script src="js/xuan_js/iscroll.js"></script>
+<script type="text/javascript" src="js/xuan_js/jquery.min.js"></script>
+<script type="text/javascript" src="js/xuan_js/My97DatePicker/WdatePicker.js"></script>
+<link href="css/game.css" rel="stylesheet" type="text/css" />
+<link href="css/moved.css" rel="stylesheet" type="text/css" />
+<link href="css/wallet.css" rel="stylesheet" type="text/css" />
+</head>
+<body><div class="container">
+  <div class="inf_part">
+   <div class="inf_left">
+   <a id="backpage"  href="#"><img src="images/xuan_images/news_images/back_icon.png" width="36" height="31"/></a>
+   <a href="x_index.do"><img src="images/xuan_images/news_images/home_icon.png" width="36" height="31"/></a>
+   </div>
+   <div class="inf_mid"><a href="default.htm"><img src="images/xuan_images/logo.png" /></a></div>
+  </div>
+  <div class="clearfloat"></div>
+  <div class="wap_loginzone" style="display:none">
+   <div>
+   	<font class="login_notice" id="login_notice"></font>
+   </div>
+ <script type="text/javascript">
+$(document).ready(function(){
+	
+	$(".inf_right").bind("click",function(e){
+			e.preventDefault();
+			$(".wap_loginzone").slideToggle();
+	});
+	
+	$("#getdtPwd").click(function(){
+	var userName = $("#username").val();
+  htmlobj=$.ajax({url:"getRanPassword.do@type=x&username="+userName,async:false});
+  $("#login_notice").html(htmlobj.responseText);
+  });
+})
+</script>
+<script type="text/javascript">
+
+function selectAction(obj){
+	if(obj=="fwpwd"){
+		document.getElementById("ranPass").style.display="none";
+		document.form22.action="fwpwdLogin.do@type=x";
+	}
+	if(obj=="wzpwd"){
+		document.getElementById("ranPass").style.display="none";
+		document.form22.action="login4xm.do@type=x";	
+	}
+	
+	if(obj=="dtpwd"){
+		document.form22.action="ranPassLogin.do";
+		document.getElementById("ranPass").style.display="";		
+	}
+}
+</script>
+<script type="text/javascript">
+function todis(obj){
+	document.form22.submit();
+}
+</script>
+<script type="text/javascript">
+	function todothis(obj){
+			window.location.href="reg.do@type=x";
+	}
+	function justdothis(obj){
+			window.location.href="getpwd.do@type=x";
+		}
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+			$("#backpage").bind("click",function(e){
+					e.preventDefault();
+					history.go(-1);
+				});
+		});
+</script>
+</div>
+<div class="clearfloat"></div>
+</body>
+</html>
+<div class="clearfloat"></div>
+<!DOCTYPE>
+<html xmlns=" http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+ <meta name="viewport" content="width=device-width;"/>
+ <meta name="MobileOptimized" content="320"/>
+ <meta content="yes" name="apple-mobile-web-app-capable" />
+ <meta name="format-detection" content="telephone=no" />
+<title>厦门无线城市</title>
+</head>
+<body>
+  <div class="newstop">
+	<div class="ntopleft">资讯频道</div>
+	<div class="ntopright">
+ <div class="newssea">
+ <form action="http://wap.xiamentd.com/search.do" method="post" name="forms">
+  <input type="hidden" name="type" value="x">
+  <input type="text" name="keyword" class="news_s_text">
+  <input type="submit" value=""  class="news_s_fdj">
+  </form>
+  </div>
+  <div class="xl_newsnav"><img src="images/xuan_images/news_images/news_nav.png" width="18" height="15"></div>
+ </div>
+  <div class="clearfloat"></div>
+  </div>
+   <div class="news_navlist">
+   <div class="arrow"></div>
+  <div class="x_tabnav">
+  <a href="pagelist.do@columnId=20000120&type=x" class="x_current">本地</a>
+  		<a href="pagelist.do@columnId=20000121&type=x">海西</a>
+  		<a href="pagelist.do@columnId=20000122&type=x">国内</a>
+  		<a href="pagelist.do@columnId=20000123&type=x">国际</a>
+  		<a href="pagelist.do@columnId=20000124&type=x">台海</a>
+  		<!-- 
+     <a href="http://wap.xiamentd.com/pagelist.do?columnId=20000127&type=x">财经</a>
+  		<a href="http://wap.xiamentd.com/pagelist.do?columnId=20000128&type=x">体育</a>
+  		<a href="http://wap.xiamentd.com/pagelist.do?columnId=20000129&type=x">娱乐</a>
+  		
+   
+   -->
+  
+  </div>
+     
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	var xl_newsnav=$(".xl_newsnav");
+	var newsnav_zone=$(".newsnav_zone");
+	xl_newsnav.bind("click",function(e){
+		e.preventDefault();
+		$(".x_tabnav").slideToggle();
+		newsnav_zone.slideToggle("fast");
+	});
+});
+</script>
+
+</body>
+</html><div class="clearfloat"></div>
+ <div class="newstitle_bg">
+  <div class="titlebg_img">本地新闻</div>
+ </div>
+  <div class="clearfloat"></div>
+   <div class="bedi_news_zone">
+   		 <div class="bende_news_list">
+ 								<a href="content.do@columnId=20000120&contentId=20132519&type=x">观音山公寓“奇观” 高空扔垃圾“每天<span></span></a>
+ 							</div>
+	 					<div class="bende_news_list left_border">
+ 								<a href="content.do@columnId=20000120&contentId=20132520&type=x">网购高峰到来小心五类诈骗 最保险还是<span></span></a>
+ 							</div>
+	 					<div class="bende_news_list">
+ 								<a href="content.do@columnId=20000120&contentId=20132521&type=x">防范拖欠工资 湖里九部门联合“织网”<span></span></a>
+ 							</div>
+	 					<div class="bende_news_list left_border">
+ 								<a href="content.do@columnId=20000120&contentId=20132525&type=x">厦门到三明、沙县客运票价最低88元<span></span></a>
+ 							</div>
+	 					<div class="bende_news_list bd_bgcolor ">
+ 								<a href="content.do@columnId=20000120&contentId=20132524&type=x">13日起658快线改为650路 旅游<span></span></a>
+ 							</div>
+	 					<div class="bedi_img">
+ 								<!-- <a href="http://wap.xiamentd.com/content.do?columnId=20000120&amp;contentId=20132523&type=x"><img src="http://wap.xiamentd.com/images/xuan_images/mrbd.jpg" width="159" height="90"></a> -->
+ 								<img src="images/xuan_images/mrbd.jpg" width="159" height="90">
+ 							</div> 
+ 							<div class="clearfloat"></div>
+	 					<div class="bende_news_list">
+ 								<a href="content.do@columnId=20000120&contentId=20132518&type=x">司机半路遇拦车谈生意 其实就为骗手机<span></span></a>
+ 							</div>
+	 					<div class="bende_news_list left_border">
+ 								<a href="content.do@columnId=20000120&contentId=20132550&type=x">光棍节白菜价机票满天飞 厦门飞武夷山<span></span></a>
+ 							</div>
+	 					<div class="bende_news_list">
+ 								<a href="content.do@columnId=20000120&contentId=20132551&type=x">奢侈手机高调布局厦门 最高价纪录达7<span></span></a>
+ 							</div>
+	 					<div class="bende_news_list left_border">
+ 								<a href="content.do@columnId=20000120&contentId=20132552&type=x">80后彪形大叔爱写少女小说 花6年采<span></span></a>
+ 							</div>
+	 					</div>
+ <div class="clearfloat"></div>
+<div class="bd_yema">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=" http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<a href="pagelist.do@columnId=20000120&pageNo=2&type=x">下一页</a>
+</body>
+</html></div>
+ <div class="clearfloat"></div>
+<div class="container">
+ <div class="footer">
+   <div class="foot_nav">
+
+   	<p>
+     <a href="x_index.do">首页</a>|
+     <a href="zx.do@type=x">资讯</a>| 
+     <a href="zw.do@type=x">政务</a>|
+     <a href="bm.do@type=x">便民</a>|
+     <a href="yl.do@type=x">健康</a>|
+     <a href="cx.do@type=x">出行</a>
+     
+    </P>
+	<p>
+	<a href="anju.do@type=x">安居</a>|
+     <a href="jy.do@type=x">教育</a>|
+     <a href="jiuye.do@type=x">求职</a>|
+     <a href="yd.do@type=x">移动</a>|
+     <a href="sq.do@type=x">社区</a>|
+     <a href="hsh.do@type=x">惠生活</a>
+	</P>
+   </div>
+   
+   <div class="banben">
+	<a href="x_index.do">触屏版</a>|<a href="changexpage.do@type=2">简版</a>
+	</div> 
+   
+   <div class="clearfloat"></div>
+   <div class="foot_bot">
+   
+
+温馨提示：本信息仅供提供演示方便链接，与原网站无关！ <a href="index.html">首页</a>  <a href="pagelist.html">列表页</a>  <a href="content.html">正文页</a>  <a href="xbxz.html">下载页</a>  <a href="hd.html">活动页页</a>
+
+   </div>
+   <div class="foot_logo">
+    <a href="../www.10086.cn/default.htm"><img src="images/xuan_images/10086_logo.png"></a>
+    <a href="../www.10086.cn/default.htm"><img src="images/xuan_images/mobile_logo.png"></a>
+   </div>
+ </div>
+ </div>
+
+ </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* CSS Document */
+/* Common Style */
+.nav { float:left;}
+.nav ul { float:left; width:700px;}
+.nav ul li {  height:30px; float:left; margin-left:5px; font-family:Microsoft YaHei; font-size:13px;}
+.nav ul li a {color:#931793; text-decoration:none;}
+.nav ul li a:hover  {color:#000;  }
+.subNav{ font-family:Microsoft YaHei; font-size:20px; border-bottom:#DACCDC 1px solid; width:650px; height:55px; line-height:200%; padding:5px 0px; margin:5px 0px; text-align:left;}
+.sunNavSecond {font-family:Microsoft YaHei; font-size:15px; font-weight:bold; width:600px; text-align:left;}
+.techerContent { width:600px; height:auto; padding-left:25px;}
+.techerContent ul {width:600px; height:auto; margin:0px; border:0px;  padding:0px; }
+.techerContent ul li { width:600px; height:25px; margin:0px; padding-left:5px; border:0px; vertical-align:top; text-align:left; list-style:outside; }
+.miaoshu { color:#7A0067; font-size:13px; font-family:Microsoft YaHei; }
+.tupianFrame { width:300px; height:180px; padding:0px; border:0px; margin:0px; text-align:left; float:left; margin-right:20px; color:#333;}
+.tp { width:280px; height:50px; border-bottom:#ececec solid 1px; }
+.tupianTitle { font-size:14px; height:35px; line-height:300%; color:#7A0067; font-weight:bold; float:left; text-indent:10px;}
+.tupian { width:40px; height:50px; float:left;}
+.section {}
+.section ul { width:700px; height:auto; float:left; padding:5px; line-height:150%;}
+.zysx { font-weight:bold; color:#FF0000; font-size:13px;}
+
+a.index { color:#FFF; font-size:17px; font-weight:bold; text-decoration:none;}
+a.index :hover  { text-decoration:none;} 
+a.clickDown { color:#4289D8; font-size:13px; font-weight:bold; text-decoration:none; font-family:Microsoft YaHei;}
+a.clickDown :hover{ text-decoration:none;}
+
+.SecondContent { width:650px; height:auto; padding:0px; margin:0px; border:0px; text-align:left; font-size:13px; float:left; background-color:#fff;}
+ 
+
+.redFont{ color:#FF0000; font-weight:bold;}
+
+
+.w936{ margin:0px;clear:both;width:650px; float:left}
+/* TAB 切换效果 */
+.tb_{width:650x; height:24px; margin-left:10px; float:left;}
+.tb_ ul{ width:650px; height:30px; float:left; border:0px; margin:0px; padding:0px;}
+.tb_ li{ float:left;  height: 30px;line-height:1.9;cursor:pointer; width:auto;text-align:center; border:#666 solid 1px; padding:0px 5px; margin-left:2px;   }
+/* 用于控制显示与隐藏的css类 */
+.normaltab   { background-color:#DCCCE6;  font-weight:bold ;color:#333;width: auto; height: 30px;}
+.hovertab    {  font-weight:bold ; color:#000; width: auto; background-color:#FFF;  height: 30px;}
+.dis{display:block; width:650px; text-align:left;  background-color:#FFF; color:#000; margin:0px 0px; height:auto;  }
+.undis{display:none;  width:650px; text-align:left; height:auto;}
+
+
+
+
+body {  margin:0px; padding:0px; border:0px; text-align:center; line-height:200%; font-size:13px;    } 
+.gxhsdFrame { line-height:200%; font-size:13px; padding-left:10px; float:left;} 
+.play { margin:10px;}
+.content { width:100%; height:75px; margin:0px auto;}
+.banner-frame { width:100%;  background-color:#975AA7; }
+
+.banner { width:100%; height:75px; margin:0px auto;  background-color:#975AA7; background-image:url(../img/top-bj.jpg); background-repeat:no-repeat;  }
+.system { font-size:25px; font-family:Microsoft YaHei; color:#FFFFFF; line-height:150%; float:left; width:300px; height:75px; text-align:left; letter-spacing:1px; }
+.ver { float:right; margin-top:55px; width:250px; color:#FFFFFF;}
+.img-alignc  { text-align:center;}
+.main { width:100%; height:auto; background-image:url(../img/bj.gif); background-repeat:repeat-x; } 
+.lrcontent { width:100%; height:auto; margin:0px auto; text-align:left;}
+.left { width:100%; font-size:13px; text-align:left; height:auto; float:left; margin-top:1px;  }
+.right { width:260px; background-color:#fff; margin-top:5px; text-align:center; float:left;   }
+
+.gxhsd-left { width:735px;  height:auto;  background-color:#FFF; margin-left:5px; margin-top:5px; float:left; padding-left:20px; }
+.gxhsd-right { width:220px; background-color:#fff;  text-align:center; margin-top:5px; float:left;   }
+
+h3 { text-align:center; font-size:15px; vertical-align:middle; line-height:35px; text-align:center;} 
+h4 { color:#36C; font-size:13px; text-align:right; line-height:0px;}
+a { color:#36C; font-size:13px; text-align:right; text-decoration:none; display: block:}
+
+
+
+td{ font-size:13px; line-height:190%;}
+
+.copy { width:100%; font-size:13px; color:#FFFFFF;  background-image:url(../img/copy-bj.gif);background-repeat:repeat-x; margin:0px auto; height:60px; }
+.copy ul { height:60px; padding:0px; margin:0px; border:0px; width:100%;}
+.copy ul li { list-style:none; line-height:100%; height:20px; padding-top:10px; }
+.search { width:213px; height:29px;  height:25px; margin-bottom:8px; margin-top:8px;}
+.tongdao { height:auto; width:217px; text-align:left; border:1px #B889C7 solid; margin-top:8px;}
+.tongdao ul li { margin:0px; padding:0px; border:0px;}
+.frame {  width:200px; height:auto; }
+.title-top { width:217px; height:29px;text-align:left; margin:0px auto; padding:0px;background-image:url(../img/nav_bg1.gif); color:#913F9D; text-indent:1em; font-weight:bold;}
+.title-bottom { width:203px; height:auto;  line-height:150%; margin-bottom:0px; }
+.title-bottom ul {width:203px;   padding:0; margin:0px 0px;  border:0px; color:#975AA7; text-indent:5em; line-height:150%;  }
+.title-bottom ul li {
+	width:203px;
+	text-indent:1em; 
+	margin:3px 0px;
+	color:#975AA7;
+	text-decoration:none;
+	text-align:left;
+	list-style:decimal;
+}
+.title-bottom ul li a {
+	margin:3px 0px;
+	color:#975AA7;
+	text-decoration:none;
+}
+
+.title-bottom ul li a:hover { color:#000; text-decoration:none;}
+
+.menusecond {width:100%; height:25px; margin-bottom:1px; background-image:url(../img/nav_bg1.gif);  margin:0px auto;}
+.menusecond ul { list-style-type:none;padding:0; margin:0px auto; float:left; width:100%; background-image:url(../img/nav_bg1.gif);} 
+.menusecond li {
+	float:left;
+	width:70px;
+	height:25px;
+
+}
+.menusecond ul li a {color:#931793; text-decoration:none;}
+.menusecond ul li a:hover {color:#000;  }
+
+
+.pmenu {width:650px; height:28px; margin-bottom:1px;  margin:0px auto;}
+.pmenu ul { list-style-type:none;padding:0; margin:0px auto; float:left;} 
+.pmenu li {
+	float:left;
+	width:auto;
+	padding-left:10px;
+	
+}
+.pmenu ul li a {color:#931793; text-decoration:underline;}
+.pmenu ul li a:hover {color:#000; text-decoration:none;  }
+
+
+.menu {width:100%;  margin:0px auto;  height:28px; background-image:url(../img/top-bj.jpg); ;}
+.menu ul li a, .menu ul li a:visited { font-family:Microsoft YaHei; font-size:14px; display:block; text-decoration:none; color:#000;width:104px; height:28px; text-align:center; color:#931793;   line-height:20px; overflow:hidden; line-height:200%;  }
+.menu ul li a:hover {color:#fff;}
+.menu ul {padding:0; margin:0px auto; list-style-type: none; }
+.menu ul li {float:left; margin-right:1px; position:relative; border-right: #AB9CB9 solid 1px;  }
+.menu ul li ul {display: none;}
+/* specific to non IE browsers */
+.menu ul li:hover a {color:#fff; background-color:#975AA7;  }
+.menu ul li:hover ul {display:block; position:absolute; top:29px; left:0; width:105px;}
+.menu ul li:hover ul li a.hide {background:#D9BFE3; color:#000;}
+.menu ul li:hover ul li:hover a.hide {background:#B889C7; color:#fff;}
+.menu ul li:hover ul li ul {}
+.menu ul li:hover ul li a { background:#D9BFE3; color:#000; }
+.menu ul li:hover ul li a:hover {background:#B889C7; color:#000;}
+.menu ul li:hover ul li:hover ul {display:block; position:absolute; left:105px; top:0;}
+.menu ul li:hover ul li:hover ul.left {left:-105px;}
+
+
+.map  { width:715px; text-align:left; height:auto; float:left; background-color:#FFF;  margin-top:5px;  }
+.map ul {  width:110; height:auto;float:left; list-style:none; margin:0px; padding:0px; border:0px;}
+.map ul li { width:auto; height:20px; line-height:none; margin:0px; padding:0px; border:0px; padding-right:5px; }
+a.map { text-decoration:none;  font-family:"Microsoft YaHei"; font-size:13px; color:#333; line-height:100%;  height:20px; width:160px; }
+a.map:hover {text-decoration:underline; color:#000;}
+.mapTitle { text-decoration:none;  font-family:"Microsoft YaHei"; font-size:16px; color:#931793; line-height:200%; width:160px; height:20px; display:block;}

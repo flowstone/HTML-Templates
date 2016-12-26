@@ -1,0 +1,220 @@
+<!DOCTYPE>
+<html> 
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>仿国外Samo Vidic Photography微官网html5手机wap旅游网站模板winter页-懒人模板【www.lanrenmb.com】</title>
+	<meta name="keywords" content="Samo Vidic Photography" />
+	<meta name="description" content="Samo Vidic Photography" />	
+	<meta name="Author" content="Webshocker.net" />
+	
+	<meta id="viewport" name="viewport" content="width=320, minimum-scale=1.0, maximum-scale=10.0,  user-scalable=1" />
+	
+	<link rel="apple-touch-icon" href="img/touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="img/touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="img/touch-icon-iphone-retina.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="img/touch-icon-ipad-retina.png" />
+	
+	<link type="text/css" href="css/iphone.css" rel="stylesheet" />	
+   	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+   	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+
+<div id="winter" class="wrap">
+	
+	
+	<div class="box menu">
+		<a href="../../iphone/default.htm"><img src="img/menu-winter.png" width="320" height="44" border="0" /></a>
+	</div>
+	
+	<div class="box b1">
+		<a href="image.asp@p=img_2Fpic-winter-01-hd.jpg"><img src="img/pic-winter-01.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b2">
+		<a href="image.asp@p=img_2Fpic-winter-02-hd.jpg"><img src="img/pic-winter-02.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b3">
+		<a href="image.asp@p=img_2Fpic-winter-03-hd.jpg"><img src="img/pic-winter-03.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b4">
+		<a href="image.asp@p=img_2Fpic-winter-04-hd.jpg"><img src="img/pic-winter-04.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b5">
+		<a href="image.asp@p=img_2Fpic-winter-05-hd.jpg"><img src="img/pic-winter-05.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b6">
+		<a href="image.asp@p=img_2Fpic-winter-06-hd.jpg"><img src="img/pic-winter-06.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b7">
+		<a href="image.asp@p=img_2Fpic-winter-07-hd.jpg"><img src="img/pic-winter-07.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b8">
+		<a href="image.asp@p=img_2Fpic-winter-08-hd.jpg"><img src="img/pic-winter-08.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b9">
+		<a href="image.asp@p=img_2Fpic-winter-09-hd.jpg"><img src="img/pic-winter-09.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b10">
+		<a href="image.asp@p=img_2Fpic-winter-10-hd.jpg"><img src="img/pic-winter-10.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b11">
+		<a href="image.asp@p=img_2Fpic-winter-11-hd.jpg"><img src="img/pic-winter-11.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b12">
+		<a href="image.asp@p=img_2Fpic-winter-12-hd.jpg"><img src="img/pic-winter-12.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b13">
+		<a href="image.asp@p=img_2Fpic-winter-13-hd.jpg"><img src="img/pic-winter-13.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b14">
+		<a href="image.asp@p=img_2Fpic-winter-14-hd.jpg"><img src="img/pic-winter-14.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b15">
+		<a href="image.asp@p=img_2Fpic-winter-15-hd.jpg"><img src="img/pic-winter-15.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	<div class="box b16">
+		<a href="image.asp@p=img_2Fpic-winter-16-hd.jpg"><img src="img/pic-winter-16.jpg" width="160" height="120" border="0" /></a>
+	</div>
+	
+	
+
+</div>
+
+
+ 
+<script type="text/javascript">  
+$(document).ready(function(){ 
+	// tap back
+	$('.box.menu').click(function(e){
+		e.preventDefault();
+		window.location="../iphone";
+	});
+	
+	//FIX: zoom
+	if ((/android /gi).test(navigator.appVersion)) {
+	  //alert('android');
+	  scale=$(window).width()/320;
+	  $('#viewport').attr('content','width=320, initial-scale='+ scale +', minimum-scale=1.0, maximum-scale=10.0,  user-scalable=1')
+	}
+});   
+
+$(window).load(function(){   
+	$('.box').prepend('<div class="boxblenda"></div>');
+	$('.box').show();
+	
+	//200ms
+	setTimeout(function(){
+		$('.box.menu .boxblenda').css("transform","translateX(320px)");
+	},200);
+	
+	//300ms
+	setTimeout(function(){
+		$('.box.b1 .boxblenda').css("transform","translateY(120px)");
+	},300);
+	
+	//400ms
+	setTimeout(function(){
+		$('.box.b2 .boxblenda').css("transform","translateY(-120px)");
+	},400);
+	
+	//500ms
+	setTimeout(function(){
+		$('.box.b3 .boxblenda').css("transform","translateX(-160px)");
+	},500);
+	
+	//600ms
+	setTimeout(function(){
+		$('.box.b4 .boxblenda').css("transform","translateX(160px)");
+	},500);
+	
+	//700ms
+	setTimeout(function(){
+		$('.box.b5 .boxblenda').css("transform","translateY(-120px)");
+	},700);
+	
+	//800ms
+	setTimeout(function(){
+		$('.box.b6 .boxblenda').css("transform","translateX(-160px)");
+	},800);
+	
+	//900ms
+	setTimeout(function(){
+		$('.box.b7 .boxblenda').css("transform","translateY(120px)");
+	},900);
+	
+	//1000ms
+	setTimeout(function(){
+		$('.box.b7 .boxblenda').css("transform","translateY(120px)");
+	},1000);
+	
+	//1100ms
+	setTimeout(function(){
+		$('.box.b8 .boxblenda').css("transform","translateY(-120px)");
+	},1100);
+	
+	//1200ms
+	setTimeout(function(){
+		$('.box.b9 .boxblenda').css("transform","translateX(160px)");
+	},1200);
+	
+	//1300ms
+	setTimeout(function(){
+		$('.box.b10 .boxblenda').css("transform","translateX(-160px)");
+	},1300);
+	
+	//1400ms
+	setTimeout(function(){
+		$('.box.b11 .boxblenda').css("transform","translateY(120px)");
+	},1400);
+	
+	//1500ms
+	setTimeout(function(){
+		$('.box.b12 .boxblenda').css("transform","translateX(-160px)");
+	},1500);
+	
+	//1600ms
+	setTimeout(function(){
+		$('.box.b13 .boxblenda').css("transform","translateY(-120px)");
+	},1600);
+	
+	//1700ms
+	setTimeout(function(){
+		$('.box.b14 .boxblenda').css("transform","translateY(120px)");
+	},1700);
+	
+	//1800ms
+	setTimeout(function(){
+		$('.box.b15 .boxblenda').css("transform","translateX(160px)");
+	},1800);
+	
+	//1900ms
+	setTimeout(function(){
+		$('.box.b16 .boxblenda').css("transform","translateY(160px)");
+	},1900);
+	
+}); 
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

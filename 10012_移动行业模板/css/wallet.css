@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font-family:"微软雅黑"; font-size:14px; width:320px; margin:0px auto;}
+*{ margin:0px; padding:0px;}
+ul,li,h2,h3,p{ margin:0px; padding:0px; list-style:none;}
+a{ text-decoration:none;}
+.clr{ clear:both;}
+.wallet_blue{ color:#1950c2;}
+img{ border:none}
+
+.wallet_addres{ border: solid 1px #1950c2; background:#fff; color:#fff; padding:1px; width:275px;}
+.wallet_addres_title th{ background:#1950c2 !important; color:#fff; text-align:center; font-size:16px; font-weight:normal; padding-top:5px; padding-bottom:5px;}
+.wallet_addres tr td{ background:#ff9c00; padding-left:5px; line-height:16px; padding-top:5px; padding-bottom:5px; padding-right:5px;}
+
+.wallet_menu01,.wallet_menu02{ background:url(../images/hdxc_images/sjqb/menubg.gif) repeat-x; height:48px; line-height:48px; font-size:16px;}
+.wallet_menu01 li{ float:left;  color:#fff; border-right:solid 1px #3d7afa; border-left:solid 1px #000000;}
+.wallet_menu01 li a,.wallet_menu02 li a{color:#fff;font-size:16px;}
+.wallet_menu01 li a{padding-left:18px; padding-right:17px;height:48px; display:block;}
+.wallet_menu02 li a{padding-left:35px; padding-right:35px;height:48px; display:block;}
+.wallet_menu02 li{float:left;  color:#fff; border-right:solid 1px #3d7afa; border-left:solid 1px #000000;}
+.wallet_menu_fouce{ background:url(../images/hdxc_images/sjqb/menubg_fouce.gif) repeat-x;}
+
+.wallet_box{ background:#fff3de; padding-top:10px; padding-left:6px; padding-bottom:15px;}
+.wallet_box h2{ background:url(../images/hdxc_images/sjqb/title01.gif) no-repeat; width:125px; padding-left:12px; padding-right:170px; height:41px; font-size:18px; text-align:center; line-height:36px; color:#fff;}
+.wallet_content{ background:url(../images/hdxc_images/sjqb/title02.gif) repeat-y; padding-left:15px; padding-right:15px; padding-top:5px; line-height:24px;}
+.wallet_content h3{ color:#1950c2; font-size:16px; font-weight:normal; margin-top:10px;}
+.wallet_content h4{ color:#1950c2; font-size:14px; font-weight:normal; margin-bottom:10px;}
+.wallet_content a{ color:#ff7200;}
+.wallet_content p{ text-indent:28px;}
+.wallet_bottom{ background:url(../images/hdxc_images/sjqb/title03.gif) no-repeat; height:24px;}
+.wallet_activity_title{background:url(../images/hdxc_images/sjqb/title01_m.gif) no-repeat; width:174px; padding-left:8px; padding-right:125px; height:41px; font-size:18px; text-align:center; line-height:36px; color:#fff; font-weight:bold;}
+
+.cooperation img{ float:left; margin-right:12px; margin-bottom:5px; margin-top:5px;}
+.wallet_registration{ margin-top:10px;}
+.wallet_input{ border:none; border-bottom:solid 2px #000; width:157px; outline:none; padding-left:2px;}
+.wallet_btn{ background:url(../images/hdxc_images/sjqb/btn.gif) no-repeat; width:151px; height:36px; border:none; margin-top:20px; cursor:pointer;}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0px auto;}
+img{ border:none;}
+.clr{ clear:both;}
+.moved{ width:320px; background:#fff; font-family:"微软雅黑"; font-size:14px; margin-bottom:20px;}
+
+.moved_title{background:#a80000; background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff0d0d), color-stop(1, #a80000)); height:37px; color:#fff; font-size:16px; line-height:37px; padding-left:10px; font-weight:bold;}
+.moved_info{ background:#fff4d5; padding:10px; padding-top:5px; line-height:24px; text-indent:28px;}
+.moved_space{ margin:5px 10px;}
+.moved_content{ line-height:24px;}
+.moved_intent{ text-indent:28px;}
+.moved_content span{ background:#b00101; color:#fff; font-size:16px; padding-left:5px; padding-right:10px; font-weight:normal;}
+.moved_photo{margin:0px; padding:0px; list-style:none;}
+.moved_photo li{ float:left; margin:0px; padding:0px; list-style:none; margin:5px 8px 5px 15px;}
+.moved_photo li img,.moved_detial_photo img{ padding:3px; border:solid 1px #ccc; width:125px !important; height:164px !important;}
+.moved_detial_photo img{width:125px !important; height:164px !important;}
+.moved_photo li p{ text-align:center;}
+.moved_photo li p a{ color:#000; text-decoration:none;}
+.moved_detial_photo{ border-bottom:dashed 1px #ccc; text-align:center; padding-bottom:10px; margin:10px auto;}

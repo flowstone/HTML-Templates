@@ -1,0 +1,222 @@
+﻿<!DOCTYPE>
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+ <meta name="MobileOptimized" content="320"/>
+ <meta content="yes" name="apple-mobile-web-app-capable" />
+ <meta name="format-detection" content="telephone=no" />
+<title>仿厦门无线城市手机wap门户网站模板内容页-3v3手机模板资源【3v3.cc】</title>
+</head>
+<body>
+<div class="container">
+  <!DOCTYPE>
+<html xmlns=" http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+ <meta name="viewport" content="width=device-width;"/>
+ <meta name="MobileOptimized" content="320"/>
+ <meta content="yes" name="apple-mobile-web-app-capable" />
+ <meta name="format-detection" content="telephone=no" />
+<title>厦门无线城市</title>
+<link href="css/xuan_css/touch.css" rel="stylesheet"
+			type="text/css" />
+<link href="css/hdxc_css/wap_style.css" rel="stylesheet" type="text/css" />
+<script src="js/xuan_js/iscroll.js"></script>
+<script type="text/javascript" src="js/xuan_js/jquery.min.js"></script>
+<script type="text/javascript" src="js/xuan_js/My97DatePicker/WdatePicker.js"></script>
+<link href="css/game.css" rel="stylesheet" type="text/css" />
+<link href="css/moved.css" rel="stylesheet" type="text/css" />
+<link href="css/wallet.css" rel="stylesheet" type="text/css" />
+</head>
+<body><div class="container">
+  <div class="inf_part">
+   <div class="inf_left">
+   <a id="backpage"  href="#"><img src="images/xuan_images/news_images/back_icon.png" width="36" height="31"/></a>
+   <a href="x_index.do"><img src="images/xuan_images/news_images/home_icon.png" width="36" height="31"/></a>
+   </div>
+   <div class="inf_mid"><a href="default.htm"><img src="images/xuan_images/logo.png" /></a></div>
+  </div>
+  <div class="clearfloat"></div>
+  <div class="wap_loginzone" style="display:none">
+   <div>
+   	<font class="login_notice" id="login_notice"></font>
+   </div>
+ <script type="text/javascript">
+$(document).ready(function(){
+	
+	$(".inf_right").bind("click",function(e){
+			e.preventDefault();
+			$(".wap_loginzone").slideToggle();
+	});
+	
+	$("#getdtPwd").click(function(){
+	var userName = $("#username").val();
+  htmlobj=$.ajax({url:"getRanPassword.do@type=x&username="+userName,async:false});
+  $("#login_notice").html(htmlobj.responseText);
+  });
+})
+</script>
+<script type="text/javascript">
+
+function selectAction(obj){
+	if(obj=="fwpwd"){
+		document.getElementById("ranPass").style.display="none";
+		document.form22.action="fwpwdLogin.do@type=x";
+	}
+	if(obj=="wzpwd"){
+		document.getElementById("ranPass").style.display="none";
+		document.form22.action="login4xm.do@type=x";	
+	}
+	
+	if(obj=="dtpwd"){
+		document.form22.action="ranPassLogin.do";
+		document.getElementById("ranPass").style.display="";		
+	}
+}
+</script>
+<script type="text/javascript">
+function todis(obj){
+	document.form22.submit();
+}
+</script>
+<script type="text/javascript">
+	function todothis(obj){
+			window.location.href="reg.do@type=x";
+	}
+	function justdothis(obj){
+			window.location.href="getpwd.do@type=x";
+		}
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+			$("#backpage").bind("click",function(e){
+					e.preventDefault();
+					history.go(-1);
+				});
+		});
+</script>
+</div>
+<div class="clearfloat"></div>
+</body>
+</html>
+<div class="clearfloat"></div>
+<!DOCTYPE>
+<html xmlns=" http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+ <meta name="viewport" content="width=device-width;"/>
+ <meta name="MobileOptimized" content="320"/>
+ <meta content="yes" name="apple-mobile-web-app-capable" />
+ <meta name="format-detection" content="telephone=no" />
+<title>厦门无线城市</title>
+</head>
+<body>
+  <div class="newstop">
+	<div class="ntopleft">资讯频道</div>
+	<div class="ntopright">
+ <div class="newssea">
+ <form action="http://wap.xiamentd.com/search.do" method="post" name="forms">
+  <input type="hidden" name="type" value="x">
+  <input type="text" name="keyword" class="news_s_text">
+  <input type="submit" value=""  class="news_s_fdj">
+  </form>
+  </div>
+  <div class="xl_newsnav"><img src="images/xuan_images/news_images/news_nav.png" width="18" height="15"></div>
+ </div>
+  <div class="clearfloat"></div>
+  </div>
+   <div class="news_navlist">
+   <div class="arrow"></div>
+  <div class="x_tabnav">
+  <a href="pagelist.do@columnId=20000120&type=x" class="x_current">本地</a>
+  		<a href="pagelist.do@columnId=20000121&type=x">海西</a>
+  		<a href="pagelist.do@columnId=20000122&type=x">国内</a>
+  		<a href="pagelist.do@columnId=20000123&type=x">国际</a>
+  		<a href="pagelist.do@columnId=20000124&type=x">台海</a>
+  		<!-- 
+     <a href="http://wap.xiamentd.com/pagelist.do?columnId=20000127&type=x">财经</a>
+  		<a href="http://wap.xiamentd.com/pagelist.do?columnId=20000128&type=x">体育</a>
+  		<a href="http://wap.xiamentd.com/pagelist.do?columnId=20000129&type=x">娱乐</a>
+  		
+   
+   -->
+  
+  </div>
+     
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	var xl_newsnav=$(".xl_newsnav");
+	var newsnav_zone=$(".newsnav_zone");
+	xl_newsnav.bind("click",function(e){
+		e.preventDefault();
+		$(".x_tabnav").slideToggle();
+		newsnav_zone.slideToggle("fast");
+	});
+});
+</script>
+
+</body>
+</html><div class="clearfloat"></div>
+ <div class="news_title1">
+  <div class="t_color"></div>
+  <div class="t_text">厦门新闻</div>
+   <div class="clearfloat"></div>
+ </div>
+ <div class="t_textzone">
+
+  <p class="newsimg"></p>
+  <div class="news_p">
+  	<p><ul> 
+   <div class="title">观音山公寓“奇观” 高空扔垃圾“每天准时”</div>
+   <h5>
+       
+			来源：厦门晚报2013-11-10 15:07:12</h5>
+	 <P>　　■这么一大袋东西，砸到人怎么办？</P> <P>　　■高空抛物太频繁，物业立下警示标识。</P> <P>　　厦门网-厦门晚报讯 本报关注高空抛物问题后，有网友联系本报:“你们早上七点可以到观音上公寓五楼平台看看，那真是壮观啊！什么都往下掷！”记者立即联系报料人，昨天到实地探访。</P> <P>　　<STRONG>现场</STRONG></P> <P><STRONG>　　记者刚一抬头</STRONG></P> <P><STRONG>　　一包剩菜砸落</STRONG></P> <P>　　昨天上午7点，观音山公寓5楼平台上，纸屑、塑料袋、饭盒等各种垃圾散落一地。</P> <P>　　“啪！”的一声，正当记者抬头仰视高层住户时，一包汤汁淋漓的剩菜从上空一处阳台划着一条弧线拍在了平台上，汁水四溅,差点打到记者，而那名在阳台上扔垃圾的男子只是扫了记者一眼，随后就淡定地转身回到屋内了。</P> <P>　　“天天都这样，早上一来就是一地垃圾！”正在给绿化带浇水的陈师傅无奈地说。</P> <P>　　<STRONG>讲述</STRONG></P> <P><STRONG>　　夜幕降临前一片整洁，一晚过后就遍地狼藉</STRONG></P> <P>　　“有一次我路过，上面直接一袋子稀饭扔了下来，溅得我裤子都湿了，也没有办法。”观音山公寓物业管理处主任许先生说。“这里的高层抛物情况确实严重。”在观音山公寓楼下是一个公交终点站，司机们的休息室就在一楼，因为经常被楼上泼的水浇到，场站只能将休息室原来的门开向另外一个方向。</P> <P>　　这些垃圾集中在五楼平台和楼下，每天夜幕降临前还是一片整洁，一晚过后就遍地狼藉。每家应该都有垃圾桶，为什么非要扔到楼下呢？而且竟然还有人把粪便用报纸包着扔下来！在许先生的手机上，赫然显示着当初他拍到的那令人恶心的场景。</P> <P>　　观音山公寓是政府建设的保障性住房，2009年交付入住。“还是有一些人保留着以前住平房的习惯。”许先生说，虽然住进了高楼，一些居民还是习惯把自家的垃圾往外面扔，并没有意识到这会带来什么后果。虽然平台和楼下每天会打扫两次，但扔垃圾的根源不除，打扫的人自己也觉得打扫太干净了没意义。</P> <P>　<STRONG>　物业</STRONG></P> <P><STRONG>　　入户劝导碰钉子</STRONG></P> <P><STRONG>　　想不出解决办法</STRONG></P> <P>　　物业做了劝导居民不要高空抛物的海报，同时还进行入户宣传，然而有时却会遇到一定的困难。“有些居民不太好沟通，总认为我们刁难他，这让我们的入户宣传很麻烦。”许先生说，在入户宣传时，一些居民会很愤怒地说，“又不是我扔的！你跟我说什么！”对于一些居民过强的自我保护心理，物业在宣传时就会用一些柔和的手段，从侧面进行宣传。</P> <P>　　许先生说，他已经将这一情况上报给作为业主单位的市建设与管理局住房保障中心，也引起重视。不过，目前，具体怎么解决，也还没有一个方法出来。</P> <P>　　编后</P> <P>　　本报自11月4日起，连续关注高空抛物现象，11月8日，厦门市委文明办、厦门晚报社和海峡国际社区、海峡国际湾区还联合发出倡议:拒绝高空抛物，共建和谐社区。同时，市委文明办将组织成立市民文明巡访团，对高空抛物等社区不文明现象进行暗访，对未做及时处理的，将问责。希望有关单位联合起来，引导居民自治，让大家形成文明自觉性，不再随意从高空抛垃圾。</P> <P>　　文/图 记者 赵晨旭</P><br/>
+    	  </ul>
+</p>
+  </div>
+ </div>
+ <div class="clearfloat"></div>
+<div class="container">
+ <div class="footer">
+   <div class="foot_nav">
+
+   	<p>
+     <a href="x_index.do">首页</a>|
+     <a href="zx.do@type=x">资讯</a>| 
+     <a href="zw.do@type=x">政务</a>|
+     <a href="bm.do@type=x">便民</a>|
+     <a href="yl.do@type=x">健康</a>|
+     <a href="cx.do@type=x">出行</a>
+     
+    </P>
+	<p>
+	<a href="anju.do@type=x">安居</a>|
+     <a href="jy.do@type=x">教育</a>|
+     <a href="jiuye.do@type=x">求职</a>|
+     <a href="yd.do@type=x">移动</a>|
+     <a href="sq.do@type=x">社区</a>|
+     <a href="hsh.do@type=x">惠生活</a>
+	</P>
+   </div>
+   
+   <div class="banben">
+	<a href="x_index.do">触屏版</a>|<a href="changexpage.do@type=2">简版</a>
+	</div> 
+   
+   <div class="clearfloat"></div>
+   <div class="foot_bot">
+   温馨提示：本信息仅供提供演示方便链接，与原网站无关！ <a href="index.html">首页</a>  <a href="pagelist.html">列表页</a>  <a href="content.html">正文页</a>  <a href="xbxz.html">下载页</a>  <a href="hd.html">活动页页</a>
+   </div>
+   <div class="foot_logo">
+    <a href="../www.10086.cn/default.htm"><img src="images/xuan_images/10086_logo.png"></a>
+    <a href="../www.10086.cn/default.htm"><img src="images/xuan_images/mobile_logo.png"></a>
+   </div>
+ </div>
+ </div>
+
+ </div>
+</body>
+</html>

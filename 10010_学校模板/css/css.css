@@ -1,0 +1,80 @@
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0;  font-size: 100%; vertical-align: baseline; }  
+
+body { text-align:center; background:#fff; font:14px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif; }
+ol, ul { list-style: none; } 
+table { border-collapse: collapse; border-spacing: 0; } 
+
+a { color:#024699; text-decoration:none; outline: none; }
+a:hover { color:#024699; text-decoration:underline; } 
+
+.left {float:left; margin-left:5px;}
+.right {float:right; margin-right:5px;}
+
+.clear {clear:both;height:1px;display:block!important;display:none;}
+.clearBg { background:none; }
+
+.header { height:39px; text-align:center; margin:0 auto 1px; background:url(../img/header_bg.gif) repeat-x; }
+
+.weather { height:23px; line-height:23px; margin:0 auto 1px; background:url(../img/title_bg01.gif) repeat-x; color:#203e7a; overflow:hidden; }
+
+.nav { line-height:50px; margin:0 auto; background:#f6fafd url(../img/info_bg01.gif) left top repeat-x; overflow:hidden; text-align:center;}
+.nav .clearBg ,.menu .clearBg { background:none!important; }
+.nav p ,.menu p { padding-top:3px; }
+.nav a ,.menu a { width:64px; height:22px; line-height:22px; padding:0 10px; text-align:center; background:url(../img/list_line.gif) right center no-repeat; float:left; }
+
+.s_nav { overflow:hidden; zoom:1; text-align:left; clear:both; }
+.s_nav li { float:left; }
+.s_nav li a { font-size:14px; color:#024699; padding:0 10px; text-decoration:none; }
+
+
+.info { margin:0 auto; overflow:hidden; border-top:#a4c7e7 2px solid; padding-bottom:10px; }
+.info h3 { height:24px; line-height:24px; color:#073e91; font-weight:bold; font-size:16px; text-align:left; padding-left:5px; background:#f4f4f4; border-top:#fff 1px solid; border-bottom:#ddd 1px solid; }
+.info ul { margin-top:5px; }
+.info li { height:22px; line-height:22px; background:url(../img/list.gif) 3px 6px no-repeat; text-align:left; clear:both; }
+.info li a { padding-left:15px; font-size:14px; float:left; }
+.info li span { color:#888; font-size:12px; margin:0 10px; }
+.r_data { float:right; }
+
+
+.search { height:28px; line-height:28px; margin:0 auto; background:url(../img/search_bg.gif) repeat-x; border-top:#7a9dd5 1px solid; }
+.search input { width:160px; height:17px; line-height:17px; background:#fff; border:#a4abb1 1px solid; }
+.search img { vertical-align:middle; }
+
+.menu { background:#f0f0f0; margin:0 auto; overflow:hidden; zoom:1; text-align:center; }
+.menu table { margin:0 auto; text-align:center; }
+.menu table tr td { text-align:center; width:64px; font-size:14px; }
+
+
+.page { height:28px; line-height:28px; margin:5px auto 10px; overflow:hidden; zoom:1; clear:both; }
+.page ul li { float:left; display:inline-block; padding:0 8px; font-size:14px; }
+.page ul li a { font-size:14px; text-decoration:none; }
+.page .i_text { width:40px; }
+
+
+
+.copyright { margin:0 auto; background:#f0f0f0; border-top:#7a9dd5 1px solid; color:#686868; }
+.copyright a { color:#686868; text-decoration:none; }
+.copyright a:hover { text-decoration:underline; }
+
+.r_b { border-bottom:#ddd 1px solid; overflow:hidden; zoom:1; }
+.r_pic_list { width:100%; overflow:hidden; margin:0 auto; text-align:left; clear:both; }
+.r_pic { width:60px; padding:3px 0 3px 4px; vertical-align:middle; }
+
+.r_cont02 { padding:5px 9px; overflow:hidden; vertical-align:middle; }
+.r_cont02 h4 { line-height:22px; }
+.r_cont02 h4 a { color:#007dab; font-size:14px; font-weight:normal; text-decoration:none; }
+.r_cont02 h4 a:hover { text-decoration:underline; }
+.r_cont02 h4 span { margin-left:5px; color:#aaa; font-weight:normal; }
+
+.r_cont_text02 { font-size:14px; line-height:18px; color:#555; vertical-align:middle;}
+.r_cont_text02 span { margin-left:14px; }
+
+#content { margin-left:5px; margin-right:5px; margin-top:3px; }

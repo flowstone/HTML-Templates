@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0px; padding:0px;}
+body{ width:320px; margin:auto;}
+img{ border:none;}
+.clr{ clear:both;}
+ul,li{margin:0px; padding:0px;list-style:none;}
+.game_box{width:320px;}
+.game_info{ background:url(../images/hdxc_images/dgdd/info01.gif) no-repeat; height:984px;}
+.game_more{  margin:895px auto auto 93px; border:none; cursor:pointer;}
+.game_sign{ background:url(../images/hdxc_images/dgdd/sign.jpg) no-repeat; height:452px;}
+.game_sign_input{ background:url(../images/hdxc_images/dgdd/input.jpg) no-repeat; border:none; margin:95px auto auto 20px; padding-top:24px; padding-left:45px; padding-right:45px; height:30px; width:187px; outline:none; padding-bottom:22px; line-height:30px;}
+.game_send{ background:url(../images/hdxc_images/dgdd/send.jpg) no-repeat; border:none; margin-top:2px; margin-left:65px; width:183px; height:62px; cursor:pointer;}
+.game_menu ul li{  float:left; height:57px;}

@@ -1,0 +1,370 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+
+
+   <script>
+        document.write('<script src=' +
+                ('__proto__' in {} ? 'js/zepto.js' : 'js/jquery.js') +
+                '><\/script>')
+    </script><script src="js/zepto.js"></script>
+    <script>
+        document.write('<script src=' +
+                ('__proto__' in {} ? 'js/public.js' : 'js/wp.js') +
+                '><\/script>')
+    </script><script src="js/public.js"></script>
+
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+
+
+<title>仿n次元漫画手机wap动漫网站模板列表页-3v3手机模板专家【3v3.cc】</title>
+<style>
+.view_body{ }
+</style>
+<style media="all and (orientation:landscape)" type="text/css">
+ .c_list_box{ left:20%}
+ .c_list_box #c_standard{ height:120px}
+</style>
+
+
+
+<script type="text/javascript">
+var listScroll,cScroll,
+	pullDownEl, pullDownOffset;
+
+function pullDownAction () {
+	$(".back_title .ficon").show();
+	setTimeout(function () {	//进行数据处理（如ajax）
+
+		loadingList(true,1);
+		$(".back_title .ficon").css("bottom","-45px");
+		$("#update_flist").css("z-index","999");
+		listScroll.refresh();	//重新刷新列表
+	},1500);
+}
+
+function loaded() {
+	// 头部样式处理
+	$(".float_header").css({"overflow":"hidden","position":"absolute"});
+	//无列表处理
+	if($(".item").length==0){
+		$("#pullDown").hide();
+		return;
+	}	
+	pullDownEl = document.getElementById('pullDown');
+	pullDownOffset = pullDownEl.offsetHeight;
+	listScroll = new iScroll('update_flist', {
+		useTransition: true,
+		topOffset: pullDownOffset,
+		onScrollStart: function(){
+			$(".float_header").css("overflow","visible");
+		},
+		onRefresh: function () {
+			if ($(".update_tips b").size()>0){
+				$(".update_tips").html("<i></i><label>下拉刷新列表</label>");
+			}
+		},
+		onScrollMove: function () {
+			if (this.y >10) {
+				this.minScrollY = 0;
+				$(".back_title .ficon").css("bottom","-42px");//调整头像位置
+				$(".update_tips i").animate({rotateZ: '-180deg'},100,'ease-out');
+				$(".update_tips label").text("松开即可刷新");
+			} else if (this.y <10) {
+				$(".back_title .ficon").css("bottom","-45px");//隐藏头像位置
+				this.minScrollY = -pullDownOffset;
+			}
+		},
+		onScrollEnd: function () {
+			if ($(".update_tips label").text()=="松开即可刷新") {
+				$("#update_flist").css("z-index","10");
+				$(".update_tips").html("<b></b><label>努力加载中…</label>");
+				pullDownAction();
+			}
+		}
+	});
+}
+//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 5);}, false);
+
+var currentPage = 2;
+var totalResult = 0;
+var showCount = '';
+var reqtype = '';
+var factor = '';
+var dictId = '8';
+var title = '少女';
+var totalPage = '39';
+
+$(function(){
+
+	$('#more_loading').click(function(){
+			loadingList(false,currentPage);
+	});
+    $(".goto_bar").removeClass("fix");//底部跳转按钮样式置底
+
+    //发现分类弹出层效果
+	/*$(".back_title .c_find").click(function(){
+		if($(".back_title .c_find").children("i").hasClass("open")){
+			$(".back_title .c_find").children("i").removeClass("open")
+			$(".c_list_box").hide();		
+		}else{
+			$(".back_title .c_find").children("i").addClass("open")
+			$(".c_list_box").show();
+			cScroll = new iScroll('c_standard',{
+				hideScrollbar: true
+			});
+		}
+	});*/
+    
+});
+
+
+
+
+
+function loadingList(isFirst,currPage){
+
+	var data = '&currentPage=' + currPage + '&dictId=' + dictId;
+	var url = 'http://m.nciyuan.com/find/find_list.htm?actionMethod=onList';
+	$.ajax({
+		type: 'POST',
+		url: url,
+		data: data,
+		dataType: 'json',
+		success:  function(result){
+			var list = result.list;
+			totalResult = result.totalResult;
+			totalPage = result.totalPage;
+			var divs = '';
+			for(var i = 0;i<list.length;i++){
+
+				var m = list[i];
+				var readUrl = 'http://m.nciyuan.com/read/detail.htm?comicId=' + m.id;
+				var readingUrl = 'http://m.nciyuan.com/read/reading.htm?comicId=' + m.id;
+				var imgUrl = 'http://img.ciyuan.be' + m.cover;
+				var rec = m.recommended;
+
+				var label_html = '';
+				if(m.publishedStatus == 0){
+					label_html += '<i class="opus_icon pt"></i>';
+				}else if(m.publishedStatus == 1){
+					label_html += '<i class="opus_icon dj"></i>';
+				}else if(m.publishedStatus == 2){
+					label_html += '<i class="opus_icon sq"></i>';
+				}else if(m.publishedStatus == 3){
+					label_html += '<i class="opus_icon qy"></i>';
+				}
+
+				if(m.isDsrw == 1){
+					label_html += '<i class="opus_icon ds"></i>';
+				}
+
+				if(m.isFhzp == 1){
+					label_html += '<i class="opus_icon fh"></i>';
+				}
+
+				divs +='<div class="item">'
+                +'<dl>'
+                    +'<dt><a href="'+ readUrl +'"><img src="'+ imgUrl +'" /></a></dt>'
+                    +'<dd><a href="'+ readUrl +'" class="bname opus_l_bname">'+ m.name +'</a>'+ label_html +'</dd>'
+                    +'<dd class="b_hot"><label>人气：' + m.clickTotal +'</label><label>评分：' + m.grade + '</label></dd>'
+                    //+'<dd>评分：' + m.grade +'</dd>'
+                    +'<dd class="author">最近更新：' + Util.substringOwn(12,m.lastUpdateName) +'</dd>'
+                    	
+                +'</dl>'
+                +'<a href="'+ readingUrl +'" data="'+ readingUrl +'" class="ricon"><b></b></a>'
+                +'</div>';
+				
+			}
+
+			 if(isFirst){
+				$('#list_new').html(divs);
+
+             } else {
+		        $('#list_more').append(divs);
+             }
+			$(".back_title .ficon").css("bottom","-45px");
+			$("#update_flist").css("z-index","999");
+			listScroll.refresh();	//重新刷新列表
+
+
+            currentPage++;
+			if(currentPage >= totalPage){
+				$('#more_loading_d').hide();
+				return;
+			}
+		}
+	});
+}
+
+</script>
+
+
+
+</head>
+<body>
+<div class="float_header" style="overflow: hidden; position: absolute; ">
+   
+
+<div class="login_wrapper">
+       
+</div>
+
+
+
+    <div class="header header2">
+        <div class="logo_wrapper">
+            <div class="logo"><a href="#">n次元</a></div>
+            <div class="login" id="login"><i></i><label>登录</label></div>
+        </div>
+    </div>
+    <div class="back_title">
+        <b><a href="#"></a></b>
+        
+        
+        <h2 id="title"><a href="#"></a><span class="c_find">少女<!-- <i></i> --></span></h2>
+        <div class="ficon"></div>
+    </div>
+</div>
+<div class="view_body" id="top_page_div">
+    <div class="flist_content" id="update_flist" style="overflow: hidden; ">
+    	<div id="scroller" style="-webkit-transition: -webkit-transform 0ms cubic-bezier(0.33, 0.66, 0.66, 1); -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, -82px) scale(1) translateZ(0px); ">
+        	<div id="pullDown">
+                <div class="update_tips">
+                    <i></i><label>下拉刷新列表</label>
+                </div>
+            </div>
+            <div class="list_wrapper" id="list_wrapper">
+            
+            	<div id="list_new">
+	            	
+			            	<div class="item">
+				                <dl>
+				                    <dt><a href="#"><img src="img/2558_1363844282629_cover_111_ylrGV_145.jpg"></a></dt>
+				                    <dd>
+				                    	<a href="#" class="bname opus_l_bname">七公主</a>
+				                    	
+				                    	
+									    		<i class="opus_icon pt"></i>
+									    										    										    										    										    										    										    	
+				                    
+				                    </dd>
+				                    <dd class="b_hot"><label>人气：942610</label><label> 评分：7.1</label></dd>
+				                    <dd class="author">最近更新：
+				                    	 									    	6 我的她									    
+				                    </dd>
+				                </dl>
+		                	<a href="#" data="#" class="ricon"><b></b></a>
+		            	  </div>
+	                
+			            	<div class="item">
+				                <dl>
+				                    <dt><a href="#"><img src="img/4173_1369830868884_cover_111_1ydZp_145.jpg"></a></dt>
+				                    <dd>
+				                    	<a href="#" class="bname opus_l_bname">穿越天下</a>
+				                    	
+				                    	
+									    		<i class="opus_icon sq"></i>
+									    										    										    										    										    										    										    	
+				                    
+				                    </dd>
+				                    <dd class="b_hot"><label>人气：287041</label><label> 评分：8.7</label></dd>
+				                    <dd class="author">最近更新：
+				                    	 									    	第六十四回									    
+				                    </dd>
+				                </dl>
+		                	<a href="#" data="#" class="ricon"><b></b></a>
+		            	  </div>
+	                
+			            	<div class="item">
+				                <dl>
+				                    <dt><a href="#"><img src="img/368_1367903036855_cover_111_WzySv_145.jpg"></a></dt>
+				                    <dd>
+				                    	<a href="#" class="bname opus_l_bname">吸血先生MR.B</a>
+				                    	
+				                    	
+									    		<i class="opus_icon pt"></i>
+									    										    										    	
+									    		<i class="opus_icon ds"></i>
+									    										    										    										    	
+				                    
+				                    </dd>
+				                    <dd class="b_hot"><label>人气：335593</label><label> 评分：6.7</label></dd>
+				                    <dd class="author">最近更新：
+				                    	 									    	序0.2									    
+				                    </dd>
+				                </dl>
+		                	<a href="#" data="#" class="ricon"><b></b></a>
+		            	  </div>
+	                
+			            	<div class="item">
+				                <dl>
+				                    <dt><a href="#"><img src="img/1346_1366257154045_cover_111_3rChb_145.jpg"></a></dt>
+				                    <dd>
+				                    	<a href="#" class="bname opus_l_bname">桃矢&amp;雪兔</a>
+				                    	
+				                    	
+									    		<i class="opus_icon pt"></i>
+									    										    										    	
+									    		<i class="opus_icon ds"></i>
+									    										    										    										    	
+				                    
+				                    </dd>
+				                    <dd class="b_hot"><label>人气：671198</label><label> 评分：8.8</label></dd>
+				                    <dd class="author">最近更新：
+				                    	 									    	日更没啥不可以~									    
+				                    </dd>
+				                </dl>
+		                	<a href="#" data="#" class="ricon"><b></b></a>
+		            	  </div>
+	                
+			            	<div class="item">
+				                <dl>
+				                    <dt><a href="#"><img src="img/511_1358822795642_cover_111_LEA3S_145.jpg"></a></dt>
+				                    <dd>
+				                    	<a href="#" class="bname opus_l_bname">我的表弟很幼稚</a>
+				                    	
+				                    	
+									    		<i class="opus_icon pt"></i>
+									    										    										    										    										    										    										    	
+				                    
+				                    </dd>
+				                    <dd class="b_hot"><label>人气：218165</label><label> 评分：6.4</label></dd>
+				                    <dd class="author">最近更新：
+				                    	 									    	正篇基本人設+福利圖									    
+				                    </dd>
+				                </dl>
+		                	<a href="#" data="#" class="ricon"><b></b></a>
+		            	  </div>
+
+	                
+                </div>
+                <div id="list_more"></div>
+            </div>
+            
+            
+            
+	            <div id="more_loading_d" class="more_loading nb">
+	                 <a id="more_loading" href="javascript:void(0)">点击加载更多</a>
+	            </div>
+	                    
+    <div class="goto_bar nb">
+    
+    	
+        <a id="down_app" href="http://www.nciyuan.com/app/?showpc=true" class="mb">下载客户端</a>
+        <a id="access_web" href="http://www.nciyuan.com?showpc=true">访问电脑版</a>
+    </div>
+	<CENTER>
+			温馨提示：本信息仅供提供演示方便链接，与原网站无关！ <a href="index.html">首页</a>&nbsp;&nbsp;&nbsp;<a href="denglu.html">登陆页演示图</a>&nbsp;&nbsp;&nbsp;<a href="faxian.html">发现页演示图</a>&nbsp;&nbsp;&nbsp;<a href="liebiao.html">列表页演示图</a>&nbsp;&nbsp;&nbsp;<a href="zhengwen.html">正文页演示图</a>&nbsp;&nbsp;&nbsp;<a href="yuedu.html">阅读页演示图</a>
+</center>
+ </div>
+
+
+</body></html>
+

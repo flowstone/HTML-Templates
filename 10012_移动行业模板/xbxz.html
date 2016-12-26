@@ -1,0 +1,800 @@
+﻿<!DOCTYPE>
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="textml; charset=utf-8" />
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="MobileOptimized" content="320"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 
+
+
+ <meta name="format-detection" content="telephone=no" />
+<title>仿厦门无线城市手机wap门户网站模板下载页-3v3手机模板资源【3v3.cc】</title>
+</head>
+
+<body>
+<div class="container">
+<head>
+
+<link href="css/xuan_css/touch.css" rel="stylesheet"
+			type="text/css" />
+<link href="css/xuan_css/touch_slide.css" rel="stylesheet"
+			type="text/css" />
+<script type="text/javascript" src="js/xuan_js/iscroll.js"></script>
+<script type="text/javascript" src="js/xuan_js/jquery.min.js"></script>
+
+</head>
+<body>
+  <div class="inf_part">
+   <div class="inf_left">
+   </div>
+   
+   <div class="inf_indexmid"><a href="default.htm"><img src="images/xuan_images/logo.png"/></a></div>
+   
+   <div class="inf_indexright">
+     <div class="inf_weather">
+      <dl>
+      <dt><img src="images/weather/11.png" width="23" height="23"></dt>
+      <dd><span>20 ℃</span><br/>
+           27 ℃<br/>
+      </dd>
+     </dl>
+     <div class="clearfloat"></div>
+     </div>
+ 		<div class="inf_air"><font color="white">  </font> </div>
+   </div>
+  </div>
+  	 <div class="clearfloat"></div>
+   </div>
+  
+
+   
+<div class="clearfloat"></div>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$(".inf_left").bind("click",function(e){
+			e.preventDefault();
+			$(".wap_loginzone").slideToggle();
+	});
+	
+	$("#getdtPwd").click(function(){
+	var userName = $("#username").val();
+  htmlobj=$.ajax({url:"getRanPassword.do@type=x&username="+userName,async:false});
+  $("#login_notice").html(htmlobj.responseText);
+  });
+})
+</script>
+<script type="text/javascript">
+function selectAction(obj){
+	if(obj=="fwpwd"){
+		document.getElementById("ranPass").style.display="none";
+		document.forms.form1.action="fwpwdLogin.do@type=x";
+	}
+	if(obj=="wzpwd"){
+		document.getElementById("ranPass").style.display="none";
+		document.forms.form1.action="login4xm.do@type=x";	
+	}
+	if(obj=="dtpwd"){
+		document.forms.form1.action="ranPassLogin.do";
+		document.getElementById("ranPass").style.display="";
+	}
+}
+</script>
+<script type="text/javascript">
+function todis(obj){
+	document.form1.submit();
+}
+</script>
+<script type="text/javascript">
+	function todothis(obj){
+	
+			window.location.href="reg.do@type=x";
+	}
+	function justdothis(obj){
+		window.location.href="getpwd.do@type=x";
+	}
+</script>
+</body>
+</html>
+<div class="mainnav">
+    <ul class="mainnav-main fn-clear">
+      <li class="mainnav-maincur" id="syl"><a href="x_index.do" class="mainnav-01">首页</a></li>
+      <li class="" id="hdl"><a href="hd.do@pageNo=1&pageSize=10" class="mainnav-02" href="">活动</a></li>
+      <li class="" id="xzl"><a href="xbxz.do" class="mainnav-03">下载</a></li>
+    </ul>
+</div>
+  <div id="firstPage">
+<!-- 活动滚动图开始-->  
+  <div id="activimg">
+  <div id="slides">
+	<div class="slides_container">
+	<div id="wrapper">
+		<div id="scroller">
+		<ul id="thelist">
+		<input type="hidden" id="rsize" name="rsize" value="3"/>
+		<li>
+				<div>
+					<a href="../wap.cccifair.org/default.htm" target="_blank"><img src="http://img.xiamentd.com/icons/wcity_pic/default/590/20131022163647_219.jpg" ></a>
+				</div>
+      			</li>
+			<li>
+				<div>
+					<a href="content.do@columnId=1020000586&contentId=20099232&version=3" target="_blank"><img src="http://img.xiamentd.com/icons/wcity_pic/default/590/20130902150138_749.jpg" ></a>
+				</div>
+      			</li>
+			<li>
+				<div>
+					<a href="../wap.app.xiamentd.com/zt/2013/jmss/@ticket=&version=3" target="_blank"><img src="http://img.xiamentd.com/icons/wcity_pic/default/590/20130624110917_303.jpg" ></a>
+				</div>
+      			</li>
+			</ul>
+	</div>
+	</div>
+  </div>
+  <div id="nav">
+	<div id="prev" onclick="myScroll.scrollToPage('prev', 0);return false"></div>
+	<ul id="indicator">
+	<li class="active">1</li>
+		<li>2</li>
+		<li>3</li>
+		</ul>
+	<div id="next" onclick="myScroll.scrollToPage('next', 0);return false"></div>
+</div>
+  </div>
+  </div>
+ <div class="list_s_zone4">
+   <div class="yy_img3">
+	<img onclick="myScroll4.scrollToPage('prev', 0);return false" src="images/xuan_images/left_icon.pngsrc="images/xuan_images/left_icon.png" />
+   </div>
+	<div class="list_cont6" id="list_list_cont6" >
+    <div class="Scryy_cont6">
+    <div id="n_list_slide6">
+	 <div id="wrapper4" >
+	 <div id="scroller4">
+	    <div class="yy_app">
+	    
+<a href="javascript:void(0)" onclick="return false;" id="yy_app_a">惠生活</a>
+<a href="javascript:void(0)" onclick="return false;" id="yy_app_b">健康</a>
+<a href="javascript:void(0)" onclick="return false;" id="yy_app_c">教育</a>
+<a href="javascript:void(0)" onclick="return false;" id="yy_app_d">出行</a>
+<a href="javascript:void(0)" onclick="return false;" id="yy_app_e">政务</a>
+<a href="javascript:void(0)" onclick="return false;" id="yy_app_f">便民</a>
+<a href="javascript:void(0)" onclick="return false;" id="yy_app_g">求职</a>
+  </div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+		 <div class="yy_img4">
+		<img onclick="myScroll4.scrollToPage('next', 0);return false"  src="images/xuan_images/right_icon.pngsrc="images/xuan_images/right_icon.png" />
+	 </div>
+   </div>
+   
+ <!-- 应用图标滚动图结束-->  
+ 
+ <div class="yyimg_zone" id="hsh">
+   <div class="topimg_bg"></div>
+   <div class="yyimg_list">
+   <p class="trafic_app">
+	<a href="xapp.do@user_id=&id=1000158&cityid=592&columnId=20000117" id="life_a">电影订票</a><a 
+	href="xapp.do@user_id=&id=105920368&cityid=592&columnId=20000118" id="life_b">手机动漫</a><a 
+	href="xapp.do@user_id=&id=1000247&cityid=592&columnId=20000117" id="life_c">电影快讯</a><a 
+	href="tel_3A12580" id="life_d">12580团购</a></p>
+ 
+     <div class="clearfloat"></div>
+   </div>
+   <div class="pindao_jr_bg"><a href="hsh.do@type=x">进入惠生活频道>></a></div>
+ </div>
+ 
+ 
+ 
+ <div class="yyimg_zone" id="jk" style="display:none;">
+   <div class="topimg_bg"></div>
+   <div class="yyimg_list">
+ 
+     <a href="xapp.do@user_id=&id=100101383&cityid=592&columnId=20000526" id="hel_a">预约挂号</a><a 
+     href="xapp.do@user_id=&id=100100995&cityid=592&columnId=20000526" id="hel_b">宠物查询</a><a 
+     href="xapp.do@user_id=&id=1000253&cityid=592&columnId=20000526" id="hel_c">名医名院</a><a 
+     href="xapp.do@user_id=&id=105920317&cityid=592&columnId=20000526" id="hel_d">体检机构</a>
+     <a href="xapp.do@user_id=&id=100100993&cityid=592&columnId=20000526" id="hel_e">药房网点</a>
+   
+   </div>
+   <div class="pindao_jr_bg"><a href="yl.do@type=x">进入健康频道>></a></div>
+ </div>
+ 
+ 
+  <div class="yyimg_zone" id="jy" style="display:none;">
+   <div class="topimg_bg"></div>
+   <div class="yyimg_list">
+ 
+     <a href="xapp.do@user_id=&id=1000145&cityid=592&columnId=20000168" id="edu_a">掌上宝贝</a><a 
+     href="xapp.do@user_id=&id=100101002&cityid=592&columnId=20000168" id="edu_b">高校迎新</a><a 
+     href="xapp.do@user_id=&id=100100996&cityid=592&columnId=20000168" id="edu_c">高校专区</a><a 
+     href="xapp.do@user_id=&id=1000237&cityid=592&columnId=20000168" id="edu_d">家校互联</a>
+     <a href="xapp.do@user_id=&id=1000146&cityid=592&columnId=20000168" id="edu_e">高考查询</a>
+   
+   </div>
+   <div class="pindao_jr_bg"><a href="jy.do@type=x">进入教育频道>></a></div>
+ </div>
+ 
+   <div class="yyimg_zone" id="cx" style="display:none;">
+   <div class="topimg_bg"></div>
+   <div class="yyimg_list">
+ 
+     <a href="xapp.do@user_id=&id=1000151&cityid=592&columnId=20000102" id="tra_a">智游鼓浪屿</a><a 
+     href="xapp.do@user_id=&id=100101480&cityid=592&columnId=1020000245" id="tra_b">掌上公交</a><a 
+     href="xapp.do@user_id=&id=1000082&cityid=592&columnId=20000533" id="tra_c">违章查询</a><a 
+     href="xapp.do@user_id=&id=1000077&cityid=592&columnId=1020000245" id="tra_d">路面视频</a>
+     <a href="xapp.do@user_id=&id=100101454&cityid=592&columnId=20000533" id="tra_e">实时路况</a>
+   
+   </div>
+   <div class="pindao_jr_bg"><a href="cx.do@type=x">进入出行频道>></a></div>
+ </div>
+ 
+ 
+ <div class="yyimg_zone" id="zw" style="display:none;">
+   <div class="topimg_bg"></div>
+   <div class="yyimg_list">
+ 
+     
+     <a href="xapp.do@user_id=&id=1000241&cityid=592&columnId=20000529" id="gov_a">办事指南</a><a 
+     href="xapp.do@user_id=&id=100101514&cityid=592&columnId=20000525" id="gov_b">公示公告</a><a 
+     href="xapp.do@user_id=&id=100100975&cityid=592&columnId=20000529" id="gov_c">市政调查</a><a 
+     href="xapp.do@user_id=&id=1000240&cityid=592&columnId=20000529" id="gov_d">手机信访</a>
+   </div>
+   <div class="pindao_jr_bg"><a href="zw.do@type=x">进入政务频道>></a></div>
+ </div>
+ 
+ <div class="yyimg_zone" id="bm" style="display:none;">
+   <div class="topimg_bg"></div>
+   <div class="yyimg_list">
+ 
+     <!-- <a href="http://wap.xiamentd.com/xapp.do?user_id=&amp;id=100101503&amp;cityid=592&amp;columnId=20000524" id="con_a">WLAN热点</a> --><a 
+     href="xapp.do@user_id=&id=1000114&cityid=592&columnId=20000524" id="con_b">缴费查询</a><a 
+     href="xapp.do@user_id=&id=1000119&cityid=592&columnId=20000524" id="con_c">天气查询</a><a 
+     href="xapp.do@user_id=&id=105920192&cityid=592&columnId=20000524" id="con_d">有线电视</a><a 
+     href="xapp.do@user_id=&id=1000204&cityid=592&columnId=20000524" id="con_e">掌上图书馆</a>
+    
+   </div>
+    <div class="pindao_jr_bg"><a href="bm.do@type=x">进入便民频道>></a></div>
+ </div>
+ 
+    <div class="yyimg_zone" id="qz" style="display:none;">
+   <div class="topimg_bg"></div>
+   <div class="yyimg_list">
+ 
+     <a href="xapp.do@user_id=&id=100101468&cityid=592&columnId=20000132" id="job_a">厦门人才网</a><a 
+     href="xapp.do@user_id=&id=1000162&cityid=592&columnId=20000132" id="job_b">求职信息</a>
+     <a href="xapp.do@user_id=&id=1000161&cityid=592&columnId=20000132" id="job_c">微求职</a>
+   
+   </div>
+   <div class="pindao_jr_bg"><a href="jiuye.do@type=x">进入求职频道>></a></div>
+ </div>
+ 
+ 
+ <div class="newstitle">精品应用</div>
+ 
+ <div class="list_s_zone">
+   <div class="yy_img1">
+	<img onclick="myScroll6.scrollToPage('prev', 0);return false" src="images/xuan_images/left_icon.pngsrc="images/xuan_images/left_icon.png" />
+   </div>
+	<div class="list_cont4" id="list_list_cont">
+    <div class="Scryy_cont6">
+    <div id="n_list_slide">
+	 <div id="wrapper6" style="overflow: hidden; line-height: 24px;">
+	 <div id="scroller6" >
+	 <div class="jpyy">
+	 		<a href="../wap.app.xiamentd.com/wxxm/default.htm" id="jp_a">无线厦门</a><!-- <a href="http://wap.xiamentd.com/XMdownclient.do?anid=13&type=x" id="jp_a">无线厦门</a> -->
+	 		<a href="xapp.do@user_id=&id=100101459&cityid=592&columnId=1020000245" id="jp_b">掌上公交</a>
+	 		<a href="XMdownclient.do@anid=9&type=x" id="jp_c">厦门人才网</a>
+			<a href="xapp.do@user_id=&id=1000151&cityid=592&columnId=1020000250" id="jp_d">智游鼓浪屿</a>
+			<a href="XMdownclient.do@anid=8&type=x" id="jp_e">无线城市</a>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	 <div class="yy_img2">
+		<img onclick="myScroll6.scrollToPage('next', 0);return false"  src="images/xuan_images/right_icon.pngsrc="images/xuan_images/right_icon.png" />
+	 </div>
+	</div>
+   </div>
+  
+ <div class="newszone">
+    <div class="newstitle"><a href="zx.do@type=x">更多&gt;&gt;</a>资讯</div>
+   
+  
+<p class="newslist">
+<a href="pagelist.do@columnId=20000120&type=x" target="_blank">本地</a>
+<a href="pagelist.do@columnId=20000121&type=x" target="_blank">海西</a> 
+<a href="pagelist.do@columnId=20000123&type=x" target="_blank">国际</a>
+<a href="pagelist.do@columnId=20000122&type=x" target="_blank">国内</a>
+<a href="pagelist.do@columnId=20000124&type=x" target="_blank">台海</a>
+</p>
+     
+    </div>
+
+<!--newsimg slider end-->
+   <div>
+    <div class="listzone">
+    <ul>
+    <li><span><a href="pagelist.do@columnId=20000120&type=x">[本地]</a></span><a href="content.do@columnId=20000120&contentId=20132519&type=x">观音山公寓“奇观” 高空扔垃圾“每天</a></li>
+    		 <li><span><a href="pagelist.do@columnId=20000120&type=x">[本地]</a></span><a href="content.do@columnId=20000120&contentId=20132520&type=x">网购高峰到来小心五类诈骗 最保险还是</a></li>
+    		 <li class="clearborder"><span><a href="pagelist.do@columnId=20000120&type=x">[本地]</a></span><a href="content.do@columnId=20000120&contentId=20132521&type=x">防范拖欠工资 湖里九部门联合“织网”</a></li>
+    		 </ul>
+    </div>
+    <div class="listzone">
+    <ul>
+     <li><span><a href="pagelist.do@columnId=20000121&type=x">[海西]</a></span><a href="content.do@columnId=20000121&contentId=20132536&type=x">福州大学生公园“求抱抱” 男女学生待</a></li>
+     		<li><span><a href="pagelist.do@columnId=20000122&type=x">[国内]</a></span><a href="content.do@columnId=20000122&contentId=20117212&type=x">安徽警方：两警察未制止少女被杀不能称</a></li>
+     		<li class="clearborder"><span><a href="pagelist.do@columnId=20000123&type=x">[国际]</a></span><a href="content.do@columnId=20000123&contentId=20117128&type=x">毒气致叙利亚千余人死亡 政府军反对派</a></li>
+     		</ul>
+    </div>
+    <div class="listzone">
+    <ul>
+     <li class="clearborder"><span><a href="pagelist.do@columnId=20000124&type=x">[台海]</a></span><a href="content.do@columnId=20000124&contentId=20117070&type=x">台湾大学生台风中撑伞两小时 陪阿嬷卖</a></li>
+     		</ul>
+    </div>
+    
+<div class="clearfloat"></div>
+    </div>
+ </div>
+  </div> 
+   <!--  活动页面开始 -->
+  <div id="secPage" style="display:none">
+  	<div class="act_style">
+  	<ul>
+    </ul>
+</div>
+	<div class="fanye">
+ 	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns=" http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+</body>
+</html></div>
+  </div>
+   
+  <div id="thirdPage" style="display:none">
+   <div class="piczone">
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=8&type=x"><img src="http://img.xiamentd.com/icons/appimg/wap_xuan/xz/wxcs.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=8&type=x">无线城市</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=1&type=x"><img src="http://img.xiamentd.com/icons/appimg/wap_xuan/xz/zsgj.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=1&type=x">掌上公交</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="../wap.app.xiamentd.com/wxxm/default.htm">
+								<img src="../211.143.192.174/icons/wcity_pic/default/592/20130622wxxm.png" width="50" height="50" alt=""/>
+							</a>
+						</dt>
+      					<dd>无线厦门</dd>
+      			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=3&type=x"><img src="http://img.xiamentd.com/icons/appimg/wap_xuan/xz/zygly.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=3&type=x">智游鼓浪屿</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=5&type=x"><img src="http://img.xiamentd.com/icons/appimg/wap_xuan/xz/wxzw.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=5&type=x">无线政务</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=2&type=x"><img src="http://img.xiamentd.com/icons/appimg/wap_xuan/xz/jkzs.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=2&type=x">健康助手</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=10&type=x"><img src="http://img.xiamentd.com/icons/appimg/wap_xuan/xz/12580sqkhd.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=10&type=x">12580</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=6&type=x"><img src="http://img.xiamentd.com/icons/appimg/wap_xuan/xz/hbgj.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=6&type=x">航班管家</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=9&type=x"><img src="http://img.xiamentd.com/icons/appimg/wap_xuan/xz/xmrcwkhd.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=9&type=x">厦门人才网</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=11&type=x"><img src="http://img.xiamentd.com/icons/appimg/wap_xuan/xz/ydspz.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=11&type=x">移动售票站</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=12&type=x"><img src="../211.143.192.174/software/zs110/1358950920.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=12&type=x">掌上110</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=14&type=x"><img src="../211.143.192.174/icons/wcity_pic/sjzf.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=14&type=x">手机支付</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=15&type=x"><img src="../211.143.192.174/icons/wcity_pic/ysbl.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=15&type=x">影迷部落</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=16&type=x"><img src="../211.143.192.174/icons/wcity_pic/gxykt.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=16&type=x">高校一卡通</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=17&type=x"><img src="../211.143.192.174/icons/wcity_pic/apk_ico_ykt_164.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=17&type=x">厦大一卡通</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="app_pic">
+     		<dl >
+     		<dt><a href="XMdownclient.do@anid=2000140&type=x"><img src="http://img.xiamentd.com/icons/wcity_pic/default/590/20130523162648_896.png" ></a></dt>
+      				<dd><a href="XMdownclient.do@anid=2000140&type=x">康健通</a></dd>
+     			</dl>
+		</div>
+	
+	<div class="clearfloat"></div>
+  	</div>  
+  	
+  </div>
+  <!-- 下载页面结束 -->
+ 
+ <div class="clearfloat"></div>
+ <div class="clearfloat"></div>
+<div class="sea-share">
+<div class="search">
+<form action="http://wap.xiamentd.com/search.do" name="form" method="post">
+<input type="hidden" name="type" value="x">
+<select class="sea_zcw" name="searchtype">
+<option value="1">站内</option>
+<option value="2">站外</option>
+</select>
+<input type="text" value="" class="keyword" name="keyword" id="keyword">
+<input type="submit" class="btn_search" value=" ">
+</form>
+</div>
+<div class="share"><a href="weiboshare.do@typeValue=&type=3&columnId=-999&cityId=592&title=&&weibo_flag=sina"><img src="images/xuan_images/share.png" width="39" height="39"></a></div> 
+</div>
+
+
+ <div class="clearfloat"></div>
+ <div class="container">
+ <div class="footer">
+   <div class="foot_nav">
+
+   	<p>
+     <a href="x_index.do">首页</a>|
+     <a href="zx.do@type=x">资讯</a>| 
+     <a href="zw.do@type=x">政务</a>|
+     <a href="bm.do@type=x">便民</a>|
+     <a href="yl.do@type=x">健康</a>|
+     <a href="cx.do@type=x">出行</a>
+     
+    </P>
+	<p>
+	<a href="anju.do@type=x">安居</a>|
+     <a href="jy.do@type=x">教育</a>|
+     <a href="jiuye.do@type=x">求职</a>|
+     <a href="yd.do@type=x">移动</a>|
+     <a href="sq.do@type=x">社区</a>|
+     <a href="hsh.do@type=x">惠生活</a>
+	</P>
+   </div>
+   
+   <div class="banben">
+	<a href="x_index.do">触屏版</a>|<a href="changexpage.do@type=2">简版</a>
+	</div> 
+   
+   <div class="clearfloat"></div>
+   <div class="foot_bot">
+   温馨提示：本信息仅供提供演示方便链接，与原网站无关！ <a href="index.html">首页</a>  <a href="pagelist.html">列表页</a>  <a href="content.html">正文页</a>  <a href="xbxz.html">下载页</a>  <a href="hd.html">活动页页</a>
+   </div>
+   <div class="foot_logo">
+    <a href="../www.10086.cn/default.htm"><img src="images/xuan_images/10086_logo.png"></a>
+    <a href="../www.10086.cn/default.htm"><img src="images/xuan_images/mobile_logo.png"></a>
+   </div>
+ </div>
+ </div>
+
+ </div>
+<div id="flag" style="display:none;">xbxz</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+		if($("#flag").text()=="hd"){
+			var firstPage=$("#firstPage");
+			var secPage=$("#secPage");
+			var thirdPage=$("#thirdPage");
+			var syl=$("#syl");
+			var hdl=$("#hdl");
+			var xzl=$("#xzl");
+			thirdPage.hide();
+			firstPage.hide();
+			secPage.show();
+			hdl.addClass("mainnav-maincur");
+			syl.removeClass("mainnav-maincur");
+			xzl.removeClass("mainnav-maincur");
+		}	
+		if($("#flag").text()=="xbxz"){
+			var firstPage=$("#firstPage");
+			var secPage=$("#secPage");
+			var thirdPage=$("#thirdPage");
+			var syl=$("#syl");
+			var hdl=$("#hdl");
+			var xzl=$("#xzl");
+			thirdPage.show();
+			firstPage.hide();
+			secPage.hide();
+			hdl.removeClass("mainnav-maincur");
+			syl.removeClass("mainnav-maincur");
+			xzl.addClass("mainnav-maincur");
+		}	
+		$("#yy_app_a").bind("click",function(e){
+		
+			var hsh=$("#hsh");
+			var jk = $("#jk");
+			var jy = $("#jy");
+			var cx = $("#cx");
+			var zw=$("#zw");
+			var bm=$("#bm");
+			var qz=$("#qz");
+			document.getElementById('hsh').style.display = "";
+     		document.getElementById('jk').style.display = "none";
+			document.getElementById('jy').style.display = "none";
+			document.getElementById('cx').style.display = "none";
+			document.getElementById('zw').style.display = "none";
+			document.getElementById('bm').style.display = "none";
+			document.getElementById('qz').style.display = "none";
+		});
+		$("#yy_app_b").bind("click",function(e){
+		
+			var hsh=$("#hsh");
+			var jk = $("#jk");
+			var jy = $("#jy");
+			var cx = $("#cx");
+			var zw=$("#zw");
+			var bm=$("#bm");
+			var qz=$("#qz");
+			document.getElementById('jk').style.display = "";
+     		document.getElementById('hsh').style.display = "none";
+			document.getElementById('jy').style.display = "none";
+			document.getElementById('cx').style.display = "none";
+			document.getElementById('zw').style.display = "none";
+			document.getElementById('bm').style.display = "none";
+			document.getElementById('qz').style.display = "none";
+		});
+		$("#yy_app_c").bind("click",function(e){
+		
+			var hsh=$("#hsh");
+			var jk = $("#jk");
+			var jy = $("#jy");
+			var cx = $("#cx");
+			var zw=$("#zw");
+			var bm=$("#bm");
+			var qz=$("#qz");
+			document.getElementById('jy').style.display = "";
+     		document.getElementById('hsh').style.display = "none";
+			document.getElementById('jk').style.display = "none";
+			document.getElementById('cx').style.display = "none";
+			document.getElementById('zw').style.display = "none";
+			document.getElementById('bm').style.display = "none";
+			document.getElementById('qz').style.display = "none";
+		});
+		$("#yy_app_d").bind("click",function(e){
+			var hsh=$("#hsh");
+			var jk = $("#jk");
+			var jy = $("#jy");
+			var cx = $("#cx");
+			var zw=$("#zw");
+			var bm=$("#bm");
+			var qz=$("#qz");
+			document.getElementById('cx').style.display = "";
+     		document.getElementById('hsh').style.display = "none";
+			document.getElementById('jk').style.display = "none";
+			document.getElementById('jy').style.display = "none";
+			document.getElementById('zw').style.display = "none";
+			document.getElementById('bm').style.display = "none";
+			document.getElementById('qz').style.display = "none";
+		});
+		$("#yy_app_e").bind("click",function(e){
+			var hsh=$("#hsh");
+			var jk = $("#jk");
+			var jy = $("#jy");
+			var cx = $("#cx");
+			var zw=$("#zw");
+			var bm=$("#bm");
+			var qz=$("#qz");
+			document.getElementById('zw').style.display = "";
+     		document.getElementById('hsh').style.display = "none";
+			document.getElementById('jk').style.display = "none";
+			document.getElementById('jy').style.display = "none";
+			document.getElementById('cx').style.display = "none";
+			document.getElementById('bm').style.display = "none";
+			document.getElementById('qz').style.display = "none";
+		});
+		$("#yy_app_f").bind("click",function(e){
+			var hsh=$("#hsh");
+			var jk = $("#jk");
+			var jy = $("#jy");
+			var cx = $("#cx");
+			var zw=$("#zw");
+			var bm=$("#bm");
+			var qz=$("#qz");
+			document.getElementById('bm').style.display = "";
+     		document.getElementById('hsh').style.display = "none";
+			document.getElementById('jk').style.display = "none";
+			document.getElementById('jy').style.display = "none";
+			document.getElementById('cx').style.display = "none";
+			document.getElementById('zw').style.display = "none";
+			document.getElementById('qz').style.display = "none";	
+			
+		});
+		$("#yy_app_g").bind("click",function(e){
+			var hsh=$("#hsh");
+			var jk = $("#jk");
+			var jy = $("#jy");
+			var cx = $("#cx");
+			var zw=$("#zw");
+			var bm=$("#bm");
+			var qz=$("#qz");
+			document.getElementById('qz').style.display = "";
+     		document.getElementById('hsh').style.display = "none";
+			document.getElementById('jk').style.display = "none";
+			document.getElementById('jy').style.display = "none";
+			document.getElementById('cx').style.display = "none";
+			document.getElementById('zw').style.display = "none";
+			document.getElementById('bm').style.display = "none";
+		});
+		var rsize=$("#rsize").val();
+		
+		$("#scroller").css("width",rsize*300);
+		$("#scroller3").css("width",308);
+		
+});
+
+</script>
+
+
+<script type="text/javascript">
+var myScroll5;
+function loaded() {
+	myScroll5 = new iScroll('wrapper5', {
+		snap: true,
+		pullLock:true,
+		momentum: false,
+		hScrollbar: false
+	 });
+}
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+<script type="text/javascript">
+var myScroll2;
+function loaded2() {
+	myScroll2 = new iScroll('wrapper2',{snap: true,momentum: false,pullLock:false,hScrollbar: false});
+}
+
+document.addEventListener('DOMContentLoaded', loaded2, false);
+
+</script>
+<script type="text/javascript">
+var myScroll3;
+function loaded3() {
+	myScroll3 = new iScroll('wrapper3', {
+		snap: true,
+		momentum: false,
+		hScrollbar: false
+		
+	 });
+}
+document.addEventListener('DOMContentLoaded', loaded3, false);
+</script>
+<script type="text/javascript">
+var myScroll;
+function loaded() {
+	myScroll = new iScroll('wrapper', {
+		pullLock:true,
+		snap: true,
+		momentum: false,
+		hScrollbar: false,
+		vScrollbar: false,
+		onScrollEnd: function () {
+			document.querySelector('#indicator > li.active').className = '';
+			document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+		}
+	 });
+}
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+<script type="text/javascript">
+	function todosubmit(obj){
+		var searchForm=document.forms.searchForm;
+		var keyword=document.getElementById("keyword").value;
+		url="search.do@type=x&keyword="+keyword;
+		
+		searchForm.action=encodeURI(url);
+		searchForm.submit();
+	}
+</script>
+
+<script type="text/javascript">
+var myScroll6;
+function loaded() {
+	myScroll6 = new iScroll('wrapper6', {
+		snap: 'a',
+		pullLock:true,
+		momentum: false,
+		hScrollbar: false,
+		vScrollbar: false,
+		vScroll:false,
+		
+	 });
+	 myScroll6.scrollToPage('prev', 0);
+}
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+<script type="text/javascript">
+var myScroll4;
+function loaded() {
+	myScroll4 = new iScroll('wrapper4', {
+		snap: 'a',
+		pullLock:false,
+		momentum: false,
+		hScrollbar: false,
+		vScrollbar: false,
+		vScroll:false,
+	 });
+	 myScroll4.scrollToPage('prev', 0);
+}
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+		
+</script>
+
+</body>
+</html>
