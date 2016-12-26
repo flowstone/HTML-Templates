@@ -1,0 +1,99 @@
+body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body { font-size:14px; line-height:150%;text-align:left; color:#666; font-family:"微软雅黑","Arial Black", Gadget, sans-serif; background:url(../images/bg.jpg) left top repeat; }
+img{ border:0; -ms-interpolation-mode:bicubic; margin:0; padding:0;}
+a:link {color:#666; text-decoration:none; outline:none;}
+a:visited {color:#666; text-decoration:none;}
+a:hover { color:#510449; text-decoration:none;}
+a:active { color:#510449; text-decoration:none;}
+ul,li{list-style:none;}
+
+.pw{min-width:320px; background:none repeat scroll 0% 0%; margin:0px auto;overflow:hidden; min-height:480px; width:100%; padding-bottom:51px;}
+
+@media screen and (max-width:480px){}
+
+/***************样式开始*********/
+.body_header{ clear:both;}
+.top{ clear:both; height:80px; width:98%; margin:0 auto;}
+.logo{ float:left;  margin-top:10px;}
+.menu{ float:right; margin-top:10px; font-size:16px; font-weight:bold; color:#6e4a3b;}
+
+/************nav************/
+#nav{ height:90px; background:url(../images/navbg.png) left bottom repeat-x;}
+.nav li{ width:25%; float:left; text-align:center; line-height:16px; font-size:16px;}
+.nav li a{ color:#fff;}
+
+.body_banner{ clear:both;}
+
+.body_main{clear:both; margin-top:-5px;}
+.trip{ clear:both;}
+
+.index_left{ float:left; width:174px; background:#fff;}
+.index_left li{ border:2px #fff solid;}
+
+.index_right{ border:2px #fff solid; width:132px; float:right;}
+.emem{ text-align:center; background:#fff;}
+.bmbm{ padding:10px 10px 0 10px; color:#fff; height:210px; background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffd942), to(#ffa20f));background:-moz-linear-gradient(top, #ffd942, #ffa20f); /* Firefox */filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd942,endColorstr=#ffa20f,grandientType=0);}
+.bmbm span{ float:right;}
+/*手机banner轮播*/
+.swipe{width:100%;overflow:hidden;position:relative;}
+.swipe ul{
+	-webkit-transition:left 800ms ease-in 0;
+	-moz-transition:left 800ms ease-in 0;
+	-o-transition:left 800ms ease-in 0;
+	-ms-transition:left 800ms ease-in 0;
+	transition:left 800ms ease-in 0;
+}
+.swipe #pagenavi{position:absolute;left:0;bottom:5px;text-align:center;width:100%; background:rgba(000, 000, 000, 0.6)!important; filter:Alpha(opacity=60); padding:10px;}
+.swipe #pagenavi a{width:14px; height:14px; line-height:99em; background:#fff; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; margin:0 4px; overflow:hidden; cursor:pointer; display:inline-block; *display:inline; *zoom:1; position:relative;}
+.swipe #pagenavi a.active{background:#ff0;  position:relative;}
+
+/*******内页*******/
+.main{ 
+	background:rgba(255, 255, 255, 0.5)!important; filter:Alpha(opacity=50); /************背景透明度**********/
+	width:94%; 
+	margin:2% auto; 
+	-moz-border-radius:5px; border-radius:5px; /**************圆角 border-radius必须写在后面************/
+	border:1px #eee solid; 
+	padding:1%;
+	/*************阴影----前两个属性设置阴影的 X / Y 位移，这里分别是 0px，第3个属性定义阴影的虚化程度，最后一个设置阴影的颜色************/
+	-webkit-box-shadow:0px 0px 5px #bcb5a6;
+　　	-moz-box-shadow:0px 0px 5px #bcb5a6;
+　　	box-shadow:0px 0px 5px #bcb5a6;
+	/*opacity: 0.5;/**********透明度( 会影响到背景的透明度)************/
+}
+.tt{ font-size:16px; font-weight:bold; color:#42ab2b; clear:both; padding-bottom:1%;}
+.tc{ line-height:240%; overflow:hidden;}
+.tc b{ color:#42ab2b;}
+.tc p{ text-indent:2em;}
+
+.pro{ width:94px; float:left; margin:1% 1%;}
+.proimg{ clear:both; width:94px; height:132px; overflow:hidden;}
+.proname{ clear:both; background:#c5b79d; text-align:center; font-size:12px;}
+.proname a{ color:#056c00;}
+
+.leftimg{ text-align:center; float:left; width:142px;}
+.leftimg a{ color:#056c00;}
+.dire{ float:right; margin-left:2%; width:50%;}
+.price{ padding:1%; width:98%; margin:0 auto; background:rgba(197, 183, 157, 0.5)!important; filter:Alpha(opacity=50); -moz-border-radius:5px; border-radius:5px;}
+.p_left{ clear:both; }
+.p_left span{ color:#f00; font-weight:bold; margin-right:10%;}
+.p_cm{ margin-top:1%;}
+.p_cm a{ margin-right:5%;}
+
+.form li{ margin:1%;}
+.form li img{ margin-top:10px;}
+.z3g-input{ height:35px; color:#6c6c6c; border:1px #eee solid; width:100%; text-indent:1em;}
+.meimei{ height:35px; color:#6c6c6c; border:1px #eee solid; width:50%; text-indent:1em;}
+.z3g-textarea{ color:#6c6c6c; border:1px #eee solid; width:100%; text-indent:1em;}
+.submit{ width:80px; height:40px; background:#42ab2b; color:#fff; cursor:pointer;}
+
+/*底部浮动样式*/
+.body_footer{width:100%; height:51px; background:url(../images/nav.jpg) left bottom repeat-x; position:fixed; bottom:0;}
+.body_footer ul{width:100%;}
+.body_footer ul li{width:25% ; float:left; color:#fff; background:url(../images/line.jpg) right top no-repeat;}
+.body_footer ul li:hover{width:25% ; float:left; color:#fff; background:url(../images/nav01.jpg) left bottom repeat-x;}
+.body_footer ul li a{width:100%; height:46px; display:block; padding-top:5px;}
+.body_footer ul li a:hover { color:#ff0;}
+.body_footer ul li dl{width:auto; margin:0 auto; text-align:center;}
+.body_footer ul li dt{width:auto; height:25px; overflow:hidden;}
+.body_footer ul li dd{width:auto; height:20px; font-size:12px; color:#fff; line-height:20px; overflow:hidden;}
