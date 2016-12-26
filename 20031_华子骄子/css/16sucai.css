@@ -1,0 +1,10 @@
+
+/*选项卡2*/
+#Tab2lvyc{ width:700px;height:auto !important;margin:0px;padding:0px;margin:0 auto;}
+/*菜单class*/
+.Menuboxlvyc {width:700px;height:29px;line-height:29px;font-size:12px; }
+.Menuboxlvyc ul{margin:0px;padding:0px;}
+.Menuboxlvyc li{float:left;display:block;cursor:pointer;width:119px;height:29px;text-align:center;color:#000; font-weight:bold; font-size:14px; background:url(../images/active03.jpg) no-repeat;}
+.Menuboxlvyc li.hover{position:relative;top:0px;padding:0px;width:119px;color:#fff;height:29px;line-height:29px;z-index:999; background:url(../images/active02.jpg) no-repeat;}
+.Contentboxlvyc{clear:both;margin-top:0px;height:auto !important;width:700px;text-align:left;padding-top:8px;}
+

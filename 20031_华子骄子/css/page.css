@@ -1,0 +1,25 @@
+/* CSS Document */
+/*--------------------------所有页面翻页样式--------------------------*/
+DIV.meneame {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 80%; PADDING-BOTTOM: 3px; MARGIN: 3px; COLOR: #666666; PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+DIV.meneame A {
+	BORDER-RIGHT: #b4e049 1px solid; PADDING-RIGHT: 7px; BACKGROUND-POSITION: 50% bottom; BORDER-TOP: #b4e049 1px solid; PADDING-LEFT: 7px; BACKGROUND-IMAGE: url(meneame.jpg); PADDING-BOTTOM: 5px; BORDER-LEFT: #b4e049 1px solid; COLOR: #666666;; MARGIN-RIGHT: 3px; PADDING-TOP: 5px; BORDER-BOTTOM: #b4e049 1px solid; TEXT-DECORATION: none
+}
+DIV.meneame A:hover {
+	BORDER-RIGHT: #b4e049 1px solid; BORDER-TOP: #b4e049 1px solid; BACKGROUND-IMAGE: none; BORDER-LEFT: #b4e049 1px solid; COLOR: #fff; BORDER-BOTTOM: #b4e049 1px solid; BACKGROUND-COLOR: #b4e049;
+}
+DIV.meneame A:active {
+	BORDER-RIGHT: #b4e049 1px solid; BORDER-TOP: #b4e049 1px solid; BACKGROUND-IMAGE: none; BORDER-LEFT: #b4e049 1px solid; COLOR: #b4e049; BORDER-BOTTOM: #b4e049 1px solid; BACKGROUND-COLOR: #b4e049
+}
+DIV.meneame SPAN.current {
+	BORDER-RIGHT: #b4e049 1px solid; PADDING-RIGHT: 7px; BORDER-TOP: #b4e049 1px solid; PADDING-LEFT: 7px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; BORDER-LEFT: #b4e049 1px solid; COLOR: #666666; MARGIN-RIGHT: 3px; PADDING-TOP: 5px; BORDER-BOTTOM: #b4e049 1px solid; BACKGROUND-COLOR: #b4e049
+}
+DIV.meneame SPAN.disabled {
+	BORDER-RIGHT: #b4e049  1px solid; PADDING-RIGHT: 7px; BORDER-TOP: #b4e049  1px solid; PADDING-LEFT: 7px; PADDING-BOTTOM: 5px; BORDER-LEFT: #b4e049  1px solid; COLOR: #666666; MARGIN-RIGHT: 3px; PADDING-TOP: 5px; BORDER-BOTTOM: #b4e049  1px solid
+}
+.about_t_down_fanye{ width:466px; height:42px; float: right; margin-top:40px;}
+
+
+
+

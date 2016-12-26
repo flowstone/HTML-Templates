@@ -1,0 +1,54 @@
+
+/*----------------------首页 页面所有部分--------------------------*/
+.box1{ background:url(../images/bg3.jpg);}
+.box{ background:url(../images/bg.jpg) center top no-repeat;}
+.main_box{ width:1215px; height:auto!important; margin:0px auto;}
+
+
+/*----------------------顶部部分--------------------------*/
+.top{ width:996px; height:85px;}
+
+/*----------------------顶部l部分--------------------------*/
+.top_l{ width:204px; height:32px; float:left; color:#FFFFFF; font-weight:bold; font-size:14px; margin-top:45px; margin-left:20px;}
+.top_l span { font-size:22px; color:#fff; font-weight:bold;}
+
+/*----------------------顶部r部分--------------------------*/
+.top_r{ width:395px; height:40px; float:right;margin-top:45px;}
+.top_r table tr td{ color:#FFFFFF;}
+
+/*----------------------导航部分--------------------------*/
+.menu{ width:996px; height:51px; background:url(../images/menu.png) no-repeat;}
+.logo{ width:189px; height:129px; position:relative; z-index:99999; float:left; left:400px; top:-70px; }
+.menu_l{ width:334px; height:35px; float:left; margin-top:8px; margin-left:-100px;_ margin-left:-120px; z-index:10;}
+.menu_r{ width:334px; height:35px; float: right; margin-top:8px; margin-right:90px;_ margin-right:40px; z-index:10;}
+
+/*----------------------导航下拉菜单部分--------------------------*/
+.big_nav{height:30px; width:334px;clear:both;}
+.nav{width:334px;margin:auto;position:relative;z-index:10;font-size:12px; margin-left:50px; margin-top:3px;}
+.nav ul{ }
+.nav li {float:left;position:relative;width:87px; line-height:32px; text-align:center; margin-left:20px; margin-right:20px;}
+.nav li.last {background-image:none;}
+.nav ul ul {visibility:hidden;position:absolute;left:0px;top:35px;z-index:1;padding:0px;margin:0px;}
+.nav ul li:hover a.menu_top{color:#010101;}
+.nav ul li:hover ul,
+.nav ul a:hover ul{visibility:visible;}
+.nav a{width:87px;height:30px;line-height:30px;display:block;background:none;color:#010101;text-decoration:none;font-size:14px; font-weight:bold;}
+.nav a:hover{width:87px;height:36px;color:#e1670a;font-weight:bold;}
+.nav ul ul{ border-bottom:#ffd500 3px solid; width:93px;}
+.nav ul ul li {clear:both;text-align:left;font-size:12px;background-image:none; }
+.nav ul ul li a{display:block;width:87px;height:25px;line-height:25px;background:#fff ;font-size:12px;font-weight:normal;color:#606060;padding:0px;text-align:center; margin-left:-20px; float:left; border-left:#ffd500 3px solid; border-right:#ffd500 3px solid; }
+.nav ul ul li a:hover{display:block;width:87px;height:25px;line-height:25px;background:#ffd500;font-size:12px;font-weight:normal;color:#010101;padding:0px;text-align:center;}
+
+
+/*----------------------所有子页快速导航条 部分--------------------------*/
+#wrap {display:block;bottom:10px;right:30px!important;right:18px;width:75px; height:459px;line-height:30px;position:fixed;border:1px solid #fff;text-align:center;color:#fff; background:url(../images/quick.jpg) no-repeat;}
+*html{overflow-x:auto;overflow-y:auto;} 
+* html #wrap {position:absolute;}
+.dao{ width:49px; height:49px;float:left; margin-top:26px; margin-left:12px;_margin-left:6px;}
+.dao1{ width:49px; height:49px;float:left;margin-left:12px;_margin-left:6px; margin-top:5px;}
+.dao2{ width:49px; height:49px;float:left;margin-left:12px;_margin-left:6px; margin-top:8px;}
+.dao3{ width:49px; height:47px;float:left;margin-left:12px;_margin-left:6px; margin-top:8px;}
+.dao4{ width:51px; height:47px;float:left;margin-left:12px;_margin-left:6px; margin-top:8px;}
+.dao5{ width:51px; height:52px;float:left;margin-left:12px;_margin-left:6px; margin-top:8px;}
+.dao6{ width:51px; height:45px;float:left;margin-left:12px;_margin-left:6px; margin-top:5px;}
+.dao7{ width:53px; height:32px;float:left; margin-top:22px;margin-left:12px;_margin-left:6px;}
