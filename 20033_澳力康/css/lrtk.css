@@ -1,0 +1,22 @@
+/* 转载请保留版权信息：懒人图库 www.lanrentuku.com */
+*{padding:0;margin:0}
+ol,ul,li{list-style:none}
+img{border:none}
+#chat_f1,#chat_f2{font-size:12px}
+#chat_f1{position:fixed;right:10px;top:220px;width:93px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+220))}
+#chat_f1_main{height:134px;background:url(../images/c2.gif) no-repeat; float:left; margin-left:6px;_margin-left:3px;*margin-left:5px;}
+#close{display:block;width:17px;height:17px;margin-left:76px;cursor:pointer;}
+.a_kf,.a_sh{ width:70px; height:20px; display:inline-block; margin:0 6px;}
+.a_kf{ margin-top:65px;}
+#chat_f1_bottom{height:3px;width:82px;overflow:hidden;background:url(../images/c2.gif) 0px -160px no-repeat }
+.chat_f1_expr{width:82px;height:auto!important;overflow:hidden;}
+.list{height:auto!important;border:1px solid #dbdbdb;border-top:none;overflow:hidden;color:#787878;background:#fff; text-align:center;}
+.name{line-height:25px}
+.current{border-left-color:#fff}
+.arrow{color:#fff; text-align:center;}
+.detail{position:absolute;margin-left:-222px;margin-top:-26px;display:none;width:200px;padding:10px;border:1px solid #dbdbdb;background:#fff;line-height:18px}
+.send_sms{display:inline-block;width:109px;height:25px;background:url(../images/c2.gif) 0px -163px;vertical-align:middle}
+.mt{margin:2px 0}
+.mt5{margin-top:5px}
+.chat_f1_expr .list .detail .border{position:absolute;width:1px;height:25px;margin-left:210px;background:#fff;margin-top:-10px}
+#chat_f2{display:none;position:fixed;right:1px;top:220px;border:1px solid #ccc;background:#fff;padding:1px 3px;width:1em;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+220));color:#F60;cursor:pointer;}
