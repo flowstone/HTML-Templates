@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin:0 auto;
+	color: #666;
+	background:#2382b9 url(../images/bg.jpg) no-repeat top;
+	position:relative;
+}
+body div, body table {
+	margin:0 auto;
+}
+h1, h2 {
+	padding:0px;
+	margin:0px;
+}
+ul{ list-style:none;}
+img {
+	border:0;
+}
+TD {
+	font-size:12px;
+	color:#666;
+}
+TH {
+	font-size:12px;
+	color:#666;
+}
+form {
+	margin:0px;
+	padding:0px;
+}
+select, input, textarea {
+	color:#666;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,code,del,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul,li{list-style:none;}
+th,td{vertical-align:middle;}
+.clearfix:after{content:'.';display:block;height:0;clear:both;overflow:hidden;}
+.clearfix{*zoom:1;}
+.clear{clear:both;}
+a{text-decoration:none; color:#fff;}
+a:hover{text-decoration:underline;}
+a:hover img{text-decoration:none;}
+
+A {
+	
+	TEXT-DECORATION: none;
+	font-size: 12px;
+	behavior: url(focus.htc);
+}
+A img{ border:0px}
+a:active {
+	TEXT-DECORATION: none;
+	font-style: normal;
+}
+A:hover {
+	TEXT-DECORATION: none;
+}
+a:link {
+	TEXT-DECORATION: none;
+	font-style: normal;
+	font-variant: normal;
+	DISPLAY: inline;
+}
+a:visited {
+	TEXT-DECORATION: none;
+	font-style: normal;
+}
+.clearfix{ clear:both}
+.w{ width:920px;margint:0 auto;}
+/*.r{text-align:right!important;}*/
+.c{text-align:center!important;}
+.l{text-align:left!important;}
+
+.Right{ float:right}
+.Left{ float:left}
+.none{display:none;}
+.H6{ width:100%; height:6px;}
+.H16{ width:100%; height:16px;}
+.mr13{ margin-right:13px;}
+.mr16{ margin-right:16px;}
+
