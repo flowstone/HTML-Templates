@@ -1,0 +1,40 @@
+﻿
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/* =============================================================
+   INVOICE STYLES
+ ============================================================ */
+.pad-top-botm {
+    padding-bottom:40px;
+    padding-top:60px;
+}
+h4 {
+    text-transform:uppercase;
+}
+
+.contact-info span {
+    font-size:14px;
+    padding:0px 50px 0px 50px;
+}
+
+.contact-info hr {
+    margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.client-info {
+    font-size:15px;
+}
+
+.ttl-amts {
+    text-align:right;
+    padding-right:50px;
+}

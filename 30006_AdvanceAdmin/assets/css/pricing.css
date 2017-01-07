@@ -1,0 +1,138 @@
+﻿
+
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/*==========================================
+   PRICING STYLES
+    =====================================================*/
+
+.pad-row {
+    padding-bottom:50px;
+}
+ /* SIMPLE TABLE STYLE*/
+.price-simple {
+    font-size:50px!important;
+    padding: 15px 0px;
+color: #ff6a00;
+border: none;
+font-weight: 700;
+
+}
+
+.simple-table:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+        -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor:pointer;
+}
+ /*OPTION NORMAL STYLE*/
+
+ .normal-table:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+        -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor:pointer;
+}
+ .plan {
+padding: 0 0 15px 0;
+margin: 30px 0px;
+list-style: none;
+text-align: center;
+}
+
+.plan li {
+padding: 15px 0px;
+border-bottom: 1px solid #e1e1e1;
+}
+    .plan li i {
+        padding-right:10px;
+    }
+.price {
+    font-size:30px!important;
+    padding: 15px 0px;
+background-color: #9d9898;
+color: #fff;
+border: none;
+font-weight: 700;
+ -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.adjust-border-radius {
+    -webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+}
+
+.adjust-border {
+    border-top-left-radius: 0px;
+ border-top-right-radius: 0px;
+}
+ /*PLAN TWO TABLE STYLE*/
+.plan-two {
+padding: 0 0 15px 0;
+margin: 30px 0px;
+list-style: none;
+text-align: center;
+cursor:pointer;
+}
+
+.active-plan-price {
+    -webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-ms-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);
+cursor:pointer;
+}
+.plan-two li {
+padding: 15px 0px;
+font-size: 16px;
+border-bottom: 1px dotted #e1e1e1;
+}
+
+.round-body {
+display: table;
+width: 135px;
+height: 135px;
+margin: 0 auto 14px auto;
+border: 3px solid #ff6a00;
+border-radius: 100%;
+}
+.price-main {
+    color:#ff6a00;
+display: table-cell;
+font-size: 28px;
+font-weight: bold;
+text-transform: uppercase;
+vertical-align: middle;
+}
+.price-Unit {
+display: block;
+}
+
+.price-main small {
+    font-size:10px!important;
+    font-weight:normal;
+}
