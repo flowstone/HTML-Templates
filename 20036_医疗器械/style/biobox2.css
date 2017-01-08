@@ -1,0 +1,49 @@
+/**
+ * biobox2.css
+ * @package    jquery
+ * @author     david  
+ */
+ 
+.dialog-loading {background:url(../images/biobox2/common_loading.gif) no-repeat center; width:100%; height:100%}
+.dialog-mask{border:0px; background:#000; margin:0px; padding:0px; position:absolute; top:0px; left:0px;background:url(../images/biobox2/dialog_bg.png); _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_bg.png"); _background:none;}
+.dialog-button{clear: both;}
+.dialog-button input{overflow:visible; overflow-y:hidden;}
+.dialog-btn1,.dialog-ok{border:1px solid #33621D; background:url(../images/biobox2/common_btn_ok.gif) top #88B674; height:24px; line-height:24px; color:#fff;cursor:pointer; padding:0px;padding-left:5px; padding-right:5px; margin:0px;}
+.dialog-btn2,.dialog-cancel{border:1px solid #999; background:url(../images/biobox2/common_btn_cancel.gif) top;height:24px; line-height:24px; color:#666;cursor:pointer;padding:0px;padding-left:5px; padding-right:5px; margin:0px;}
+.dialog-btn1,.dialog-btn2{margin-right:10px}
+.dialog-content{text-align:left; clear:both; overflow:auto;}
+
+.biodialog{width:300px; color:#444;}
+.biodialog a:link,biodialog a:visited {color: #005EAC; text-decoration:none;}
+.biodialog a:hover {color:#ff6600; text-decoration:underline;}
+.biodialog .dialog-header{height:36px; position:relative; cursor:move;}
+.biodialog .dialog-tc{margin-left:11px; margin-right:11px; width:auto; height:36px;font-weight:bold;}
+.biodialog .dialog-tc2{height:30px; line-height:30px; font-size:14px; width:100%; clear:both;background:url(../images/biobox2/dialog_tc2.gif) top; text-align:left;}
+.biodialog .dialog-tc1{height:6px; overflow:hidden; background:url(../images/biobox2/dialog_tc1.png) repeat-x; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_tc1.png"); _background:none;}
+.biodialog .dialog-tl{position:absolute; left:0px; top:0px;width:11px; height:36px; background:url(../images/biobox2/dialog_tl.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_tl.png"); _background:none;}
+.biodialog .dialog-tr{position:absolute; right:0px;top:0px;width:11px; height:36px; background:url(../images/biobox2/dialog_tr.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_tr.png"); _background:none;}
+.biodialog .dialog-close{float:right;cursor:pointer;margin:8px 3px 0 0;	height:14px; width:14px; background:url(../images/biobox2/dialog_close1.png) no-repeat; /*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_close1.png"); _background:none;*/}
+.biodialog .dialog-close:hover{background:url(../images/biobox2/dialog_close2.png) no-repeat; /*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_close2.png"); _background:none;*/}
+.biodialog .dialog-content{clear:both; line-height:20px; font-size:14px; padding:5px 5px 0; background:#fff; text-align:left; overflow-y:auto; overflow-x:hidden;}
+.biodialog .dialog-button{clear:both; background:#fff;}
+.biodialog .dialog-cl{width:6px;background:url(../images/biobox2/dialog_con_lc.png); _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_con_lc.png"); _background:none;}
+.biodialog .dialog-cr{width:6px;background:url(../images/biobox2/dialog_con_rc.png); _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_con_rc.png"); _background:none;}
+.biodialog .dialog-button{text-align:right; font-size:12px; padding-right:6px; _padding-right:2px;}
+.biodialog .dialog-ok{border:1px solid #33621D; background:url(../images/biobox2/btn_ok.gif) top #88B674; height:24px; line-height:24px; color:#fff;cursor:pointer; padding:0 5px; margin:0px; margin-right:3px;}
+.biodialog .dialog-cancel{border:1px solid #999; background:url(../images/biobox2/btn_cancel.gif) top; height:24px; line-height:24px; color:#666;cursor:pointer; padding:0 5px; margin:0px;}
+.biodialog .dialog-button-disabled{overflow:visible; overflow-y:hidden; border:1px solid #999; background:url(../images/biobox2/btn_cancel.gif) top; height:24px; line-height:24px; color:#666;cursor:pointer; padding:0 5px; margin:0px;}
+.biodialog .dialog-bot{clear:both; height:11px; position:relative; font-size:0px;}
+.biodialog .dialog-bl{position:absolute; left:0px; top:0px; width:11px; height:11px; background:url(../images/biobox2/dialog_bl.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_bl.png"); _background:none;}
+.biodialog .dialog-bc{margin-left:11px; margin-right:11px; width:auto; height:11px; background:url(../images/biobox2/dialog_bc.png) repeat-x; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_bc.png"); _background:none;}
+.biodialog .dialog-br{position:absolute; right:0px; top:0px; width:11px; height:11px; background:url(../images/biobox2/dialog_br.png) no-repeat; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod="scale", src="/images/biobox2/dialog_br.png"); _background:none;}
+
+.biodialog .dialog-header-line { height: 6px; overflow: hidden; background:url(../images/biobox2/dialog_bc.png) repeat-x left bottom;};
+
+.bioalert .dialog-cancel{display:none;}
+
+.bioselect li{float:left; width:120px;}
+.bioselect .wsearch{width:100%;text-align:right;}
+
+.biosuggest{width:160px;background:#ccc;}
+.biosuggest .dialog-content{padding:5px 5px 0;}
+.biosuggest li{padding:0px;margin:0px;line-height:20px;cursor:pointer;border-bottom:1px dotted #bbb;}

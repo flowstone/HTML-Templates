@@ -1,0 +1,706 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" /> 
+<script type="text/javascript" src="js/jquery1.4.js"></script>
+<script type="text/javascript" src="js/bioV4.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.mini.js"></script>
+<script type="text/javascript" src="js/dyfrom.js"></script>
+<title>咨询详情页</title>
+<meta name="Keywords" content="咨询详情页"/>
+<meta name="Description" content="咨询详情页"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/xm_write.css"/>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/xm_write.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,.ie6png');
+</script>
+<![endif]--> 
+
+</head>
+<body>
+	<script type="text/javascript" src="js/borsertocss.js"> </script><!-- 判断在IE9以下浏览器中根据像素的不同而设置的样式 -->	
+ 
+  <!--头部代码开始-->
+   
+    <div class="navbar navbar-fixed-top" style="_position: relative;_z-index: 10000;">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<div class="nav-collapse">
+					<ul class="nav" id="navID">
+						
+                        <li class=""><a href="index.html"><b>首页</b></a></li>
+					 	<li class=""><a href="cxzx_list.html"><b>创新咨讯</b></a></li>
+						<li class=""><a href="cxfw_list.html"><b>创新服务</b></a></li>
+						<li class=""><a href="xmdata.html"><b>项目数据库</b></a></li>
+						<li class=""><a href="tzjg_list.html"><b>投资机构</b></a></li>
+						<li class="active"><a href="xm_write.html"><b>项目发布</b></a></li>
+                        
+                         
+					</ul>
+				</div><!--/.nav-collapse -->
+				<ul class="nav pull-right login-none nav-tips">
+		<li class="ie6png divider-vertical" style="_width: 30px;_height: 40px;_background: url(images/icons.png) no-repeat 10px -106px;"><a class="dropdown-toggle clearfix" href="/login.html?url=aHR0cDovL3d3dy5iaW9kaXNjb3Zlci5jb20vbmV3cy5odG1sP3BhZ2U9Mg%3D%3D" style="padding: 7px 5px;"><img class="logo-before pull-left" src="images/avatar-icon.png" /></a></li>
+	</ul>
+<div class="popup-div tips-div" style="position: absolute;z-index: 10000001;display: none;"></div>
+			
+
+<ul class="nav pull-right pl-20 myul">
+    <li class=""><a href="register.html">注册</a></li>
+    <li class="l10"><a href="login.html">登录</a></li>
+</ul>
+			</div>
+		</div>
+	</div>
+    
+    
+	
+    <div class="top-div">
+	<div class="container clearfix">
+		
+       <div class="span3 logo-div logo-img" style="margin-left:0px;">
+        <a href="/" title="医疗器械创新网"><img src="images/logo.jpg" class="ie6png" style="display: block;"/></a>
+       </div>
+		
+        <div class="span11 pull-right top-ad" style="position: relative;_float: right;_height: 80px;_overflow: hidden;">
+ <a href="javascript:;" class="pull-left" target="_blank" rel="nofollow">
+        <img alt="" src="images/img1.jpg" style="width: 100%; display: block;"/></a>
+        
+         <a href="javascript:;" class="pull-left" style="display:none;" target="_blank">
+        <img alt="" src="images/img2.jpg" style="width: 100%; display: block;"/></a>
+
+	 <div class="slides-icon-ad slides-ad-point" style="position: absolute;right:60px;">
+				<a href="javascript:void(0);" class="icon-css-on ie6png">&nbsp;</a>
+				<a href="javascript:void(0);" class="icon-css ie6png">&nbsp;</a>	 
+	 </div>
+            
+	</div>
+	</div>
+</div>
+    
+ 
+
+<script type="text/javascript">
+	$(function(){
+		var Interval_control = '';
+		var current_index = 0;
+		show_pic_ad = function(index){
+			$(".top-ad .pull-left").each(function(i){
+				$(this).hide();
+				if(i == index){
+					$(this).show(); 
+				}
+			});
+		};
+		show_point_ad = function(index){
+			$(".top-ad .slides-ad-point a").each(function(i){
+				if($(this).hasClass("icon-css-on")){
+					$(this).removeClass("icon-css-on");
+					$(this).addClass("icon-css");
+				}
+				if(i == index){
+					if($(this).hasClass("icon-css")){
+						$(this).removeClass("icon-css");
+					}
+					$(this).addClass("icon-css-on");
+				}
+			});
+		};
+		slides = function(){
+			$(".slides-ad-point a").each(function(index){
+				$(this).click(function(){
+					current_index = index;
+					show_point_ad(index);
+					show_pic_ad(current_index);
+				});
+			});
+		};
+		slides();
+		Interval_control = setInterval(function(){
+			show_point_ad(current_index);
+			show_pic_ad(current_index);
+			if (current_index == ($(".slides-icon-ad a").length - 1)){
+				current_index = -1;
+			}
+			current_index ++;
+		},5000);//设置自动切换函数
+		//当触发mouseenter事件时，取消正在执行的自动切换方法，触发mouseouter事件时重新设置自动切换
+		$(".top-ad .pull-left").mouseenter(function() {
+			clearInterval(Interval_control);//停止自动切换
+		}).mouseleave(function(){
+			Interval_control = setInterval(function(){
+				show_point_ad(current_index);
+				show_pic_ad(current_index);
+				if (current_index == ($(".top-ad .pull-left").length - 1)){
+					current_index = -1;
+				}
+				current_index ++;
+			},5000);//设置自动切换函数
+		});
+	});
+</script>
+
+<!--头部代码结束-->
+
+ 	<div class="hr tp-div-nexthr" style="margin-top: 0;margin-bottom: 0;padding: 0;"></div>
+	<div class="container pb-15">
+	<!-- Example row of columns -->
+	<div class="row">
+		<div class="span12">
+       
+   
+ <!--内容页面-->     
+                        
+  <div class="label-div b-30 border-all pt-5 t-20" style="position: relative; padding-left: 0;">
+     <div class="txmd">     
+     
+     <h4 class="mmh4">提交项目基本信息</h4>
+     <h6 class="mmh6">平均用时3分钟，您的项目即可以被收录到数据库中</h6>
+     
+     <form action="###" method="post">
+     <div  class="basic">
+        您的基本资料
+     </div>
+     
+     <div class="control-group">
+                <label class="control-label" for="inputName">姓名
+                    <p class="text-error">必填项</p>
+                </label>
+
+                <div class="controls">
+                    <input id="inputName" type="text" name="username" value=""
+                           placeholder="请填写真实姓名" class="input-xlarge placeholder on" maxlength="10" rel="input-text"  >
+                    <span class="help-inline">请填写真实姓名</span>
+                </div>
+                <div class="mmclear"></div>
+                
+            </div>
+            
+            
+       <div class="control-group">
+                <label class="control-label" for="inputEmail">E-mail
+                    <p class="text-error">必填项</p>
+                </label>
+
+                <div class="controls">
+                    <input id="inputEmail" type="text" placeholder="邮箱格式不正确" value=""
+                           class="input-xlarge placeholder on" rel="input-email" >
+                    <span class="help-inline"></span>
+                </div>
+                <div class="mmclear"></div>
+            </div>
+            
+            
+            <div class="control-group">
+                <label class="control-label" for="inputPhone">电话
+                    <p class="text-error">必填项</p>
+                </label>
+
+                <div class="controls">
+                    <input type="text" id="inputPhone" value=""
+                           placeholder="请填写真实手机号，我们会联系您确认信息" maxlength="30" rel="input-phone"
+                           class="input-xlarge placeholder on" >
+                    <span class="help-inline"></span>
+                </div>
+                <div class="mmclear"></div>
+            </div>
+            
+             
+             
+            
+            <div class="control-group ">
+                <label class="control-label" for="inputRole">职务
+                    <p class="text-error">必填项</p>
+                </label>
+                <div class="controls">
+                    <input id="inputRole" type="text" name="userrole" value="" placeholder="创始团队成员或高管才能创建项目"
+                           class="input-xlarge placeholder on" maxlength="10" rel="input-text">
+                    <span class="help-inline"></span>
+                </div>
+                <div class="mmclear"></div>
+            </div>
+            
+            
+                        <div class="control-group">
+                <label class="control-label" for="avatarUpload">上传头像<p class="text-error">必填项</p></label>
+
+                <div class="controls">
+                    <div id="avatarUpload">
+                        <img src="images/uphoto.jpg" rel="img-target-avatar"
+                             data-value="0" data-check="eb1ae6331b63d1ad95006586c4add55b"
+                             class="active img-target img-on">
+                        <span class="help-inline"></span>
+                    </div>
+                    
+                    <button type="button" modal-target="#img-modal" rel="ajax-upload-avatar" class="btn btn-primary uploadphoto" onclick="uphoto()">
+                        上传头像
+                    </button>
+                    <input type="file" id="uphototx" value="update"  style="display:none;"/>
+          <span class="help-block">
+            请上传jpg/jpeg/png/gif格式文件，文件小于1MB
+          </span>         
+                </div>
+                <div class="mmclear"></div>
+            </div>
+            
+      
+      
+      
+        <div  class="basic b-20">
+        产品的基本资料
+     </div>      
+      <div class="control-group ">
+                <label class="control-label" for="inputProductName">产品名称<p class="text-error">必填项</p></label>
+
+                <div class="controls">
+                    <input id="inputProductName" type="text"
+                           value=""
+                           placeholder="只填写产品" class="input-xlarge on check-exist placeholder"
+                           maxlength="30" rel="input-text">
+                    <span class="help-inline"></span>
+                </div>
+                <div class="mmclear"></div>
+            </div>
+            <div class="control-group ">
+                <label class="control-label" for="inputWebsite">网址<p class="text-error">必填项</p></label>
+
+                <div class="controls">
+                    <input id="inputWebsite" name="website" type="text"
+                           value=""
+                           placeholder="如：www.xxx.com" class="input-xlarge on placeholder" maxlength="100"
+                           rel="input-url">
+                    <span class="help-inline"></span>
+                </div>
+                <div class="mmclear"></div>
+            </div>
+            <div class="control-group ">
+                <label class="control-label" for="inputProductWeibo">产品官方微博<p>选填项</p></label>
+
+                <div class="controls">
+                    <input id="inputProductWeibo" name="weibo" type="text"
+                           value=""
+                           placeholder="请填写产品官方微博的URL" class="input-xlarge placeholder">
+                    <span class="help-inline"></span>
+                </div>
+                <div class="mmclear"></div>
+            </div>       
+            
+             <div class="control-group">
+                <label class="control-label">分类
+                    <p class="text-error">必填项</p>
+
+                    <p class="text-error">（最多三项）</p>
+                    
+                </label>
+               
+               <div class="mtype pull-left" style="position:relative; width:78%;">
+                 
+   <dl class="mydllist">   
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">游戏</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">硬件</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">工具</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">旅游</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">体育</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">教育</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">媒体</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">硬件</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">工具</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">旅游</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">体育</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">教育</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="javascript:;">媒体</a></span><span class="mr"></span></dd>
+  </dl>
+  </div>
+               
+                               
+                    
+                <div class="mmclear"></div>
+            </div> 
+            
+        
+             
+     
+            <div class="control-group">
+                <label for="inputLocation" class="control-label">地区
+                    <p class="text-error">必填项</p></label>
+
+                <div class="controls">
+                    <div id="inputLocation">
+       <select name="provinceid[]" id="provinceid" class="location-select span2" >
+      <option value="1">国外</option>
+        <option value="10" selected="selected">北京</option>
+        <option value="11">上海</option>
+        <option value="12">天津</option>
+        <option value="13">重庆</option>
+        <option value="14">河北</option>
+        <option value="15">山西</option>
+        <option value="16">内蒙古 </option>
+        <option value="17">辽宁</option>
+        <option value="18">吉林</option>
+        <option value="19">黑龙江</option>
+        <option value="20">江苏</option>
+        <option value="21">浙江</option>
+        <option value="22">安徽</option>
+        <option value="23">福建</option>
+        <option value="24">江西</option>
+        <option value="25">山东</option>
+        <option value="26">河南</option>
+        <option value="27">湖北</option>
+        <option value="28">湖南</option>
+        <option value="29">广东</option>
+        <option value="30">广西</option>
+        <option value="31">海南</option>
+        <option value="32">四川</option>
+        <option value="33">贵州</option>
+        <option value="34">云南</option>
+        <option value="35">西藏</option>
+        <option value="36">陕西</option>
+        <option value="37">甘肃</option>
+        <option value="38">青海</option>
+        <option value="39">宁夏</option>
+        <option value="40">新疆</option>
+        <option value="41">香港</option>
+        <option value="42">澳门</option>
+        <option value="43">台湾</option>
+    </select >
+    
+<span id="city">
+    <select name='cityid[]' id='cityid' class='span2'><option value='1000' selected='selected'>东城区</option><option value='1001'>西城区</option><option value='1002'>崇文区</option><option value='1003'>宣武区</option><option value='1004'>朝阳区 </option><option value='1005'>丰台区</option><option value='1006'>石景山区</option><option value='1007'>海淀区</option><option value='1008'>门头沟区</option><option value='1009'>房山区</option><option value='1010'>通州区</option><option value='1011'>顺义区 </option><option value='1012'>昌平区</option><option value='1013'>大兴区</option><option value='1014'>怀柔区</option><option value='1015'>平谷区</option><option value='1016'>密云县</option><option value='1017'>延庆县</option></select>
+  </span>
+  
+  
+                    </div>
+                </div>
+                 <div class="mmclear"></div>
+            </div>
+            
+            
+            <div class="control-group ">
+                <label for="inputLaunchTime" class="control-label">产品初版上线时间<p class="text-error">必填项</p></label>
+
+                <div class="controls">
+             <link rel="stylesheet" type="text/css" href="js/calendar/jscal2.css"/>
+			<link rel="stylesheet" type="text/css" href="js/calendar/border-radius.css"/>
+			<link rel="stylesheet" type="text/css" href="js/calendar/win2k.css"/>
+			<script type="text/javascript" src="js/calendar/calendar.js"></script>
+			<script type="text/javascript" src="js/calendar/lang/en.js"></script>
+            <input type="text" class="input-xlarge on datepicker" rel="input-text"
+                           value=""
+                           readonly id="productdate">
+                           
+            <script type="text/javascript">
+			Calendar.setup({
+			weekNumbers: true,
+		    inputField : "productdate",
+		    trigger    : "productdate",
+		    dateFormat: "%Y-%m-%d",
+		    showTime: false,
+		    minuteStep: 1,
+		    onSelect   : function() {this.hide();}
+			});
+        </script>   
+                         
+                    <span class="help-inline"></span>
+                </div>
+                 <div class="mmclear"></div>
+            </div>
+            <div class="control-group ">
+                <label class="control-label">LOGO<p class="text-error">必填项</p></label>
+
+                <div class="controls">
+                    <div id="logoUpload">
+                        <img src="images/xmlogo.jpg"
+                             rel="img-target-logo"
+                             data-value="0"
+                             data-check="a86d4a9f4efdc578c791dd86edca102b"
+                             class="img-target img-on ">
+                        <span class="help-inline"></span>
+                    </div>
+                    <button type="button" modal-target="#img-modal" rel="ajax-upload-logo" class="btn btn-primary mmuploadlogo2" onclick="uplogo()">
+                        上传LOGO
+                    </button>
+                     <input type="file" id="ulogo" value="update"  style="display:none;"/>
+          <span class="help-block">
+            请上传jpg/jpeg/png/gif格式文件，文件小于1MB
+          </span>
+                </div>
+                 <div class="mmclear"></div>
+            </div>
+
+            <div class="control-group ">
+                <label class="control-label" for="inputNeedtail">一句话简介
+                    <p class="text-error">必填项</p>
+                </label>
+
+                <div class="controls">
+                    <textarea id="inputNeedtail" type="text" placeholder="以极简的文字说明产品解决的需求"
+                              class="input-xlarge placeholder on" maxlength="45" rel="text-area"></textarea>
+                    <span class="help-inline"></span>
+                     <p>还可输入<span rel="inputNeedtail" class="myhelp-inline" id="hnum">45</span>字</p>
+                    
+				</div>
+                 <div class="mmclear"></div>
+                <div style="margin-left:20%;">
+                 <span class="block muted"><small>如下厨房填写的：菜谱分享网站。</small></span>
+                    <span class="block muted"><small>错误1：带产品名：不要写"下厨房是一个菜谱分享网站"，而写"菜谱分享网站"</small></span>
+                    <span class="block muted"><small>错误2：用太抽象的概念描述：不要写"O2O项目"，而一定要具体到比如"帮助上午检测用户优惠使用情况"</small></span>
+                </div>
+                
+                 
+                
+            </div>
+            
+            <div class="control-group ">
+                <label class="control-label" for="textAbstract">产品介绍
+                    <p class="text-error">必填项</p>
+                </label>
+
+                <div class="controls">
+                    <textarea id="textAbstract" placeholder="请填写您产品、公司以及团队的信息，建议大于100字。介绍的越详细，越容易得到网友和投资人关注哦。" rows="4"
+                              class="input-xlarge placeholder on" maxlength="300" rel="text-area"></textarea>
+                    <span class="help-inline"></span>
+
+                    <p>还可输入<span rel="textAbstract" class="myhelp-inline" id="projs">300</span>字</p>
+                </div>
+   				 <div class="mmclear"></div>
+            </div>
+            
+            <div class="control-group ">
+                <label class="control-label" for="inputKeywords">产品关键词<p class="text-error">必填项</p></label>
+
+                <div class="controls">
+                    <input id="inputKeywords" type="text"
+                           value=""
+                           class="input-xlarge on" rel="input-text">
+                    <span class="help-inline"></span>
+
+                    <p>请使用英文逗号分隔，如：O2O,移动互联网</p>
+                </div>
+                 <div class="mmclear"></div>
+            </div>
+            
+            
+            <div class="control-group">
+                <label for="pictureUpload"  class="control-label" >上传截图<p class="text-error">必填项</p></label>
+            <div class="controls pull-left" style="width:76%">
+                    <div rel="img-picture-target" id="pictureUpload">
+                        <img src="images/160160.png" item="0" >
+                        <img src="images/160160.png" item="1">
+                        <img src="images/160160.png" item="2">
+                      <span class="help-inline"></span>
+                </div>
+                <div class="mmclear"></div>
+                    <button type="button" modal-target="#img-modal" rel="ajax-upload-picture"
+                            class="btn btn-primary block uploadfileimg" onclick="upimg()">上传截图
+                    </button>
+                    <input type="file" id="mmupjt" value="update"  style="display:none;"/>
+          <span class="help-block">
+	    请逐张上传，最多3张，剪切比例仅为4:3。支持jpg/jpeg/png/gif格式文件，文件小于2MB
+          </span>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <span class="help-block center fs16" rel="form-help"></span>
+                </div>
+                 <div class="mmclear"></div>
+            </div>
+      
+     </div>
+     
+    
+    <div class="basic" style="border-top:1px solid #ccc; text-align:right; margin-left:15px; padding:10px 0px 5px 0px;">
+     
+      <input type="image" src="images/blutbottom.jpg" value="" style="width:81px; height:46px;"/>
+     
+    </div>
+    
+     <div class="mmclear"></div> 
+     
+   </form>
+
+</div>
+  
+ 
+
+
+</div>
+ 
+
+
+
+
+
+        
+      
+      <!--右侧代码-->  
+       <div class="span4">
+			
+        
+            
+            <div class="label-div t-20 border-all">
+				<div class="l-15">
+               		 <h3 class="label-title border-b b-15 small clearfix" style="padding-bottom: 14px;">关注咨询</h3>
+                </div>
+				<div class="label-main tody-hot l-15" >
+					<ul>
+					  <li><a href="">标题标题标题标题标题标题题标题1</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题2</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标 标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+					</ul>
+				</div>
+			</div>
+            
+            
+            
+             <div class="label-div t-20 border-all">
+				<div class="l-15">
+               		 <h3 class="label-title border-b b-15 small clearfix" style="padding-bottom: 14px;">最多分享</h3>
+                </div>
+				<div class="label-main tody-hot l-15" >
+					<ul>
+					  <li><a href="">标题标题标题标题标题标题题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标 标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+					</ul>
+				</div>
+			</div>
+            
+            
+            
+             <div class="label-div t-20 border-all">
+				<div class="l-15">
+               		 <h3 class="label-title border-b b-15 small clearfix" style="padding-bottom: 14px;">最多评论</h3>
+                </div>
+				<div class="label-main tody-hot l-15" >
+					<ul>
+					  <li><a href="">标题标题标题标题标题标题题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标 标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+					</ul>
+				</div>
+			</div>
+            
+          
+             
+            
+	 
+            
+		</div>
+	</div>
+</div>
+
+<!--右侧代码结束-->
+
+
+<!-- /container -->
+
+  <div class="container">
+ 
+ 	<div class="hr"></div>
+    
+    </div>
+  
+<!-- /container -->
+
+</div>
+    
+ 
+<div class="footer">
+		 
+		 
+			<div class="clearfix" style="background:#EDEDED;">
+				
+         
+                <ul class="about-ul">
+					<li>客服电话 400-100-8884 - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></li>
+					<li><span>|</span></li>
+					<li><a title="广告投放" href="javascript:;" class="fc666" target="_blank">广告投放</a></li>
+					<li><span>|</span></li>
+					<li><a title="企业服务" href="javascript:;" class="fc666" target="_blank">企业服务</a></li>
+					<li><span>|</span></li>
+					<li><a title="公司博客" href="javascript:;" class="fc666" target="_blank" >公司博客</a></li>
+					<li><span>|</span></li>
+					<li><a title="加入我们" href="javascript:;" class="fc666" target="_blank">加入我们</a></li>
+					<li><span>|</span></li>
+					<li><a title="服务协议" href="javascript:;" class="fc666" target="_blank">服务协议</a></li>
+					<li><span>|</span></li>
+                     <li id="zk_btn" class="ie6png down-class">
+                   	 <a title="友情链接" href="javascript:void(0);" class="fc666">友情链接</a>
+                    </li>
+				    <div class="clear"></div>
+				</ul>
+			</div>
+    
+    <div class="friend-link border-all t-20 b-20">
+		<ul class="clearfix">
+		
+	</ul>
+</div>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		var flag = 0;
+		$(".friend-link").hide();
+		//Down
+		$("#zk_btn").click(function(){
+			if(flag == 0){
+				$(".friend-link").slideDown(400); 
+				$(this).removeClass('down-class');
+				$(this).addClass('up-class');
+				$("html,body").animate({scrollTop:($(".friend-link").offset().top+2000)},600);
+				flag = 1;
+			}else{
+				$(".friend-link").slideUp(400);  
+				$(this).removeClass('up-class');
+				$(this).addClass('down-class'); 
+				flag = 0;
+			}
+		});
+	});
+</script>
+<p>Copyright ©2013　　备8888888888号</p>
+    
+		</div> 
+
+ 
+ 
+
+ 
+<script type="text/javascript">
+//回到顶部
+backToTop('body');
+</script>
+</body>
+</html>

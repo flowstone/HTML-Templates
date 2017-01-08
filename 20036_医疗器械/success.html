@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" /> 
+<script type="text/javascript" src="js/jquery1.4.js"></script>
+<script type="text/javascript" src="js/bioV4.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.mini.js"></script>
+<title>成功页</title>
+<meta name="Keywords" content="成功页"/>
+<meta name="Description" content="成功页"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/success.css"/>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/zx_info.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,.ie6png');
+</script>
+<![endif]--> 
+
+</head>
+<body>
+	<script type="text/javascript" src="js/borsertocss.js"> </script><!-- 判断在IE9以下浏览器中根据像素的不同而设置的样式 -->	
+ 
+  <!--头部代码开始-->
+   
+    <div class="navbar navbar-fixed-top" style="_position: relative;_z-index: 10000;">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<div class="nav-collapse">
+					<ul class="nav" id="navID">
+						<li class=""><a href="index.html"><b>首页</b></a></li>
+						<li class=""><a href="cxzx_list.html"><b>创新咨讯</b></a></li>
+						<li class=""><a href="cxfw_list.html"><b>创新服务</b></a></li>
+						<li class=""><a href="xmdata.html"><b>项目数据库</b></a></li>
+						<li class=""><a href="tzjg_list.html"><b>投资机构</b></a></li>
+						<li class="active"><a href="xm_write.html"><b>项目发布</b></a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+				<ul class="nav pull-right login-none nav-tips">
+		<li class="ie6png divider-vertical" style="_width: 30px;_height: 40px;_background: url(images/icons.png) no-repeat 10px -106px;"><a class="dropdown-toggle clearfix" href="/login.html?url=aHR0cDovL3d3dy5iaW9kaXNjb3Zlci5jb20vbmV3cy5odG1sP3BhZ2U9Mg%3D%3D" style="padding: 7px 5px;"><img class="logo-before pull-left" src="images/avatar-icon.png" /></a></li>
+	</ul>
+<div class="popup-div tips-div" style="position: absolute;z-index: 10000001;display: none;"></div>
+<script type="text/javascript">
+var tip_show = 1;
+//头部下拉
+var timer1 = "";
+$('#dropdownID-0').hover(function(){
+	var obj = $(this);
+	if(timer1)
+	{
+		clearTimeout(timer1);
+	}
+	timer1 = setTimeout(function(){
+		obj.find('.dropdown-menu').show();
+		tip_show = 0;
+		$(".tips-div").hide();
+		obj.find('.other-icon').css({"background":"#2E2E2E"});
+	}, 500);
+},function(){
+	var obj = $(this);
+	if(timer1)
+	{
+		clearTimeout(timer1);
+	}
+	timer1 = setTimeout(function(){
+		obj.find('.dropdown-menu').hide();
+		$(".tips-div").hide();
+		tip_show = 1;
+		getTips();
+		obj.find('.other-icon').css({"background":"none"});
+	}, 500);
+});
+
+var timer2 = "";
+$('#dropdownID-1').hover(function(){
+	var obj = $(this);
+	if(timer2)
+	{
+		clearTimeout(timer2);
+	}
+	timer2 = setTimeout(function(){
+		obj.find('.dropdown-menu').show();
+		tip_show = 0;
+		$(".tips-div").hide();
+		obj.find('.other-icon').css({"background":"#2E2E2E"});
+	}, 500);
+},function(){
+	var obj = $(this);
+	if(timer2)
+	{
+		clearTimeout(timer2);
+	}
+	timer2 = setTimeout(function(){
+		obj.find('.dropdown-menu').hide();
+		tip_show = 1;
+		getTips();
+		$(".tips-div").hide();
+		obj.find('.other-icon').css({"background":"none"});
+	}, 500);
+});
+</script>				
+
+
+<ul class="nav pull-right pl-20 myul">
+    <li class=""><a href="register.html">注册</a></li>
+    <li class="l10"><a href="login.html">登录</a></li>
+</ul>
+			</div>
+		</div>
+	</div>
+    
+    
+	
+    <div class="top-div">
+	<div class="container clearfix">
+		
+       <div class="span3 logo-div logo-img" style="margin-left:0px;">
+        <a href="/" title="医疗器械创新网"><img src="images/logo.jpg" class="ie6png" style="display: block;"/></a>
+       </div>
+		
+        <div class="span11 pull-right top-ad" style="position: relative;_float: right;_height: 80px;_overflow: hidden;">
+ <a href="javascript:;" class="pull-left" target="_blank" rel="nofollow">
+        <img alt="" src="images/img1.jpg" style="width: 100%; display: block;"/></a>
+        
+         <a href="javascript:;" class="pull-left" style="display:none;" target="_blank">
+        <img alt="" src="images/img2.jpg" style="width: 100%; display: block;"/></a>
+
+	 <div class="slides-icon-ad slides-ad-point" style="position: absolute;right:60px;">
+				<a href="javascript:void(0);" class="icon-css-on ie6png">&nbsp;</a>
+				<a href="javascript:void(0);" class="icon-css ie6png">&nbsp;</a>	 
+	 </div>
+            
+	</div>
+	</div>
+</div>
+    
+ 
+
+<script type="text/javascript">
+	$(function(){
+		var Interval_control = '';
+		var current_index = 0;
+		show_pic_ad = function(index){
+			$(".top-ad .pull-left").each(function(i){
+				$(this).hide();
+				if(i == index){
+					$(this).show(); 
+				}
+			});
+		};
+		show_point_ad = function(index){
+			$(".top-ad .slides-ad-point a").each(function(i){
+				if($(this).hasClass("icon-css-on")){
+					$(this).removeClass("icon-css-on");
+					$(this).addClass("icon-css");
+				}
+				if(i == index){
+					if($(this).hasClass("icon-css")){
+						$(this).removeClass("icon-css");
+					}
+					$(this).addClass("icon-css-on");
+				}
+			});
+		};
+		slides = function(){
+			$(".slides-ad-point a").each(function(index){
+				$(this).click(function(){
+					current_index = index;
+					show_point_ad(index);
+					show_pic_ad(current_index);
+				});
+			});
+		};
+		slides();
+		Interval_control = setInterval(function(){
+			show_point_ad(current_index);
+			show_pic_ad(current_index);
+			if (current_index == ($(".slides-icon-ad a").length - 1)){
+				current_index = -1;
+			}
+			current_index ++;
+		},5000);//设置自动切换函数
+		//当触发mouseenter事件时，取消正在执行的自动切换方法，触发mouseouter事件时重新设置自动切换
+		$(".top-ad .pull-left").mouseenter(function() {
+			clearInterval(Interval_control);//停止自动切换
+		}).mouseleave(function(){
+			Interval_control = setInterval(function(){
+				show_point_ad(current_index);
+				show_pic_ad(current_index);
+				if (current_index == ($(".top-ad .pull-left").length - 1)){
+					current_index = -1;
+				}
+				current_index ++;
+			},5000);//设置自动切换函数
+		});
+	});
+</script>
+
+<!--头部代码结束-->
+ 
+
+ <div class="hr tp-div-nexthr" style="margin-top: 0;margin-bottom: 0;padding: 0;"></div>
+	<div class="container pb-15">
+	<!-- Example row of columns -->
+	<div class="row">
+		<div class="span12w100">
+		  <div class="b-30 border-all pt-5 t-20" style="position: relative; padding-left: 0; background:#fff;" >
+		    
+			<div class="mmmy">
+			
+			<!------------------->
+			
+			
+			<div class="container">
+			<h5>
+		            您已经提交了您的项目信息。我们的运营人员将会尽快审核您的项目。
+            </h5>
+        <p>
+            医疗器械创新网为创业公司提供了许多贴心的创业服务，如媒体报道、融资对接、免费猎头咨询等服务。
+        </p>
+        
+	 	        <p>
+            <a class="btn-primary mybutton" style="color:#fff;" href="###">寻求报道</a>
+           	点击左方按钮，为您的 我的新产品呢 项目寻求报道，可以同步到国内外多家合作媒体。
+        </p>
+				        <p>
+            <a class="btn-primary mybutton" style="color:#fff;" href="###">寻求融资</a>
+            点击左方按钮，为您的 我的新产品呢 项目对接适合的投资人。
+        </p>
+		        <p>
+            如果您有招聘需求，但不确定是否要寻找猎头及寻找什么猎头，点击 <a class="btn-primary mybutton2" style="color:#fff;" href="###">猎头咨询服务</a>。
+        </p>
+        <p>若您想了解更多关于医疗器械创新网提供的创业服务，可以点击 <a class="btn-primary mybutton" style="color:#fff;" href="###">创业服务</a>，选取您所需要的服务。</p>
+    	<p>您也可以直接点击<a href="wodexinchanpinne">我的新产品呢</a>回到您的项目页面。</p>
+    <div class="well row-fluid">
+        <h3>
+            如何在医疗器械创新网寻找融资？
+        </h3>
+
+        <p>
+            新提交项目、或者编辑您现有的项目，完整填写投资人了解项目所需的信息（共2步），审核通过之后即可。
+        </p>
+
+        <p>
+           届时，认证投资人可以查看到您正在寻求投资的状态（仅可看到状态，未经您允许是无法看到全部信息的），并可以通过医疗器械创新网得到您留下的联系方式进而联系您。
+        </p>
+
+        <p>
+            对于您感兴趣的投资人，可以主动投递项目，投递后，该投资人即有权完整查看您填写的全部信息。
+        </p>
+
+        <p>
+            您提交完整信息后，医疗器械创新网会及时跟进，将项目介绍给关注相应方向的投资人，并定期组织融资对接会，高效而切实的帮助您完成融资。
+        </p>
+    </div>
+    <div class="well row-fluid">
+        <h3>
+            如何在医疗器械创新网寻求报道？
+        </h3>
+
+        <p>
+            新提交项目，或者编辑您现有的项目，完整填写医疗器械创新网报道所需的信息（共2步），审核通过之后即可。
+        </p>
+
+        <p>
+            届时，如果我们对您的项目动向感兴趣，我们的编辑会主动联系您，采访更多信息。
+        </p>
+
+        <p>
+            当然，填写的资料越详细，越能够让编辑更好的了解您的项目和您的团队。
+        </p>
+    </div>
+    <div class="well row-fluid">
+        <h3>
+            如何在医疗器械创新网寻找符合您的创业服务？
+        </h3>
+
+        <p>
+            医疗器械创新网以及医疗器械创新网提供一揽子创业服务，我们希望能通过我们的努力让作为创业者的您能全身心投入到您的产品中，并通过对接有限的创业资源，创业基建，为创业者降低创业门槛，打造更好的产品，赢得更多的掌声。
+        </p>
+        
+        <p>
+        	您只需要选择好您需要的创业服务，点击申请即可。随后我们的创业服务顾问将会第一时间与您取得联系，并推荐最符合您的创业服务。
+        </p>
+    </div>
+</div>
+			
+			
+			
+			
+			<!--------------------->
+			</div>	
+		  
+		    
+		  
+		  </div>
+		</div>
+	</div>
+</div>	
+ 
+ 
+ 
+<!-- /container -->
+
+  <div class="container">
+ 
+ 	<div class="hr"></div>
+    
+    </div>
+  
+<!-- /container -->
+
+</div>
+    
+ 
+<div class="footer">
+		 
+		 
+			<div class="clearfix" style="background:#EDEDED;">
+				
+         
+                <ul class="about-ul">
+					<li>客服电话 400-100-8884 - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></li>
+					<li><span>|</span></li>
+					<li><a title="广告投放" href="javascript:;" class="fc666" target="_blank">广告投放</a></li>
+					<li><span>|</span></li>
+					<li><a title="企业服务" href="javascript:;" class="fc666" target="_blank">企业服务</a></li>
+					<li><span>|</span></li>
+					<li><a title="公司博客" href="javascript:;" class="fc666" target="_blank" >公司博客</a></li>
+					<li><span>|</span></li>
+					<li><a title="加入我们" href="javascript:;" class="fc666" target="_blank">加入我们</a></li>
+					<li><span>|</span></li>
+					<li><a title="服务协议" href="javascript:;" class="fc666" target="_blank">服务协议</a></li>
+					<li><span>|</span></li>
+                     <li id="zk_btn" class="ie6png down-class">
+                   	 <a title="友情链接" href="javascript:void(0);" class="fc666">友情链接</a>
+                    </li>
+				    <div class="clear"></div>
+				</ul>
+			</div>
+    
+    <div class="friend-link border-all t-20 b-20">
+		<ul class="clearfix">
+		
+	</ul>
+</div>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		var flag = 0;
+		$(".friend-link").hide();
+		//Down
+		$("#zk_btn").click(function(){
+			if(flag == 0){
+				$(".friend-link").slideDown(400); 
+				$(this).removeClass('down-class');
+				$(this).addClass('up-class');
+				$("html,body").animate({scrollTop:($(".friend-link").offset().top+2000)},600);
+				flag = 1;
+			}else{
+				$(".friend-link").slideUp(400);  
+				$(this).removeClass('up-class');
+				$(this).addClass('down-class'); 
+				flag = 0;
+			}
+		});
+	});
+</script>
+<p>Copyright ©2013　　备8888888888号</p>
+    
+		</div> 
+
+ 
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($){
+$('.add-emote').live('click',function(){get_face2face(this,'face.html')});
+$('.face_title div').live('click',function(){face2face(this)});
+$('.add_comment_submit').live('click',function(){add_comment_submit_fn(this,$(this).parents('form').attr('id'))});
+
+});
+/*]]>*/
+</script>
+
+
+<script type="text/javascript">
+//回到顶部
+backToTop('body');
+</script>
+</body>
+</html>

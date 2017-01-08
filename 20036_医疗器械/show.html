@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" /> 
+<script type="text/javascript" src="js/jquery1.4.js"></script>
+<script type="text/javascript" src="js/bioV4.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.mini.js"></script>
+<title>投资机构</title>
+<meta name="Keywords" content="投资机构"/>
+<meta name="Description" content="投资机构"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/show.css"/>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js?v=20130220"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,.ie6png');
+</script>
+<![endif]--> 
+
+</head>
+<body>
+	<script type="text/javascript" src="js/borsertocss.js"> </script><!-- 判断在IE9以下浏览器中根据像素的不同而设置的样式 -->	
+ 
+  <!--头部代码开始-->
+   
+    <div class="navbar navbar-fixed-top" style="_position: relative;_z-index: 10000;">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<div class="nav-collapse">
+					<ul class="nav" id="navID">
+                        <li class=""><a href="index.html"><b>首页</b></a></li>
+					 	<li class=""><a href="cxzx_list.html"><b>创新咨讯</b></a></li>
+						<li class=""><a href="cxfw_list.html"><b>创新服务</b></a></li>
+						<li class=""><a href="xmdata.html"><b>项目数据库</b></a></li>
+						<li class="active"><a href="tzjg_list.html"><b>投资机构</b></a></li>
+						<li class=""><a href="xm_write.html"><b>项目发布</b></a></li>
+                    
+						 
+					</ul>
+				</div><!--/.nav-collapse -->
+				<ul class="nav pull-right login-none nav-tips">
+		<li class="ie6png divider-vertical" style="_width: 30px;_height: 40px;_background: url(/images/icons.png) no-repeat 10px -106px;"><a class="dropdown-toggle clearfix" href="/login.html?url=aHR0cDovL3d3dy5iaW9kaXNjb3Zlci5jb20vbmV3cy5odG1sP3BhZ2U9Mg%3D%3D" style="padding: 7px 5px;"><img class="logo-before pull-left" src="images/avatar-icon.png" /></a></li>
+	</ul>
+<div class="popup-div tips-div" style="position: absolute;z-index: 10000001;display: none;"></div>
+<script type="text/javascript">
+var tip_show = 1;
+//头部下拉
+var timer1 = "";
+$('#dropdownID-0').hover(function(){
+	var obj = $(this);
+	if(timer1)
+	{
+		clearTimeout(timer1);
+	}
+	timer1 = setTimeout(function(){
+		obj.find('.dropdown-menu').show();
+		tip_show = 0;
+		$(".tips-div").hide();
+		obj.find('.other-icon').css({"background":"#2E2E2E"});
+	}, 500);
+},function(){
+	var obj = $(this);
+	if(timer1)
+	{
+		clearTimeout(timer1);
+	}
+	timer1 = setTimeout(function(){
+		obj.find('.dropdown-menu').hide();
+		$(".tips-div").hide();
+		tip_show = 1;
+		getTips();
+		obj.find('.other-icon').css({"background":"none"});
+	}, 500);
+});
+
+var timer2 = "";
+$('#dropdownID-1').hover(function(){
+	var obj = $(this);
+	if(timer2)
+	{
+		clearTimeout(timer2);
+	}
+	timer2 = setTimeout(function(){
+		obj.find('.dropdown-menu').show();
+		tip_show = 0;
+		$(".tips-div").hide();
+		obj.find('.other-icon').css({"background":"#2E2E2E"});
+	}, 500);
+},function(){
+	var obj = $(this);
+	if(timer2)
+	{
+		clearTimeout(timer2);
+	}
+	timer2 = setTimeout(function(){
+		obj.find('.dropdown-menu').hide();
+		tip_show = 1;
+		getTips();
+		$(".tips-div").hide();
+		obj.find('.other-icon').css({"background":"none"});
+	}, 500);
+});
+</script>				
+
+<ul class="nav pull-right pl-20 myul">
+    <li class=""><a href="register.html">注册</a></li>
+    <li class="l10"><a href="login.html">登录</a></li>
+</ul>
+			</div>
+		</div>
+	</div>
+    
+    
+	
+    <div class="top-div">
+	<div class="container clearfix">
+		
+       <div class="span3 logo-div logo-img" style="margin-left:0px;">
+        <a href="/" title="医疗器械创新网"><img src="images/logo.jpg" class="ie6png" style="display: block;"/></a>
+       </div>
+		
+        <div class="span11 pull-right top-ad" style="position: relative;_float: right;_height: 80px;_overflow: hidden;">
+ <a href="javascript:;" class="pull-left" target="_blank" rel="nofollow">
+        <img alt="" src="images/img1.jpg" style="width: 100%; display: block;"/></a>
+        
+         <a href="javascript:;" class="pull-left" style="display:none;" target="_blank">
+        <img alt="" src="images/img2.jpg" style="width: 100%; display: block;"/></a>
+
+	 <div class="slides-icon-ad slides-ad-point" style="position: absolute;right:60px;">
+				<a href="javascript:void(0);" class="icon-css-on ie6png">&nbsp;</a>
+				<a href="javascript:void(0);" class="icon-css ie6png">&nbsp;</a>	 
+	 </div>
+            
+	</div>
+	</div>
+</div>
+    
+
+
+<script type="text/javascript">
+	$(function(){
+		var Interval_control = '';
+		var current_index = 0;
+		show_pic_ad = function(index){
+			$(".top-ad .pull-left").each(function(i){
+				$(this).hide();
+				if(i == index){
+					$(this).show(); 
+				}
+			});
+		};
+		show_point_ad = function(index){
+			$(".top-ad .slides-ad-point a").each(function(i){
+				if($(this).hasClass("icon-css-on")){
+					$(this).removeClass("icon-css-on");
+					$(this).addClass("icon-css");
+				}
+				if(i == index){
+					if($(this).hasClass("icon-css")){
+						$(this).removeClass("icon-css");
+					}
+					$(this).addClass("icon-css-on");
+				}
+			});
+		};
+		slides = function(){
+			$(".slides-ad-point a").each(function(index){
+				$(this).click(function(){
+					current_index = index;
+					show_point_ad(index);
+					show_pic_ad(current_index);
+				});
+			});
+		};
+		slides();
+		Interval_control = setInterval(function(){
+			show_point_ad(current_index);
+			show_pic_ad(current_index);
+			if (current_index == ($(".slides-icon-ad a").length - 1)){
+				current_index = -1;
+			}
+			current_index ++;
+		},5000);//设置自动切换函数
+		//当触发mouseenter事件时，取消正在执行的自动切换方法，触发mouseouter事件时重新设置自动切换
+		$(".top-ad .pull-left").mouseenter(function() {
+			clearInterval(Interval_control);//停止自动切换
+		}).mouseleave(function(){
+			Interval_control = setInterval(function(){
+				show_point_ad(current_index);
+				show_pic_ad(current_index);
+				if (current_index == ($(".top-ad .pull-left").length - 1)){
+					current_index = -1;
+				}
+				current_index ++;
+			},5000);//设置自动切换函数
+		});
+	});
+</script>
+
+<!--头部代码结束-->
+ 
+	<div class="container clearfix">
+    <div class="mmdh"><a href="">首页</a> > <a href="">投资机构</a> > <a href="">机构标题</a></div>   
+  
+   <div class="mylistshow b-20" id="mmlistshow">
+   <div class="downjiao"><img src="images/downjiao.jpg" alt="hide"/></div>  
+  <dl class="mydllist">
+  <dd>关注领域：</dd>    
+  <dd class="selected"><span class="ml"></span><span class="mm"><a href="">全部</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">活动</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">资助</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">人才</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">培训</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">认证</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">人才</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">培训</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">认证</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">培训</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">认证</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">培训</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">认证</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">活动</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">资助</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">人才</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">培训</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">认证</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">人才</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">培训</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">认证</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">培训</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">认证</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">培训</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">认证</a><i>15</i></span><span class="mr"></span></dd> 
+  </dl>
+       
+  <div class="mmclear"></div>       
+  </div>
+    </div>
+
+	<div class="hr tp-div-nexthr" style="margin-top: 0;margin-bottom: 0;padding: 0;"></div>
+	<div class="container pb-15">
+	<!-- Example row of columns -->
+	<div class="row">
+		<div class="span12">
+       
+     <div class="label-div b-30 border-all pt-5 t-20" style="position: relative; padding-left: 0;">
+      <div class="mmright2 t-30">
+          <img src="images/show_pic.jpg" />
+       </div>
+   
+  	  <div class="mmleft t-30">      
+     
+       <h5>机构名称</h5>
+  
+      <div class="decoration">2013/03/02 　项目分类　阅读437</div>
+   
+          <div class="info">
+           <dl>
+              <dd><span class="t">中文简介：</span> <span>内容内容内容内容内容内容</span></dd>
+              <dd><span class="t">英文简称：</span> <span>内容内容内容内容内容内容</span></dd>
+              <dd><span class="t">网　　址：</span> <span>内容内容内容内容内容内容</span></dd>
+              <dd><span class="t">成立时间：</span> <span>内容内容内容内容内容内容</span></dd>
+              <dd><span class="t">注册地点：</span> <span>内容内容内容内容内容内容</span></dd>
+              <dd><span class="t">机构总部：</span> <span>内容内容内容内容内容内容</span></dd>
+           </dl>
+    	 </div> 
+         
+      </div>
+    
+     
+      <!--警告：切勿删除-->
+     <!--[if IE 6]> <a class="follow-btn ie6png mmmzw"></a><![endif]--> 
+	 
+	 <div class="mmclear"></div>
+	 
+	 
+	 <div class="mmcontent t-20">
+		<span class="pc157AC0">机构简介：</span>
+        
+        内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+        <div class="pc157AC0" style="margin:20px 0 0 0;">机构投资事件</div>
+      
+	  <table class="mytable" cellpadding="0" cellspacing="0">
+      <tr><th>受资方</th><th>投资方</th><th>行属行业</th><th>投资时间</th><th>详情</th></tr>
+      <tr><td>内容内容</td><td>内容内容</td><td>内容内容</td><td>2013-03-02</td><td>详情</td></tr>
+      <tr><td>内容内容</td><td>内容内容</td><td>内容内容</td><td>2013-03-02</td><td>详情</td></tr>
+    </table>
+    <br/>    
+    <span class="pc157AC0">机构投资介绍：</span>
+         内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+       
+	 
+	 
+	 </div>
+	 
+	 
+	 
+
+ 
+  </div>
+ 
+ 
+</div>
+        
+      
+      <!--右侧代码-->  
+       <div class="span4">
+			  
+            <div class="label-div t-20 border-all">
+				<div class="l-15">
+               		 <h3 class="label-title border-b b-15 small clearfix" style="padding-bottom: 14px;">关注咨询</h3>
+                </div>
+				<div class="label-main tody-hot l-15" >
+					<ul>
+					  <li><a href="">标题标题标题标题标题标题题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标 标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+					</ul>
+				</div>
+			</div>
+            
+            
+            
+             <div class="label-div t-20 border-all">
+				<div class="l-15">
+               		 <h3 class="label-title border-b b-15 small clearfix" style="padding-bottom: 14px;">最多分享</h3>
+                </div>
+				<div class="label-main tody-hot l-15" >
+					<ul>
+					  <li><a href="">标题标题标题标题标题标题题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标 标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+					</ul>
+				</div>
+			</div>
+            
+            
+            
+             <div class="label-div t-20 border-all">
+				<div class="l-15">
+               		 <h3 class="label-title border-b b-15 small clearfix" style="padding-bottom: 14px;">最多评论</h3>
+                </div>
+				<div class="label-main tody-hot l-15" >
+					<ul>
+					  <li><a href="">标题标题标题标题标题标题题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标 标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+                      <li><a href="">标题标题标题标题标题标题标题标题</a></li>
+					</ul>
+				</div>
+			</div>
+            
+          
+             
+            
+	 
+            
+		</div>
+	</div>
+</div>
+
+<!--右侧代码结束-->
+
+
+<!-- /container -->
+
+  <div class="container">
+ 
+ 	<div class="hr"></div>
+    
+    </div>
+  
+<!-- /container -->
+
+</div>
+    
+ 
+<div class="footer">
+		 
+		 
+			<div class="clearfix" style="background:#EDEDED;">
+				
+         
+                <ul class="about-ul">
+					<li>客服电话 400-100-8884 - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></li>
+					<li><span>|</span></li>
+					<li><a title="广告投放" href="javascript:;" class="fc666" target="_blank">广告投放</a></li>
+					<li><span>|</span></li>
+					<li><a title="企业服务" href="javascript:;" class="fc666" target="_blank">企业服务</a></li>
+					<li><span>|</span></li>
+					<li><a title="公司博客" href="javascript:;" class="fc666" target="_blank" >公司博客</a></li>
+					<li><span>|</span></li>
+					<li><a title="加入我们" href="javascript:;" class="fc666" target="_blank">加入我们</a></li>
+					<li><span>|</span></li>
+					<li><a title="服务协议" href="javascript:;" class="fc666" target="_blank">服务协议</a></li>
+					<li><span>|</span></li>
+                     <li id="zk_btn" class="ie6png down-class">
+                   	 <a title="友情链接" href="javascript:void(0);" class="fc666">友情链接</a>
+                    </li>
+				    <div class="clear"></div>
+				</ul>
+			</div>
+    
+    <div class="friend-link border-all t-20 b-20">
+		<ul class="clearfix">
+		
+	</ul>
+</div>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		var flag = 0;
+		$(".friend-link").hide();
+		//Down
+		$("#zk_btn").click(function(){
+			if(flag == 0){
+				$(".friend-link").slideDown(400); 
+				$(this).removeClass('down-class');
+				$(this).addClass('up-class');
+				$("html,body").animate({scrollTop:($(".friend-link").offset().top+2000)},600);
+				flag = 1;
+			}else{
+				$(".friend-link").slideUp(400);  
+				$(this).removeClass('up-class');
+				$(this).addClass('down-class'); 
+				flag = 0;
+			}
+		});
+	});
+</script>
+<p>Copyright ©2013　　备8888888888号</p>
+    
+		</div> 
+ 
+
+
+<script type="text/javascript">
+//回到顶部
+backToTop('body');
+</script>
+</body>
+</html>
