@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+<meta charset="utf-8" />
+<title>Gallery</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="less/animate.less-master/animate.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="js/woothemes-FlexSlider-06b12f8/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="js/prettyPhoto_3.1.5/prettyPhoto.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="js/isotope/css/style.css" type="text/css" media="screen" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" media="screen" />
+<!--[if IE 7]>
+    <link rel="stylesheet" href="fonts/font-awsome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+<script type="text/javascript" src="js/modernizr.custom.48287.js"></script>
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png" />
+<link rel="shortcut icon" href="favicon.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<header>
+     <div class="container">
+          <div class="navbar">
+               <div class="navbar-inner"> <a class="brand" href="index.html"> <img src="images/restart_logo.png" width="90" height="90" alt="optional logo" /> <span class="logo_title">{re}<strong>start</strong></span> <span class="logo_subtitle">a clean &amp; multipurpose template</span> </a> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="nb_left pull-left"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></span> <span class="nb_right pull-right">menu</span> </a>
+                    <div class="nav-collapse collapse">
+                         <ul class="nav pull-right">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about_us.html">About Us</a></li>
+                              <li><a href="services.html">Services</a></li>
+                              <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                              <li><a href="blog.html">Blog</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                              <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Pages<span class="caret"></span></a>
+                                   <ul class="dropdown-menu">
+                                        <li><a href="home_alternative.html">Home Alternative</a></li>
+                                        <li><a href="page_alternative.html">Page Alternative</a></li>
+                                        <li><a href="gallery.html">Portfolio Masonry</a></li>
+                                        <li><a href="portfolio_item.html">Portfolio Item</a></li>
+                                        <li><a href="portfolio_item_2.html">Portfolio Item II</a></li>
+                                        <li><a href="single_post.html">Single Post</a></li>
+                                        <li><a href="404.html">ERROR 404</a></li>
+                                        <li><a href="register.html">Register or Sign in <span class="label label-important">new</span></a></li>
+                                        <li><a href="elements.html">Bootstrap Elements</a></li>
+                                   </ul>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+          <div id="social_media_wrapper"> <a href="#facebook"><i class="icon icon-facebook"></i></a> <a href="#twitter"><i class="icon icon-twitter"></i></a> <a href="#googleplus"><i class="icon icon-google-plus"></i></a> </div>
+          <div id="sign"><a href="register.html"><i class="icon icon-user"></i>Register/Sign in</a></div>
+     </div>
+</header>
+<div id="main">
+     <div class="container">
+          <div class="hgroup">
+               <h1>Masonry portfolio <small>or</small> photo gallery</h1>
+               <h2>This is a mixture of portfolio items and photo gallery! We are using the Isotope Jquery plugin to filter results and Prettyphoto to open the lighbox. 
+                    This is the<strong> Masonry Version</strong>, you should also check out the <a href="portfolio.html"><strong>strict version</strong></a>. All photos &copy; by <a href="http://www.cssmoban.com/" target="_blank">Dimitra Giannouka</a>.</h2>
+               <ul class="breadcrumb pull-right">
+                    <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+                    <li class="active">Portfolio</li>
+               </ul>
+          </div>
+          <ul id="portfolio_filters">
+               <li><a href="#" data-filter="*">show all</a></li>
+               <li><a href="#" data-filter=".cat_just_photos">just photos</a></li>
+               <li><a href="#" data-filter=".cat_projects">whole projects</a></li>
+          </ul>
+          <div id="portfolio_container" class="portfolio_masonry row">
+               <div class="portfolio_item cat_just_photos span4"> <a rel='prettyPhoto' href="images/portfolio/t2.jpg"> <img src="images/portfolio/t2.jpg" alt="The title of the photo" />
+                    <div class="overlay">
+                         <div class="desc"> <i class="icon-2x icon-resize-full"></i> </div>
+                    </div>
+                    </a> </div>
+               <div class="portfolio_item cat_projects span4"> <a href="portfolio_item.html"> <img src="images/portfolio/a6.jpg" alt="Title of the project" />
+                    <div class="overlay">
+                         <div class="desc"> <i class="icon-2x icon-external-link"></i>
+                              <h3>Title of the project</h3>
+                              <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+                         </div>
+                    </div>
+                    </a> </div>
+               <div class="portfolio_item cat_just_photos span4"> <a rel='prettyPhoto' href="images/portfolio/b3.jpg"> <img src="images/portfolio/b3.jpg" alt="The title of the photo" />
+                    <div class="overlay">
+                         <div class="desc"> <i class="icon-2x icon-resize-full"></i> </div>
+                    </div>
+                    </a> </div>
+               <div class="portfolio_item cat_projects span4"> <a href="portfolio_item.html"> <img src="images/portfolio/a4.jpg" alt="Title of the project" />
+                    <div class="overlay">
+                         <div class="desc"> <i class="icon-2x icon-external-link"></i>
+                              <h3>Title of the project</h3>
+                              <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+                         </div>
+                    </div>
+                    </a> </div>
+               <div class="portfolio_item cat_just_photos span4"> <a rel='prettyPhoto' href="images/portfolio/p4.jpg"> <img src="images/portfolio/p4.jpg" alt="The title of the photo" />
+                    <div class="overlay">
+                         <div class="desc"> <i class="icon-2x icon-resize-full"></i> </div>
+                    </div>
+                    </a> </div>
+               <div class="portfolio_item cat_projects span4"> <a href="portfolio_item.html"> <img src="images/portfolio/t4.jpg" alt="Title of the project" />
+                    <div class="overlay">
+                         <div class="desc"> <i class="icon-2x icon-external-link"></i>
+                              <h3>Title of the project</h3>
+                              <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+                         </div>
+                    </div>
+                    </a> </div>
+               <div class="portfolio_item cat_just_photos span4"> <a rel='prettyPhoto' href="images/portfolio/t3.jpg"> <img src="images/portfolio/t3.jpg" alt="The title of the photo" />
+                    <div class="overlay">
+                         <div class="desc"> <i class="icon-2x icon-resize-full"></i> </div>
+                    </div>
+                    </a> </div>
+               <div class="portfolio_item cat_projects span4"> <a href="portfolio_item.html"> <img src="images/portfolio/a3.jpg" alt="Title of the project" />
+                    <div class="overlay">
+                         <div class="desc"> <i class="icon-2x icon-external-link"></i>
+                              <h3>Title of the project</h3>
+                              <p>Description of the project dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum...</p>
+                         </div>
+                    </div>
+                    </a> </div>
+          </div>
+     </div>
+     <footer>
+          <section id="copyright">
+               <div class="container">
+                    <div class="row">
+                         <div class="span6">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></div>
+                         <div class="span6 text-right"><a href="http://www.cssmoban.com/">模板之家</a> </div>
+                    </div>
+               </div>
+          </section>
+     </footer>
+</div>
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
+<script src="twitter-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/modernizr.custom.48287.js"></script>
+<script src="js/woothemes-FlexSlider-06b12f8/jquery.flexslider-min.js"></script>
+<script src="js/prettyPhoto_3.1.5/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/isotope/jquery.isotope.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/restart_theme.js"></script>
+
+</body>
+</html>
