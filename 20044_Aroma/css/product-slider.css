@@ -1,0 +1,126 @@
+/*************************************/
+/***** Banner With Multiple Items ****/
+/*************************************/
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.slider {
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 970px;
+	height:280px;
+	padding: 0px;
+}
+
+.slider-nav {
+	position: relative;
+}
+
+.slider-nav a.next2,
+.slider-nav a.prev2 {
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	top: 123px;
+	z-index: 99;
+	cursor: pointer;
+	text-indent: -8888px;
+	opacity: 0.5;
+	filter:alpha(opacity=30);
+}
+
+.slider-nav a:hover.next2,
+.slider-nav a:hover.prev2 {
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+
+.slider-nav .prev2 {
+	background: url(../images/carousel_arrows.png) no-repeat;
+	background-position: 0px 0px;
+	left: -15px;
+}
+.slider-nav .next2 {
+	background: url(../images/carousel_arrows.png) no-repeat;
+	background-position: 0px -27px;
+	right: -15px;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.slider .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div.group-items {
+	float: left;
+	width: 972px;
+	margin: 0px 0px 0px -1px;
+	padding: 15px 0px 0px 0px;
+}
+
+div.group-items div.single-item {
+	width: 212px; 
+	float: left; 
+	border-right: 1px solid #ede6e9;
+	padding: 0px 15px;;
+	text-align: center;
+}
+
+div.group-items div.single-item img {
+	padding: 15px 0px 20px 0px;
+}
+
+div.group-items div.first {
+	width: 230px;
+	padding: 0px 15px 0px 0px;
+}
+
+div.group-items div.last {
+	width: 230px;
+	padding: 0px 0px 0px 15px;
+	border: 0px none;
+}
+
+div.group-items span.title {
+	color: #ce5d86;
+	font-size: 15px;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}
+
+div.group-items span.price {
+	color: #50062c;
+	font-size: 13px;
+	font-weight: bold;
+  display: block;
+  text-align: left;
+}
+
+/* active item */
+.slider .active {
+	border:2px solid #000;
+	position:relative;
+	cursor:default;
+}
+
+/* this makes it possible to add next button beside scrollable */
+.slider {
+	float:left;	
+}
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+} 

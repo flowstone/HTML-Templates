@@ -1,0 +1,721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Main style -->
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+<!-- Fancybox style -->
+<link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<!-- Product slider style -->
+<link rel="stylesheet" href="css/product-slider.css" type="text/css" />
+
+<!--[if IE 6]>
+	<link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen" />
+<![endif]-->
+
+<!-- Style for the superfish navigation menu -->
+<link rel="stylesheet" href="superfish/superfish.css" type="text/css" media="screen" />
+
+<!-- Style for Megamenu -->
+<link rel="stylesheet" href="css/megamenu.css" type="text/css" /> 
+
+<!-- Style for price range slider -->
+<link rel="stylesheet" href="jQueryUI/css/redmond/jquery-ui-1.7.1.custom.css" type="text/css" />
+<link rel="Stylesheet" href="jQueryUI/css/ui.slider.extras.css" type="text/css" />
+
+<!-- Style for Custom Forms -->
+<link rel="stylesheet" href="uniform/css/uniform.default.css" type="text/css" media="screen" charset="utf-8" />
+
+<!-- Google font -->
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css' />
+
+<!-- JS for jQuery -->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+<!-- JS for jQuery Product slider -->
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+<!-- JS for jQuery Border effect -->
+<script type="text/javascript" src="js/jquery.insetBorderEffect.js"></script>
+
+<!-- JS for jQuery Fancy Box -->
+<script type="text/javascript" src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<!-- JS for superfish navigation menu -->
+<script type="text/javascript" src="superfish/hoverIntent.js"></script> 
+<script type="text/javascript" src="superfish/superfish.js"></script> 
+
+<!-- JS for price range slider -->
+<script type="text/javascript" src="jQueryUI/js/jquery-ui-1.7.1.custom.min.js"></script>
+<script type="text/javascript" src="jQueryUI/js/selectToUISlider.jQuery.js"></script>
+
+<!-- JS for Collapsible Menu -->
+<script type="text/javascript" src="js/jquery.collapse.js"></script> 
+
+<!-- Style for product gallery -->
+<link href="exposure/exposure.css" type="text/css" rel="stylesheet" />
+		
+<!-- JS for product gallery -->
+<script src="exposure/jquery.exposure.js" type="text/javascript"></script>
+
+<!-- JS for Custom Forms -->
+<script src="uniform/jquery.uniform.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	
+	// Megamenu
+	$(function() {
+						
+		var $menu = $('#ldd_menu');
+		
+		$menu.children('li').each(function(){
+			var $this = $(this);
+			var $span = $this.children('span');
+			$span.data('width',$span.width());
+			
+			$this.bind('mouseenter',function(){
+				$menu.find('.ldd_submenu').stop(true,true).hide();
+				$span.stop().animate({'width':'auto'},150,function(){
+					$this.find('.ldd_submenu').slideDown(300);
+				});
+			}).bind('mouseleave',function(){
+				$this.find('.ldd_submenu').stop(true,true).hide();
+				$span.stop().animate({'width':$span.data('width')+'px'},300);
+			});
+		});
+	});
+	
+	// Tabs
+	$(function() {
+			$("ul.tabs").tabs("div.panes > .tab-content");
+	});
+	
+	$(document).ready(function() {
+		
+		// Exposure product image gallery
+		$(function(){
+				var gallery = $('#images');
+				gallery.exposure({controlsTarget : '#controls',
+					imageControls : false,
+					controls : { prevNext : false, pageNumbers : false, firstLast : false },
+					pageSize : 5,
+					enableSlideshow: false,
+					showCaptions: false,
+					slideshowControlsTarget : '#slideshow',
+					onThumb : function(thumb) {
+						var li = thumb.parents('li');				
+						var fadeTo = li.hasClass($.exposure.activeThumbClass) ? 1 : 0.7;
+						
+						thumb.css({display : 'none', opacity : fadeTo}).stop().fadeIn(200);
+						
+						thumb.hover(function() { 
+							thumb.fadeTo('fast',1); 
+						}, function() { 
+							li.not('.' + $.exposure.activeThumbClass).children('img').fadeTo('fast', 0.7); 
+						});
+					},
+					onImageHoverOver : function() {
+						if (gallery.imageHasData()) {						
+							// Show image data as an overlay when image is hovered.
+							gallery.dataElement.stop().show().animate({bottom:0+'px'},{queue:false,duration:160});
+						}
+					},
+					onImageHoverOut : function() {
+						// Slide down the image data.
+						var imageDataBottom = -gallery.dataElement.outerHeight();
+						gallery.dataElement.stop().show().animate({bottom:imageDataBottom+'px'},{queue:false,duration:160});
+					},
+					onImage : function(image, imageData, thumb) {
+						var w = gallery.wrapper;
+						
+						// Fade out the previous image.
+						image.siblings('.' + $.exposure.lastImageClass).stop().fadeOut(500, function() {
+							$(this).remove();
+						});
+						
+						// Fade in the current image.
+						image.hide().stop().fadeIn(500);
+						
+						// Setup hovering for the image data container.
+						imageData.hover(function() {
+							// Trigger mouse enter event for wrapper element.
+							w.trigger('mouseenter');
+						}, function() {
+							// Trigger mouse leave event for wrapper element.
+							w.trigger('mouseleave');
+						});
+						
+						// Check if wrapper is hovered.
+						var hovered = w.hasClass($.exposure.imageHoverClass);						
+						if (hovered) {
+							if (gallery.imageHasData()) {
+								gallery.onImageHoverOver();
+							} else {
+								gallery.onImageHoverOut();
+							}	
+						}
+		
+						if (gallery.showThumbs && thumb && thumb.length) {
+							thumb.parents('li').siblings().children('img.' + $.exposure.selectedImageClass).stop().fadeTo(200, 0.7, function() { $(this).removeClass($.exposure.selectedImageClass); });			
+							thumb.fadeTo('fast', 1).addClass($.exposure.selectedImageClass);
+						}
+					}
+				});
+			});
+		// Exposure end
+		
+		// Custom forms
+		$(function(){ 
+			$("input:checkbox, input:radio").uniform();
+		});
+		
+		// Border effects
+		$(".featured-product-item img").insetBorder({
+			borderColor : '#EDE6E9',
+			inset: 5
+		});
+		
+		// Navigation menu
+		$("ul.sf-menu").superfish(); 
+		
+		// Collapsible menu
+		$("#lhs, #features .box").collapse({
+        show: function() {
+            this.animate({opacity: 'toggle', height: 'toggle'}, 300);
+        },
+        hide : function() {
+            this.animate({opacity: 'toggle', height: 'toggle'}, 300);
+        }
+    }); 
+		
+		// Slider
+		$(".slider").scrollable();
+	
+		// Fancybox
+		$("a.grouped-elements").fancybox({
+			'titlePosition'	: 'inside'
+		});
+
+		$("a[rel=group4]").fancybox({
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none',
+			'titlePosition' 	: 'over',
+			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+				return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+			}
+		});
+		
+		// Mouseover effect for thumbnails
+		$("a.grouped-elements").hover(function() {
+			  $(this).find(".imagehover").toggleClass("mouseon");
+		});
+		
+		// Price range
+			$('select#valueA, select#valueB').selectToUISlider();
+			
+		// Dropdown show/hide
+		jQuery(".dropdown").click(function() {
+
+			// Hiding any open menus
+			jQuery(".dropdown").not(this).each(function() {
+				jQuery(this).find("ul").hide();
+				jQuery(this).find("a.nav-link").removeClass('selected');
+			})
+		
+			jQuery(this).find("ul").toggle();
+			jQuery(this).find("a.nav-link").toggleClass('selected');
+		  });
+      
+		// Closing the menu if click outside
+		jQuery(document).bind('click', function(e) {
+			var $clicked = jQuery(e.target);
+          
+			if (! $clicked.parents().hasClass("dropdown")) {
+				jQuery(this).find('.dropdown a.nav-link').removeClass("selected");
+				jQuery(".dropdown ul").hide();
+			}
+          
+		});
+      
+	});
+	
+	$(window).load(function() {
+		
+	});
+		
+
+</script>
+
+<style type="text/css">
+* {margin:0; padding:0;}
+body { background-image:url(img/backgroundproducts01.jpg); background-repeat:no-repeat;}
+p{ font-family:Book Antiqua;font-size:20px; font-style:italic; color:#a05858;margin-top:15px; margin-left:20px;}
+a{ text-decoration:none; border:none; color:#851a1a; display:block; line-height:inherit;}
+h1{ font-weight:normal; font-size:16px; font-family:Arial; color:#a05858; margin-top:10px;}
+img{ border:none;}
+li{ list-style:none;}
+
+.container{ width:980px;margin:auto; overflow:hidden;}
+.head{width:980px;height:100px;}
+.head img{float:left;}
+.headTop{width:330px;height:26px;}
+.headTop a{float:left; font-family:Arial; font-size:16px;margin-top:11px;margin-left:7px;
+border:none; color:#f1bebe;}
+.rightBox{width:330px;height:100px;float:right;margin-right:12px;}
+.mainMenu{width:318px;height:42px; margin-top:33px;margin-left:10px;}
+
+.search{width:404px;height:34px;float:left;margin-top:54px;margin-left:30px;}
+.nav{width:980px;height:52px; background-image:url(images/mainnav_28.png); background-repeat:no-repeat;}
+.nav li{float:left;}
+.nav a{ font-family:Chaparral Pro; color:#CCC; font-weight:bold; font-size:20px; line-height:50px;}
+.nav a:hover{color:#FFF;}
+
+.footer{width:980px;height:375px;margin-top:10px;}
+.usefull ul{ font-family:Arial; font-size:18px; color:#851a1a; font-weight:bold;line-height:30px;
+ float:left; margin-left:50px; margin-top:20px;}
+.usefull a{ font-family:Arial; font-size:12px; color:green; line-height:20px;}
+.lastLogo{width:150px;height:34px; background-image:url(images/last-logo_03.png); 
+background-repeat:no-repeat ;margin-right:10px; float:right; margin-top:100px;}
+.foot{width:980px;height:36px; margin-top:30px; background-color:#282828;}
+.three{width:360px;height:18px;float:left; margin-top:9px; margin-left:50px;}
+.three a{color:#a1a1a1; font-size:14px; font-family:Arial; text-decoration:underline; float:left;}
+.web{width:290px;height:20px; margin-top:8px;float:right; margin-right:70px;}
+.web a{color:#a1a1a1; font-size:16px; font-family:Arial; float:right}
+
+
+</style> 
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Aroma首页</title>
+</head>
+
+<body>
+
+<div class="container" >
+  
+	        <!--header-->
+         	<!--页眉左边信息栏-->
+	      <div class="head">
+	        <img src="images/Aroma_Home-page_02.png" />
+           
+	        <div class="search">
+	          <div align="left">
+	            <input type="search" 
+                     value="&nbsp;&nbsp;Search" 
+                     style="width:404px;height:34px; border:2px #b6ce8a; color:#8f8f8f; font-family:Arial; font-size:16px;
+                      		background:url(images/search_19.png); background-repeat:no-repeat; line-height:34px;"/>
+              </div>
+            </div>
+            <!--页眉右边信息栏-->
+	        <div class="rightBox">
+	          <div class="headTop">
+	            
+	            <div align="left"><a href="#">Login</a>
+	              <a><img src="images/aroma_Home-page_12.png" /></a>
+	              <a href="#">Reginster</a>
+	              <a><img src="images/aroma_Home-page_12.png" /></a>
+	              <a href="#"><img src="images/Aroma_Home-page_05.png" /></a>
+	              <a href="#">CH</a>
+	              <a href="#"><img src="images/Aroma_Home-page_07.png" /></a>
+	              <a href="">EN</a>
+                  <a href="#"><img src="images/Aroma_Home-page_09.png" /></a>
+	              <a href="#">HK</a>
+	              
+                </div>
+              </div>
+	          <!--主按钮(mainMenu)-->
+	          <div class="mainMenu">
+	            <div align="left">
+	              <a href="Home-page.html"><input type="button"
+                       value="CONTACTS" 
+                       style="width:129px;height:42px; color:#FFF; font-family:Chaparral Pro; font-size:20px;
+                        	line-height:42px;font-weight:bold;border:0; background:url(images/Aroma_Home-page_19.png); float:left; " /></a>
+	              <a href="forinvestors.html"><input type="button" 
+                		value="FOR INVESTORS" 
+                		style="width:178px;height:42px;color:#FFF; font-family:Chaparral Pro; font-size:20px; line-height:42px; 
+                				font-weight:bold;border:0; background:url(images/Aroma_Home-page_21.png); float:right;" /></a>
+	              
+                </div>
+              </div>
+            </div>
+  </div>
+  		<!--主导航(nav)-->
+	      <div align="left">
+          
+	        <table class="nav">
+	          <tr>
+	            <td width="150" align="center" valign="middle"><a href="products.html" target="_top">PRODUCTS</a></td>
+	            <td width="174" align="center" valign="middle"><a href="beauty land.html" target="_top">BEAUTY LAND</a></td>
+	            <td width="216" align="center" valign="middle"><a href="about.html" target="_top">ABOUT AROMA</a></td>
+	            <td width="420" align="left" valign="middle"><a href="contacts.html" target="_top">CONTACTS</a></td>
+              </tr>
+            </table>
+          </div>
+          <!--content-->
+          <div class="content-top"></div>
+          <div class="content-inner">
+			
+			<!-- List Begin -->
+			
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="Home-page.html" target="_top">Home</a></li>
+					
+					<li><a href="Home-page -anticellulite .html" target="_top">anticellulite</a></li>
+					<li class="last">Great New Perfume for Her</li>
+				</ul>
+				<br class="clear"/>
+			</div>
+			
+				<!-- Left Column Begin -->
+			<div id="lhs" class="left-side float-left">
+				<h3 class="active">Categories</h3>
+				<ul>
+					<li><a href="#">Make Up</a></li>
+					<li>Fragrance</li>
+					<li><a href="#">Skincare</a></li>
+					<li><a href="#">Bodycare</a></li>
+					<li><a href="#">Hand Wash & Soaps</a></li>
+				</ul>
+				
+				<h3 class="active">Brands</h3>
+				<ul>
+					
+					<li><label><input type="checkbox" checked="yes" />Calvin Klein</label></li>
+					<li><label><input type="checkbox" checked="yes" />Chloe</label></li>
+					<li><label><input type="checkbox" />Jaguar</label></li>
+					<li><label><input type="checkbox" />Nivea</label></li>
+					<li><label><input type="checkbox" />Tommy Hilfiger</label></li>
+				</ul>
+				
+				<h3 class="active">Price Range</h3>
+				
+				<!-- Price Slider Begin -->
+				<div class="price-range">
+					<fieldset>
+						<label for="valueA">From:</label>
+						<select name="valueA" id="valueA">
+							<option value="$0">$0</option>
+							<option value="$10">$10</option>
+							<option value="$20">$20</option>
+							<option value="$30" selected="selected">$30</option>
+							<option value="$40">$40</option>
+							<option value="$50">$50</option>
+							<option value="$100">$100</option>
+							<option value="$200">$200</option>
+							<option value="$400">$400</option>
+							<option value="$600">$600</option>
+						</select>
+				
+						<label for="valueB">To:</label>
+						<select name="valueB" id="valueB">
+							<option value="$0">$0</option>
+							<option value="$10">$10</option>
+							<option value="$20">$20</option>
+							<option value="$30">$30</option>
+							<option value="$40">$40</option>
+							<option value="$50">$50</option>
+							<option value="$100" selected="selected">$100</option>
+							<option value="$200">$200</option>
+							<option value="$400">$400</option>
+							<option value="$600">$600</option>
+						</select>
+					</fieldset>
+				</div>
+				<!-- Price Slider End -->
+				
+				<!-- Featured Products Begin -->
+				<h3 class="active">Featured Products</h3>
+				<div class="featured-product">
+					<div class="featured-product-item">
+						<a href="#" class="float-left"><img src="images/small01.jpg" border="0" /></a>
+						<span class="title"><a href="#">Great New Perfume</a></span>
+						<span class="price">$29.90</span>
+					</div>
+					<br class="clear"/>
+					<div class="featured-product-item">
+						<a href="#" class="float-left"><img src="images/small02.jpg" border="0" align="left" /></a>
+						<span class="title"><a href="#">Great New Perfume</a></span>
+						<span class="price">$29.90</span>
+					</div>
+					<br class="clear"/>
+					<div class="featured-product-item">
+						<a href="#" class="float-left"><img src="images/small03.jpg" border="0" align="left" /></a>
+						<span class="title"><a href="#">Great New Perfume</a></span>
+						<span class="price">$29.90</span>
+					</div>
+				</div>
+				<!-- Featured Products Begin -->
+				
+			</div>
+			<!-- Left Column End -->
+			
+			<!-- Main Column Begin -->
+			<div class="main-content">
+			
+				<div class="detail-item">
+					
+						<!-- Product Gallery Begin -->
+						<div class="product-gallery float-left">
+							<div id="exposure"></div>
+							<div class="panel">	
+								<div id="controls"></div>				
+								<div id="slideshow"></div>
+								<ul id="images">
+									<li><a href="images/product1.jpg"><img src="images/product1_small1.jpg" title="Home made" /></a></li>
+									<li><a href="images/product1_2.jpg"><img src="images/product1_small2.jpg" title="Chocolate" /></a></li>
+									<li><a href="images/product2.jpg"><img src="images/product1_small3.jpg" title="Love birds" /></a></li>
+									<li><a href="images/product3.jpg"><img src="images/product1_small4.jpg" title="Blue" /></a></li>
+								</ul>
+							</div>	
+						</div>
+						<!-- Product Gallery End -->
+					
+			 		<div class="text-info">
+			 			<span class="title">Great New Perfume for Her</span>
+						<span class="price">$149.90</span>
+													
+						<span class="description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id rutrum orci. Donec vel turpis orci, id conditum est. Nunc nec felis non est dictum ultrices. </p>
+						</span>
+						
+						<div class="dropdown-container">
+							<span class="size">Quantity:</span>
+							<input type="text" value="1" onfocus="if(this.value=='1'){this.value=''};" onblur="if(this.value==''){this.value='1'};" class="input-text quantity">
+						</div>
+				
+						<div class="dropdown-container">
+							<span class="size">Size:</span>
+							<!-- Dropdown Begin -->
+							<div class="color">
+								<div class="dropdown">
+									<a href="javascript:void(0)" class="dropdown-link">Select Size...</a>
+				
+									<ul class="search-menu" style="display: none; position: absolute;">
+										<li>
+											<span class="menu-link">S</span>
+										</li>
+										<li>
+											<span class="menu-link">M</span>
+										</li>
+										<li class="last">
+											<span class="menu-link">L</span>
+										</li>
+									</ul>
+										
+								</div>  
+							</div>
+							<!-- Dropdown End -->
+						</div>
+						
+						<br class="clear"/>
+				
+						<div class="float-left dropdown-container">
+							<a href="#" class="general-button-big"><span class="button-big">Add to cart</span></a>
+						</div>
+						
+						<br class="clear"/>
+						
+						
+							<!-- Google Begin -->
+							<div class="social-container float-left">
+								<g:plusone size="medium" width="120"></g:plusone>
+
+								<script type="text/javascript">
+								  (function() {
+									var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+									po.src = '../../../apis.google.com/js/plusone.js';
+									var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+								  })();
+								</script>
+							</div>
+							<!-- Google End -->
+							
+							<!-- Twitter Begin -->
+							<div class="social-container float-left">
+								<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							</div>
+							<!-- Twitter End -->
+							
+							<!-- Facebook Begin -->
+							<div class="social-container float-left">
+								<div id="fb-root"></div>
+								<script>(function(d, s, id) {
+								  var js, fjs = d.getElementsByTagName(s)[0];
+								  if (d.getElementById(id)) return;
+								  js = d.createElement(s); js.id = id;
+								  js.src = "../../../connect.facebook.net/en_US/all.js#xfbml=1";
+								  fjs.parentNode.insertBefore(js, fjs);
+								}(document, 'script', 'facebook-jssdk'));</script>
+								<div class="fb-like" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div>
+							</div>
+							<!-- Facebook End -->
+
+			 		</div>
+					
+					<!-- Tabs Begin -->
+					<div id="tabbed-menu">
+						<ul class="tabs">
+							<li><a href="#">Description</a></li>
+							<li><a href="#">Comments</a></li>
+						</ul>
+						<br class="clear"/>
+		
+						<div class="panes">
+							<div class="tab-content description">
+								
+								<!-- Tab 1 section -->
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id rutrum orci. Donec vel turpis orci, id condimentum est. Nunc nec felis non est dictum ultrices. Nam semper gravida auctor. Aenean non dolor at lorem viverra fringilla varius vitae nisi. Ut ornare sollicitudin leo, et rhoncus turpis volutpat vel. Nullam ac nunc in ipsum pellentesque facilisis id at justo.</p>
+
+								<p>Aliquam ac libero elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla metus libero, rhoncus nec mattis ac, ullamcorper interdum elit. Nullam id congue est. Nam diam dui, accumsan quis pretium et, facilisis ut leo. Sed orci diam, dictum ut aliquet eget, sodales in massa. </p>
+
+								<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam rhoncus, felis sed aliquam tempus, ipsum sem consequat ligula, vitae mollis nunc diam quis sem. Aliquam ac libero elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla metus libero, rhoncus nec mattis ac, ullamcorper interdum elit. </p>
+								
+								<p>Maecenas id rutrum orci. Donec vel turpis orci, id condimentum est. Nunc nec felis non est dictum ultrices. Nam semper gravida auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean non dolor at lorem viverra fringilla varius vitae nisi. Ut ornare sollicitudin leo, et rhoncus turpis volutpat vel. Nullam ac nunc in ipsum pellentesque facilisis id at justo.</p>
+								
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus libero, rhoncus nec mattis ac, ullamcorper interdum elit. Nullam id congue est. Nam diam dui, accumsan quis pretium et, facilisis ut leo. Sed orci diam, dictum ut aliquet eget, sodales in massa. Ut ornare sollicitudin leo, et rhoncus turpis volutpat vel. Nullam ac nunc in ipsum pellentesque facilisis id at justo.</p>
+								<!-- End -->
+							  
+							</div>
+							<div class="tab-content">
+								
+								<!-- Tab 2 section -->
+								<div class="single-comment blog-page">
+									<div class="avatar float-left">
+										<img src="images/avatar.png"/>
+									</div>
+									<div class="comment-text blog-single-entry">
+										<span class="name">John Smith</span>
+										<span class="date">January 12, 2012, Wednesday, at 10:23 a.m.</span>
+										<p>Nunc porta turpis vitae tellus pulvinar dapibus. Morbi ut leo sapien, vel vulte orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Fusce sed nisi enim, et tincidunt nunc. </p>
+									</div>
+								</div>
+								
+								<div class="comment-form-container">
+									<span class="new-comment-heading">Post Your Comment</span>
+									<div class="form-name float-left">
+										<span>Your Name</span>
+										<input type="text" value="" class="form-name input-text">
+									</div>
+									<div class="form-name float-right">
+										<span>Your E-mail</span>
+										<input type="text" value="" class="form-name input-text">
+									</div>
+									<br class="clear"/>
+									<div class="form-comment">
+										<span>Comment</span>
+										<textarea name="comments" rows="4" cols="20" class="txtarea-comment"></textarea> 
+									</div>
+									<a href="#" class="general-button-big add-comment"><span class="button-big">Submit your comment</span></a>
+							</div>
+								<!-- End -->
+							  
+							</div>
+							
+						</div>
+						
+					</div>
+					<!-- Tabs End -->
+					
+				</div>
+					
+			</div>
+			<!-- Main Column End -->
+			
+			<br class="clear"/>
+			
+			<!-- List End -->
+			
+		</div>
+         
+         
+		<img src="images/Aroma_Home-page_48.png" class="line"/>
+	      <!--footer页脚-->
+                  <div class="footer">
+                	<div class="usefull">
+                    	<ul>Usefull
+                        	<li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Forgot your password?</a></li>
+                            <li><a href="#">Search</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                        <ul>Aromas brands
+                        	<li><a href="#">Astera HOMEOPATHICA</a></li>
+                            <li><a href="#">AROMA Men</a></li>
+                            <li><a href="#">TOUCH MY SKIN</a></li>
+                            <li><a href="#">Aroma Hyaluron + Retinol</a></li>
+                            <li><a href="#">Aroma Collagen + Omege 3</a></li>
+                            <li><a href="#">Aroma Re-White</a></li>
+                            <li><a href="#">Aroma Hot Body Slim</a></li>
+                            <li><a href="#">Happy Baby</a></li>
+                            <li><a href="#">Astera</a></li>
+                            <li><a href="#">Astera PARODONT</a></li>
+                            <li><a href="#">Astera TOTAL 12</a></li>
+                        </ul>
+                        <ul>&nbsp;
+                        	<li><a href="#">Astera Xtreme</a></li>
+                            <li><a href="#">Astera Active +</a></li>
+                            <li><a href="#">Astera KIDS</a></li>
+                            <li><a href="#">Dento Kiss</a></li>
+                            <li><a href="#">Aroma Fresh</a></li>
+                            <li><a href="#">Aroma Natural</a></li>
+                            <li><a href="#">Aroma Greenline</a></li>
+                            <li><a href="#">Aroma Fresh & Clean</a></li>
+                            <li><a href="#">Aroma Luxury oils</a></li>
+                            <li><a href="#">Aroma Natural elements</a></li>
+                            <li><a href="#">Aroma Baby</a></li>
+                            
+                        </ul>
+                        <ul>&nbsp;
+                        	<li><a href="#">Sunwatch</a></li>
+                            <li><a href="#">Organic Age control</a></li>
+                            <li><a href="#">Aroma Q 10</a></li>
+                            <li><a href="#">Aroma Intime</a></li>
+                            <li><a href="#">Aroma</a></li>
+                            <li><a href="#">Viking</a></li>
+                            <li><a href="#">Aroma Color</a></li>
+                            <li><a href="#">Aroma Color Henna</a></li>
+                            <li><a href="#">Aroma INTENSE</a></li>
+                            <li><a href="#">Aroma Style</a></li>
+                            <li><a href="#">Fara</a></li>
+                        </ul>
+                        <ul>Aromas online
+                        	<li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">YouTuble</a></li>
+                        </ul>
+                      <ul>Feedback
+                        	<li><a href="#">Forum</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            
+                        </ul>
+                     
+                      
+                      
+                  </div>
+                 <!--页脚LOGO-->
+                  		<div class="lastLogo"></div>
+                </div>
+                <!--底部信息网址-->
+                <div class="foot">
+                	<div class="three">
+                    <a href="#">www.aroma.bg</a>&nbsp;&nbsp;
+                    <a href="#">www.astera.bg</a>&nbsp;&nbsp;
+                    <a href="#">www.greenline.bg</a>
+                    </div>
+                    <div class="web">
+                    	<a>Web design & development @</a>&nbsp;<img src="images/smalllogo_07.png" />
+                    	
+                    </div>
+                </div>
+	</div>
+        
+</div>
+</body>
+</html>

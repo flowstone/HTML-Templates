@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://themes.googleusercontent.com/static/fonts/kaushanscript/v1/qx1LSqts-NtiKcLw4N03IGrfpCc_r9-5ZnZPBmoO4Sk.eot);
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(http://themes.googleusercontent.com/static/fonts/kaushanscript/v1/qx1LSqts-NtiKcLw4N03IGrfpCc_r9-5ZnZPBmoO4Sk.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/kaushanscript/v1/qx1LSqts-NtiKcLw4N03IFhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+}

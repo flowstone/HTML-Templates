@@ -1,0 +1,151 @@
+
+#main {
+	width:824px;
+	margin:0 auto;
+}
+
+#images {
+	display:none;	
+}
+
+.panel {
+	margin:0 0 12px 0;	
+}
+
+ul.exposureThumbs {
+	border-right:none;
+	padding:0;
+	margin: 15px 0px 0px 0px;
+	list-style-type:none;
+	height:79px;
+}
+
+ul.exposureThumbs li {
+	background:#ffffff;
+	margin:0 5px 0 0;
+	padding:0;
+	text-align:center;
+	display:none;
+	float:left;
+}
+
+ul.exposureThumbs li img {
+	cursor:pointer;
+}
+
+ul.exposureThumbs li.last {
+	margin:0;
+}
+
+.exposureTarget {
+	width:330px;
+	height:250px;
+	background-color:#111;	
+	background-image:url(res/loader.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+	float:left;	
+	padding:0;
+	margin: 0px 0px 15px 0px;
+	position:relative;
+	overflow:hidden; 
+}
+
+.exposureWrapper {
+	position:absolute; 
+	top:0; 
+	left:0;
+}
+
+.exposureWrapper img {
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.exposureLoaded {
+	background-image:none;	
+}
+
+.exposureData {
+	position:absolute;
+ 	left:0;
+ 	right:0;
+ 	bottom:-2000px;
+	height:60px;
+	padding:7px;
+	background-image:url(res/veil.png);
+	color:#fff;
+	font-family:Arial,Verdana,Helvetica,sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	display:none;
+}
+
+/* In this demo we are using thumbs with fixed size */
+ul.exposureThumbs li {
+
+}
+
+ul.exposureThumbs li.current {
+	border: 5px solid #EDE6E9;
+}
+
+ul.exposureThumbs li.active {
+	border: 1px dashed #d5c1ca;
+	padding: 4px;
+}
+
+.exposureSlideshowControls a,
+.exposureControls span,
+.exposureControls a {
+	font-family:Arial,Verdana,Helvetica,sans-serif;
+	font-size:11px;
+	padding:8px;
+	background-color:#999;
+	display:block;
+	float:left;
+}
+
+.exposureSlideshowControls a {
+	float:right;	
+}
+
+.exposureSlideshowControls a,
+.exposureControls a {
+	color:#333;
+	text-decoration:none;
+	outline:none;
+}
+
+.exposureSlideshowControls a:active,
+.exposureSlideshowControls a:hover,
+.exposureControls a:active,
+.exposureControls a:hover {
+	background-color:#ddd;
+	color:#444;
+}
+
+.exposurePaging .active {
+	color:#111;
+	background-color:#fff;
+}
+
+.clear {
+	clear:both;	
+}
+
+p.info {
+	margin:40px auto;
+	text-align:center;	
+	width:600px;
+}
+
+p.info a {
+	color:#006fc0;	
+}
+
+p.info a:hover, p.info a:active {
+	color:#0084e7;	
+}

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Qwigley';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://themes.googleusercontent.com/static/fonts/qwigley/v3/sHoEui32qs911fp4i_V2UQ.eot);
+  src: local('Qwigley'), local('Qwigley-Regular'), url(http://themes.googleusercontent.com/static/fonts/qwigley/v3/sHoEui32qs911fp4i_V2UQ.eot) format('embedded-opentype'), url(http://themes.googleusercontent.com/static/fonts/qwigley/v3/7kYx3NMo0QlNvVUFn_G-mg.woff) format('woff');
+}

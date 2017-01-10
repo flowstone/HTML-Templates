@@ -1,0 +1,22 @@
+
+body{ margin:auto;}
+A { TEXT-DECORATION: none }
+/*修改下面三个宽度为你想要的下面三个宽度*/
+.scroller { WIDTH: 665px; }
+.scroller .section { WIDTH: 665px; }
+.feature { WIDTH: 665px; }
+.feature { MARGIN-TOP: 2em; POSITION: relative }
+.feature H2 { MARGIN: 20px 0px 7px; text-align: left; text-indent: 10px; }
+.feature A IMG { BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #ccc 1px solid }
+.feature A:hover IMG { BORDER-RIGHT: #2388ff 1px solid; BORDER-TOP: #2388ff 1px solid; BACKGROUND: #ffc; BORDER-LEFT: #2388ff 1px solid; BORDER-BOTTOM: #2388ff 1px solid }
+#my-glider { POSITION: relative; margin:10px auto; }
+.scroller { OVERFLOW: hidden; HEIGHT: 104px }
+.scroller .section { FLOAT: left; OVERFLOW: hidden; WHITE-SPACE: nowrap; HEIGHT: 104px; TEXT-ALIGN: center }
+.scroller .content { WIDTH: 10000px }
+#prevLink { DISPLAY: block; OVERFLOW: hidden; WIDTH: 20px; TEXT-INDENT: -99999px; POSITION: absolute; TOP: 35%; HEIGHT: 20px; background-image: url(../img/glider-arrows.png); background-repeat: no-repeat; }
+#nextLink { DISPLAY: block; OVERFLOW: hidden; WIDTH: 20px; TEXT-INDENT: -99999px; POSITION: absolute; TOP: 35%; HEIGHT: 20px; background-image: url(../img/glider-arrows.png); background-repeat: no-repeat; }
+#prevLink:hover { BACKGROUND-POSITION: 0px -19px }
+#nextLink { BACKGROUND-POSITION: -19px 0px }
+#nextLink:hover { BACKGROUND-POSITION: -19px -19px }
+#prevLink { LEFT: -18px }
+#nextLink { RIGHT: -18px }

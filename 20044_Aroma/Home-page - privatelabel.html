@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Main style -->
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+<!-- Fancybox style -->
+<link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<!-- Product slider style -->
+<link rel="stylesheet" href="css/product-slider.css" type="text/css" />
+
+<!-- Style for the superfish navigation menu -->
+<link rel="stylesheet" href="superfish/superfish.css" type="text/css" media="screen" />
+
+<!-- Style for Megamenu -->
+<link rel="stylesheet" href="css/megamenu.css" type="text/css" /> 
+
+<!-- Style for price range slider -->
+<link rel="stylesheet" href="jQueryUI/css/redmond/jquery-ui-1.7.1.custom.css" type="text/css" />
+<link rel="Stylesheet" href="jQueryUI/css/ui.slider.extras.css" type="text/css" />
+
+<!-- Style for Custom Forms -->
+<link rel="stylesheet" href="uniform/css/uniform.default.css" type="text/css" media="screen" charset="utf-8" />
+
+<!-- Google font -->
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css' />
+
+<!-- JS for jQuery -->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+<!-- JS for jQuery Product slider -->
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+<!-- JS for jQuery Border effect -->
+<script type="text/javascript" src="js/jquery.insetBorderEffect.js"></script>
+
+<!-- JS for jQuery Fancy Box -->
+<script type="text/javascript" src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<!-- JS for superfish navigation menu -->
+<script type="text/javascript" src="superfish/hoverIntent.js"></script> 
+<script type="text/javascript" src="superfish/superfish.js"></script> 
+
+<!-- JS for Collapsible Menu -->
+<script type="text/javascript" src="js/jquery.collapse.js"></script> 
+
+<!-- JS for price range slider -->
+<script type="text/javascript" src="jQueryUI/js/jquery-ui-1.7.1.custom.min.js"></script>
+<script type="text/javascript" src="jQueryUI/js/selectToUISlider.jQuery.js"></script>
+
+<!-- JS for Custom Forms -->
+<script src="uniform/jquery.uniform.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	
+	// Megamenu
+	$(function() {
+						
+		var $menu = $('#ldd_menu');
+		
+		$menu.children('li').each(function(){
+			var $this = $(this);
+			var $span = $this.children('span');
+			$span.data('width',$span.width());
+			
+			$this.bind('mouseenter',function(){
+				$menu.find('.ldd_submenu').stop(true,true).hide();
+				$span.stop().animate({'width':'auto'},150,function(){
+					$this.find('.ldd_submenu').slideDown(300);
+				});
+			}).bind('mouseleave',function(){
+				$this.find('.ldd_submenu').stop(true,true).hide();
+				$span.stop().animate({'width':$span.data('width')+'px'},300);
+			});
+		});
+	});
+	
+	$(document).ready(function() {
+		
+		// Custom forms
+		$(function(){ 
+			$("input:checkbox, input:radio").uniform();
+		});
+		
+		// Border effects
+		$(".featured-product-item img").insetBorder({
+			borderColor : '#EDE6E9',
+			inset: 5
+		});
+		
+		// Navigation menu
+		$("ul.sf-menu").superfish(); 
+		
+		// Collapsible menu
+		$("#lhs, #features .box").collapse({
+        show: function() {
+            this.animate({opacity: 'toggle', height: 'toggle'}, 300);
+        },
+        hide : function() {
+            this.animate({opacity: 'toggle', height: 'toggle'}, 300);
+        }
+    });
+		
+		// Slider
+		$(".slider").scrollable();
+	
+		// Fancybox
+		$("a.grouped-elements").fancybox({
+			'titlePosition'	: 'inside'
+		});
+
+		$("a[rel=group4]").fancybox({
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none',
+			'titlePosition' 	: 'over',
+			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+				return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+			}
+		});
+		
+		// Mouseover effect for thumbnails
+		$("a.grouped-elements").hover(function() {
+			  $(this).find(".imagehover").toggleClass("mouseon");
+		});
+		
+		// Price range
+		$('select#valueA, select#valueB').selectToUISlider();
+
+		// Dropdown show/hide
+		jQuery(".dropdown").click(function() {
+
+      	jQuery(this).find("ul").toggle();
+			jQuery(this).find("a.nav-link").toggleClass('selected');
+		});
+      
+		// Closing the menu if click outside
+		jQuery(document).bind('click', function(e) {
+			var $clicked = jQuery(e.target);
+          
+			if (! $clicked.parents().hasClass("dropdown")) {
+				jQuery(this).find('.dropdown a.nav-link').removeClass("selected");
+				jQuery(".dropdown ul").hide();
+			}
+          
+		});
+      
+	});
+
+	$(window).load(function() {
+		
+	});
+		
+</script>
+
+<style type="text/css">
+* {margin:0; padding:0;}
+body { background-image:url(img/background.jpg); background-repeat:no-repeat;}
+p{ font-family:Book Antiqua;font-size:20px; font-style:italic; color:#a05858;margin-top:15px; margin-left:20px;}
+a{ text-decoration:none; border:none; color:#851a1a;}
+h1{ font-weight:normal; font-size:16px; font-family:Arial; color:#a05858; margin-top:10px;}
+img{ border:none;}
+li{ list-style:none;}
+
+
+
+.container{ width:980px;margin:auto; overflow:hidden;}
+.head{width:980px;height:100px;}
+.head img{float:left;}
+.headTop{width:330px;height:26px;}
+.headTop a{float:left; font-family:Arial; font-size:16px;margin-top:11px;margin-left:7px;
+border:none; color:#f1bebe;}
+.rightBox{width:330px;height:100px;float:right;margin-right:12px;}
+.mainMenu{width:318px;height:42px; margin-top:33px;margin-left:10px;}
+.mainMenu a:hover{ color:#ce5d86;}
+.search{width:404px;height:34px;float:left;margin-top:54px;margin-left:30px;}
+.nav{width:980px;height:52px; background-image:url(images/mainnav_28.png); background-repeat:no-repeat;}
+.nav li{float:left;}
+.nav a{ font-family:Chaparral Pro; color:#CCC; font-weight:bold; font-size:20px; line-height:50px;}
+.nav a:hover{color:#FFF;}
+.line{ width:980px; height:2px; margin:auto; margin-top:10px;}
+.footer{width:980px;height:385px; margin:auto;}
+.usefull ul{ float:left; margin-left:30px; margin-top:20px; font-size:18px; color:#600; font-weight:bold;}
+.usefull a{ font-family:Arial; font-size:12px; color:green; line-height:30px;}
+.lastLogo{width:150px;height:34px; background-image:url(images/last-logo_03.png); background-repeat:no-repeat ;margin-right:10px; float:right; margin-top:200px;}
+.foot{width:980px;height:36px; margin-top:30px; background-color:#282828; margin:auto;}
+.three{width:360px;height:18px;float:left; margin-top:9px; margin-left:50px;}
+.three a{color:#a1a1a1; font-size:14px; font-family:Arial; text-decoration:underline;}
+.web{width:277px;height:20px; font-family:Arial; font-size:18px; color:#851a1a; font-weight:bold;line-height:30px;float:right; margin-right:60px;}
+.web a{color:#a1a1a1; font-size:16px; font-family:Arial; line-height:40px;}
+.web a:hover{ color:#FFF;}
+</style>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Aroma首页</title>
+</head>
+
+<body>
+<div class="container">
+  
+	        <!--header-->
+         
+	      <div class="head">
+	        <img src="images/Aroma_Home-page_02.png" />
+           
+	        <div class="search">
+	          <div align="left">
+	            <input type="search" 
+                     value="&nbsp;&nbsp;Search" 
+                     style="width:404px;height:34px; border:2px #b6ce8a; color:#8f8f8f; font-family:Arial; font-size:16px; background:url(images/search_19.png); background-repeat:no-repeat; line-height:34px;"/>
+              </div>
+            </div>
+	        <div class="rightBox">
+	          <div class="headTop">
+	            
+	            <div align="left"><a href="#">Login</a>
+	              <a><img src="images/aroma_Home-page_12.png" /></a>
+	              <a href="#">Reginster</a>
+	              <a><img src="images/aroma_Home-page_12.png" /></a>
+	              <a href="#"><img src="images/Aroma_Home-page_05.png" /></a>
+	              <a href="#">CH</a>
+	              <a href="#"><img src="images/Aroma_Home-page_07.png" /></a>
+	              <a href="#">EN
+                  <a href="#"><img src="images/Aroma_Home-page_09.png" /></a>
+	              <a href="#">HK</a>
+	              
+                </div>
+              </div>
+	          
+	          <div class="mainMenu">
+	            <div align="left">
+	              <a href="contacts.html"><input type="button"
+                       value="CONTACTS" 
+                       style="width:129px;height:42px; color:#FFF; font-family:Chaparral Pro; font-size:20px; line-height:42px;font-weight:bold;border:0; background:url(images/Aroma_Home-page_19.png); float:left; " /></a>
+	              <a href="forinvestors.html"><input type="button" 
+                value="FOR INVESTORS" 
+                style="width:178px;height:42px;color:#FFF; font-family:Chaparral Pro; font-size:20px; line-height:42px; font-weight:bold;border:0; background:url(images/Aroma_Home-page_21.png); float:right;" /></a>
+	              
+                </div>
+              </div>
+            </div>
+  </div>
+	      <div align="left">
+	        <table class="nav">
+	          <tr>
+	            <td width="150" align="center" valign="middle"><a href="products.html">PRODUCTS</a></td>
+	            <td width="174" align="center" valign="middle"><a href="beauty land.html">BEAUTY LAND</a></td>
+	            <td width="216" align="center" valign="middle"><a href="about.html">ABOUT AROMA</a></td>
+	            <td width="420" align="left" valign="middle"><a href="contacts.html">CONTACTS</a></td>
+              </tr>
+            </table>
+          </div>
+          			<div class="content-top"></div>
+          			<div class"="content-inner>
+			
+			<!-- List Begin -->
+			
+			<div class="breadcrumbs">
+				<ul>
+				 
+					<li><a href="index.html" target="_top">Home</a></li>
+					<li><a href="#">E-Store</a></li>
+					<li class="last">Fragrance</li>
+				</ul>
+				<br class="clear"/>
+			</div>
+			
+			<!-- Left Column Begin -->
+			<div id="lhs" class="left-side float-left">
+				<h3 class="active">Categories</h3>
+				<ul>
+					<li><a href="#">Make Up</a></li>
+					<li>Fragrance</li>
+					<li><a href="#">Skincare</a></li>
+					<li><a href="#">Bodycare</a></li>
+					<li><a href="#">Hand Wash & Soaps</a></li>
+				</ul>
+				
+				<h3 class="active">Brands</h3>
+				<ul>
+					
+					<li><label><input type="checkbox" checked="yes" />Calvin Klein</label></li>
+					<li><label><input type="checkbox" checked="yes" />Chloe</label></li>
+					<li><label><input type="checkbox" />Jaguar</label></li>
+					<li><label><input type="checkbox" />Nivea</label></li>
+					<li><label><input type="checkbox" />Tommy Hilfiger</label></li>
+				</ul>
+				
+				<h3 class="active">Price Range</h3>
+				
+				<!-- Price Slider Begin -->
+				<div class="price-range">
+					<fieldset>
+						<label for="valueA">From:</label>
+						<select name="valueA" id="valueA">
+							<option value="$0">$0</option>
+							<option value="$10">$10</option>
+							<option value="$20">$20</option>
+							<option value="$30" selected="selected">$30</option>
+							<option value="$40">$40</option>
+							<option value="$50">$50</option>
+							<option value="$100">$100</option>
+							<option value="$200">$200</option>
+							<option value="$400">$400</option>
+							<option value="$600">$600</option>
+						</select>
+				
+						<label for="valueB">To:</label>
+						<select name="valueB" id="valueB">
+							<option value="$0">$0</option>
+							<option value="$10">$10</option>
+							<option value="$20">$20</option>
+							<option value="$30">$30</option>
+							<option value="$40">$40</option>
+							<option value="$50">$50</option>
+							<option value="$100" selected="selected">$100</option>
+							<option value="$200">$200</option>
+							<option value="$400">$400</option>
+							<option value="$600">$600</option>
+						</select>
+					</fieldset>
+				</div>
+				<!-- Price Slider End -->
+				
+				<!-- Featured Products Begin -->
+				<h3 class="active">Featured Products</h3>
+				<div class="featured-product">
+					<div class="featured-product-item">
+						<a href="#" class="float-left"><img src="images/small01.jpg" border="0" /></a>
+						<span class="title"><a href="#">Great New Perfume</a></span>
+						<span class="price">$29.90</span>
+					</div>
+					<br class="clear"/>
+					<div class="featured-product-item">
+						<a href="#" class="float-left"><img src="images/small02.jpg" border="0" align="left" /></a>
+						<span class="title"><a href="#">Great New Perfume</a></span>
+						<span class="price">$29.90</span>
+					</div>
+					<br class="clear"/>
+					<div class="featured-product-item">
+						<a href="#" class="float-left"><img src="images/small03.jpg" border="0" align="left" /></a>
+						<span class="title"><a href="#">Great New Perfume</a></span>
+						<span class="price">$29.90</span>
+					</div>
+				</div>
+				<!-- Featured Products Begin -->
+				
+			</div>
+			<!-- Left Column End -->
+			
+			<!-- Main Column Begin -->
+			<div class="main-content">
+				<h3>Fragrance Category - Display as Grid</h3>
+				
+				<div class="list-options">
+					<div class="float-left">
+						<img src="images/icon_grid.png"/><span>View as grid</span>
+						<img src="images/icon_list.png"/><a href="list.html" class="regular">View as list</a>
+					</div>
+					
+					<!-- Sort By Begin -->
+					<div class="float-right sortby">
+						<div class="dropdown">
+							<a href="javascript:void(0)" class="dropdown-link">Sort By...</a>
+		
+							<ul class="search-menu" style="display: none; position: absolute;">
+								<li>
+									<span class="menu-link">Price Low to High</span>
+								</li>
+								<li>
+									<span class="menu-link">Price High to Low</span>
+								</li>
+								<li>
+									<span class="menu-link">Rating</span>
+								</li>
+							</ul>
+								
+						</div>  
+					</div>
+					<br class="clear"/>
+					<!-- Sort By End -->
+				</div>
+					
+				
+				 <!-- 1-3 -->
+					<div class="list-items">
+						<div class="single-item">
+							<div class="sale-badge-grid"></div>
+							<span class="title"><a href="details.html">Great New Perfume for Her</a></span>
+							<span class="price"><span class="stricken">$89.90</span>$49.90</span>
+							<img src="images/product1.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item">
+							<div class="sale-badge-grid"></div>
+							<span class="title"><a href="details.html">Aroma Accattivante</a></span>
+							<span class="price"><span class="stricken">$39.90</span>$29.90</span>
+							<img src="images/product2.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item last">
+							<span class="title"><a href="details.html">Delight in Orange</a></span>
+							<span class="price">$23</span>
+							<img src="images/product3.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div><br class="clear"/>
+					</div>
+					
+					<!-- 4-6 -->
+					<div class="list-items">
+						<div class="single-item">
+							<span class="title"><a href="details.html">Kiss in the Rain</a></span>
+							<span class="price">$149.90</span>
+							<img src="images/product5.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item">
+							<span class="title"><a href="details.html">Aroma Dolce</a></span>
+							<span class="price">$29</span>
+							<img src="images/product6.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item last">
+							<span class="title"><a href="details.html">Wind of Spring</a></span>
+							<span class="price">$23</span>
+							<img src="images/product2.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div><br class="clear"/>
+					</div>
+					
+					 <!-- 7-9 -->
+					<div class="list-items">
+						<div class="single-item">
+							<span class="title"><a href="details.html">Great New Perfume for Her</a></span>
+							<span class="price">$149.90</span>
+							<img src="images/product4.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item">
+							<span class="title"><a href="details.html">Delight in Yellow</a></span>
+							<span class="price">$29</span>
+							<img src="images/product3.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item last">
+							<span class="title"><a href="details.html">Seduction in Purple</a></span>
+							<span class="price">$23</span>
+							<img src="images/product1.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div><br class="clear"/>
+					</div>
+				
+			</div>
+			<!-- Main Column End -->
+			
+			<br class="clear"/>
+			
+			<!-- List End -->
+			
+		</div>
+      		
+            <img src="images/Aroma_Home-page_48.png" class="line" />
+            <!-- footer -->
+                <div class="footer">
+                	<div class="usefull">
+                    	<ul>Usefull
+                        	<li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Forgot your password?</a></li>
+                            <li><a href="#">Search</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                        <ul>Aromas brands
+                        	<li><a href="#">Astera HOMEOPATHICA</a></li>
+                            <li><a href="#">AROMA Men</a></li>
+                            <li><a href="#">TOUCH MY SKIN</a></li>
+                            <li><a href="#">Aroma Hyaluron + Retinol</a></li>
+                            <li><a href="#">Aroma Collagen + Omege 3</a></li>
+                            <li><a href="#">Aroma Re-White</a></li>
+                            <li><a href="#">Aroma Hot Body Slim</a></li>
+                            <li><a href="#">Happy Baby</a></li>
+                            <li><a href="#">Astera</a></li>
+                            <li><a href="#">Astera PARODONT</a></li>
+                            <li><a href="#">Astera TOTAL 12</a></li>
+                        </ul>
+                        <ul>&nbsp;
+                        	<li><a href="#">Astera Xtreme</a></li>
+                            <li><a href="#">Astera Active +</a></li>
+                            <li><a href="#">Astera KIDS</a></li>
+                            <li><a href="#">Dento Kiss</a></li>
+                            <li><a href="#">Aroma Fresh</a></li>
+                            <li><a href="#">Aroma Natural</a></li>
+                            <li><a href="#">Aroma Greenline</a></li>
+                            <li><a href="#">Aroma Fresh & Clean</a></li>
+                            <li><a href="#">Aroma Luxury oils</a></li>
+                            <li><a href="#">Aroma Natural elements</a></li>
+                            <li><a href="#">Aroma Baby</a></li>
+                            
+                        </ul>
+                        <ul>&nbsp;
+                        	<li><a href="#">Sunwatch</a></li>
+                            <li><a href="#">Organic Age control</a></li>
+                            <li><a href="#">Aroma Q 10</a></li>
+                            <li><a href="#">Aroma Intime</a></li>
+                            <li><a href="#">Aroma</a></li>
+                            <li><a href="#">Viking</a></li>
+                            <li><a href="#">Aroma Color</a></li>
+                            <li><a href="#">Aroma Color Henna</a></li>
+                            <li><a href="#">Aroma INTENSE</a></li>
+                            <li><a href="#">Aroma Style</a></li>
+                            <li><a href="#">Fara</a></li>
+                        </ul>
+                        <ul>Aromas brands
+                        	<li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">YouTuble</a></li>
+                        </ul>
+                      <ul>Feedback
+                        	<li><a href="#">Forum</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            
+                        </ul>
+                     
+                      
+                      
+                  </div>
+                  		<div class="lastLogo"></div>
+                </div>
+                <div class="foot">
+                	<div class="three">
+                    <a href="#">www.aroma.bg</a>&nbsp;&nbsp;
+                    <a href="#">www.astera.bg</a>&nbsp;&nbsp;
+                    <a href="#">www.greenline.bg</a>
+                    </div>
+                    <div class="web">
+                    	<a>Web design & development @</a>&nbsp;<img src="images/smalllogo_07.png" />
+                    	
+                    </div>
+                </div>
+	</div>
+        
+</div>
+</body>
+</html>

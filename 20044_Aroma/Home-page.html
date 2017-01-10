@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<style type="text/css">
+* {margin:0; padding:0;}
+body { background-image:url(img/background.jpg); background-repeat:no-repeat;}
+p{ font-family:Book Antiqua;font-size:20px; font-style:italic; color:#a05858;margin-top:15px; margin-left:20px;}
+a{ text-decoration:none; border:none; color:#851a1a;}
+h1{ font-weight:normal; font-size:16px; font-family:Arial; color:#a05858; margin-top:10px;}
+img{ border:none;}
+
+
+.wrapper {width:980px; margin:0 auto;}
+.shuoming {margin-top:20px; border:1px solid #ccc; padding-bottom:10px;}
+.shuoming dt {height:30px; line-height:30px; font-weight:bold; text-indent:10px;}
+.shuoming dd {line-height:20px; padding:5px 20px;}
+
+/* qqshop focus */
+.foc_img {width:980px; height:330px; overflow:hidden; position:relative;}
+.foc_img ul {height:380px; position:absolute;}
+.foc_img ul li {float:left; width:980px; height:330px; overflow:hidden; position:relative;}
+.foc_img ul li div {position:absolute; overflow:hidden;}
+.foc_img .btnBg {position:absolute; width:800px; height:20px; left:0; bottom:0; background:#000;}
+.foc_img .btn {position:absolute; width:780px; height:10px; padding:5px 10px; right:0; bottom:0; text-align:right;}
+.foc_img .btn span {display:inline-block; _display:inline; _zoom:1; width:25px; height:10px; _font-size:0; margin-left:5px; cursor:pointer; background:#fff;}
+.foc_img .btn span.on {background:#fff;}
+.foc_img .preNext {width:45px; height:100px; position:absolute; top:90px; background:url(img/sprite.png) no-repeat 0 0; cursor:pointer;}
+.foc_img .pre {left:0;}
+.foc_img .next {right:0; background-position:right top;}
+
+
+.container{ width:980px;margin:auto; overflow:hidden;}
+.head{width:980px;height:100px;}
+.head img{float:left;}
+.headTop{width:330px;height:26px;}
+.headTop a{float:left; font-family:Arial; font-size:16px;margin-top:11px;margin-left:7px;
+border:none; color:#f1bebe;}
+.rightBox{width:330px;height:100px;float:right;margin-right:12px;}
+.mainMenu{width:318px;height:42px; margin-top:33px;margin-left:10px;}
+
+.search{width:404px;height:34px;float:left;margin-top:54px;margin-left:30px;}
+.nav{width:980px;height:52px; background-image:url(images/mainnav_28.png); background-repeat:no-repeat;}
+.nav li{float:left;}
+.nav a{ font-family:Chaparral Pro; color:#CCC; font-weight:bold; font-size:20px;}
+.nav a:hover{color:#FFF;}
+.banner{width:980px;height:330px;}
+.line{margin-top:10px;width:980px;}
+.showBar{width:980px; height:390px; margin-top:10px; background-image:url(images/aroma_News_sidebar_03.png); background-repeat:no-repeat;}
+.showNews{width:200px;height:390px; float:left;margin-left:24px;}
+.showNews a{width:200px;display:block; font-family:Arial;font-size:18px; margin-top:10px;}
+.showPrivateLabel a{width:200px; display:block; font-family:Arial;font-size:18px;margin-top:10px;}
+.showNewProducts a{width:200px; display:block; font-family:Arial;font-size:18px;margin-top:10px;}
+.showAntiCellulite a{width:200px; display:block; font-family:Arial;font-size:18px;margin-top:10px;}
+.showPrivateLabel{width:200px;height:390px; float:left; margin-left:43px;}
+.showNewProducts{width:200px;height:390px; float:left; margin-left:43px;}
+.showAntiCellulite{width:200px;height:390px; float:left; margin-left:43px;}
+.showFirst{width:200px; height:200px; background-image:url(images/Aroma_Home-page_35.png); background-repeat:no-repeat; margin-top:10px;}
+.showSecond{width:200px; height:200px; background-image:url(images/Aroma_Home-page_30.png); background-repeat:no-repeat;margin-top:10px;}
+.showThird{width:200px; height:200px; background-image:url(images/Aroma_Home-page_38.png); background-repeat:no-repeat;margin-top:10px;}
+.showFourth{width:200px; height:200px; background-image:url(images/Aroma_Home-page_32.png); background-repeat:no-repeat;margin-top:10px;}
+.moreBox{width:50px;height:11px;margin-bottom:10px;}
+.email{width:980px; height:260px; margin-top:10px; background-image:url(images/Email_sandbar_03.png); background-repeat:no-repeat;}
+.emailUs{width:486px;height:192px;margin-top:30px; margin-left:30px; float:left;}
+.feedBack{width:330px;height:192px;float:left; margin-top:50px;margin-left:40px;}
+.emailUs span{ font-size:20px; font-weight:bold; color:#851a1a; font-family:Book Antiqua;}
+.feedBack span{ font-size:20px; font-weight:bold; color:#851a1a; font-family:Book Antiqua;}
+.feedBack a{ font-size:20px; color:#ca2727; font-family:Book Antiqua;}
+.mail{width:90px;height:90px;background-image:url(images/Aroma_Home-page_55.png); background-repeat:no-repeat; float:right; margin-top:54px;}
+.fontBox{width:350px;height:192px; float:left;}
+.cutLine{margin-top:20px;;margin-left:45px; float:left;}
+.read{width:132px;height:16px;ling-height:16px; margin-left:200px;}
+.footer{width:980px;height:375px;margin-top:10px;}
+.usefull ul{ font-family:Arial; font-size:18px; color:#851a1a; font-weight:bold;line-height:30px; float:left; margin-left:50px; margin-top:20px;}
+.usefull a{ font-family:Arial; font-size:12px; color:green; line-height:20px;}
+.lastLogo{width:150px;height:34px; background-image:url(images/last-logo_03.png); background-repeat:no-repeat ;margin-right:10px; float:right; margin-top:100px;}
+.foot{width:980px;height:36px; margin-top:30px; background-color:#282828;}
+.three{width:360px;height:18px;float:left; margin-top:9px; margin-left:50px;}
+.three a{color:#a1a1a1; font-size:14px; font-family:Arial; text-decoration:underline;}
+.web{width:277px;height:20px; margin-top:8px;float:right; margin-right:50px;}
+.web a{color:#a1a1a1; font-size:16px; font-family:Arial;}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var sWidth = $("#focus").width(); //获取焦点图的宽度（显示面积）
+	var len = $("#focus ul li").length; //获取焦点图个数
+	var index = 0;
+	var picTimer;
+	
+	//以下代码添加数字按钮和按钮后的半透明条，还有上一页、下一页两个按钮
+	var btn = "<div class='btnBg'></div><div class='btn'>";
+	for(var i=0; i < len; i++) {
+		btn += "<span></span>";
+	}
+	btn += "</div><div class='preNext pre'></div><div class='preNext next'></div>";
+	$("#focus").append(btn);
+	$("#focus .btnBg").css("opacity",0.5);
+
+	//为小按钮添加鼠标滑入事件，以显示相应的内容
+	$("#focus .btn span").css("opacity",0.4).mouseenter(function() {
+		index = $("#focus .btn span").index(this);
+		showPics(index);
+	}).eq(0).trigger("mouseenter");
+
+	//上一页、下一页按钮透明度处理
+	$("#focus .preNext").css("opacity",0.2).hover(function() {
+		$(this).stop(true,false).animate({"opacity":"0.5"},300);
+	},function() {
+		$(this).stop(true,false).animate({"opacity":"0.2"},300);
+	});
+
+	//上一页按钮
+	$("#focus .pre").click(function() {
+		index -= 1;
+		if(index == -1) {index = len - 1;}
+		showPics(index);
+	});
+
+	//下一页按钮
+	$("#focus .next").click(function() {
+		index += 1;
+		if(index == len) {index = 0;}
+		showPics(index);
+	});
+
+	//本例为左右滚动，即所有li元素都是在同一排向左浮动，所以这里需要计算出外围ul元素的宽度
+	$("#focus ul").css("width",sWidth * (len));
+	
+	//鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
+	$("#focus").hover(function() {
+		clearInterval(picTimer);
+	},function() {
+		picTimer = setInterval(function() {
+			showPics(index);
+			index++;
+			if(index == len) {index = 0;}
+		},4000); //此4000代表自动播放的间隔，单位：毫秒
+	}).trigger("mouseleave");
+	
+	//显示图片函数，根据接收的index值显示相应的内容
+	function showPics(index) { //普通切换
+		var nowLeft = -index*sWidth; //根据index值计算ul元素的left值
+		$("#focus ul").stop(true,false).animate({"left":nowLeft},300); //通过animate()调整ul元素滚动到计算出的position
+		//$("#focus .btn span").removeClass("on").eq(index).addClass("on"); //为当前的按钮切换到选中的效果
+		$("#focus .btn span").stop(true,false).animate({"opacity":"0.4"},300).eq(index).stop(true,false).animate({"opacity":"1"},300); //为当前的按钮切换到选中的效果
+	}
+});
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Aroma首页</title>
+</head>
+
+<body>
+
+<div class="container">
+  
+	        <!--header-->
+         
+	      <div class="head">
+	        <img src="images/Aroma_Home-page_02.png" />
+           
+	        <div class="search">
+	          <div align="left">
+	            <input type="search" 
+                     value="&nbsp;&nbsp;Search" 
+                     style="width:404px;height:34px; border:2px #b6ce8a; color:#8f8f8f; font-family:Arial; font-size:16px; background:url(images/search_19.png); background-repeat:no-repeat; line-height:34px;"/>
+              </div>
+            </div>
+	        <div class="rightBox">
+	          <div class="headTop">
+	            
+	            <div align="left"><a href="#">Login</a>
+	              <a><img src="images/aroma_Home-page_12.png" /></a>
+	              <a href="#">Reginster</a>
+	              <a><img src="images/aroma_Home-page_12.png" /></a>
+	              <a href="#"><img src="images/Aroma_Home-page_05.png" /></a>
+	              <a href="#">CH</a>
+	              <a href="#"><img src="images/Aroma_Home-page_07.png" /></a>
+	              <a href="Home-page.html" target="_top">EN</a>
+                  <a href="#"><img src="images/Aroma_Home-page_09.png" /></a>
+	              <a href="#">HK</a>
+	              
+                </div>
+              </div>
+	          
+	          <div class="mainMenu">
+	            <div align="left">
+                <a href="contacts.html" target="_top">
+                	  <input type="submit"
+                       value="CONTACTS" 
+                       style="width:129px;height:42px; color:#FFF; font-family:Chaparral Pro; font-size:20px; line-height:42px;font-weight:bold;border:0; background:url(images/Aroma_Home-page_19.png); float:left; " /></a>
+	              <a href="forinvestors.html" target="_top">
+                  <input type="button" 
+                	value="FOR INVESTORS" 
+                	style="width:178px;height:42px;color:#FFF; font-family:Chaparral Pro; font-size:20px; line-height:42px; font-weight:bold;border:0; background:url(images/Aroma_Home-page_21.png); float:right;" /></a>
+	              
+                </div>
+              </div>
+            </div>
+  </div>
+	      <div align="left">
+	        <table class="nav">
+	          <tr>
+	            <td width="150" align="center" valign="middle"><a href="products.html" target="_top">PRODUCTS</a></td>
+	            <td width="174" align="center" valign="middle"><a href="beauty land.html" target="_top">BEAUTY LAND</a></td>
+	            <td width="216" align="center" valign="middle"><a href="about.html" target="_top">ABOUT AROMA</a></td>
+	            <td width="420" align="left" valign="middle"><a href="contacts.html" target="_top">CONTACTS</a></td>
+              </tr>
+            </table>
+          </div>
+          <!--banner-->
+  <div class="banner">
+  			<div class="wrapper">
+	<div id="focus" class="foc_img">
+		<ul>
+			<li><a href="#" target="_blank"><img src=""/></a></li>
+			<li><a href="#" target="_blank"><img src=""/></a></li>
+			<li><a href="#" target="_blank"><img src="" /></a></li>
+			<li><a href="#" target="_blank"><img src="" /></a></li>
+			<li><a href="#" target="_blank"><img src="" /></a></li>
+		</ul>
+	</div>
+</div>
+  
+  </div>
+  <img src="images/Aroma_Home-page_48.png" class="line" />
+	      <div class="showBar">
+	        <div class="showNews">
+       		  <a href="beautyland-news.html" target="_blank">NEWS</a>
+       		  <a href=""><div class="showFirst"></div></a>
+             		<h1>Aroma PLC has done a longterm investment of 6 millioneuroin the construction of a new plant.</h1>
+	         		<div class="moreBox"><a href="beautyland-news.html" class="more"><img src="images/Aroma_Home-page_44.png" /></a></div>	   
+            </div>
+	        <div class="showPrivateLabel">
+            		<a href="Home-page - privatelabel.html" target="_top">PRIVATE LABEL</a>
+       		  <a href="Home-page - privatelabel.html"><div class="showSecond"></div></a>
+             		<h1>The Market economy is characterizes with variety ofproducts and service that havebeen
+created for a...</h1>
+	         		<div><a href="beautyland-news.html" target="_top" class="more"><img src="images/Aroma_Home-page_44.png" /></a></div>  
+
+            </div>
+	        <div class="showNewProducts">
+            		<a href="beautyland-news.html" target="_top">NEW PRODUCTS</a>
+       		  <a href="beautyland-news.html"><div class="showThird"></div></a>
+             		<h1>Specially developed formulas,following the latest cosmetictrends,which ensure up to 48hour active prtection againstsweating.</h1>
+	         		<div><a href="Home-page - privatelabel.html" target="_top" class="more"><img src="images/Aroma_Home-page_44.png" /></a></div> 
+
+            </div>
+	        
+            <div class="showAntiCellulite">
+       	      <a href="Home-page - privateproducts.html" target="_top">ANTI-CELLULITE</a>
+       		  <a href="Home-page -anticellulite .html"><div class="showFourth"></div></a>
+       		  <h1>Aroma PLC has done a long
+-term investment of 6 million
+euroin the construction of a 
+new plant.</h1>
+              <div><a href="#"><img src="images/Aroma_Home-page_44.png" /></a></div>  
+            </div>
+	        	
+  </div>
+          <img src="images/Aroma_Home-page_48.png" class="line" />
+                <div class="email">
+                	<div class="emailUs">
+                    	<div class="fontBox"><span>NEWSLETTER SUBSCRIPTION</span>
+                        <p> Please enter your e-mail and press<br>
+ the button to subscribe for our newsletter.</p>
+ 						<input type="email" style="width:302px; height:32px; border:none; color:#979696; font-size:16px; font-family:Arial; line-height:30px; margin-top:10px; margin-left:10px; background:url(images/search_08.png)" value="&nbsp;&nbsp;Your e-mail"  />
+                        <input type="button"
+                       value="SUBSCRIBE" 
+                       style="width:150px;height:32px; color:#FFF; font-family:Arial; font-size:16px; line-height:32px;font-weight:bold;border:0; background:url(images/Aroma_Home-page_59.png); float:left; margin-left:163px; margin-top:10px;" /></div>
+                       <div class="mail"></div>
+                       
+                    </div>
+                   
+                    <img src="images/Aroma_Home-page_52.png" class="cutLine"/>
+                     <div class="feedBack">
+                     		<span>NEWSLETTER SUBSCRIPTION</span>
+                        	<p> Please enter your e-mail and press<br>
+ the button to subscribe for our newsletter.</p>
+ 							<div class="read"><a href="#">Read more >></a></div>
+                     </div>
+                     
+                </div>
+                <img src="images/Aroma_Home-page_48.png" class="line" />
+                <div class="footer">
+                	<div class="usefull">
+                    	<ul>Usefull
+                        	<li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Forgot your password?</a></li>
+                            <li><a href="#">Search</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                        <ul>Aromas brands
+                        	<li><a href="#">Astera HOMEOPATHICA</a></li>
+                            <li><a href="#">AROMA Men</a></li>
+                            <li><a href="#">TOUCH MY SKIN</a></li>
+                            <li><a href="#">Aroma Hyaluron + Retinol</a></li>
+                            <li><a href="#">Aroma Collagen + Omege 3</a></li>
+                            <li><a href="#">Aroma Re-White</a></li>
+                            <li><a href="#">Aroma Hot Body Slim</a></li>
+                            <li><a href="#">Happy Baby</a></li>
+                            <li><a href="#">Astera</a></li>
+                            <li><a href="#">Astera PARODONT</a></li>
+                            <li><a href="#">Astera TOTAL 12</a></li>
+                        </ul>
+                        <ul>USEFULL
+                        	<li><a href="#">Astera Xtreme</a></li>
+                            <li><a href="#">Astera Active +</a></li>
+                            <li><a href="#">Astera KIDS</a></li>
+                            <li><a href="#">Dento Kiss</a></li>
+                            <li><a href="#">Aroma Fresh</a></li>
+                            <li><a href="#">Aroma Natural</a></li>
+                            <li><a href="#">Aroma Greenline</a></li>
+                            <li><a href="#">Aroma Fresh & Clean</a></li>
+                            <li><a href="#">Aroma Luxury oils</a></li>
+                            <li><a href="#">Aroma Natural elements</a></li>
+                            <li><a href="#">Aroma Baby</a></li>
+                            
+                        </ul>
+                        <ul>USEFULL
+                        	<li><a href="#">Sunwatch</a></li>
+                            <li><a href="#">Organic Age control</a></li>
+                            <li><a href="#">Aroma Q 10</a></li>
+                            <li><a href="#">Aroma Intime</a></li>
+                            <li><a href="#">Aroma</a></li>
+                            <li><a href="#">Viking</a></li>
+                            <li><a href="#">Aroma Color</a></li>
+                            <li><a href="#">Aroma Color Henna</a></li>
+                            <li><a href="#">Aroma INTENSE</a></li>
+                            <li><a href="#">Aroma Style</a></li>
+                            <li><a href="#">Fara</a></li>
+                        </ul>
+                        <ul>Aromas brands
+                        	<li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">YouTuble</a></li>
+                        </ul>
+                      <ul>Feedback
+                        	<li><a href="#">Forum</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            
+                        </ul>
+                     
+                      
+                      
+                  </div>
+                  		<div class="lastLogo"></div>
+                </div>
+                <div class="foot">
+                	<div class="three">
+                    <a href="#">www.aroma.bg</a>&nbsp;&nbsp;
+                    <a href="#">www.astera.bg</a>&nbsp;&nbsp;
+                    <a href="#">www.greenline.bg</a>
+                    </div>
+                    <div class="web">
+                    	<a>Web design & development @</a>&nbsp;&nbsp;<img src="images/smalllogo_07.png" />
+                    	
+                    </div>
+                </div>
+	</div>
+        
+</div>
+</body>
+</html>
