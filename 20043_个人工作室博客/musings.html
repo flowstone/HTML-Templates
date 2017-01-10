@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<!----menu_script---->
+    <script src="js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<div class="header_bg">
+	<!---start-wrap---->
+<div class="wrap">
+	<!-----start-header----->
+	<div class="header">	
+		<div class="logo">
+			<a href="index.html"><img src="images/logo1.png" title="logo" /></a>
+		</div>	
+	<div class="cssmenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li class="active"><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+					<div class="clear"> </div>
+			</ul>
+	</div>
+	
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li class="active"><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<div class="clear"> </div>
+			</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+		<div class="header_bottom">
+		</div>
+		<!-----end-header-------->
+		<!--start gallery-->
+	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+		<!--end home-page-con-->
+<div class="main1">
+<div class="wrap">
+		<div class="main_btm">
+			<!--start-mfp -->	
+			<div id="small-dialog1" class="mfp-hide">
+				<div class="pop_up">
+					<img src="images/22.jpg" alt=" "/>
+				</div>
+			</div>
+			<!--end-mfp -->	
+		<!--start-content-->
+			<div class="gallery">
+			<div class="container">
+			<div id="gallerylist">
+				<div class="gallerylist-wrapper">				
+						<img src="images/1.jpg"  alt="Image 1"/>
+						<span>
+							<h2>Lorem Ipsum is simply</h2>
+						 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+							<a class="popup-with-zoom-anim" href="#small-dialog1"><img class="simg" src="images/zoom.png"></a>
+						 </span>
+						
+				</div>
+				<div class="gallerylist-wrapper">				
+						<img src="images/2.jpg"  alt="Image 1"/>
+						<span>
+							<h2>Lorem Ipsum is simply</h2>
+						 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+						 	<a class="popup-with-zoom-anim" href="#small-dialog1"><img class="simg" src="images/zoom.png"></a>
+						 </span>
+				</div>
+				<div class="gallerylist-wrapper">				
+						<img src="images/3.jpg"  alt="Image 1"/>
+						<span>
+							<h2>Lorem Ipsum is simply</h2>
+						 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+						 	<a class="popup-with-zoom-anim" href="#small-dialog1"><img class="simg" src="images/zoom.png"></a>
+						 </span>
+				</div>
+				<div class="clear"> </div>
+			</div>		
+			<div id="gallerylist1">
+				<div class="gallerylist-wrapper">		
+						<img src="images/4.gif"  alt="Image 1"/>
+						<span>
+							<h2>Lorem Ipsum is simply</h2>
+						 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+						 	<a class="popup-with-zoom-anim" href="#small-dialog1"><img class="simg" src="images/zoom.png"></a>
+						 </span>
+				</div>
+				<div class="gallerylist-wrapper">				
+						<img src="images/5.jpg"  alt="Image 1"/>
+						<span>
+							<h2>Lorem Ipsum is simply</h2>
+						 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+						 	<a class="popup-with-zoom-anim" href="#small-dialog1"><img class="simg" src="images/zoom.png"></a>
+						 </span>
+				</div>
+				<div class="gallerylist-wrapper">				
+						<img src="images/6.jpg"  alt="Image 1"/>
+						<span>
+							<h2>Lorem Ipsum is simply</h2>
+						 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+						 	<a class="popup-with-zoom-anim" href="#small-dialog1"><img class="simg" src="images/zoom.png"></a>
+						 </span>
+				</div>
+				<div class="clear"> </div>
+			</div>	
+			<div id="gallerylist1">
+				<div class="gallerylist-wrapper">				
+						<img src="images/7.jpg"  alt="Image 1"/>
+						<span>
+							<h2>Lorem Ipsum is simply</h2>
+						 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p><br />
+						 	<a class="popup-with-zoom-anim" href="#small-dialog1"><img class="simg" src="images/zoom.png"></a>
+						 </span>
+				</div>
+				<div class="gallerylist-wrapper">
+						<img src="images/8.jpg"  alt="Image 1"/>
+						<span>
+							<h2>Lorem Ipsum is simply</h2>
+						 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+						 	<a class="popup-with-zoom-anim" href="#small-dialog1"><img class="simg" src="images/zoom.png"></a>
+						 </span>
+				</div>
+				<div class="gallerylist-wrapper">
+						<img src="images/9.jpg"  alt="Image 1"/>
+						<span>
+							<h2>Lorem Ipsum is simply</h2>
+						 	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+						 	<a class="popup-with-zoom-anim" href="#small-dialog1"><img class="simg" src="images/zoom.png"></a>
+						 </span>
+				</div>
+				<div class="clear"> </div>
+			</div>																																				
+		</div>
+	</div><!-- container -->
+	<script type="text/javascript">$('body').flipLightBox()</script>
+	<div class="clear"> </div>
+	</div>
+</div>
+</div>
+<!--End-gallery-->
+<!----start footer------>
+			<div class="footer">
+			<div class="wrap">
+			<div class="social">
+				<ul>
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/twitter.png"> </a></li>
+					<li><a href="#"><img src="images/vimeo.png"> </a></li>
+					<li><a href="#"><img src="images/dribbble.png"> </a></li>
+					<li><a href="#"> <img src="images/flickr.png"></a></li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="copy-right">
+			<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>	    
+		</div>
+
+</body>
+</html>

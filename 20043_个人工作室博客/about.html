@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!----menu_script---->
+    <script src="js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<div class="header_bg">
+	<!---start-wrap---->
+<div class="wrap">
+	<!-----start-header----->
+	<div class="header">	
+		<div class="logo">
+			<a href="index.html"><img src="images/logo1.png" title="logo" /></a>
+		</div>	
+	<div class="cssmenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+					<div class="clear"> </div>
+			</ul>
+	</div>
+	
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<div class="clear"> </div>
+			</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+		<div class="header_bottom">
+		</div>
+		<!-----end-header-------->
+		<!----start-content--->
+			<div class="content">
+				<div class="wrap">
+					<div class="about">
+				<div class="about-top">
+					<div class="col span_1_of_about">
+							<h3>About</h3>
+							<div class="section group">
+								<div class="grid_1_of_4 images_1_of_4">
+						 			<div class="image"><a href="#"><img src="images/prs1.jpg"></a></div>
+						 			<h4><a href="#">Adrian Thomas</a> </h4>
+						 			<h6>6CEO&amp;Founder</h6>
+						 			<p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been </p>
+								</div>
+								<div class="grid_1_of_4 images_1_of_4">
+									<div class="image"><a href="#"><img src="images/prs1.jpg"></a></div>
+									 <h4><a href="#">Narate Ketram</a></h4>
+									 <h6>Creative Diector</h6>
+									 <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been</p>
+								</div>
+								<div class="clear"> </div>
+								</div>
+					</div>
+					<div class="col span_1_of_about1">
+						<h3>Recent Comments</h3>
+						<ul class="comments-custom unstyled">			
+					      <li class="comments-custom_li">
+								<div class="icon"> </div>
+								<div class="right-text">	
+									<a href="#"><h4 class="comments-custom_h">Admin:</h4></a>
+										<div class="comments-custom_txt">
+											<a href="#" title="Go to this comment">Sed ut perspiciatis unde omnis iste...</a>
+										</div>
+										<time>May 05,2013</time>
+								</div>
+								<div class="clear"> </div>
+							</li>
+							<li class="comments-custom_li">
+								<div class="icon"> </div>
+								<div class="right-text">	
+									<a href="#"><h4 class="comments-custom_h">Admin:</h4></a>
+										<div class="comments-custom_txt">
+											<a href="#" title="Go to this comment">Sed ut perspiciatis unde omnis iste...</a>
+										</div>
+										<time>May 05,2013</time>
+								</div>
+								<div class="clear"> </div>
+							</li>
+							<li class="comments-custom_li">
+								<div class="icon"> </div>
+								<div class="right-text">	
+									<a href="#"><h4 class="comments-custom_h">Admin:</h4></a>
+										<div class="comments-custom_txt">
+											<a href="#" title="Go to this comment">Sed ut perspiciatis unde omnis iste...</a>
+										</div>
+										<time>May 05,2013</time>
+								</div>
+								<div class="clear"> </div>
+							</li>
+					</ul>
+				</div>
+					<div class="clear"> </div>
+			</div>
+			<div class="about-bottom">
+	   		       <div class="about-topgrids">
+						<div class="about-topgrid1">
+							<h3>Who We Are</h3>
+							   <img src="images/img.jpg" title="name">
+							   <h5>LOREM IPM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT. PRAESENT VESTIBULUM.</h5>
+							   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p>
+							   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris.Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+						</div>
+				   </div>
+								<div class="about-histore">
+									<h3>History</h3>
+									<div class="historey-lines">
+										<ul>
+											<li><span>2011 &nbsp;-</span></li>
+											<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p></li>
+											<div class="clear"> </div>
+										</ul>
+									</div>
+									<div class="historey-lines">
+										<ul>
+											<li><span>2012 &nbsp;-</span></li>
+											<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p></li>
+											<div class="clear"> </div>
+										</ul>
+									</div>
+									<div class="historey-lines">
+										<ul>
+											<li><span>2013 &nbsp;-</span></li>
+											<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p></li>
+											<div class="clear"> </div>
+										</ul>
+									</div>
+									<div class="historey-lines">
+										<ul>
+											<li><span>2014 &nbsp;-</span></li>
+											<li><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aeonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.</p></li>
+											<div class="clear"> </div>
+										</ul>
+									</div>
+								   <div class="clear"> </div>
+								</div>
+								<div class="about-services">
+									<h3>Why Choose Us</h3>
+									<div class="questions">
+							          <h4><img src="images/marker21.png" alt=""/>&nbsp;What is Lorem Ipsum?</h4>
+	        				          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	        		                </div>
+	        		                <div class="questions">
+							          <h4><img src="images/marker21.png" alt=""/>&nbsp;What is Lorem Ipsum?</h4>
+	        				          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	        		                </div>
+	        		                <div class="questions">
+							          <h4><img src="images/marker21.png" alt=""/>&nbsp;What is Lorem Ipsum?</h4>
+	        				          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	        		                </div>
+							   </div>
+						<div class="clear"></div> 
+					</div>
+			  </div>
+		</div>
+		</div>
+				</div>
+			<div class="footer">
+			<div class="wrap">
+			<div class="social">
+				<ul>
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/twitter.png"> </a></li>
+					<li><a href="#"><img src="images/vimeo.png"> </a></li>
+					<li><a href="#"><img src="images/dribbble.png"> </a></li>
+					<li><a href="#"> <img src="images/flickr.png"></a></li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+		</div>
+		</div><!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="copy-right">
+			<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>	    
+		</div>
+
+</body>
+</html>

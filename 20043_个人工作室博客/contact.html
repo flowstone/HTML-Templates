@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!----menu_script---->
+    <script src="js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<div class="header_bg">
+	<!---start-wrap---->
+<div class="wrap">
+	<!-----start-header----->
+	<div class="header">	
+		<div class="logo">
+			<a href="index.html"><img src="images/logo1.png" title="logo" /></a>
+		</div>	
+	<div class="cssmenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li class="active"><a href="contact.html">Contact</a></li>
+					<div class="clear"> </div>
+			</ul>
+	</div>
+	
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li class="active"><a href="contact.html">Contact</a></li>
+				<div class="clear"> </div>
+			</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+		<div class="header_bottom">
+		</div>
+		<!-----end-header-------->
+		<!---start-getintouch---->
+			<div class="get-intouch" id="contact">
+				<div class="wrap">
+					<h3>Contact Us</h3>
+				<div class="get-intouch-grids">
+					<div class="get-intouch-left-address">
+						<h4>Cras at ultrices erat, sed vulputate eros nunc at augue gravida!</h4>
+						<p>2345 Setwant natrer, 1234</p>
+						<p>Washington. United States.</p>
+						<p>(401) 1234 567</p>
+						<p><a href="mailto:hello@mykingdom.com">hello@mykingdom.com</a></p>
+					</div>
+					<div class="get-intouch-center-form">
+						<h5>Say hello!</h5>
+						<form>
+							<input class="frist" type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+							<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+							<input type="submit" value="Send message" />
+							<div class="clear"> </div>
+						</form>
+					</div>
+					<!-- aToolTip js -->
+						<script type="text/javascript" src="js/jquery.atooltip.js"></script>
+						<script type="text/javascript">
+							$(function(){ 
+								$('a.normalTip').aToolTip();
+								}); 
+						</script>
+					<div class="clear"> </div>
+				</div>
+				</div>
+				<div class="map">
+					<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=India&amp;aq=0&amp;oq=indi&amp;sll=44.746733,-108.533936&amp;sspn=5.859437,13.392334&amp;ie=UTF8&amp;hq=&amp;hnear=India&amp;ll=20.593684,78.96288&amp;spn=3.787665,6.696167&amp;t=m&amp;z=8&amp;output=embed"> </iframe>
+				</div>
+			</div>
+			<!---//End-getintouch---->
+			<!----start footer------>
+			<div class="footer">
+			<div class="wrap">
+			<div class="social">
+				<ul>
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/twitter.png"> </a></li>
+					<li><a href="#"><img src="images/vimeo.png"> </a></li>
+					<li><a href="#"><img src="images/dribbble.png"> </a></li>
+					<li><a href="#"> <img src="images/flickr.png"></a></li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+		</div>
+		</div><!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="copy-right">
+			<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>	    
+		</div>
+
+</body>
+</html>

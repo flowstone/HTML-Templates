@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!----menu_script---->
+    <script src="js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<div class="header_bg">
+	<!---start-wrap---->
+<div class="wrap">
+	<!-----start-header----->
+	<div class="header">	
+		<div class="logo">
+			<a href="index.html"><img src="images/logo1.png" title="logo" /></a>
+		</div>	
+	<div class="cssmenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li class="active"><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+					<div class="clear"> </div>
+			</ul>
+	</div>
+	
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li class="active"><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<div class="clear"> </div>
+			</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+		<div class="header_bottom">
+		</div>
+		<!-----end-header-------->
+		<div class="footer-box">
+	    <div class="wrap">
+	     	<h4 class="f-head">
+				Lorem ipsum dolor
+			</h4>	
+	        <div id="slideshow">
+			 	
+				
+		    <div class="f-desc1" style="display: block;">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+				</div><div class="f-desc1" style="display: none;">
+			 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+					</div></div>
+				<script>
+					$("#slideshow > div:gt(0)").hide();
+					setInterval(function() { 
+					  $('#slideshow > div:first')
+					    .fadeOut(00)
+					    .next()
+					    .fadeIn(500)
+					    .end()
+					    .appendTo('#slideshow');
+					},  2000);
+				</script>
+	  </div>
+	</div>
+		<div class="content-middle">
+		<div class="wrap">
+			<h5 class="head">Lorem ipsum</h5>
+		       <div class="middle-top">
+				<div class="col_1_of_3 span_1_of_3">
+					<div class="dc-head">
+						<div class="dc-head-img">
+							<a href="#"><img src="images/pic.jpg" title="dc-name"></a>
+						</div>
+						<div class="dc-head-info">
+							<h3>Perspiciatis</h3>
+							<span>totam rem aperiam</span>
+						</div>
+						<div class="clear"> </div>
+						<div class="dc-profile">
+							<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+							<button class="btn btn-6 btn-6a">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<div class="dc-head">
+						<div class="dc-head-img">
+							<a href="#"><img src="images/pic1.jpg" title="dc-name"></a>
+						</div>
+						<div class="dc-head-info">
+							<h3>Perspiciatis</h3>
+							<span>totam rem aperiam</span>
+						</div>
+						<div class="clear"> </div>
+						<div class="dc-profile">
+							<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+							<button class="btn btn-6 btn-6a">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<div class="dc-head">
+						<div class="dc-head-img">
+							<a href="#"><img src="images/pic2.jpg" title="dc-name"></a>
+						</div>
+						<div class="dc-head-info">
+							<h3>Perspiciatis</h3>
+							<span>totam rem aperiam</span>
+						</div>
+						<div class="clear"> </div>
+						<div class="dc-profile">
+							<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+							<button class="btn btn-6 btn-6a">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div> 
+		   </div>
+		</div>
+	</div>
+	<!----start footer------>
+			<div class="footer">
+			<div class="wrap">
+			<div class="social">
+				<ul>
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/twitter.png"> </a></li>
+					<li><a href="#"><img src="images/vimeo.png"> </a></li>
+					<li><a href="#"><img src="images/dribbble.png"> </a></li>
+					<li><a href="#"> <img src="images/flickr.png"></a></li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="copy-right">
+			<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>	    
+		</div>
+
+</body>
+</html>

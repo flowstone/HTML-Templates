@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+ 		<!---strat-slider---->
+	    <script type="text/javascript" src="js/jquery.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/slider-style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<!---//-slider---->	
+	<!----menu_script---->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<div class="header_bg">
+	<!---start-wrap---->
+<div class="wrap">
+	<!-----start-header----->
+	<div class="header">	
+		<div class="logo">
+			<a href="index.html"><img src="images/logo1.png" title="logo" /></a>
+		</div>	
+	<div class="cssmenu">
+			<ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+					<div class="clear"> </div>
+			</ul>
+	</div>
+	
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<div class="clear"> </div>
+			</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+		<div class="header_bottom">
+		</div>
+		<!-----end-header-------->
+		<div class="text-slider">
+				<div class="wrap"> 
+		<!---start-da-slider----->
+			<div id="da-slider" class="da-slider">
+					<div class="da-slide">
+						<h2><span><img src="images/que.png"/></span></h2>
+						<p>They are ill discoverers that think there is no land,when they can see nothing but sea.</p>
+						<span class="da-link"><h6> </h6></span>
+					</div>
+					<div class="da-slide">
+						<h2><span><img src="images/que.png"/></span></h2>
+						<p>They are ill discoverers that think there is no land,when they can see nothing but sea.</p>
+						<span class="da-link"><h6> </h6></span>
+					</div>
+					<div class="da-slide">
+						<h2><span><img src="images/que.png"/></span></h2>
+						<p>They are ill discoverers that think there is no land,when they can see nothing but sea.</p>
+						<span class="da-link"><h6> </h6></span>
+					</div>
+					<div class="da-slide">
+						<h2><span><img src="images/que.png"/></span></h2>
+						<p>They are ill discoverers that think there is no land,when they can see nothing but sea.</p>
+						<span class="da-link"><h6> </h6></span>
+					</div>
+					<div class="da-slide">
+						<h2><span><img src="images/que.png"/></span></h2>
+						<p>They are ill discoverers that think there is no land,when they can see nothing but sea.</p>
+						<span class="da-link"><h6> </h6></span>
+					</div>
+					<nav class="da-arrows">
+						<span class="da-arrows-prev"> </span>
+						<span class="da-arrows-next"> </span>
+					</nav>
+			</div>
+				<script type="text/javascript" src="js/jquery.cslider.js"></script>
+				<script type="text/javascript">
+					$(function() {
+						$('#da-slider').cslider({
+							autoplay	: true,
+							bgincrement	: 450
+						});
+					
+					});
+				</script>
+			 </div>
+			</div>
+				<!---//End-da-slider----->
+			<!----//End-banner---->
+		<div class="main">
+			<div class="wrap">
+				<div class="part_of_1">
+					<div class="image">
+						<a href="#"><img src="images/img.png"/></a>
+					</div>
+					<div class="desc">
+						<span>Hello.</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="vector" src="images/vectro.png"/>
+        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+		<div class="middle">
+			<div class="wrap">
+				<div class="grid_of_1">
+					<div class="images">
+						<a href="#"><span><img src="images/icon1.png" /></span></a>
+					</div>
+					<h3>Lorem ipsum dolor</h3>
+					<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
+					<h4>Posted on 1st jan 2014</h4>
+					<div class="links">
+						<ul>
+							<li><a class="upload" href="#"> </a> </li>
+							<li><a class="refesh" href="#"> </a> </li>
+							<li><a class="wishlish" href="#"> </a> </li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<span><h6> </h6></span>
+					
+				</div>
+				<div class="grid_of_1">
+					<div class="images">
+						<a href="#"><span><img src="images/icon2.png" /></span></a>
+					</div>
+					<p class="para para1">"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."</p>
+					<h5>Lorem ipsum dolor</h5>
+					<h4>Posted on 1st jan 2014</h4>
+					<div class="links">
+						<ul>
+							<li><a class="upload" href="#"> </a> </li>
+							<li><a class="refesh" href="#"> </a> </li>
+							<li><a class="wishlish" href="#"> </a> </li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<span><h6> </h6></span>
+					
+				</div>
+				<div class="grid_of_1">
+					<div class="images">
+						<a href="#"><span><img src="images/icon4.png" /></span></a>
+					</div>
+					<div class="bg_images">
+						<a href="#"><img src="images/image.jpg" /></a>
+					</div>
+					<h4>Posted on 1st jan 2014</h4>
+					<div class="links">
+						<ul>
+							<li><a class="upload" href="#"> </a> </li>
+							<li><a class="refesh" href="#"> </a> </li>
+							<li><a class="wishlish" href="#"> </a> </li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<span><h6> </h6></span>
+					
+				</div>
+				<div class="grid_of_1">
+					<div class="images">
+						<a href="#"><span><img src="images/icon4.png" /></span></a>
+					</div>
+					<div class="bg_vedio">
+						<a href="#"><iframe src="//player.vimeo.com/video/15370828" width="697" height="464" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></a>
+					</div>
+					<h4>Posted on 1st jan 2014</h4>
+					<div class="links">
+						<ul>
+							<li><a class="upload" href="#"> </a> </li>
+							<li><a class="refesh" href="#"> </a> </li>
+							<li><a class="wishlish" href="#"> </a> </li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<span><h6> </h6></span>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer">
+			<div class="wrap">
+			<div class="social">
+				<ul>
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/twitter.png"> </a></li>
+					<li><a href="#"><img src="images/vimeo.png"> </a></li>
+					<li><a href="#"><img src="images/dribbble.png"> </a></li>
+					<li><a href="#"> <img src="images/flickr.png"></a></li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+
+		<div class="copy-right">
+			<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>	    
+		</div>
+
+</body>
+</html>

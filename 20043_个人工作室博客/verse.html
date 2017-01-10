@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!----menu_script---->
+    <script src="js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<div class="header_bg">
+	<!---start-wrap---->
+<div class="wrap">
+	<!-----start-header----->
+	<div class="header">	
+		<div class="logo">
+			<a href="index.html"><img src="images/logo1.png" title="logo" /></a>
+		</div>	
+	<div class="cssmenu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li class="active"><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+					<div class="clear"> </div>
+			</ul>
+	</div>
+	
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="musings.html">Musings</a></li>
+				<li class="active"><a href="verse.html">Verse</a></li>
+				<li><a href="prose.html">Prose</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<div class="clear"> </div>
+			</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+		<div class="header_bottom">
+		</div>
+		<!-----end-header-------->
+		<div class="main1">
+		 <div class="wrap">
+			  <div class="single-wrapper">
+			   <div class="single-blog">
+			    <div class="images images1"><div class="single-img"><img src="images/s2.jpg" alt=""/></div></div>
+					<p class="blog-text">orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+					<div class="images images1"><div class="single-img"><img src="images/s1.jpg" alt=""/></div></div>
+					<p class="blog-text">orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat..</p>
+				<div class="images images1"><div class="single-img"><img src="images/s3.jpg" alt=""/></div></div>
+					<p class="blog-text">orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+					
+				</div>
+			   <div class="project-sidebar">
+			   	<div class="grids">
+			   		<div class="grid1">
+				 	 <div class="project-list">
+				     	<h4>Categories</h4>
+						<ul class="blog-list">
+						    <li><a href="">Always free from Lorem ipsum</a></li>
+					        <li><a href="">Always free from Lorem ipsum</a></li>
+					        <li><a href="">Always free from Lorem ipsum</a></li>
+					        <li><a href="">Always free from Lorem ipsum</a></li>
+					        <li><a href="">Always free from Lorem ipsum</a></li>
+					    </ul>
+					 </div>
+					 </div>
+					 <div class="grid1">
+					  <div class="project-list">
+				     	<h4>Archive</h4>
+						<ul class="blog-list">
+							<li><a href="">July (15)</a></li>
+							<li><a href="">Oct (20)</a></li>
+							<li><a href="">November (8)</a></li>
+							<li><a href="">December (25)</a></li>
+							<li><a href="">August (9)</a></li>
+						</ul>
+					 </div>
+				 </div>
+				  <div class="clear"> </div>
+				 </div>
+				 <div class="project-list1">
+			     	<h4>Popular Posts</h4>
+					<ul>
+						<li><img src="images/pic6.jpg" alt=""><p><a href="#">Lorem ipsum dolor sit amet, consectetuer</a></p>
+							<span class="likes"><span class="link1"><a href="#">Dec 14, 2013</a></span></span><div class="clear"></div>
+						</li>
+						<li><img src="images/pic7.jpg" alt=""><p><a href="#">Lorem ipsum dolor sit amet, consectetuer</a></p>
+							<span class="likes"><span class="link1"><a href="#">Dec 14, 2013</a></span></span><div class="clear"></div>
+						</li>
+						<li><img src="images/pic8.jpg" alt=""><p><a href="#">Lorem ipsum dolor sit amet, consectetuer</a></p>
+							<span class="likes"><span class="link1"><a href="#">Dec 14, 2013</a></span></span><div class="clear"></div>
+						</li>
+						<li><img src="images/pic9.jpg" alt=""><p><a href="#">Lorem ipsum dolor sit amet, consectetuer</a></p>
+							<span class="likes"><span class="link1"><a href="#">Dec 14, 2013</a></span></span><div class="clear"></div>
+						</li>
+						<li><img src="images/pic10.jpg" alt=""><p><a href="#">Lorem ipsum dolor sit amet, consectetuer</a></p>
+							<span class="likes"><span class="link1"><a href="#">Dec 14, 2013</a></span></span><div class="clear"></div>
+						</li>
+					</ul>
+				 </div>
+			</div>
+			<div class="clear"></div>
+		  </div>
+		  <ul class="dc_pagination dc_paginationA dc_paginationA06">
+					    <li><a href="#" class="previous">Previous</a></li>
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#" class="current">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li><a href="#">...</a></li>
+					    <li><a href="#">19</a></li>
+					    <li><a href="#">20</a></li>
+					    <li><a href="#" class="next">Next</a></li>
+			        </ul>
+  </div>
+  </div>
+   <!----start footer------>
+			<div class="footer">
+			<div class="wrap">
+			<div class="social">
+				<ul>
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/twitter.png"> </a></li>
+					<li><a href="#"><img src="images/vimeo.png"> </a></li>
+					<li><a href="#"><img src="images/dribbble.png"> </a></li>
+					<li><a href="#"> <img src="images/flickr.png"></a></li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+		</div>
+		</div><!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="copy-right">
+			<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>	    
+		</div>
+
+</body>
+</html>
