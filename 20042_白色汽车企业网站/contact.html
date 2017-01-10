@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Cleanography</title>
+    <!--CSS-->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css" charset="utf-8"/>
+    <!--Scripts START-->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/slimbox2.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.validate.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.contacable.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script type="text/javascript" src="js/gmap3.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+    
+      jQuery(function(){
+  
+        jQuery('#googlemap').gmap3(
+          {
+            action: 'addMarker',
+            address: "1319 Stanley avenue, Glendale, Los Angeles, USA",
+            map:{
+              center: true,
+              zoom: 14
+            },
+			
+          },
+          {action: 'setOptions', args:[{scrollwheel:true}]}
+        );
+          
+      });
+    </script>
+    <!--END SCRIPTS-->
+    </head>
+    <body>
+<!--Feedback-->
+<div id="contactable"> 
+      <!-- contactable html placeholder --> 
+    </div>
+<!--Wrapper START-->
+<div id="wrapper"> 
+      <!--Header START-->
+      <div id="header"> 
+    <!--Logo-->
+    <div id="logo"> <a href="index.html"><img src="images/logo.png" alt="Cleanography" /></a> </div>
+    <!--Navigation-->
+    <div class="nav-wrap">
+          <ul class="group" id="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="singlepost.html">Single Post</a></li>
+        <li class="current_page_item"><a href="contact.html">Contact</a></li>
+      </ul>
+        </div>
+    <div id="searchwrapper">
+          <form action="#">
+        <p>
+              <input type="text" class="searchbox" onfocus="if(this.value == 'Type here') { this.value = ''; }" value="Type here"/>
+              <input type="image" src="images/searc-btn.png" class="searchbox_submit" value=""/>
+            </p>
+      </form>
+        </div>
+  </div>
+       <div class="header-slash"> </div>
+      <div id="page-title">
+    <h1>Contact us</h1>
+    <p> Get in touch with us! </p>
+  </div>
+     <div class="divider">
+	 </div>
+      <!--Left Container-->
+      <div id="left-container">
+    <h4>Maecenas in nisi risus</h4>
+    <!--Pull Quote-->
+    <div class="pull-quote">
+          <p> Consectetur adipiscing elit. Nunc turpis enim, vulputate ut euismod malesuada, gravida id ligula. Maecenas in nisi risus. Nunc commodo mollis fermentum. Nulla facilisi. Ut et augue ut odio rutrum condimentum vel porttitor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat pretium nisi, nec laoreet diam </p>
+        </div>
+      <div class="post-slash"> </div>
+    <!--Google Map-->
+    <div id="map">
+          <h4>Find us on map</h4>
+          <div id="googlemap" class="gmap3 map-frame"></div>
+        </div>
+    <div class="contact-info">
+          <div class="info-container"> <img src="images/skype.png" alt="Skype" />
+        <p> +381 44 245 679 000 </p>
+        <img src="images/contact-divider.png" class="contact-divider" alt="Divider" /> </div>
+          <div class="info-container"> <img src="images/home.png" alt="Home address" />
+        <p> Lorem ipsum Street 45000 </p>
+        <img src="images/contact-divider.png" class="contact-divider" alt="" /> </div>
+          <div class="info-container"> <img src="images/email.png" alt="Email" />
+        <p> companyname@info.com </p>
+        <img src="images/contact-divider.png" class="contact-divider"  alt="" /> </div>
+          <div class="info-container"> <img src="images/web.png" alt="Website" />
+        <p> www.yourwebsite.com </p>
+        <img src="images/contact-divider.png" class="contact-divider" alt="" /> </div>
+          <div class="socialnet"> <a href="#"><img src="images/facebook.png" alt="Facebook" /></a> <a href="#"><img src="images/linkedin.png" alt="Linkedin" /></a> <a href="#"><img src="images/twitter.png" alt="Twitter" /></a> <a href="#"><img src="images/youtube.png" alt="Youtube" /></a> </div>
+        </div>
+       <div class="post-slash"> </div>
+	<div class="arrow">
+	</div>
+    <h4 class="feedback-info">Send us an email</h4>
+    <!--Contact Form-->
+    <div id="contact_form"> </div>
+  </div>
+      <!--END Left Container--> 
+      <!--Sidebar-->
+      <div id="sidebar">
+    <div id="popular-posts">
+          <h3>Popular Posts</h3>
+                <div class="slash"> </div>
+          <div class="pop-posts"> <a href="#"><img src="images/sidebar-recpost.jpg"  alt=""/></a>
+        <p class="p-title"> <a href="#"> Awesome Title</a> </p>
+        <p> Consectetur adipiscing elit. Nunc turpis enim </p>
+      </div>
+          <div class="pop-posts"> <a href="#"><img src="images/sidebar-recpost2.jpg"  alt="" /></a>
+        <p class="p-title"> <a href="#">2nd Title comes here :)</a> </p>
+        <p> Consectetur adipiscing elit. Nunc turpis enim </p>
+      </div>
+          <div class="pop-posts"> <a href="#"><img src="images/sidebar-recpost3.jpg"  alt="" /></a>
+        <p class="p-title"> <a href="#">Responsive web design</a> </p>
+        <p> Nunc turpis enim lorem sit amet dolor ipsum fras </p>
+      </div>
+          <div class="pop-posts"> <a href="#"><img src="images/sidebar-recpost4.jpg"  alt="" /></a>
+        <div class="post-cont">
+              <p class="p-title"> <a href="#">Lorem ipsum post</a> </p>
+              <p> Nunc turpis enim lorem sit amet dolor ipsum frasrpis enim lorem sit amet dolor ipsum frasrpis enim lorem sit amet dolor ipsum frasrpis enim lorem sit amet dolor ipsum frasrpis enim lorem sit amet dolor ipsum frasrpis enim lorem sit amet dolor ipsum fras </p>
+            </div>
+      </div>
+        </div>
+    <!--categories-->
+    <div id="categories">
+          <h3>Categories</h3>
+               <div class="slash"> </div>
+          <ul>
+        <li><a href="#" class="linknudge">Illustration</a></li>
+        <li><a href="#" class="linknudge">Media</a></li>
+        <li><a href="#" class="linknudge">Print</a></li>
+        <li><a href="#" class="linknudge">Multimedia</a></li>
+        <li><a href="#" class="linknudge">Web design</a></li>
+        <li><a href="#" class="linknudge">Graphic Design</a></li>
+        <li><a href="#" class="linknudge">Web Development</a></li>
+        <li><a href="#" class="linknudge">HTML &amp; CSS</a></li>
+        <li><a href="#" class="linknudge">3D Modeling</a></li>
+        <li><a href="#" class="linknudge">Animation</a></li>
+      </ul>
+        </div>
+  </div>
+      <!--END Sidebar--> 
+    </div>
+<!--END WRAPPER--> 
+
+<!-- Footer -->
+<div id="footer"> 
+      <!--Back to top Button-->
+      <div id="totop"> <a href="#top"><img src="images/toTop.png"  alt="to Top" /></a> </div>
+      <!--Footer-->
+      <div class="footer-top"></div>
+      <div id="footer-container">
+    <div class="footer-inner"> 
+          <!--Recent posts-->
+          <div id="recent-posts">
+        <h4 class="r-post-title">Recent <span class="r-title">Posts</span></h4>
+        <div class="post"> <a href="#"><img src="images/recentpost1.png" alt=""/></a>
+              <h6>Awesome Web design</h6>
+              <p> Lorem ipsum dolor sit amet mauris mass odio purus dui </p>
+              <span class="date">32 comments</span> </div>
+        <div class="f-sep"> </div>
+        <div class="post"> <a href="#"><img src="images/recentpost2.png" alt=""/></a>
+              <h6>Awesome Web design</h6>
+              <p> Lorem ipsum dolor sit amet mauris mass odio purus dui </p>
+              <span class="date">32 comments</span> </div>
+        <div class="f-sep"> </div>
+        <div class="post"> <a href="#"><img src="images/recentpost3.png" alt=""/></a>
+              <h6>Awesome Web design</h6>
+              <p> Lorem ipsum dolor sit amet mauris mass odio puorem ipsum dolor sit amet mauris mass odio purus dui </p>
+              <span class="date">32 comments</span> </div>
+      </div>
+          <!--Tweets-->
+          <div id="tweets">
+        <h4 class="tweet-title">Latest <span class="r-title">Tweets</span></h4>
+        <div class="demo">
+              
+              <div class='tweet query'> </div>
+            </div>
+      </div>
+          <!--Testimonials-->
+          <h4 class="testimonials-title">Client <span class="r-title">Testimonials</span></h4>
+          <div id="testimonials1">
+        <blockquote>
+              <p> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " <cite>Faton - KS</cite> </p>
+            </blockquote>
+        <blockquote>
+              <p> "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." <cite>John Smith - LA</cite> </p>
+            </blockquote>
+        <blockquote>
+              <p>Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></p>
+            </blockquote>
+      </div>
+        </div>
+  </div>
+    </div>
+<!--THE END-->
+
+</body>
+</html>

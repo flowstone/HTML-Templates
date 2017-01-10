@@ -1,0 +1,19 @@
+/*--Filterable Portfolio--*/
+
+
+#wrap {width:673px;float:left;overflow: hidden;
+min-height:700px;padding-bottom:30px;}
+/* Filter */
+dl { margin-bottom: 3em; color: #777; }
+dt, dd { float: left; }
+dt { margin-right: 5px; }
+.filter li { float: left; }
+.filter a { margin-right:32px;  font-family:Arial;font-size:14px;color:#898989 ;text-decoration: none;border-bottom:2px solid #d3d3d3;padding-bottom:10px;}
+.filter a:hover, .current a { font-family:Arial;font-size:14px;color:#333; border-bottom:2px solid #f6ca27; padding-bottom:10px;}
+
+/* Portfolio Items */
+
+.portfolio li { float: left; margin-right:13px; margin-bottom: 10px; }
+.portfolio a { display: block; text-decoration: none;}
+.portfolio img { width: 192px; height: 154px; display: block;background-image:url(../images/portfolio_frame.png);padding:9px 10px 9px 9px;}
+.portfolio li p {font-family:Arial;font-size:13px;color:#57757e;padding-top:9px;text-align:center;border-bottom:1px dashed #eaeaea;padding-bottom:11px;} 
