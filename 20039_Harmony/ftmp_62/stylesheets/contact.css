@@ -1,0 +1,121 @@
+
+
+/*======== quickContact ============*/
+div.quickContact form label input, div.quickContact form textarea {
+	border:3px solid #c5c5c5;
+	background:none;
+	padding:10px;
+	width:280px;
+	margin: 0 6px 12px;
+	font-family:'PT Sans', serif;
+	font-size:13px;
+	/*border rounded*/
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	/* transiton */
+	transition:all .3s linear;
+	-webkit-transition:all .3s linear;
+	-moz-transition:all .3s linear;
+	-o-transition:all .3s linear;
+}
+div.quickContact form textarea {
+	width:94%;
+	height:135px;
+}
+div.quickContact form div {
+	text-align:right;
+}
+div.quickContact form div input {
+	margin-right:8px;
+	cursor:pointer;
+}
+div.quickContact form div p {
+	float:left;
+}
+div.quickContact form div p.fail {
+	color:#dd5c5c;
+	font-family:'PT Sans', sans-serif;
+	font-size:14px;
+	padding:5px 10px 5px 35px;
+	background:#fbd9d9 url('../images/icons/error.gif') no-repeat 10px 50%;
+	border:1px solid #e79393;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+}
+
+div.quickContact form div p.success {
+	color:#96bf6a;
+	font-family:'PT Sans', sans-serif;
+	font-size:14px;
+	padding:5px 10px 5px 30px;
+	background:#eaf6dd url('../images/icons/success.gif') no-repeat 15px 50%;
+	border:1px solid #b9dc94;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+}
+/*======= end quickContact =========*/
+
+
+/*======= ourLocation ===========*/
+div.ourLocation iframe {
+	width:98%;
+	padding:5px;
+	background:#fff;
+	border:1px solid #d3d3d3;
+	/* box-shadow */
+	box-shadow:0 3px 0 #dedede;
+	-webkit-box-shadow:0 3px 0 #dedede;
+	-moz-box-shadow:0 3px 0 #dedede;
+	-o-box-shadow:0 3px 0 #dedede;
+}
+/*===== end ourLocation ======*/
+
+aside #contactInfo ul li {
+	/*padding-left:55px;*/
+	margin-bottom:18px;
+}
+aside #contactInfo ul li h4 {
+	font-size:16px;
+	/* text shadow */
+	text-shadow:0 1px 0 #fff;
+	-webkit-text-shadow:0 1px 0 #fff;
+	-moz-text-shadow:0 1px 0 #fff;
+	-o-text-shadow:0 1px 0 #fff;
+}
+aside #contactInfo ul li h4 span {
+	font:400 13px 'PT Sans', sans-serif;
+	color:#666;
+}
+aside #contactInfo ul li h4 em {
+	width:30px;
+	height:30px;
+	display:inline-block;
+	float:left;
+	margin-right:12px;
+	text-indent:-999999em;
+	background:url('../images/icons/contact_info.png') no-repeat;
+}
+aside #contactInfo ul li.address em {
+	 background-position:0 0;
+}
+aside #contactInfo ul li.email em {
+	background-position:0 -40px;
+}
+aside #contactInfo ul li.phone em {
+	background-position:0 -80px;
+}
+aside #contactInfo ul li.fax em {
+	background-position:0 -118px;
+}
+
+
+
+
+
+

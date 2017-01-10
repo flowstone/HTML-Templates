@@ -1,0 +1,76 @@
+/*========= category Style ===========*/
+div.category {
+	text-align:right;
+	padding-bottom:12px;
+}
+div.category a {
+	color:#222;
+	margin-right:6px;
+}
+/*============ end ===============*/
+
+
+/*========== folio Container =============*/
+#fourFolio div.folioContainer {
+	margin-top:24px;
+}
+#fourFolio div.folioContainer:first-child {
+	margin-top:0;
+}
+#fourFolio div.folioContainer div.folioOuter {
+	position:relative;
+}
+#fourFolio div.folioContainer div.folioOuter img {
+	width:96%;
+	padding:4px;
+	background:#fff;
+	border:1px solid #d3d3d3;
+	display:block;
+}
+
+/* setting */
+#fourFolio div.folioContainer div.folioOuter div.setting {
+	position:absolute;
+	top:4px;
+	left:4px;
+	width:96%;
+	height:96%;
+	text-align:center;
+	z-index:300;
+	background: url(../images/icons/header_pattern.png) repeat left top;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+#fourFolio div.folioContainer div.folioOuter div.setting a {
+	top:43%;
+	text-align:center;
+	width:32px;
+	height:30px;
+	display:block;
+	box-shadow:none;
+	font:0/0 a;
+	border:none;
+	float:left;
+	background:url('../images/icons/setting_tools.png') no-repeat;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter:alpha(opacity=60);
+}
+#fourFolio div.folioContainer div.folioOuter div.setting a:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+#fourFolio div.folioContainer div.folioOuter div.setting a.viewfolio {
+	background-position:0 0;
+	position:absolute;
+	left:36%;
+}
+#fourFolio div.folioContainer div.folioOuter div.setting a.linkfolio {
+	background-position: -32px 0;
+	position:absolute;
+	left:51%;
+}
+
+

@@ -1,0 +1,261 @@
+
+/*======== history =========*/
+#history p {
+	margin:0;
+	padding:0;
+}
+#history ul li {
+	padding-left:25px;
+	background:url('../images/icons/arrow.png') no-repeat left 50%;
+}
+
+/*===== team =======*/
+#team div.controlls{
+	background:url('../images/icons/body_dotted.png') repeat left top;
+	padding:0;
+	height:20px;
+	font-size:24px;
+	line-height:18px;
+	margin: 60px 0 30px;
+}
+#team div.controlls h3{
+	float:left;
+	border:none;
+	box-shadow:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+#team div.controlls div.pagers {
+	margin:-8px 0 0 0;
+	padding:0 0 0 0;
+	float:right;
+	padding-left:10px;
+	background:url('../images/icons/body.png') repeat left top;
+}
+#team div.controlls div.pagers button {
+	float:left;
+	width:32px;
+	height:32px;
+	display:block;
+	text-indent:-999999em;
+	border:none;
+	background:url('../images/icons/nxtPrev.png') no-repeat left 0;
+	cursor:pointer;
+}
+#team div.controlls div.pagers button.prev {
+	background-position:0 0;
+}
+#team div.controlls div.pagers button.prev:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+#team div.controlls div.pagers button.nxt {
+	background-position:-33px 0;
+	margin-left:3px;
+}
+#team div.controlls div.pagers button.nxt:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+
+
+
+/* ul */
+#team ul li img {
+	width:96%;
+	padding:4px;
+	background:#fff;
+	border:1px solid #d3d3d3;
+	display:block;
+}
+#team ul li h4 {
+	padding:6px 0;
+	/* text shadow */
+    text-shadow:0 1px 0 #fff;
+    -webkit-text-shadow:0 1px 0 #fff;
+    -moz-text-shadow:0 1px 0 #fff;
+    -o-text-shadow:0 1px 0 #fff;
+}
+#team ul li h4 span {
+	font:italic 12px/24px 'PT Sans', serif;
+	color:#777;
+}
+
+/* ul nested inside ul */
+#team ul li ul {
+	padding:6px 0;
+	border-bottom:1px solid #b4b4b4;
+	/* box-shadow */
+	box-shadow:0 1px 0 #fff;
+	-webkit-box-shadow:0 1px 0 #fff;
+	-moz-box-shadow:0 1px 0 #fff;
+	-o-box-shadow:0 1px 0 #fff;
+}
+#team ul li ul li {
+	display:inline-block;
+	color:#323232;
+}
+#team ul li ul li a {
+	text-indent:-999999em;
+	width:16px;
+	height:16px;
+	display:block;
+	margin-left:5px;
+	background:url('../images/icons/sprite_social.png') no-repeat;
+}
+#team ul li ul li a:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+/* facebook */
+#team ul li ul li a.facebook {
+	background-position:0 0;
+}
+/* twitter */
+#team ul li ul li a.twitter {
+	background-position:0 -40px;
+}
+/* googleP */
+#team ul li ul li a.googleP {
+	background-position:0 -80px;
+}
+/* p */
+#team ul li p {
+	margin-top:12px;
+}
+
+
+/*=========== our work space ========*/
+div.workSpace ul li img {
+	width:98%;
+	padding:3px;
+	margin-bottom:12px;
+	background:#fff;
+	border:1px solid #d3d3d3;
+	/* box-shadow */
+	box-shadow:0 3px 0 #dedede;
+	-webkit-box-shadow:0 3px 0 #dedede;
+	-moz-box-shadow:0 3px 0 #dedede;
+	-o-box-shadow:0 3px 0 #dedede;
+}
+
+/* flex Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* my Own Style for flexslider */
+ol.flex-control-nav {
+	width:100%;
+	text-align:center;
+}
+ol.flex-control-nav li {
+	display:inline-block;
+}
+ol.flex-control-nav li a {
+	text-indent:-999999em;
+	width:12px;
+	height:13px;
+	padding:0;
+	margin:0 4px;
+	display:block;
+	background:url('../images/icons/circleIco.png') no-repeat left bottom;
+	cursor:pointer;
+}
+ol.flex-control-nav li a:hover, ol.flex-control-nav li a.active {
+	background-position:left top;
+}
+
+
+
+/*=============== aside ===============*/
+
+/*====== whatWeDo ======*/
+aside div.whatWeDo ul li {
+	padding-left:25px;
+	background:url('../images/icons/arrow.png') no-repeat left 50%;
+}
+/*======= Testimonilas ======*/
+aside div.test {
+	background:url('../images/icons/body.png') repeat left top; /* to fix for cycle plugin */
+}
+aside div.test div.controlls {
+	background:url('../images/icons/body_dotted.png') repeat left top;
+	padding:0;
+	height:20px;
+	font-size:24px;
+	line-height:18px;
+	margin: 60px 0 30px;
+}
+aside div.test div.controlls h3 {
+	float:left;
+	border:none;
+	box-shadow:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+aside div.test div.controlls div.pagers {
+	margin:-8px 0 0 0;
+	padding:0 0 0 0;
+	float:right;
+	padding-left:10px;
+	background:url('../images/icons/body.png') repeat left top;
+}
+aside div.test div.controlls div.pagers button {
+	float:left;
+	width:32px;
+	height:32px;
+	display:block;
+	text-indent:-999999em;
+	border:none;
+	background:url('../images/icons/nxtPrev.png') no-repeat left 0;
+	cursor:pointer;
+}
+aside div.test div.controlls div.pagers button.prev {
+	background-position:0 0;
+}
+aside div.test div.controlls div.pagers button.prev:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+aside div.test div.controlls div.pagers button.nxt {
+	background-position:-33px 0;
+	margin-left:3px;
+}
+aside div.test div.controlls div.pagers button.nxt:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+
+aside div.test p {
+	padding-left:35px;
+	background:url('../images/icons/qoute.png') no-repeat left top;
+}

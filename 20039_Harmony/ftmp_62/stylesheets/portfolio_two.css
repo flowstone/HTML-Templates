@@ -1,0 +1,98 @@
+/*========= category Style ===========*/
+div.category {
+	text-align:right;
+	padding-bottom:24px;
+}
+div.category a {
+	color:#222;
+	margin-right:6px;
+}
+/*============ end ===============*/
+
+
+/*===== folioContainer =======*/
+#twoFolio div.folioHolder {
+	position:relative;
+	margin-bottom:30px;
+	
+}
+#twoFolio div.folioContainer:last-child div.folioHolder {
+	margin-bottom:0;
+}
+/* setting div */
+#twoFolio div.setting {
+	position:absolute;
+	top:5px;
+	left:5px;
+	width:98%;
+	height:94%;
+	text-align:center;
+	z-index:300;
+	background: url(../images/icons/header_pattern.png) repeat left top;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+#twoFolio div.setting a {
+	top:43%;
+	text-align:center;
+	width:32px;
+	height:30px;
+	display:block;
+	box-shadow:none;
+	font:0/0 a;
+	border:none;
+	float:left;
+	background:url('../images/icons/setting_tools.png') no-repeat;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter:alpha(opacity=60);
+}
+#twoFolio div.setting a:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+/* view */
+#twoFolio div.setting a.viewfolio {
+	background-position:0 0;
+	position:absolute;
+	left:36%;
+}
+#twoFolio div.setting a.linkfolio {
+	background-position: -32px 0;
+	position:absolute;
+	left:51%;
+}
+
+
+
+
+/* folio div contain the images */
+#twoFolio div.folio {
+	position:relative;
+	overflow: hidden;
+}
+#twoFolio div.folio a img {
+	width:98%;
+	margin-bottom:12px;
+	padding:5px;
+	background:#fff;
+	border:1px solid #d3d3d3;
+	display:block;
+}
+
+/* folio Desc */
+#twoFolio div.desc h4 {
+	margin:0 0 12px;
+	font:400 16px/24px 'AllerBold', sans-serif;
+	/* text shadow */
+	text-shadow:0 1px 0 #fff;
+	-webkit-text-shadow:0 1px 0 #fff;
+	-moz-text-shadow:0 1px 0 #fff;
+	-o-text-shadow:0 1px 0 #fff;
+}
+#twoFolio div.desc h4 span {
+	font:italic 13px/24px 'PT Sans', serif;
+	color:#777;
+}

@@ -1,0 +1,498 @@
+
+/* the div below tabs */
+#features {
+	position: relative;
+	margin:60px 0 0;
+	padding-bottom:20px;
+	background:url('../images/icons/slider_shadow2.png') no-repeat 50% bottom;
+	/*padding:60px 0 24px;*/
+	/*border:1px solid red;*/
+}
+#features ul li {
+	/*overflow: hidden;*/
+	margin:0;
+	padding:0;
+}
+#features ul li img {
+	max-width:100%;
+	border:5px solid #fff;
+	display: block;
+	margin: 0 auto;
+	z-index:90;
+}
+
+/* flex Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption {width: 99%; padding:10px 0; margin: 0 auto; position: absolute; left: 5px; bottom: 25px; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 14px; line-height: 18px;}
+.flex-caption p {
+	padding-left:30px;
+	font:16px 'PT Sans', Arial, sans-serif;
+	font-style:italic;
+}
+
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* my Own Style for flexslider */
+ol.flex-control-nav {
+	display:none;
+}
+
+ul.flex-direction-nav {
+	width:100%;
+	z-index:200;
+	display:block;
+}
+ul.flex-direction-nav a {
+	position: absolute;
+	font:0/0 a;
+	width:52px;
+	height:52px;
+	display:block;
+	opacity: 0.4;
+	-moz-opacity: 0.4;
+	filter:alpha(opacity=40);
+}
+ul.flex-direction-nav a:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+ul.flex-direction-nav a.next {
+	position: absolute;
+	top:15%;
+	right:-5px;
+	background:url('../images/icons/bg_direction_nav.png') no-repeat -52px 0;
+}
+ul.flex-direction-nav a.prev {
+	position: absolute;
+	bottom:15%;
+	left:-5px;
+	background:url('../images/icons/bg_direction_nav.png') no-repeat 0 0;
+}
+
+
+/*=========== our services ============*/
+#ourServices {
+	margin-top:50px;
+}
+#ourServices div.imgService img {
+	margin-right:12px;
+	width:34px;
+	height:31px;
+	border:none;
+	float:left;
+}
+#ourServices h4 {
+	margin:0 0 12px 0;
+	font-size:16px;
+	color:#555;
+	float:left;
+	padding-top:6px;
+	text-shadow:0 1px 0 #fff;
+	-webkit-text-shadow:0 1px 0 #fff;
+	-moz-text-shadow:0 1px 0 #fff;
+	-o-text-shadow:0 1px 0 #fff;
+}
+#ourServices p {
+	clear:both;
+	padding-top:18px;
+}
+#ourServices a.blueBtn {
+	float:left;
+	margin-top:12px;
+}
+/* end services */
+
+
+/*========= latestFolio Style ===========*/
+#latestFolio div.controlls{
+	background:url('../images/icons/body_dotted.png') repeat left top;
+	padding:0;
+	height:20px;
+	font-size:24px;
+	line-height:18px;
+	margin: 60px 0 30px;
+}
+#latestFolio div.controlls h3{
+	float:left;
+	border:none;
+	box-shadow:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+#latestFolio div.controlls div.pagers {
+	margin:-8px 0 0 0;
+	padding:0 0 0 0;
+	float:right;
+	padding-left:10px;
+	background:url('../images/icons/body.png') repeat left top;
+}
+#latestFolio div.controlls div.pagers button {
+	float:left;
+	width:32px;
+	height:32px;
+	display:block;
+	text-indent:-999999em;
+	border:none;
+	background:url('../images/icons/nxtPrev.png') no-repeat left 0;
+	cursor:pointer;
+}
+#latestFolio div.controlls div.pagers button.prev {
+	background-position:0 0;
+}
+#latestFolio div.controlls div.pagers button.prev:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+#latestFolio div.controlls div.pagers button.nxt {
+	background-position:-33px 0;
+	margin-left:3px;
+}
+#latestFolio div.controlls div.pagers button.nxt:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+
+/* ul */
+#latestFolio ul li {
+	position:relative;
+	background-color:#fff;
+	
+}
+#latestFolio ul li:last-child {
+	margin-right:0;
+}
+/* folio div contain the images */
+#latestFolio ul li div.folioImg img {
+	width:96%;
+	padding:4px;
+	background:#fff;
+	border:1px solid #d3d3d3;
+	display:block;
+}
+#latestFolio ul li a {
+	display:block;
+}
+
+/* setting div */
+#latestFolio ul li div.setting {
+	position:absolute;
+	top:4px;
+	left:4px;
+	width:96%;
+	height:96%;
+	text-align:center;
+	z-index:300;
+	background: url(../images/icons/header_pattern.png) repeat left top;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+#latestFolio ul li div.setting a {
+	top:43%;
+	text-align:center;
+	width:32px;
+	height:30px;
+	display:block;
+	box-shadow:none;
+	font:0/0 a;
+	border:none;
+	float:left;
+	background:url('../images/icons/setting_tools.png') no-repeat;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter:alpha(opacity=60);
+}
+#latestFolio ul li div.setting a:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+/* view */
+#latestFolio ul li div a.viewfolio {
+	background-position:0 0;
+	position:absolute;
+	left:36%;
+}
+/* link */
+#latestFolio ul li div a.linkfolio {
+	background-position: -32px 0;
+	position:absolute;
+	left:51%;
+}
+/* end recent portfoliofolio */
+
+
+
+
+
+/*============ latest blog =============*/
+/*======== date div ==========*/
+
+#leftSide article div.date {
+	text-align:center;
+}
+#leftSide article div.date p {
+	background:url('../images/icons/date_bg.png') no-repeat left top;
+	width:96px;
+	height:96px;
+	display:block;
+	font: 13px/21px 'PT Sans', sans-serif;
+	color:#aaa;
+	margin:0;
+	padding:18px 0 0 0;
+	text-transform:capitalize;
+}
+#leftSide article div.date p span {
+	font:24px/30px 'AllerBold', sans-serif;
+	color:#ccc;
+	padding:0;
+	/* text-shadow */
+	text-shadow:0 1px 0 #444, inset 0 1px 1px #fff;
+	-webkit-text-shadow:0 1px 0 #444, inset 0 1px 1px #fff;
+	-moz-text-shadow:0 1px 0 #444, inset 0 1px 1px #fff;
+	-o-text-shadow:0 1px 0 #444, inset 0 1px 1px #fff;
+}
+#leftSide article div.date ul li {
+	margin:0 0 4px 0;
+	padding:0;
+	text-align:left;
+}
+#leftSide article div.date ul li a {
+	padding-left:25px;
+	color:#4574a8;
+}
+#leftSide article div.date ul li a:hover {
+	color:#666;
+}
+#leftSide article div.date ul li a.articleComment {
+	background:url('../images/icons/art_comment.png') no-repeat left 50%;
+}
+#leftSide article div.date ul li a.articleCategory {
+	background:url('../images/icons/art_category.png') no-repeat left 50%;
+}
+#leftSide article div.date ul li a.articleAuthor {
+	background:url('../images/icons/author.png') no-repeat left 50%;
+}
+/*======= end date =============*/
+
+
+
+/*========= aticle body ============*/
+#leftSide article div.articleBody img {
+	width:98%;
+	margin:0;
+	padding:5px;
+	background-color:#e5e5e5;
+	display:block;
+	background:#fff;
+	border:1px solid #ddd;
+}
+#leftSide article div.articleBody a.img_hold {
+	display:block;
+	/*border:1px solid red;*/
+	padding-bottom:12px;
+	background:url('../images/icons/blog_shadow.png') no-repeat left bottom;
+}
+#leftSide article div.articleBody h4 {
+	margin:12px 0;
+	font:400 16px/24px 'AllerBold', sans-serif;
+	/* text shadow */
+	text-shadow:0 1px 0 #fff;
+	-webkit-text-shadow:0 1px 0 #fff;
+	-moz-text-shadow:0 1px 0 #fff;
+	-o-text-shadow:0 1px 0 #fff;
+}
+
+#leftSide article div.articleBody h4 span {
+	font:italic 13px/24px 'PT Sans', sans-serif;
+	color:#777;
+	display:none;
+}
+#leftSide article div.articleBody p {
+	margin:0 0 21px 0;
+}
+
+
+
+/*======== aside =============*/
+/* ========= tabs ==========*/
+aside #tabOuter {
+	margin:0;
+	padding:0;
+}
+aside #tabNav {
+	margin-bottom:24px;
+}
+aside #tabNav li {
+	display:inline-block;
+	margin-right:6px;
+}
+aside #tabNav li a {
+	padding:6px 10px;
+}
+aside #tabNav li:last-child {
+	margin-right:0;
+}
+
+/*============= ==============*/
+
+
+/*============== Popular and comments tab content Style ==============*/
+
+aside #tabOuter {
+	position:relative;
+}
+aside div.holder {
+	padding:0 12px;
+	margin-bottom:12px;
+}
+aside div.holder div.img {
+	float:left;
+	padding-bottom:3px;
+	background:url('../images/icons/small_images_shadow.png') no-repeat left bottom;
+}
+aside div.holder div.img a {
+	display:inline-block;
+	box-shadow:none;
+	text-shadow:none;
+	width:64px;
+	height:64px;
+	margin-right:18px;
+	background:#333;
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+aside div.holder div.img a:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+aside div.holder div.img a img {
+	border:5px solid #fff;
+	width:65px;
+	height:60px;
+}
+aside div.holder div.details {
+	width:165px;
+	float:left;
+	margin-left:5px;
+}
+aside div.holder div.details h5 {
+	margin-bottom:3px;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size:13px;
+	line-height:18px;
+	text-transform:capitalize;
+}
+aside div.holder div.details h5 a {
+	color:#444;
+}
+aside div.holder div.details h5 a:hover {
+	color:#4574a8;
+}
+aside div.holder div.details span {
+	color:#999;
+	font-style:italic;
+}
+
+
+
+
+/*============ latest tweets ===========*/
+#latest_tweet {
+	border:1px solid #d1d1d1;
+	
+	padding:3px;
+	margin:60px 0 0 0;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-o-border-radius:20px;
+}
+#latest_tweet ul {
+	float:left;
+	width:80%;
+}
+#latest_tweet ul li {
+	font:14px 'PT Sans', Arial, sans-serif;
+	color:#555;
+	padding:9px 0 9px 55px;
+	background:url('../images/icons/birde.png') no-repeat 6px 50%;
+}
+#latest_tweet ul li a {
+	color:#999;
+}
+#latest_tweet ul li a:hover {
+	color:#4574a8;
+}
+#latest_tweet ul li:last-child {
+	margin-bottom:0;
+}
+
+
+/* pagers div */
+#latest_tweet div.pagers {
+	margin:0 6px 0 0;
+	padding:9px 0;
+	float:right;
+	padding-left:10px;
+}
+#latest_tweet div.pagers button {
+	float:left;
+	width:32px;
+	height:32px;
+	display:block;
+	text-indent:-999999em;
+	border:none;
+	background:url('../images/icons/nxtPrev.png') no-repeat left 0;
+	cursor:pointer;
+}
+#latest_tweet div.pagers button.prev {
+	background-position:0 0;
+}
+#latest_tweet div.pagers button.prev:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+#latest_tweet div.pagers button.nxt {
+	background-position:-33px 0;
+	margin-left:3px;
+}
+#latest_tweet div.pagers button.nxt:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+

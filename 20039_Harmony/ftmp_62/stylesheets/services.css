@@ -1,0 +1,130 @@
+
+/*========= services ==========*/
+#services hr {
+	border:1px solid transparent;
+	margin-bottom:24px;
+}
+
+#services ul li div img {
+	margin-right:12px;
+	width:34px;
+	height:31px;
+	border:none;
+	float:left;
+}
+#services ul li h4 {
+	margin:0 0 12px 0;
+	font-size:16px;
+	color:#555;
+	float:left;
+	padding-top:6px;
+	text-shadow:0 1px 0 #fff;
+	-webkit-text-shadow:0 1px 0 #fff;
+	-moz-text-shadow:0 1px 0 #fff;
+	-o-text-shadow:0 1px 0 #fff;
+}
+
+#services ul li p {
+	clear:both;
+	padding-top:18px;
+}
+#services ul li a.blueBtn {
+	float:left;
+	margin-top:12px;
+}
+
+
+/*============= clients ===========*/
+#clients div.controlls {
+	background:url('../images/icons/body_dotted.png') repeat left top;
+	padding:0;
+	height:20px;
+	font-size:24px;
+	line-height:18px;
+	margin: 60px 0 30px;
+}
+#clients div.controlls h3 {
+	float:left;
+	border:none;
+	box-shadow:none;
+	margin:0;
+	padding:0;
+	display:inline;
+}
+#clients div.controlls div.pagers {
+	margin:-8px 0 0 0;
+	padding:0 0 0 0;
+	float:right;
+	padding-left:10px;
+	background:url('../images/icons/body.png') repeat left top;
+}
+#clients div.controlls div.pagers button {
+	float:left;
+	width:32px;
+	height:32px;
+	display:block;
+	text-indent:-999999em;
+	border:none;
+	background:url('../images/icons/nxtPrev.png') no-repeat left 0;
+	cursor:pointer;
+}
+#clients div.controlls div.pagers button.prev {
+	background-position:0 0;
+}
+#clients div.controlls div.pagers button.prev:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+#clients div.controlls div.pagers button.nxt {
+	background-position:-33px 0;
+	margin-left:3px;
+}
+#clients div.controlls div.pagers button.nxt:hover {
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+
+#clients div.clientSlider {
+	position: relative;
+	left:0;
+	margin:0 auto;
+	width:90%;
+}
+#clients ul {
+	position:absolute;
+	left:0;
+	overflow:hidden;
+
+}
+#clients ul li {
+	margin:0 5px;
+}
+#clients ul li div {
+	text-align:center;
+	border:5px solid #d5d5d5;
+	/* border rounded */
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+}
+#clients ul li div a {
+	width:210px;
+	padding:25px 0;
+	background:url('../images/icons/body.png') repeat left top;
+	display:block;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	filter:alpha(opacity=60);
+}
+#clients ul li div a:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+#clients ul li div img {
+	height:32px;
+	border:none;
+}
