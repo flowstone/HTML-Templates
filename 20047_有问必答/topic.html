@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="IE=edge,Chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="webkit" name="renderer">
+	<title>发现 - 有问必答</title>
+	<meta content="有问必答,知识社区,社交社区,问答社区" name="keywords">
+	<meta content="有问必答 社交化知识社区" name="description">
+	<base href="">
+	<!--[if IE]>
+</base>
+<![endif]-->
+<link type="image/x-icon" rel="shortcut icon" href="static/css/default/img/favicon.ico?v=20151125">
+
+<link href="static/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="static/css/icon.css" type="text/css" rel="stylesheet">
+
+<link type="text/css" rel="stylesheet" href="static/css/default/common.css?v=20151125">
+<link type="text/css" rel="stylesheet" href="static/css/default/link.css?v=20151125">
+<link type="text/css" rel="stylesheet" href="static/js/plug_module/style.css?v=20151125">
+
+<script type="text/javascript">
+	var _90DB43ABD4D2EFB80B143A0DF5B3B668="18C84670BD4E0E36";
+	var G_POST_HASH=_90DB43ABD4D2EFB80B143A0DF5B3B668;
+	var G_INDEX_SCRIPT = "?/";
+	var G_SITE_NAME = "WeCenter";
+	var G_BASE_URL = "";
+	var G_STATIC_URL = "static";
+	var G_UPLOAD_URL = "uploads";
+	var G_USER_ID = "1";
+	var G_USER_NAME = "itbull";
+	var G_UPLOAD_ENABLE = "Y";
+	var G_UNREAD_NOTIFICATION = 0;
+	var G_NOTIFICATION_INTERVAL = 100000;
+	var G_CAN_CREATE_TOPIC = "1";
+	var G_ADVANCED_EDITOR_ENABLE = "Y";
+
+	</script>
+<script type="text/javascript" src="static/js/jquery.2.js?v=20151125"></script>
+<script type="text/javascript" src="static/js/jquery.form.js?v=20151125"></script>
+<script type="text/javascript" src="static/js/plug_module/plug-in_module.js?v=20151125"></script>
+<script type="text/javascript" src="static/js/aws.js?v=20151125"></script>
+<script type="text/javascript" src="static/js/aw_template.js?v=20151125"></script>
+<script type="text/javascript" src="static/js/app.js?v=20151125"></script>
+<script src="static/js/compatibility.js" type="text/javascript"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="static/js/respond.js"></script>
+<![endif]-->
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style>
+</head>
+<body>
+<noscript id="noscript" unselectable="on">
+	<div class="aw-404 aw-404-wrap container">
+		<img src="static/common/no-js.jpg">
+		<p>你的浏览器禁用了JavaScript, 请开启后刷新浏览器获得更好的体验!</p>
+	</div>
+</noscript>
+
+<div class="aw-top-menu-wrap">
+	<div class="container">
+		<!-- logo -->
+		<div class="aw-logo hidden-xs">
+			<a href=""></a>
+		</div>
+		<!-- end logo -->
+		<!-- 搜索框 -->
+		<div class="aw-search-box  hidden-xs hidden-sm">
+			<form method="post" id="global_search_form" action="?/search/" class="navbar-search">
+				<input type="text" id="aw-search-query" name="q" autocomplete="off" placeholder="搜索问题、话题或人" class="form-control search-query">
+				<span onclick="$('#global_search_form').submit();" id="global_search_btns" title="搜索"> <i class="icon icon-search"></i>
+				</span>
+				<div class="aw-dropdown">
+					<div class="mod-body">
+						<p class="title">输入关键字进行搜索</p>
+						<ul class="aw-dropdown-list hide"></ul>
+						<p class="search">
+							<span>搜索:</span>
+							<a onclick="$('#global_search_form').submit();"></a>
+						</p>
+					</div>
+					<div class="mod-footer">
+						<a class="pull-right btn btn-mini btn-success publish" onclick="" href="publish.html">发起问题</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- end 搜索框 -->
+		<!-- 导航 -->
+		<div class="aw-top-nav navbar">
+			<div class="navbar-header">
+				<button class="navbar-toggle pull-left">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
+					<li>
+						<a class="active" href="index.html"> <i class="icon icon-list"></i>
+							发现
+						</a>
+					</li>
+					<li>
+						<a href="topic_index.html">
+							<i class="icon icon-topic"></i>
+							话题
+						</a>
+					</li>
+					<li>
+						<a style="font-weight:bold;">· · ·</a>
+						<div class="dropdown-list pull-right">
+							<ul id="extensions-nav-list"></ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- end 导航 -->
+		<!-- 未登录展示 -->
+		<div class="aw-user-nav">
+			<!-- 登陆&注册栏 -->
+			<a href="login.html" class="login btn btn-normal btn-primary">登录</a>
+			<a href="register.html" class="register btn btn-normal btn-success">注册</a>
+			<!-- end 登陆&注册栏 -->
+		</div>
+		<!-- 登陆成功展示用户栏 -->
+		<div class="aw-user-nav">
+			<!-- 登陆&注册栏 -->
+			<a class="aw-user-nav-dropdown" href="people.html">
+				<img src="static/common/avatar-mid-img.png" alt="itbull"></a>
+			<div class="aw-dropdown dropdown-list pull-right">
+				<ul class="aw-dropdown-list">
+					<li class="hidden-xs">
+						<a href="user_set.html">
+							<i class="icon icon-setting"></i>
+							设置
+						</a>
+					</li>
+					<li class="hidden-xs">
+						<a href="admin/login.html">
+							<i class="icon icon-job"></i>
+							管理
+						</a>
+					</li>
+					<li>
+						<a href="?/account/logout/">
+							<i class="icon icon-logout"></i>
+							退出
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- end 登陆&注册栏 -->
+		</div>
+		<!-- end 用户栏 -->
+		<!-- 发起 -->
+		<div class="aw-publish-btn">
+
+			<a onclick="AWS.dialog('publish', {'category_enable':'1', 'category_id':'0', 'topic_title':''}); return false;" href="?/publish/" class="btn-primary" id="header_publish">
+				<i class="icon icon-ask"></i>
+				发起
+			</a>
+			<div class="dropdown-list pull-right">
+				<ul>
+					<li>
+						<a onclick="" href="publish.html">问题</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end 发起 -->
+	</div>
+</div>
+
+<div class="aw-container-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="aw-global-tips"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="aw-content-wrap clearfix">
+				<div class="col-sm-12 col-md-9 aw-main-content">
+					<div class="aw-mod aw-topic-detail-title">
+						<div class="mod-body">
+							<img alt="php" src="http://localhost/wecenter/static/common/topic-mid-img.png">
+							<h2 class="pull-left">php</h2>
+							<div class="aw-topic-operate text-color-999">
+								<a class="follow btn btn-normal btn-success active" onclick="AWS.User.follow($(this), 'topic', 2);" href="javascript:;" data-original-title="" title="">
+									<span>取消关注</span> <em>|</em> <b>1</b>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="aw-mod aw-topic-list-mod">
+						<div class="mod-head">
+							<div class="tabbable">
+								<!-- tab 切换 -->
+								<ul class="nav nav-tabs aw-nav-tabs hidden-xs">
+									<li class="active">
+										<a data-toggle="tab" href="#all">全部内容</a>
+									</li>
+									<li>
+										<a data-toggle="tab" href="#best_answers">精华</a>
+									</li>
+									<li>
+										<a data-toggle="tab" href="#recommend">推荐</a>
+									</li>
+									<li>
+										<a style="display:none" data-toggle="tab" id="i_favorite" href="#favorite">我的收藏</a>
+									</li>
+									<li>
+										<a data-toggle="tab" id="i_about" href="#about">关于话题</a>
+									</li>
+									<div class="aw-search-bar pull-right hidden-xs">
+										<i class="icon icon-search"></i>
+										<input type="text" placeholder="搜索..." class="search-query form-control" id="question-input">
+										<div class="aw-dropdown">
+											<p class="title">没有找到相关结果</p>
+											<ul class="aw-dropdown-list"></ul>
+										</div>
+									</div>
+								</ul>
+								<!-- end tab 切换 -->
+							</div>
+						</div>
+
+						<div class="mod-body">
+							<!-- tab 切换内容 -->
+							<div class="tab-content">
+								<div id="all" class="tab-pane active">
+									<!-- 推荐问题 -->
+									<!-- end 推荐问题 -->
+									<div class="aw-mod">
+										<div class="mod-body">
+											<div id="c_all_list" class="aw-common-list">
+												<div data-topic-id="2," class="aw-item active">
+													<a rel="nofollow" href="http://localhost/wecenter/?/people/itbull" data-id="1" class="aw-user-name hidden-xs">
+														<img alt="" src="http://localhost/wecenter/uploads/avatar/000/00/00/01_avatar_max.jpg"></a>
+													<div class="aw-question-content">
+														<h4>
+															<a href="http://localhost/wecenter/?/question/2">PHP是世界上最好的语言</a>
+														</h4>
+														<a class="pull-right text-color-999" href="http://localhost/wecenter/?/question/2#!answer_form">回复</a>
+
+														<p>
+															<a href="http://localhost/wecenter/?/explore/category-1" class="aw-question-tags">默认分类</a>
+															•
+															<a class="aw-user-name" href="http://localhost/wecenter/?/people/itbull">itbull</a>
+															<span class="text-color-999">发起了问题 • 1 人关注 • 0 个回复 • 1 次浏览 • 5 天前</span>
+															<span class="text-color-999 related-topic hide">• 来自相关话题</span>
+														</p>
+
+													</div>
+												</div>
+												<div data-topic-id="2," class="aw-item ">
+													<a rel="nofollow" href="http://localhost/wecenter/?/people/itbull" data-id="1" class="aw-user-name hidden-xs">
+														<img alt="" src="http://localhost/wecenter/uploads/avatar/000/00/00/01_avatar_max.jpg"></a>
+													<div class="aw-question-content">
+														<h4>
+															<a href="http://localhost/wecenter/?/question/1">PHP是什么</a>
+														</h4>
+														<div class="pull-right hidden-xs contribute">
+															<span class="pull-right text-color-999">贡献</span>
+															<a rel="nofollow" href="http://localhost/wecenter/?/people/bull" data-id="2" class="aw-user-name">
+																<img alt="" src="http://localhost/wecenter/static/common/avatar-mid-img.png"></a>
+														</div>
+
+														<p>
+															<a href="http://localhost/wecenter/?/explore/category-1" class="aw-question-tags">默认分类</a>
+															•
+															<a data-id="2" class="aw-user-name" href="http://localhost/wecenter/?/people/bull">bull</a>
+															<span class="text-color-999">回复了问题 • 1 人关注 • 1 个回复 • 7 次浏览 • 5 天前</span>
+															<span class="text-color-999 related-topic hide">• 来自相关话题</span>
+														</p>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mod-footer">
+											<a auto-load="false" id="c_all_more" class="aw-load-more-content disabled" data-page="2">
+												<span>没有更多了</span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div id="best_answers" class="tab-pane">
+									<div id="c_best_question_list" class="aw-feed-list">
+										<div class="mod-body"></div>
+										<div class="mod-footer">
+											<a auto-load="false" id="bp_best_question_more" class="aw-load-more-content" data-page="2">
+												<span>更多...</span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div id="recommend" class="tab-pane">
+									<div class="aw-mod">
+										<div class="mod-body">
+											<div id="c_recommend_list" class="aw-common-list"></div>
+										</div>
+										<div class="mod-footer">
+											<a auto-load="false" id="c_recommend_more" class="aw-load-more-content" data-page="2">
+												<span>更多...</span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div id="questions" class="tab-pane">
+									<div class="aw-mod">
+										<div class="mod-body">
+											<div id="c_question_list" class="aw-common-list">
+												<div data-topic-id="2," class="aw-item active">
+													<a rel="nofollow" href="http://localhost/wecenter/?/people/itbull" data-id="1" class="aw-user-name hidden-xs">
+														<img alt="" src="http://localhost/wecenter/uploads/avatar/000/00/00/01_avatar_max.jpg"></a>
+													<div class="aw-question-content">
+														<h4>
+															<a href="http://localhost/wecenter/?/question/2">PHP是世界上最好的语言</a>
+														</h4>
+														<a class="pull-right text-color-999" href="http://localhost/wecenter/?/question/2#!answer_form">回复</a>
+
+														<p>
+															<a href="http://localhost/wecenter/?/explore/category-1" class="aw-question-tags">默认分类</a>
+															•
+															<a class="aw-user-name" href="http://localhost/wecenter/?/people/itbull">itbull</a>
+															<span class="text-color-999">发起了问题 • 1 人关注 • 0 个回复 • 1 次浏览 • 5 天前</span>
+															<span class="text-color-999 related-topic hide">• 来自相关话题</span>
+														</p>
+
+													</div>
+												</div>
+												<div data-topic-id="2," class="aw-item ">
+													<a rel="nofollow" href="http://localhost/wecenter/?/people/itbull" data-id="1" class="aw-user-name hidden-xs">
+														<img alt="" src="http://localhost/wecenter/uploads/avatar/000/00/00/01_avatar_max.jpg"></a>
+													<div class="aw-question-content">
+														<h4>
+															<a href="http://localhost/wecenter/?/question/1">PHP是什么</a>
+														</h4>
+														<a class="pull-right text-color-999" href="http://localhost/wecenter/?/question/1#!answer_form">回复</a>
+
+														<p>
+															<a href="http://localhost/wecenter/?/explore/category-1" class="aw-question-tags">默认分类</a>
+															•
+															<a data-id="2" class="aw-user-name" href="http://localhost/wecenter/?/people/bull">bull</a>
+															<span class="text-color-999">回复了问题 • 1 人关注 • 1 个回复 • 7 次浏览 • 5 天前</span>
+															<span class="text-color-999 related-topic hide">• 来自相关话题</span>
+														</p>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="mod-footer">
+											<a auto-load="false" id="c_question_more" class="aw-load-more-content" data-page="2">
+												<span>更多...</span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div id="articles" class="tab-pane">
+									<!-- 动态首页&话题精华模块 -->
+									<div class="aw-mod">
+										<div class="mod-body">
+											<div id="c_articles_list" class="aw-common-list"></div>
+										</div>
+										<div class="mod-footer">
+											<a auto-load="false" id="bp_articles_more" class="aw-load-more-content" data-page="2">
+												<span>更多...</span>
+											</a>
+										</div>
+									</div>
+									<!-- end 动态首页&话题精华模块 -->
+								</div>
+
+								<div id="favorite" class="tab-pane">
+									<!-- 动态首页&话题精华模块 -->
+									<div id="c_favorite_list" class="aw-mod aw-feed-list">
+										<p align="center" style="padding: 15px 0">没有内容</p>
+									</div>
+									<!-- end 动态首页&话题精华模块 -->
+
+									<!-- 加载更多内容 -->
+									<a id="bp_favorite_more" class="aw-load-more-content disabled" data-page="0">
+										<span>没有更多了</span>
+									</a>
+									<!-- end 加载更多内容 -->
+								</div>
+
+								<div id="about" class="tab-pane">
+									<div class="aw-topic-detail-about text-color-666 markitup-box"></div>
+								</div>
+							</div>
+							<!-- end tab 切换内容 -->
+						</div>
+					</div>
+				</div>
+
+				<!-- 侧边栏 -->
+				<div class="col-sm-12 col-md-3 aw-side-bar hidden-xs">
+					<!-- 话题描述 -->
+					<div class="aw-mod aw-text-align-justify">
+						<div class="mod-head">
+							<h3>话题描述</h3>
+						</div>
+						<div class="mod-body">
+							<a class="icon-inverse" href="http://localhost/wecenter/?/topic/edit/2">
+								<i class="icon icon-edit"></i>
+								添加描述
+							</a>
+						</div>
+					</div>
+					<!-- end 话题描述 -->
+
+					<div class="aw-mod topic-about">
+						<div class="mod-head">
+							<h3>相关话题</h3>
+						</div>
+						<div data-type="topic" class="mod-body">
+							<div data-id="2" data-type="topic" class="aw-topic-bar">
+								<div class="tag-bar clearfix">
+									<span class="aw-edit-topic icon-inverse">
+										<i class="icon icon-edit"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 最佳回复者 -->
+					<!-- end 最佳回复者 -->
+
+					<!-- xx人关注该话题 -->
+					<div class="aw-mod topic-status">
+						<div class="mod-head">
+							<h3>1 人关注该话题</h3>
+						</div>
+						<div class="mod-body">
+							<div class="aw-border-radius-5" id="focus_users">
+								<a href="http://localhost/wecenter/?/people/itbull">
+									<img alt="itbull" src="http://localhost/wecenter/uploads/avatar/000/00/00/01_avatar_mid.jpg"></a>
+							</div>
+						</div>
+					</div>
+					<!-- end xx人关注该话题 -->
+
+					<!-- 话题修改记录 -->
+					<div class="aw-mod topic-edit-notes">
+						<div class="mod-head">
+							<h3>
+								<i class="icon icon-down pull-right"></i>
+								话题修改记录
+							</h3>
+						</div>
+						<div class="mod-body hide">
+							<ul>
+								<li onclick="AWS.dialog('topicEditHistory', decodeURIComponent('2016-02-25%3A%20%3Ca%20href%3D%22people%2Fitbull%22%3Eitbull%3C%2Fa%3E%20%E5%88%9B%E5%BB%BA%E4%BA%86%E8%AF%A5%E8%AF%9D%E9%A2%98%3C%2Fp%3E'));">
+									<span class="pull-right text-color-999">2016-02-25</span>
+									<a class="aw-user-name" data-id="" href="javascript:;">itbull</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- end 话题修改记录 -->
+
+					<div class="aw-mod">
+						<div class="mod-head">
+							<h3>管理</h3>
+						</div>
+
+						<div class="mod-body">
+							<ul>
+								<li>
+									<a href="http://localhost/wecenter/?/topic/edit/2">编辑话题</a>
+								</li>
+								<li>
+									<a href="http://localhost/wecenter/?/topic/manage/2">管理话题</a>
+								</li>
+
+								<li>
+									<a onclick="AWS.ajax_request(G_BASE_URL + '/topic/ajax/lock/', 'topic_id=2');" href="javascript:;">锁定话题</a>
+								</li>
+
+								<li>
+									<a onclick="AWS.dialog('confirm', {'message' : '确认删除?'}, function(){AWS.ajax_request(G_BASE_URL + '/topic/ajax/remove/', 'topic_id=2');});" href="javascript:;">删除话题</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end 侧边栏 -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="aw-footer-wrap">
+	<div class="aw-footer">
+		Copyright &copy; 2016-2099, All Rights Reserved
+		<span class="hidden-xs">
+			Powered By
+			<a target="blank" href="http://helloitbull.net/">有问必答 1.0</a>
+		</span>
+
+	</div>
+</div>
+
+</body>
+</html>

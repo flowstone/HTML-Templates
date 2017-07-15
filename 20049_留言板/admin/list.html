@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理</title>
+	<link rel="stylesheet" href="../bs/css/bootstrap.min.css">
+	<script src="../bs/js/jquery.min.js"></script>
+	<script src="../bs/js/bootstrap.min.js"></script>
+	<script src="../bs/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-inverse" >
+		  <div class="navbar-header">
+		    <a class="navbar-brand"  href="index.html">管理</a>
+		  </div>
+		</nav>
+		<div class="row">
+		  <div class="col-md-3">
+		  	<div class="list-group">
+			  <a href="#" class="list-group-item active">
+			    管理列表
+			  </a>
+			  <a href="#" class="list-group-item">留言管理</a>
+			</div>
+		  </div>
+		  <div class="col-md-9">
+			
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					留言管理
+				</div>
+			    <div class="panel-body">
+			   		<table class="table table-bordered">
+					  <tr>
+					  	<th>序号</th>
+					  	<th>标题</th>
+					  	<th>留言时间</th>
+					  	<th>操作</th>
+					  </tr>
+					  
+					  <tr>
+					  	<td>1</td>
+					  	<td>标题</td>
+					  	<td>时间</td>
+					  	<td><a href="edit.html">修改</a>
+							<a href="#" onclick="return confirm('确定要删除吗？');" >删除</a>
+					  	</td>
+					  </tr>
+					  
+					</table>
+			    </div>
+			    <div class="panel-footer">
+					<ul class="pager">
+					  	<li class="previous"><a href="#">&larr; 首页</a></li>
+					  	<li><a href="#">上一页</a></li>
+  						<li><a href="#">下一页</a></li>
+					  	<li class="next"><a href="#">末页 &rarr;</a></li>
+					</ul>
+			    </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="webkit" name="renderer">
+    <meta content="IE=edge,Chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="blank" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>用户管理-有问必答</title>
+    <link href="../static/css/bootstrap.css?v=20151125" rel="stylesheet" type="text/css">
+    <link href="../static/css/icon.css?v=20151125" rel="stylesheet" type="text/css">
+    <link href="../static/admin/css/common.css?v=20151125" rel="stylesheet" type="text/css">
+    <script src="../static/js/jquery.2.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/js/jquery.form.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/admin/js/aws_admin.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/admin/js/aws_admin_template.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/admin/js/framework.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/admin/js/global.js?v=20151125" type="text/javascript"></script>
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="../static/js/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="aw-header">
+        <button class="btn btn-sm mod-head-btn pull-left">
+         <i class="icon icon-bar"></i>
+        </button>
+
+        <div class="mod-header-user">
+            <ul class="pull-right">
+
+                <li class="dropdown username">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="">
+                        <img width="30" class="img-circle" src="../static/common/avatar-mid-img.png">
+                        itbull
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu pull-right mod-user">
+                        <li>
+                            <a target="_blank" href="">
+                                <i class="icon icon-user"></i>
+                                账户
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">
+                                <i class="icon icon-logout"></i>
+                                退出
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="aw-side" class="aw-side ps-container">
+        <div class="mod">
+            <div class="mod-logo">
+                <img alt="" src="../static/admin/img/logo.png" class="pull-left">
+                <h1>有问必答</h1>
+            </div>
+
+            <div class="mod-message">
+                <div class="message">
+                    <a title="首页" target="_blank" href="../index.html" class="btn btn-sm">
+                        <i class="icon icon-home"></i>
+                    </a>
+
+                    <a title="退出" href="login.html" class="btn btn-sm">
+                        <i class="icon icon-logout"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="mod-bar">
+                <input type="hidden" val="0" id="hide_values">
+                <li>
+                    <a class=" icon icon-ul" href="index.html">
+                        <span>摘要信息</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a data="icon" class="icon icon-reply" href="javascript:;">
+                        <span>内容管理</span>
+                    </a>
+
+                    <ul class="hide">
+                        <li>
+                            <a href="category.html">
+                                <span>分类管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="question.html">
+                                <span>问题管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topic.html">
+                                <span>话题管理</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a data="icon" class=" icon icon-user active" href="javascript:;">
+                        <span>用户管理</span>
+                    </a>
+
+                    <ul class="hide" style="display: block;">
+                        <li>
+                            <a href="user.html" class="active">
+                                <span>用户列表</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="role.html">
+                                <span>用户角色</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a data="icon" class="icon icon-setting" href="javascript:;">
+                        <span>全局设置</span>
+                    </a>
+
+                    <ul class="hide">
+                        <li>
+                            <a href="site.html">
+                                <span>站点信息</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="regedit.html">
+                                <span>注册访问</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mail.html">
+                                <span>邮件设置</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a data="icon" class=" icon icon-job" href="javascript:;">
+                        <span>工具</span>
+                    </a>
+
+                    <ul class="hide">
+                        <li>
+                            <a href="tool.html">
+                                <span>系统维护</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="ps-scrollbar-x-rail" style="width: 235px; display: none; left: 0px; bottom: 3px;">
+            <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+        </div>
+        <div class="ps-scrollbar-y-rail" style="top: 0px; height: 607px; display: inherit; right: 0px;">
+            <div class="ps-scrollbar-y" style="top: 0px; height: 560px;"></div>
+        </div>
+    </div>
+
+    <div id="user_list" class="aw-content-wrap">
+        <div class="mod">
+            <div class="mod-head">
+                <h3>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="user.html">会员列表</a></li>
+                        <li class=""><a data-toggle="tab" href="#search">搜索</a></li>
+                        <li><a href="user_add.html">添加用户</a></li>
+                    </ul>
+                </h3>
+            </div>
+            <div class="mod-body tab-content">
+                <div id="list" class="tab-pane active">
+
+                    <div class="table-responsive">
+                                        <form id="users_form" action="http://localhost/wecenter/?/admin/ajax/remove_users/" method="post">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th><div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="check-all" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div></th>
+                                    <th>ID</th>
+                                    <th>用户名</th>
+                                    <th>邮箱</th>
+                                    <th>角色</th>
+                                    <th>注册时间</th>
+                                    <th>最后活跃</th>
+                                    <th>在线时长</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                                            <tr>
+                                    <td><div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" name="uids[]" value="2" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div></td>
+                                    <td>2</td>
+                                    <td><a target="_blank" href="http://localhost/wecenter/?/people/bull">bull</a> <span class="text-color-999">[ 邮件未验证 ]</span></td>
+                                    <td>bull@helloitbull.net</td>
+                                    <td>会员</td>
+                                    <td>2 天前</td>
+                                    <td>2 天前</td>
+                                    <td>10 分钟</td>
+                                    <td class="nowrap">
+                                        <a title="" class="icon icon-edit md-tip" href="user_edit.html" data-original-title="编辑"></a>
+                                        <a class="icon icon-forbid md-tip" title="" onclick="AWS.ajax_request(G_BASE_URL + '/admin/ajax/forbidden_user/' , 'uid=2&amp;status=1');" href="javascript:;" data-original-title="封禁用户"></a></td>
+                                </tr>
+                                                            <tr>
+                                    <td><div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" name="uids[]" value="1" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;"></ins></div></td>
+                                    <td>1</td>
+                                    <td><a target="_blank" href="http://localhost/wecenter/?/people/itbull">itbull</a> </td>
+                                    <td>itbull@helloitbull.net</td>
+                                    <td>管理员</td>
+                                    <td>2 天前</td>
+                                    <td>1 分钟前</td>
+                                    <td>280 分钟</td>
+                                    <td class="nowrap">
+                                        <a title="" class="icon icon-edit md-tip" href="http://localhost/wecenter/?/admin/user/edit/uid-1" data-original-title="编辑"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </form>
+                                    </div>
+
+                    <div class="mod-table-foot">
+                        <div class="col-sm-4 col-xs-12">
+                            <a onclick="AWS.ajax_post($('#users_form'));" class="btn btn-danger">删除</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                                                </div>
+                    </div>
+                </div>
+
+                <div id="search" class="tab-pane">
+                    <form role="form" class="form-horizontal" id="search_form" onsubmit="return false;" action="" method="post">
+
+                        <input type="hidden" value="search" name="action">
+
+                        <div class="form-group">
+                            <label class="col-sm-2 col-xs-3 control-label">用户名:</label>
+
+                            <div class="col-sm-5 col-xs-8">
+                                <input type="text" name="user_name" value="" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 col-xs-3 control-label">邮箱:</label>
+
+                            <div class="col-sm-5 col-xs-8">
+                                <input type="text" name="email" value="" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 col-xs-3 control-label">用户组:</label>
+
+                            <div class="col-sm-5 col-xs-8">
+                                <select class="form-control" name="group_id">
+                                    <option value=""></option>
+                                    <option value="1">超级管理员</option>
+                                    <option value="2">前台管理员</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 col-xs-3 control-label">最后登录 IP 段:</label>
+
+                            <div class="col-sm-5 col-xs-8">
+                                <input type="text" name="ip" value="" class="form-control">
+
+                                <span class="help-block">限 C 段, 如: 203.31.42.*</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 col-xs-3 control-label">居住地:</label>
+
+                            <div class="col-sm-3 col-xs-3">
+                                <select class="select_area form-control" name="province" style="display: inline-block;"><option value="">请选择省份或直辖市</option><option value="安徽省">安徽省</option><option value="北京市">北京市</option><option value="福建省">福建省</option><option value="甘肃省">甘肃省</option><option value="广东省">广东省</option><option value="广西壮族自治区">广西壮族自治区</option><option value="贵州省">贵州省</option><option value="海南省">海南省</option><option value="河北省">河北省</option><option value="河南省">河南省</option><option value="黑龙江省">黑龙江省</option><option value="湖北省">湖北省</option><option value="湖南省">湖南省</option><option value="吉林省">吉林省</option><option value="江苏省">江苏省</option><option value="江西省">江西省</option><option value="辽宁省">辽宁省</option><option value="内蒙古自治区">内蒙古自治区</option><option value="宁夏回族自治区">宁夏回族自治区</option><option value="青海省">青海省</option><option value="山东省">山东省</option><option value="山西省">山西省</option><option value="陕西省">陕西省</option><option value="上海市">上海市</option><option value="四川省">四川省</option><option value="天津市">天津市</option><option value="西藏自治区">西藏自治区</option><option value="新疆维吾尔自治区">新疆维吾尔自治区</option><option value="云南省">云南省</option><option value="浙江省">浙江省</option><option value="重庆市">重庆市</option><option value="香港">香港</option><option value="澳门">澳门</option><option value="台湾">台湾</option></select>
+                            </div>
+                            <div class="col-sm-3 col-xs-3">
+                                <select class="select_area form-control hide" name="city"></select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-5 col-xs-8">
+                                <button class="btn btn-primary" onclick="AWS.ajax_post($('#search_form'));" type="button">搜索</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/admin/js/echarts-data.js" type="text/javascript"></script>
+    <script src="../static/admin/js/echarts.js" type="text/javascript"></script>
+    <div class="aw-footer">
+        <p>
+            Copyright &copy; 2016-2099 - Powered By
+            <a target="blank" href="http://helloitbull.net/">有问必答 1.0</a>
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>控制面板</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <script type="text/javascript" src="view/javascript/jquery/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="view/javascript/bootstrap/js/bootstrap.min.js"></script>
+  <link href="view/stylesheet/bootstrap.css" type="text/css" rel="stylesheet" />
+  <link href="view/javascript/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+  <link href="view/javascript/summernote/summernote.css" rel="stylesheet" />
+  <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+  <script src="view/javascript/jquery/datetimepicker/moment.js" type="text/javascript"></script>
+  <script src="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+  <link href="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen" />
+  <link type="text/css" href="view/stylesheet/stylesheet.css" rel="stylesheet" media="screen" />
+  <script src="view/javascript/common.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="container">
+    <header id="header" class="navbar navbar-static-top">
+      <div class="navbar-header">
+        <a type="button" id="button-menu" class="pull-left"> <i class="fa fa-indent fa-lg"></i>
+        </a>
+        <a href="" class="navbar-brand">
+          <img src="view/image/logo.png" alt="OpenCart" title="OpenCart" />
+        </a>
+      </div>
+      <ul class="nav pull-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">
+            <span class="label label-danger pull-left">0</span> <i class="fa fa-bell fa-lg"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right alerts-dropdown">
+            <li class="dropdown-header">订单管理</li>
+            <li>
+              <a href="" style="display: block; overflow: auto;">
+                <span class="label label-warning pull-right">0</span>
+                处理中订单
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="label label-success pull-right">0</span>
+                已完成订单
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="label label-danger pull-right">0</span>
+                退货
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-header">客户列表</li>
+            <li>
+              <a href="">
+                <span class="label label-success pull-right">0</span>
+                在线客户
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="label label-danger pull-right">0</span>
+                待审批
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-header">商品</li>
+            <li>
+              <a href="">
+                <span class="label label-danger pull-right">0</span>
+                缺货
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="label label-danger pull-right">0</span>
+                评论
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-header">加盟</li>
+            <li>
+              <a href="">
+                <span class="label label-danger pull-right">0</span>
+                待审批
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-life-ring fa-lg"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li class="dropdown-header">
+              网店名称
+              <i class="fa fa-shopping-cart"></i>
+            </li>
+            <li>
+              <a href="" target="_blank">BuyPlus(败家Shopping)</a>
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown-header">
+              帮助
+              <i class="fa fa-life-ring"></i>
+            </li>
+            <li>
+              <a href="" target="_blank">技术支持</a>
+            </li>
+            <li>
+              <a href="" target="_blank">支持文档</a>
+            </li>
+            <li>
+              <a href="" target="_blank">应用商店</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <span class="hidden-xs hidden-sm hidden-md">注销</span>
+            <i class="fa fa-sign-out fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <nav id="column-left">
+      <div id="profile">
+        <div>
+          <!-- <i class="fa fa-opencart"></i> -->
+          <img src="view/image/avatar.png" style="max-width:42px; max-height: 42px;" >
+        </div>
+        <div>
+          <h4>HelloKang</h4>
+          <small>Administrator</small>
+        </div>
+      </div>
+      <ul id="menu">
+        <li id="dashboard">
+          <a href="">
+            <i class="fa fa-dashboard fa-fw"></i>
+            <span>管理首页</span>
+          </a>
+        </li>
+        <li id="catalog">
+          <a class="parent">
+            <i class="fa fa-tags fa-fw"></i>
+            <span>商品目录</span>
+          </a>
+          <ul>
+            <li>
+              <a href="">商品分类</a>
+            </li>
+            <li>
+              <a href="">商品管理</a>
+            </li>
+            <li class="hidden">
+              <a href="">分期付款</a>
+            </li>
+            <li>
+              <a href="">筛选过滤</a>
+            </li>
+            <li>
+              <a class="parent">商品属性</a>
+              <ul>
+                <li>
+                  <a href="">商品属性</a>
+                </li>
+                <li>
+                  <a href="">属性组</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">商品选项</a>
+            </li>
+            <li>
+              <a href="">品牌管理</a>
+            </li>
+            <li>
+              <a href="">下载设置</a>
+            </li>
+            <li>
+              <a href="">商品评论</a>
+            </li>
+            <li>
+              <a href="">信息管理</a>
+            </li>
+          </ul>
+        </li>
+        <li id="extension">
+          <a class="parent">
+            <i class="fa fa-puzzle-piece fa-fw"></i>
+            <span>扩展功能</span>
+          </a>
+          <ul>
+            <li>
+              <a href="">扩展安装</a>
+            </li>
+            <li>
+              <a href="">扩展配置</a>
+            </li>
+            <li>
+              <a href="">流量分析</a>
+            </li>
+            <li>
+              <a href="">验证码</a>
+            </li>
+            <li>
+              <a href="">插件扩展</a>
+            </li>
+            <li>
+              <a href="">反欺诈</a>
+            </li>
+            <li>
+              <a href="">模块配置</a>
+            </li>
+            <li>
+              <a href="">支付管理</a>
+            </li>
+            <li>
+              <a href="">配送管理</a>
+            </li>
+            <li>
+              <a href="">订单配置</a>
+            </li>
+          </ul>
+        </li>
+        <li id="design">
+          <a class="parent">
+            <i class="fa fa-television fa-fw"></i>
+            <span>页面设计</span>
+          </a>
+          <ul>
+            <li>
+              <a href="">布局</a>
+            </li>
+            <li>
+              <a href="">横幅</a>
+            </li>
+          </ul>
+        </li>
+        <li id="sale">
+          <a class="parent">
+            <i class="fa fa-shopping-cart fa-fw"></i>
+            <span>营销推广</span>
+          </a>
+          <ul>
+            <li>
+              <a href="">订单管理</a>
+            </li>
+            <li class="hidden">
+              <a href="">分期付款订单</a>
+            </li>
+            <li>
+              <a href="">商品退换</a>
+            </li>
+            <li>
+              <a class="parent">礼品券</a>
+              <ul>
+                <li>
+                  <a href="">礼品券</a>
+                </li>
+                <li>
+                  <a href="">礼品券主题</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="parent hidden">PayPal</a>
+              <ul>
+                <li>
+                  <a href="">搜寻交易记录</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li id="customer">
+          <a class="parent">
+            <i class="fa fa-user fa-fw"></i>
+            <span>客户列表</span>
+          </a>
+          <ul>
+            <li>
+              <a href="">客户列表</a>
+            </li>
+            <li>
+              <a href="">客户群组</a>
+            </li>
+            <li>
+              <a href="">自定义区</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="parent">
+            <i class="fa fa-share-alt fa-fw"></i>
+            <span>市场营销</span>
+          </a>
+          <ul>
+            <li>
+              <a href="">市场营销</a>
+            </li>
+            <li>
+              <a href="">加盟会员</a>
+            </li>
+            <li>
+              <a href="">优惠券设置</a>
+            </li>
+            <li>
+              <a href="">Mail</a>
+            </li>
+          </ul>
+        </li>
+        <li id="system">
+          <a class="parent">
+            <i class="fa fa-cog fa-fw"></i>
+            <span>系统设置</span>
+          </a>
+          <ul>
+            <li>
+              <a href="">网店设置</a>
+            </li>
+            <li>
+              <a class="parent">用户管理</a>
+              <ul>
+                <li>
+                  <a href="">用户管理</a>
+                </li>
+                <li>
+                  <a href="">用户群组</a>
+                </li>
+                <li>
+                  <a href="">API</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="parent">参数设置</a>
+              <ul>
+                <li>
+                  <a href="">店铺地址</a>
+                </li>
+                <li>
+                  <a href="">语言设置</a>
+                </li>
+                <li>
+                  <a href="">货币设置</a>
+                </li>
+                <li>
+                  <a href="">库存状态</a>
+                </li>
+                <li>
+                  <a href="">订单状态</a>
+                </li>
+                <li>
+                  <a class="parent">商品退换</a>
+                  <ul>
+                    <li>
+                      <a href="">退换状态</a>
+                    </li>
+                    <li>
+                      <a href="">退换管理</a>
+                    </li>
+                    <li>
+                      <a href="">退换原因</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">省/直辖市设置</a>
+                </li>
+                <li>
+                  <a href="">城市设置</a>
+                </li>
+                <li>
+                  <a href="">区县</a>
+                </li>
+                <li>
+                  <a href="">区域群组</a>
+                </li>
+                <li>
+                  <a class="parent">商品税种</a>
+                  <ul>
+                    <li>
+                      <a href="">税率类别</a>
+                    </li>
+                    <li>
+                      <a href="">商品税率</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">尺寸单位</a>
+                </li>
+                <li>
+                  <a href="">重量单位</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="parent">相关工具</a>
+              <ul>
+                <li>
+                  <a href="">上传文件</a>
+                </li>
+                <li>
+                  <a href="">备份/恢复</a>
+                </li>
+                <li>
+                  <a href="">错误日志</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li id="reports">
+          <a class="parent">
+            <i class="fa fa-bar-chart-o fa-fw"></i>
+            <span>统计报表</span>
+          </a>
+          <ul>
+            <li>
+              <a class="parent">营销推广</a>
+              <ul>
+                <li>
+                  <a href="">商品销售统计</a>
+                </li>
+                <li>
+                  <a href="">商品销售税费统计</a>
+                </li>
+                <li>
+                  <a href="">运费统计</a>
+                </li>
+                <li>
+                  <a href="">退换商品统计</a>
+                </li>
+                <li>
+                  <a href="">折扣商品统计</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="parent">商品管理</a>
+              <ul>
+                <li>
+                  <a href="">商品浏览统计</a>
+                </li>
+                <li>
+                  <a href="">商品购买统计</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="parent">客户列表</a>
+              <ul>
+                <li>
+                  <a href="">在线客户统计</a>
+                </li>
+                <li>
+                  <a href="">客户活动统计</a>
+                </li>
+                <li>
+                  <a href="">客户订单统计</a>
+                </li>
+                <li>
+                  <a href="">奖励积分统计</a>
+                </li>
+                <li>
+                  <a href="">客户余额统计</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="parent">市场营销</a>
+              <ul>
+                <li>
+                  <a href="">市场营销</a>
+                </li>
+                <li>
+                  <a href="">加盟会员</a>
+                </li>
+                <li>
+                  <a href="">加盟会员活动统计</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div id="stats">
+        <ul>
+          <li>
+            <div>
+              订单已经完成
+              <span class="pull-right">0%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                <span class="sr-only">0%</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              订单待处理
+              <span class="pull-right">0%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                <span class="sr-only">0%</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              其它状态
+              <span class="pull-right">0%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                <span class="sr-only">0%</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="content">
+      <div class="page-header">
+        <div class="container-fluid">
+          <div class="pull-right">
+            <button type="submit" form="form-setting" data-toggle="tooltip" title="保存" class="btn btn-primary"> <i class="fa fa-save"></i>
+            </button>
+            <a href="admin/index.php?route=setting/store&amp;token=zCrO5UG5Gxye6F4HUqxXNq8XTDXACUU5" data-toggle="tooltip" title="取消" class="btn btn-default"> <i class="fa fa-reply"></i>
+            </a>
+          </div>
+          <h1>系统设置</h1>
+          <ul class="breadcrumb">
+            <li>
+              <a href="admin/index.php?route=common/dashboard&amp;token=zCrO5UG5Gxye6F4HUqxXNq8XTDXACUU5">首页</a>
+            </li>
+            <li>
+              <a href="admin/index.php?route=setting/store&amp;token=zCrO5UG5Gxye6F4HUqxXNq8XTDXACUU5">商店</a>
+            </li>
+            <li>
+              <a href="admin/index.php?route=setting/setting&amp;token=zCrO5UG5Gxye6F4HUqxXNq8XTDXACUU5">系统设置</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <i class="fa fa-pencil"></i>
+              编辑系统设置
+            </h3>
+          </div>
+          <div class="panel-body">
+            <form action="admin/index.php?route=setting/setting&amp;token=zCrO5UG5Gxye6F4HUqxXNq8XTDXACUU5" method="post" enctype="multipart/form-data" id="form-setting" class="form-horizontal">
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a href="#tab-general" data-toggle="tab">编辑项目</a>
+                </li>
+                <li>
+                  <a href="#tab-store" data-toggle="tab">商店设置</a>
+                </li>
+                <li>
+                  <a href="#tab-local" data-toggle="tab">本地化设置</a>
+                </li>
+                <li>
+                  <a href="#tab-option" data-toggle="tab">选项设置</a>
+                </li>
+                <li>
+                  <a href="#tab-image" data-toggle="tab">图片设置</a>
+                </li>
+                <li>
+                  <a href="#tab-ftp" data-toggle="tab">FTP</a>
+                </li>
+                <li>
+                  <a href="#tab-mail" data-toggle="tab">邮件协议</a>
+                </li>
+                <li>
+                  <a href="#tab-server" data-toggle="tab">服务器设置</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab-general">
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-meta-title">Meta标题</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_meta_title" value="BuyPlus(败家Shopping)" placeholder="Meta标题" id="input-meta-title" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-meta-description">Meta标签描述</label>
+                    <div class="col-sm-10">
+                      <textarea name="config_meta_description" rows="5" placeholder="Meta标签描述" id="input-meta-description" class="form-control">BuyPlus(败家Shopping)</textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-meta-keyword">Meta标签关键词</label>
+                    <div class="col-sm-10">
+                      <textarea name="config_meta_keyword" rows="5" placeholder="Meta标签关键词" id="input-meta-keyword" class="form-control">BuyPlus(败家Shopping)</textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-template">模板设置</label>
+                    <div class="col-sm-10">
+                      <select name="config_template" id="input-template" class="form-control">
+                        <option value="default">default</option>
+                        <option value="gd-free" selected="selected">gd-free</option>
+                      </select>
+                      <br />
+                      <img src="" alt="" id="template" class="img-thumbnail" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-layout">默认布局</label>
+                    <div class="col-sm-10">
+                      <select name="config_layout_id" id="input-layout" class="form-control">
+                        <option value="6">Account</option>
+                        <option value="10">Affiliate</option>
+                        <option value="3">Category</option>
+                        <option value="7">Checkout</option>
+                        <option value="12">Compare</option>
+                        <option value="8">Contact</option>
+                        <option value="4" selected="selected">Default</option>
+                        <option value="1">Home</option>
+                        <option value="11">Information</option>
+                        <option value="5">Manufacturer</option>
+                        <option value="2">Product</option>
+                        <option value="13">Search</option>
+                        <option value="9">Sitemap</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-store">
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-name">商店名称</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_name" value="BuyPlus(败家Shopping)" placeholder="商店名称" id="input-name" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-owner">商店管理员</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_owner" value="sunboy" placeholder="商店管理员" id="input-owner" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-address">联系地址</label>
+                    <div class="col-sm-10">
+                      <textarea name="config_address" placeholder="联系地址" rows="5" id="input-address" class="form-control">HelloKang网络科技有限公司</textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-geocode">
+                      <span data-toggle="tooltip" data-container="#tab-general" title="请手动输入您商店的地理位置。">地理编码</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_geocode" value="4OS1ut0EX72MCu0R3P1lqCTu" placeholder="地理编码" id="input-geocode" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-email">电子邮箱</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_email" value="kang@kang.com" placeholder="电子邮箱" id="input-email" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-telephone">联系电话</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_telephone" value="123456789" placeholder="联系电话" id="input-telephone" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-fax">传真号码</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_fax" value="" placeholder="传真号码" id="input-fax" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-image">图像</label>
+                    <div class="col-sm-10">
+                      <a href="" id="thumb-image" data-toggle="image" class="img-thumbnail">
+                        <img src="image/cache/no_image-100x100.png" alt="" title="" data-placeholder="image/cache/no_image-100x100.png" />
+                      </a>
+                      <input type="hidden" name="config_image" value="" id="input-image" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-open">
+                      <span data-toggle="tooltip" data-container="#tab-general" title="请填写您商店的营业时间。">营业时间</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <textarea name="config_open" rows="5" placeholder="营业时间" id="input-open" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-comment">
+                      <span data-toggle="tooltip" data-container="#tab-general" title="此字段为任何特殊说明你想告诉顾客，即商店不接受支票。">附言</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <textarea name="config_comment" rows="5" placeholder="附言" id="input-comment" class="form-control">BuyPlus(败家Shopping) 由 www.opencart.cn出品， 成都光大网络科技有限公司 版权所有</textarea>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="tab-pane" id="tab-local">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-country">省/直辖市归属</label>
+                    <div class="col-sm-10">
+                      <select name="config_country_id" id="input-country" class="form-control">
+                        <option value="9">上海</option>
+                        <option value="25">云南</option>
+                        <option value="5">内蒙古</option>
+                        <option value="1">北京</option>
+                        <option value="34">台湾</option>
+                        <option value="7">吉林</option>
+                        <option value="23" selected="selected">四川</option>
+                        <option value="2">天津</option>
+                        <option value="30">宁夏</option>
+                        <option value="12">安徽</option>
+                        <option value="15">山东</option>
+                        <option value="4">山西</option>
+                        <option value="19">广东</option>
+                        <option value="20">广西</option>
+                        <option value="31">新疆</option>
+                        <option value="10">江苏</option>
+                        <option value="14">江西</option>
+                        <option value="3">河北</option>
+                        <option value="16">河南</option>
+                        <option value="11">浙江</option>
+                        <option value="21">海南</option>
+                        <option value="17">湖北</option>
+                        <option value="18">湖南</option>
+                        <option value="33">澳门</option>
+                        <option value="28">甘肃</option>
+                        <option value="13">福建</option>
+                        <option value="26">西藏</option>
+                        <option value="24">贵州</option>
+                        <option value="6">辽宁</option>
+                        <option value="22">重庆</option>
+                        <option value="27">陕西</option>
+                        <option value="29">青海</option>
+                        <option value="32">香港</option>
+                        <option value="8">黑龙江</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-zone">所在城市</label>
+                    <div class="col-sm-10">
+                      <select name="config_zone_id" id="input-zone" class="form-control"></select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-language">前台语言</label>
+                    <div class="col-sm-10">
+                      <select name="config_language" id="input-language" class="form-control">
+                        <option value="zh_CN" selected="selected">简体中文</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-admin-language">后台语言</label>
+                    <div class="col-sm-10">
+                      <select name="config_admin_language" id="input-admin-language" class="form-control">
+                        <option value="zh_CN" selected="selected">简体中文</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-currency">
+                      <span data-toggle="tooltip" title="更改默认货币时需要清除浏览器缓存并重置您现有的cookie。">货币设置</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <select name="config_currency" id="input-currency" class="form-control">
+                        <option value="CNY" selected="selected">人民币</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">
+                      <span data-toggle="tooltip" title="设置是否每天自动更新汇率！">汇率更新</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="config_currency_auto" value="1" />
+                        是
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="config_currency_auto" value="0" checked="checked" />
+                        否
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-length-class">尺寸单位</label>
+                    <div class="col-sm-10">
+                      <select name="config_length_class_id" id="input-length-class" class="form-control">
+                        <option value="1" selected="selected">厘米</option>
+                        <option value="2">毫米</option>
+                        <option value="3">英寸</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-weight-class">重量单位</label>
+                    <div class="col-sm-10">
+                      <select name="config_weight_class_id" id="input-weight-class" class="form-control">
+                        <option value="1" selected="selected">千克</option>
+                        <option value="2">克</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-option">
+                  <fieldset>
+                    <legend>商品</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="显示页面上类别菜单中子类别内的商品数量。">前台商品计数</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_product_count" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_product_count" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-catalog-limit">
+                        <span data-toggle="tooltip" title="确定在商品分类中每个网页上显示多少商品（商品，种类等）">每页默认商品数量 (前台管理)</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_product_limit" value="15" placeholder="每页默认商品数量 (前台管理)" id="input-catalog-limit" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-list-description-limit">
+                        <span data-toggle="tooltip" title="确定在商品分类中每个网页上显示多少商品（种类，特价等）">显示商品描述限制 (前台管理)</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_product_description_length" value="100" placeholder="显示商品描述限制 (前台管理)" id="input-list-description-limit" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-admin-limit">
+                        <span data-toggle="tooltip" title="确定每页显示多少管理数量（订单，客户等）">每页默认商品数量 (后台管理)</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_limit_admin" value="20" placeholder="每页默认商品数量 (后台管理)" id="input-admin-limit" class="form-control" />
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>评论</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="启用或停用新商品评论的增加及显示原有商品评论">允许商品评论</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_review_status" value="1" checked="checked" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_review_status" value="0" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="让非注册用户可以发表评论。">允许未注册客户评论</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_review_guest" value="1" checked="checked" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_review_guest" value="0" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="当有新评论时，发送邮件通知店主。">新评论邮件提醒</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_review_mail" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_review_mail" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>礼品券</legend>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-voucher-min">
+                        <span data-toggle="tooltip" title="客户可以购买优惠券的最低金额。">最小礼品券数</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_voucher_min" value="1" placeholder="最小礼品券数" id="input-voucher-min" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-voucher-max">
+                        <span data-toggle="tooltip" title="客户可以购买优惠券的最高金额。">最大礼品券数</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_voucher_max" value="1000" placeholder="最大礼品券数" id="input-voucher-max" class="form-control" />
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>税率</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">价格含税</label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_tax" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_tax" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-tax-default">
+                        <span data-toggle="tooltip" title="非注册用户使用商店所在地税率。 你可以使用商店所在地税率计算税费。">使用商店所在地税率</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_tax_default" id="input-tax-default" class="form-control">
+                          <option value="">--- 无 ---</option>
+                          <option value="shipping" selected="selected">商品配送</option>
+                          <option value="payment">支付地址</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-tax-customer">
+                        <span data-toggle="tooltip" title="注册客户使用客户所在地税率。 你可以使用商店所在地税率计算税费。">使用客户所在地税率</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_tax_customer" id="input-tax-customer" class="form-control">
+                          <option value="">--- 无 ---</option>
+                          <option value="shipping" selected="selected">商品配送</option>
+                          <option value="payment">支付地址</option>
+                        </select>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>账户</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="通过客户的在线报告来跟踪客户。">在线客户</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_customer_online" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_customer_online" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-customer-group">
+                        <span data-toggle="tooltip" title="默认客户组。">客户组</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_customer_group_id" id="input-customer-group" class="form-control">
+                          <option value="1" selected="selected">Default</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="显示客户群体，新注册客户时可以选择。">客户组</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" name="config_customer_group_display[]" value="1" checked="checked" />
+                            Default
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="会员登入后，才能显示价格。">登录显示价格</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_customer_price" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_customer_price" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-login-attempts">
+                        <span data-toggle="tooltip" title="已经达到最大尝试次数，账户锁定一小时，请联系管理员解锁。">最大登陆尝试次数</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_login_attempts" value="5" placeholder="最大登陆尝试次数" id="input-login-attempts" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-account">
+                        <span data-toggle="tooltip" title="注册账户前必须同意的条款。">账户条款</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_account_id" id="input-account" class="form-control">
+                          <option value="0">--- 无 ---</option>
+                          <option value="4">关于我们</option>
+                          <option value="6">最新公告</option>
+                          <option value="5">条款及条件</option>
+                          <option value="3" selected="selected">隐私政策</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="当有新用户注册时，发送邮件通知店主。">发送新注册用户邮件</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_account_mail" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_account_mail" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>结账</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-invoice-prefix">
+                        <span data-toggle="tooltip" title="请设置发票号的前缀，如 INV-2011-00">发票号前缀</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_invoice_prefix" value="INV-2013-00" placeholder="发票号前缀" id="input-invoice-prefix" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="在购物车页面中显示重量">在购物车中显示重量</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_cart_weight" value="1" checked="checked" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_cart_weight" value="0" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="允许未注册用户直接结账，此项交易不适用于可下载的商品。">游客结账</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_checkout_guest" value="1" checked="checked" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_checkout_guest" value="0" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-checkout">
+                        <span data-toggle="tooltip" title="结账前用户必须同意的条款。">结账条款</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_checkout_id" id="input-checkout" class="form-control">
+                          <option value="0">--- 无 ---</option>
+                          <option value="4">关于我们</option>
+                          <option value="6">最新公告</option>
+                          <option value="5" selected="selected">条款及条件</option>
+                          <option value="3">隐私政策</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-order-status">
+                        <span data-toggle="tooltip" title="设置默认订单状态的命令时处理。">订单状态</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_order_status_id" id="input-order-status" class="form-control">
+                          <option value="9">取消回退</option>
+                          <option value="2">处理中</option>
+                          <option value="15">已付款</option>
+                          <option value="3">已发货</option>
+                          <option value="7">已取消</option>
+                          <option value="12">已回退</option>
+                          <option value="10">已失败</option>
+                          <option value="16">已失败</option>
+                          <option value="5">已完成</option>
+                          <option value="13">已拒付</option>
+                          <option value="8">已拒绝</option>
+                          <option value="11">已退款</option>
+                          <option value="14">已逾期</option>
+                          <option value="1" selected="selected">待处理</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-process-status">
+                        <span data-toggle="tooltip" title="设置客户订单在何种状态下才可下载或使用礼品券。">订单处理状态</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <div class="well well-sm" style="height: 150px; overflow: auto;">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="9" />
+                              取消回退
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="2" checked="checked" />
+                              处理中
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="15" />
+                              已付款
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="3" checked="checked" />
+                              已发货
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="7" />
+                              已取消
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="12" checked="checked" />
+                              已回退
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="10" />
+                              已失败
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="16" />
+                              已失败
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="5" checked="checked" />
+                              已完成
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="13" />
+                              已拒付
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="8" />
+                              已拒绝
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="11" />
+                              已退款
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="14" />
+                              已逾期
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_processing_status[]" value="1" checked="checked" />
+                              待处理
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-complete-status">
+                        <span data-toggle="tooltip" title="设置客户订单在何种状态下才可下载或使用礼品券。">订单完成状态</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <div class="well well-sm" style="height: 150px; overflow: auto;">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="9" />
+                              取消回退
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="2" />
+                              处理中
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="15" />
+                              已付款
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="3" checked="checked" />
+                              已发货
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="7" />
+                              已取消
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="12" />
+                              已回退
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="10" />
+                              已失败
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="16" />
+                              已失败
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="5" checked="checked" />
+                              已完成
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="13" />
+                              已拒付
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="8" />
+                              已拒绝
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="11" />
+                              已退款
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="14" />
+                              已逾期
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_complete_status[]" value="1" />
+                              待处理
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-fraud-status">
+                        <span data-toggle="tooltip" title="设置订单状态时，客户涉嫌试图改变订单付款的细节或使用优惠券，礼品券，奖励点已经被使用。">欺诈状态</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_fraud_status_id" id="input-fraud-status" class="form-control">
+                          <option value="9">取消回退</option>
+                          <option value="2">处理中</option>
+                          <option value="15">已付款</option>
+                          <option value="3">已发货</option>
+                          <option value="7" selected="selected">已取消</option>
+                          <option value="12">已回退</option>
+                          <option value="10">已失败</option>
+                          <option value="16">已失败</option>
+                          <option value="5">已完成</option>
+                          <option value="13">已拒付</option>
+                          <option value="8">已拒绝</option>
+                          <option value="11">已退款</option>
+                          <option value="14">已逾期</option>
+                          <option value="1">待处理</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="创建新订单时给店主发送邮件。">通知邮件</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_order_mail" value="1" checked="checked" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_order_mail" value="0" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-api">
+                        <span data-toggle="tooltip" title="默认的API，用户管理员应该使用">API 用户</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_api_id" id="input-api" class="form-control">
+                          <option value="0">--- 无 ---</option>
+                          <option value="3" selected="selected">Default</option>
+                        </select>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>商品库存</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="显示商品页面上的库存数量。">显示库存</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_stock_display" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_stock_display" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="在购物车页面中显示脱销信息。 如果一个商品已经卖完了， 但‘脱销结账’是肯定的。(警告总在‘脱销结账’是否定时显示)">显示脱销警告</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_stock_warning" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_stock_warning" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="如果客户订购的商品不存在仓库，仍然允许结账。">脱销结账</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_stock_checkout" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_stock_checkout" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>加盟会员</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="自动批准任何新注册的加盟账户。">加盟需要审批</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_affiliate_approval" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_affiliate_approval" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="自动添加佣金时，每个订单必须达到的完成状态。">自动添加佣金</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_affiliate_auto" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_affiliate_auto" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-affiliate-commission">
+                        <span data-toggle="tooltip" title="默认加盟账户佣金百分比。">加盟账户佣金 (%)</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_affiliate_commission" value="5" placeholder="加盟账户佣金 (%)" id="input-affiliate-commission" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-affiliate">
+                        <span data-toggle="tooltip" title="创建加盟账户用户必须同意的条款。">加盟条款</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_affiliate_id" id="input-affiliate" class="form-control">
+                          <option value="0">--- 无 ---</option>
+                          <option value="4">关于我们</option>
+                          <option value="6">最新公告</option>
+                          <option value="5" selected="selected">条款及条件</option>
+                          <option value="3">隐私政策</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="当一个新的加盟注册时，发送电子邮件给店老板。">新加盟邮件</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_affiliate_mail" value="1" checked="checked" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_affiliate_mail" value="0" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>退货</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-return">
+                        <span data-toggle="tooltip" title="退货前客户必须同意该条款。">退换条款</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_return_id" id="input-return" class="form-control">
+                          <option value="0">--- 无 ---</option>
+                          <option value="4">关于我们</option>
+                          <option value="6">最新公告</option>
+                          <option value="5" selected="selected">条款及条件</option>
+                          <option value="3">隐私政策</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-return-status">
+                        <span data-toggle="tooltip" title="设置退换请求提交后默认的退换状态。">退换状态</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_return_status_id" id="input-return-status" class="form-control">
+                          <option value="3">已完成</option>
+                          <option value="1" selected="selected">待处理</option>
+                          <option value="2">等待商品寄回</option>
+                        </select>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>验证码</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="验证码用于注册、登录、联系和评论。">验证码</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <select name="config_captcha" id="input-return" class="form-control">
+                          <option value="">--- 无 ---</option>
+                          <option value="basic_captcha" selected="selected">基本验证码</option>
+                          <option value="basic_captcha" selected="selected">基本验证码</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">验证码页</label>
+                      <div class="col-sm-10">
+                        <div class="well well-sm" style="height: 150px; overflow: auto;">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_captcha_page[]" value="register" checked="checked" />
+                              注册
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_captcha_page[]" value="review" checked="checked" />
+                              评论
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_captcha_page[]" value="return" checked="checked" />
+                              退货
+                            </label>
+                          </div>
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox" name="config_captcha_page[]" value="contact" checked="checked" />
+                              联系
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="tab-pane" id="tab-image">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-logo">网店图标</label>
+                    <div class="col-sm-10">
+                      <a href="" id="thumb-logo" data-toggle="image" class="img-thumbnail">
+                        <img src="image/cache/catalog/logo3-100x100.png" alt="" title="" data-placeholder="image/cache/no_image-100x100.png" />
+                      </a>
+                      <input type="hidden" name="config_logo" value="catalog/logo3.png" id="input-logo" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-icon">
+                      <span data-toggle="tooltip" title="图标必须为PNG格式大小为：16px x 16px。">Icon 图标</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <a href="" id="thumb-icon" data-toggle="image" class="img-thumbnail">
+                        <img src="image/cache/catalog/cart-100x100.png" alt="" title="" data-placeholder="image/cache/no_image-100x100.png" />
+                      </a>
+                      <input type="hidden" name="config_icon" value="catalog/cart.png" id="input-icon" />
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-category-width">分类列表图的尺寸</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_category_width" value="80" placeholder="宽度" id="input-image-category-width" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_category_height" value="80" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-thumb-width">商品缩略图片尺寸</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_thumb_width" value="300" placeholder="宽度" id="input-image-thumb-width" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_thumb_height" value="300" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-popup-width">商品弹出图片尺寸</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_popup_width" value="500" placeholder="宽度" id="input-image-popup-width" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_popup_height" value="500" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-product-width">商品列表图的尺寸</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_product_width" value="300" placeholder="宽度" id="input-image-product-width" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_product_height" value="300" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-additional-width">附加商品图像尺寸</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_additional_width" value="300" placeholder="宽度" id="input-image-additional-width" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_additional_height" value="300" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-related">关联商品图像尺寸</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_related_width" value="80" placeholder="宽度" id="input-image-related" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_related_height" value="80" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-compare">对比图片尺寸</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_compare_width" value="90" placeholder="宽度" id="input-image-compare" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_compare_height" value="90" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-wishlist">收藏图片尺寸</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_wishlist_width" value="47" placeholder="宽度" id="input-image-wishlist" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_wishlist_height" value="47" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-cart">购物车图像尺寸</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_cart_width" value="47" placeholder="宽度" id="input-image-cart" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_cart_height" value="47" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-image-location">商店图片大小</label>
+                    <div class="col-sm-10">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_location_width" value="268" placeholder="宽度" id="input-image-location" class="form-control" />
+                        </div>
+                        <div class="col-sm-6">
+                          <input type="text" name="config_image_location_height" value="50" placeholder="高度" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-ftp">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-ftp-host">FTP 主机</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_ftp_hostname" value="demo.opencart.cn" placeholder="FTP 主机" id="input-ftp-host" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-ftp-port">FTP 端口</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_ftp_port" value="21" placeholder="FTP 端口" id="input-ftp-port" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-ftp-username">FTP 用户</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_ftp_username" value="" placeholder="FTP 用户" id="input-ftp-username" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-ftp-password">FTP 密码</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_ftp_password" value="" placeholder="FTP 密码" id="input-ftp-password" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-ftp-root">
+                      <span data-toggle="tooltip" data-html="true" title="opencart系统一般安装在目录 'public_html/' 下。">FTP 根目录：:</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_ftp_root" value="" placeholder="FTP 根目录：:" id="input-ftp-root" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">FTP 状态</label>
+                    <div class="col-sm-10">
+                      <label class="radio-inline">
+                        <input type="radio" name="config_ftp_status" value="1" />
+                        是
+                      </label>
+                      <label class="radio-inline">
+                        <input type="radio" name="config_ftp_status" value="0" checked="checked" />
+                        否
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-mail">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-mail-protocol">
+                      <span data-toggle="tooltip" title="只需选择'MAIL' 除非您的主机已禁用PHP的邮件功能">邮件协议</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <select name="config_mail_protocol" id="input-mail-protocol" class="form-control">
+                        <option value="mail" selected="selected">Mail</option>
+                        <option value="smtp">SMTP</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-mail-parameter">
+                      <span data-toggle="tooltip" title="当使用 'MAIL', 在此可增加额外的邮件地址(如 ‘femail@storeaddress.com'。">邮件参数</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_mail_parameter" value="" placeholder="邮件参数" id="input-mail-parameter" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-mail-smtp-hostname">
+                      <span data-toggle="tooltip" title="如果需要安全连接，请添加 'tls://' 。（例如TLS://smtp.gmail.com）。">SMTP 主机</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_mail_smtp_hostname" value="" placeholder="SMTP 主机" id="input-mail-smtp-hostname" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-mail-smtp-username">SMTP 用户</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_mail_smtp_username" value="" placeholder="SMTP 用户" id="input-mail-smtp-username" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-mail-smtp-password">SMTP 密码</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_mail_smtp_password" value="" placeholder="SMTP 密码" id="input-mail-smtp-password" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-mail-smtp-port">SMTP 端口</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_mail_smtp_port" value="25" placeholder="SMTP 端口" id="input-mail-smtp-port" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-mail-smtp-timeout">SMTP 超时</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="config_mail_smtp_timeout" value="5" placeholder="SMTP 超时" id="input-mail-smtp-timeout" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-alert-email">
+                      <span data-toggle="tooltip" title="任何您想收到本站邮件的额外信箱。 (请用逗号分开)">附加通知邮箱</span>
+                    </label>
+                    <div class="col-sm-10">
+                      <textarea name="config_mail_alert" rows="5" placeholder="附加通知邮箱" id="input-alert-email" class="form-control"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-server">
+                  <fieldset>
+                    <legend>概要</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="本功能将在前台首页显示系统维护信息。 但在后台您可以正常使用本系统。">系统维护模式</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_maintenance" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_maintenance" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="要使用搜索引擎优化网址's 您的服务器必须支持 Apache Rewrite Mod 功能，在启用此项功能前你需要重新命名 htaccess.txt 文件为 .htaccess">高级URL Rewrite's</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_seo_url" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_seo_url" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-robots">
+                        <span data-toggle="tooltip" title="加入不受欢迎的爬虫/机器人。">爬虫/机器人</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <textarea name="config_robots" rows="5" placeholder="爬虫/机器人" id="input-robots" class="form-control">
+                          abot
+    dbot
+    ebot
+    hbot
+    kbot
+    lbot
+    mbot
+    nbot
+    obot
+    pbot
+    rbot
+    sbot
+    tbot
+    vbot
+    ybot
+    zbot
+    bot.
+    bot/
+    _bot
+    .bot
+    /bot
+    -bot
+    :bot
+    (bot
+    crawl
+    slurp
+    spider
+    seek
+    accoona
+    acoon
+    adressendeutschland
+    ah-ha.com
+    ahoy
+    altavista
+    ananzi
+    anthill
+    appie
+    arachnophilia
+    arale
+    araneo
+    aranha
+    architext
+    aretha
+    arks
+    asterias
+    atlocal
+    atn
+    atomz
+    augurfind
+    backrub
+    bannana_bot
+    baypup
+    bdfetch
+    big brother
+    biglotron
+    bjaaland
+    blackwidow
+    blaiz
+    blog
+    blo.
+    bloodhound
+    boitho
+    booch
+    bradley
+    butterfly
+    calif
+    cassandra
+    ccubee
+    cfetch
+    charlotte
+    churl
+    cienciaficcion
+    cmc
+    collective
+    comagent
+    combine
+    computingsite
+    csci
+    curl
+    cusco
+    daumoa
+    deepindex
+    delorie
+    depspid
+    deweb
+    die blinde kuh
+    digger
+    ditto
+    dmoz
+    docomo
+    download express
+    dtaagent
+    dwcp
+    ebiness
+    ebingbong
+    e-collector
+    ejupiter
+    emacs-w3 search engine
+    esther
+    evliya celebi
+    ezresult
+    falcon
+    felix ide
+    ferret
+    fetchrover
+    fido
+    findlinks
+    fireball
+    fish search
+    fouineur
+    funnelweb
+    gazz
+    gcreep
+    genieknows
+    getterroboplus
+    geturl
+    glx
+    goforit
+    golem
+    grabber
+    grapnel
+    gralon
+    griffon
+    gromit
+    grub
+    gulliver
+    hamahakki
+    harvest
+    havindex
+    helix
+    heritrix
+    hku www octopus
+    homerweb
+    htdig
+    html index
+    html_analyzer
+    htmlgobble
+    hubater
+    hyper-decontextualizer
+    ia_archiver
+    ibm_planetwide
+    ichiro
+    iconsurf
+    iltrovatore
+    image.kapsi.net
+    imagelock
+    incywincy
+    indexer
+    infobee
+    informant
+    ingrid
+    inktomisearch.com
+    inspector web
+    intelliagent
+    internet shinchakubin
+    ip3000
+    iron33
+    israeli-search
+    ivia
+    jack
+    jakarta
+    javabee
+    jetbot
+    jumpstation
+    katipo
+    kdd-explorer
+    kilroy
+    knowledge
+    kototoi
+    kretrieve
+    labelgrabber
+    lachesis
+    larbin
+    legs
+    libwww
+    linkalarm
+    link validator
+    linkscan
+    lockon
+    lwp
+    lycos
+    magpie
+    mantraagent
+    mapoftheinternet
+    marvin/
+    mattie
+    mediafox
+    mediapartners
+    mercator
+    merzscope
+    microsoft url control
+    minirank
+    miva
+    mj12
+    mnogosearch
+    moget
+    monster
+    moose
+    motor
+    multitext
+    muncher
+    muscatferret
+    mwd.search
+    myweb
+    najdi
+    nameprotect
+    nationaldirectory
+    nazilla
+    ncsa beta
+    nec-meshexplorer
+    nederland.zoek
+    netcarta webmap engine
+    netmechanic
+    netresearchserver
+    netscoop
+    newscan-online
+    nhse
+    nokia6682/
+    nomad
+    noyona
+    nutch
+    nzexplorer
+    objectssearch
+    occam
+    omni
+    open text
+    openfind
+    openintelligencedata
+    orb search
+    osis-project
+    pack rat
+    pageboy
+    pagebull
+    page_verifier
+    panscient
+    parasite
+    partnersite
+    patric
+    pear.
+    pegasus
+    peregrinator
+    pgp key agent
+    phantom
+    phpdig
+    picosearch
+    piltdownman
+    pimptrain
+    pinpoint
+    pioneer
+    piranha
+    plumtreewebaccessor
+    pogodak
+    poirot
+    pompos
+    poppelsdorf
+    poppi
+    popular iconoclast
+    psycheclone
+    publisher
+    python
+    rambler
+    raven search
+    roach
+    road runner
+    roadhouse
+    robbie
+    robofox
+    robozilla
+    rules
+    salty
+    sbider
+    scooter
+    scoutjet
+    scrubby
+    search.
+    searchprocess
+    semanticdiscovery
+    senrigan
+    sg-scout
+    shai'hulud
+    shark
+    shopwiki
+    sidewinder
+    sift
+    silk
+    simmany
+    site searcher
+    site valet
+    sitetech-rover
+    skymob.com
+    sleek
+    smartwit
+    sna-
+    snappy
+    snooper
+    sohu
+    speedfind
+    sphere
+    sphider
+    spinner
+    spyder
+    steeler/
+    suke
+    suntek
+    supersnooper
+    surfnomore
+    sven
+    sygol
+    szukacz
+    tach black widow
+    tarantula
+    templeton
+    /teoma
+    t-h-u-n-d-e-r-s-t-o-n-e
+    theophrastus
+    titan
+    titin
+    tkwww
+    toutatis
+    t-rex
+    tutorgig
+    twiceler
+    twisted
+    ucsd
+    udmsearch
+    url check
+    updated
+    vagabondo
+    valkyrie
+    verticrawl
+    victoria
+    vision-search
+    volcano
+    voyager/
+    voyager-hc
+    w3c_validator
+    w3m2
+    w3mir
+    walker
+    wallpaper
+    wanderer
+    wauuu
+    wavefire
+    web core
+    web hopper
+    web wombat
+    webbandit
+    webcatcher
+    webcopy
+    webfoot
+    weblayers
+    weblinker
+    weblog monitor
+    webmirror
+    webmonkey
+    webquest
+    webreaper
+    websitepulse
+    websnarf
+    webstolperer
+    webvac
+    webwalk
+    webwatch
+    webwombat
+    webzinger
+    whizbang
+    whowhere
+    wild ferret
+    worldlight
+    wwwc
+    wwwster
+    xenu
+    xget
+    xift
+    xirq
+    yandex
+    yanga
+    yeti
+    yodao
+    zao
+    zippp
+    zyborg
+                        </textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-compression">
+                        <span data-toggle="tooltip" title="GZIP 可更有效地转移到要求的客户端。压缩级别必须在0 - 9">输出压缩等级</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_compression" value="0" placeholder="输出压缩等级" id="input-compression" class="form-control" />
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>安全</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="检查你的服务器是否安装了SSL认证，如果安装了，可以使用SSL。">使用 SSL</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_secure" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_secure" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="忘记密码管理。如果系统被破坏，将不能自动发送密码。">允许忘记密码</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_password" value="1" checked="checked" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_password" value="0" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">
+                        <span data-toggle="tooltip" title="你可以让各个网店之间的购物车共享数据。">多网店共享Sessions</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_shared" value="1" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_shared" value="0" checked="checked" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-encryption">
+                        <span data-toggle="tooltip" title="请提供一个密钥, 让处理订单时可加密个人的资料。">加密密钥</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <textarea name="config_encryption" rows="5" placeholder="加密密钥" id="input-encryption" class="form-control">
+                          UinYV8q3AygvY0sNIxMlRaAi8ZpHDQZrrUNoG9Oiy44JPQi7Cesa5GU2vcWRwU3tr0DJF40TUsivYS8dgkJ1Odl3Y2T8oe0WtKqWQxqD6cRBStI1wFXFMWD91ucRu5H0aJjNpL4A0Wg2ruC0pJnKEb7iikyiRApKONS3CjLFkL0wbkWDhoVaGs3Hd7FmV0yCsUIyx5dYD2Hi6FiwbNq8NPVmd4DtNm4TezHeHGvg8IRfQdFVQKFlcTofLpqnrP3WYEc0YavJbWFRrE9lWkIdXXg2Td7y7F1YrINxREi7N1pwHh9p0JBABQiWjbmZwB3zNYSUKvw2T9R4CHfIVvv5YmhcHhupWuElz78PjJcI3IchH0O9X8uXMCiqAECoF1uURS059ca3DoWsZWV6BlDIIG35sgYO2sAjgiLaCReWeZCImhs3HRFKJW2P8ZbFzVr6jIUt31yIb4apkZc8Z44yvZ0czo1AaYUqGTJr52Xhl8GoUasGKR6dYqCqix26c0glHAEPNnSjn9Itkgunp6RniwXeUpHlMLTpjVXvTWlBrphhn1PmcplmdbvYXzyQ9XwekzVil7Aj4m33xdpE489ghkgDCYu7zrJWdaDr8fF7lnYJ5YxgeiMiLXj13XaZjWFhb6D28DRynQvu4EkY5SvhoYUKWv5cwrih2D4YwXy20w11k0j4LHJn3L7odCoiPK99GhrpafYRarZ1A7ojxYabFRtR4Fp4KQNlgmZayOUB3YDn7gUU1zJ1rF7pDeLfMiC9hcQ0dtZK4MtGcukIjU1SnrA6FlUrfBwPUOMN7WCDTv6KVHfAfpUQsFH6EgACvEhhjAIBhXTlwsuAAiQtg4EnFj0DEOXfbgwSe7pnPr3yDRKiP81aDl6jQbOM9QSvobAx5ZvnHrZZSkrObw9LpgXU6AqJGRCoNEiUEGvRq3BvPnTrigwjgRF6kDmDdaiINlPLGtmyx7cQU5JV75Bp8DFK6LAmBAuVmukRKsQcX8QimSnBH9Fecq8ZGr6aedalIRdH
+                        </textarea>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>上传</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-file-max-size">
+                        <span data-toggle="tooltip" title="最大图像文件的大小，你可以上传图片管理器。输入的字节。">允许上传的最大字节</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_file_max_size" value="300000" placeholder="允许上传的最大字节" id="input-file-max-size" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-file-ext-allowed">
+                        <span data-toggle="tooltip" title="增加允许上传文件扩展名，一行填入一个值。">允许上传的扩展名</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <textarea name="config_file_ext_allowed" rows="5" placeholder="允许上传的扩展名" id="input-file-ext-allowed" class="form-control">
+                          zip
+    txt
+    png
+    jpe
+    jpeg
+    jpg
+    gif
+    bmp
+    ico
+    tiff
+    tif
+    svg
+    svgz
+    zip
+    rar
+    msi
+    cab
+    mp3
+    qt
+    mov
+    pdf
+    psd
+    ai
+    eps
+    ps
+    doc
+                        </textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label" for="input-file-mime-allowed">
+                        <span data-toggle="tooltip" title="增加被允许的类型文件上传，每行填入一个值。">允许文件类型</span>
+                      </label>
+                      <div class="col-sm-10">
+                        <textarea name="config_file_mime_allowed" rows="5" placeholder="允许文件类型" id="input-file-mime-allowed" class="form-control">
+                          text/plain
+    image/png
+    image/jpeg
+    image/gif
+    image/bmp
+    image/tiff
+    image/svg+xml
+    application/zip
+    &quot;application/zip&quot;
+    application/x-zip
+    &quot;application/x-zip&quot;
+    application/x-zip-compressed
+    &quot;application/x-zip-compressed&quot;
+    application/rar
+    &quot;application/rar&quot;
+    application/x-rar
+    &quot;application/x-rar&quot;
+    application/x-rar-compressed
+    &quot;application/x-rar-compressed&quot;
+    application/octet-stream
+    &quot;application/octet-stream&quot;
+    audio/mpeg
+    video/quicktime
+    application/pdf
+                        </textarea>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend>错误 处理</legend>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">显示错误</label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_error_display" value="1" checked="checked" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_error_display" value="0" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">日志错误</label>
+                      <div class="col-sm-10">
+                        <label class="radio-inline">
+                          <input type="radio" name="config_error_log" value="1" checked="checked" />
+                          是
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="config_error_log" value="0" />
+                          否
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-group required">
+                      <label class="col-sm-2 control-label" for="input-error-filename">错误日志文件名</label>
+                      <div class="col-sm-10">
+                        <input type="text" name="config_error_filename" value="error.log" placeholder="错误日志文件名" id="input-error-filename" class="form-control" />
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <a href="http://www.hellokang.net">BuyPlus(败家Shopping) HelloKang</a>
+      <br>
+      &copy; 2009-2016 All Rights Reserved.
+      <br>Version 1.0
+    </footer>
+    
+  </div>
+</body>
+</html>

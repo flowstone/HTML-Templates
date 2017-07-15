@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="webkit" name="renderer">
+    <meta content="IE=edge,Chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="blank" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>WeCenter</title>
+
+    <link href="../static/css/bootstrap.css?v=20151125" rel="stylesheet" type="text/css">
+    <link href="../static/css/icon.css?v=20151125" rel="stylesheet" type="text/css">
+    <link href="../static/admin/css/login.css?v=20151125" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+    var G_INDEX_SCRIPT = "?/";
+    var G_BASE_URL = "";
+    var G_USER_ID = "";
+    var G_POST_HASH = "";
+</script>
+    <link href="../static/admin/css/common.css?v=20151125" rel="stylesheet" type="text/css">
+    <link href="../static/admin/css/login.css?v=20151125" rel="stylesheet" type="text/css">
+    <script src="../static/js/jquery.2.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/admin/js/aws_admin.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/admin/js/aws_admin_template.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/js/jquery.form.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/admin/js/framework.js?v=20151125" type="text/javascript"></script>
+    <script src="../static/admin/js/global.js?v=20151125" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="aw-login">
+        <div class="mod center-block">
+            <h1>
+                <img alt="" src="../static/admin/img/wecenter-logo.png"></h1>
+
+            <form method="post" action="index.html" onsubmit="" id="login_form" role="form">
+                <div class="alert alert-danger hide error_message"></div>
+
+                <div class="form-group">
+                    <label>邮箱</label>
+                    <input type="text" disabled="disabled" value="itbull@helloitbull.net" placeholder="邮箱" class="form-control"> <i class="icon icon-user"></i>
+                </div>
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" autofocus="" onkeydown="if (event.keyCode == 13) { document.getElementById('login_submit').click(); };" name="password" placeholder="密码" class="form-control"> <i class="icon icon-lock"></i>
+                </div>
+                <div class="form-group">
+                    <label>验证码</label>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <input type="text" maxlength="4" onkeydown="" name="seccode_verify" class="form-control"></div>
+                        <div class="col-xs-4 col-xs-offset-1">
+                            <img onclick="" id="captcha" class="verification" src="../static/admin/img/login-captcha.png"></div>
+                    </div>
+                </div>
+                <button onclick="AWS.ajax_post($('#login_form'), AWS.ajax_processer, 'error_message');" id="login_submit" class="btn btn-primary" type="submit">登录</button>
+            </form>
+
+            <h2 class="text-center text-color-999">有问必答 管理平台</h2>
+        </div>
+    </div>
+</body>
+</html>

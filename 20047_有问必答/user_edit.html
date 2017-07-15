@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="IE=edge,Chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="webkit" name="renderer">
+	<title>发现 - 有问必答</title>
+	<meta content="有问必答,知识社区,社交社区,问答社区" name="keywords">
+	<meta content="有问必答 社交化知识社区" name="description">
+	<base href="">
+	<!--[if IE]>
+</base>
+<![endif]-->
+<link type="image/x-icon" rel="shortcut icon" href="static/css/default/img/favicon.ico?v=20151125">
+
+<link href="static/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="static/css/icon.css" type="text/css" rel="stylesheet">
+
+<link type="text/css" rel="stylesheet" href="static/css/default/common.css?v=20151125">
+<link type="text/css" rel="stylesheet" href="static/css/default/link.css?v=20151125">
+<link type="text/css" rel="stylesheet" href="static/js/plug_module/style.css?v=20151125">
+<link href="user_setting.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="static/js/jquery.2.js"></script>
+<script type="text/javascript" src="static/js/jquery.form.js?v=20151125"></script>
+<script type="text/javascript" src="static/js/plug_module/plug-in_module.js?v=20151125"></script>
+<script type="text/javascript" src="static/js/aws.js?v=20151125"></script>
+<script type="text/javascript" src="static/js/aw_template.js?v=20151125"></script>
+<script type="text/javascript" src="static/js/app.js?v=20151125"></script>
+<script src="static/js/compatibility.js" type="text/javascript"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="static/js/respond.js"></script>
+<![endif]-->
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style>
+</head>
+<noscript unselectable="on" id="noscript">
+    <div class="aw-404 aw-404-wrap container">
+        <img src="/static/common/no-js.jpg">
+        <p>你的浏览器禁用了JavaScript, 请开启后刷新浏览器获得更好的体验!</p>
+    </div>
+</noscript>
+<body>
+	<div class="aw-top-menu-wrap">
+		<div class="container">
+			<!-- logo -->
+			<div class="aw-logo hidden-xs">
+				<a href=""></a>
+			</div>
+			<!-- end logo -->
+			<!-- 搜索框 -->
+			<div class="aw-search-box  hidden-xs hidden-sm">
+				<form class="navbar-search" action="/search/" id="global_search_form" method="post">
+					<input class="form-control search-query" type="text" placeholder="搜索问题、话题或人" autocomplete="off" name="q" id="aw-search-query" />
+					<span title="搜索" id="global_search_btns" onClick="$('#global_search_form').submit();"><i class="icon icon-search"></i></span>
+					<div class="aw-dropdown">
+						<div class="mod-body">
+							<p class="title">输入关键字进行搜索</p>
+							<ul class="aw-dropdown-list collapse"></ul>
+							<p class="search"><span>搜索:</span><a onClick="$('#global_search_form').submit();"></a></p>
+						</div>
+						<div class="mod-footer">
+							<a href="javascript:;" onClick="$('#header_publish').click();" class="pull-right btn btn-mini btn-success publish">发起问题</a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- end 搜索框 -->
+			<!-- 导航 -->
+			<div class="aw-top-nav navbar">
+				<div class="navbar-header">
+				  <button  class="navbar-toggle pull-left">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				</div>
+				<nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+				  <ul class="nav navbar-nav">
+										<li><a href="/home/"><i class="icon icon-home"></i> 动态</a></li>
+										<li><a href="" class=""><i class="icon icon-list"></i> 发现</a></li>
+
+					<!-- <li><a href="/question/" class="">问题</a></li>
+
+					<li><a href="/article/" class="">文章</a></li> -->
+
+					<li><a href="/topic/" ><i class="icon icon-topic"></i> 话题</a></li>
+										<li>
+						<a href="/notifications/" class=""><i class="icon icon-bell"></i> 通知</a>
+						<span class="badge badge-important" style="display:none" id="notifications_unread">0</span>
+						<div class="aw-dropdown pull-right hidden-xs">
+							<div class="mod-body">
+								<ul id="header_notification_list"></ul>
+							</div>
+							<div class="mod-footer">
+								<a href="/notifications/">查看全部</a>
+							</div>
+						</div>
+					</li>
+										<li><a href="/help/"><i class="icon icon-bulb"></i> 帮助</a></li>					<li>
+						<a style="font-weight:bold;">· · ·</a>
+						<div class="dropdown-list pull-right">
+							<ul id="extensions-nav-list">
+																								<li><a href="/project/"><i class="icon icon-activity"></i> 活动</a></li>
+															</ul>
+						</div>
+					</li>
+				  </ul>
+				</nav>
+			</div>
+			<!-- end 导航 -->
+			<!-- 用户栏 -->
+			<div class="aw-user-nav">
+				<!-- 登陆&注册栏 -->
+									<a href="/people/%E8%BE%9B%E8%80%81%E5%B8%88" class="aw-user-nav-dropdown">
+						<img alt="辛老师" src="/uploads/avatar/000/02/76/56_avatar_mid.jpg" />
+						
+					</a>
+					<div class="aw-dropdown dropdown-list pull-right">
+						<ul class="aw-dropdown-list">
+							<li><a href="/inbox/"><i class="icon icon-inbox"></i> 私信<span class="badge badge-important collapse" id="inbox_unread">0</span></a></li>
+							<li class="hidden-xs"><a href="/account/setting/profile/"><i class="icon icon-setting"></i> 设置</a></li>
+														<li><a href="/account/logout/"><i class="icon icon-logout"></i> 退出</a></li>
+						</ul>
+					</div>
+								<!-- end 登陆&注册栏 -->
+			</div>
+			<!-- end 用户栏 -->
+			<!-- 发起 -->
+						<div class="aw-publish-btn">
+				
+				<a id="header_publish" class="btn-primary" href="/publish/" onclick="AWS.dialog('publish', {'category_enable':'0', 'category_id':'0', 'topic_title':''}); return false;"><i class="icon icon-ask"></i>发起</a>
+				<div class="dropdown-list pull-right">
+					<ul>
+						<li>
+							<form method="post" action="/publish/">
+																<a onclick="$(this).parents('form').submit();">问题</a>
+							</form>
+
+						</li>
+																							</ul>
+				</div>
+			</div>
+						<!-- end 发起 -->
+		</div>
+	</div>
+		<div class="aw-email-verify">
+		<div class="container text-center">
+			<a onclick="AWS.ajax_request(G_BASE_URL + '/account/ajax/send_valid_mail/');">你的邮箱 2959029778@qq.com 还未验证, 点击这里重新发送验证邮件</a>
+		</div>
+	</div>
+	
+<div class="aw-container-wrap">
+	<div class="container">
+		<div class="row">
+			<div class="aw-content-wrap clearfix">
+				<div class="aw-user-setting">
+					<div class="tabbable">
+						<ul class="nav nav-tabs aw-nav-tabs active">				
+							
+							<h2><i class="icon icon-setting"></i> 用户设置</h2>
+						</ul>
+					</div>
+					
+					<div class="tab-content clearfix">
+<!-- 基本信息 -->
+<div class="aw-mod">
+	<div class="mod-body">
+		<div class="aw-mod mod-base">
+			<div class="mod-head">
+				<h3>基本信息</h3>
+			</div>
+			<form id="setting_form" method="post" action="/account/ajax/profile_setting/">
+			<div class="mod-body">
+				<dl>
+					<dt>账号:</dt>
+					<dd>2959029778@qq.com &nbsp; (<a onclick="AWS.ajax_request(G_BASE_URL + '/account/ajax/send_valid_mail/');">重发验证邮件</a>)</dd>
+				</dl>
+				<dl>
+					<dt>真实姓名:</dt>
+					<dd>辛老师</dd>
+				</dl>
+				<dl>
+					<dt>性别:</dt>
+					<dd>
+						<label>
+							<input name="sex" id="sex" value="1" type="radio" /> 男						</label>
+						<label>
+							<input name="sex" id="sex" value="2" type="radio" /> 女						</label>
+						<label>
+							<input name="sex" id="sex" value="3" type="radio" checked="checked" /> 保密						</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt>生日:</dt>
+					<dd>
+						<select name="birthday_y">
+							<option value=""></option>
+							<option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970"  selected>1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1914">1914</option><option value="1913">1913</option><option value="1912">1912</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1908">1908</option><option value="1907">1907</option><option value="1906">1906</option><option value="1905">1905</option><option value="1904">1904</option><option value="1903">1903</option><option value="1902">1902</option><option value="1901">1901</option>						</select>
+						年						<select name="birthday_m">
+							<option value=""></option>
+							<option value="1"  selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>						</select>
+						月						<select name="birthday_d">
+							<option value=""></option>
+							<option value="1"  selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>						</select>
+						日					</dd>
+				</dl>
+				<dl>
+					<dt><label>现居:</label></dt>
+					<dd>
+						<select name="province" class="select_area"></select> <select name="city" class="select_area"></select>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>职业:</label></dt>
+					<dd>
+						<select name="job_id">
+							<option value="0">--</option>
+							<option value="1">站长</option><option value="2">产品经理</option><option value="3">视觉设计师</option><option value="4">程序员</option><option value="5">前端工程师</option><option value="6">风险投资者</option><option value="7">职业经理人</option><option value="8">运营人员</option><option value="9">人力资源</option><option value="10">运维人员</option><option value="11">创业者</option><option value="12">媒体</option><option value="13">天使</option><option value="14">学生</option><option value="17">其他</option>						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt><label>介绍:</label></dt>
+					<dd class="introduce"><input class="form-control" name="signature" maxlength="128" type="text" value="" /></dd>
+			</dl>
+			
+				<!-- 上传头像 -->
+				<div class="side-bar">
+					<dl>
+						<dt class="pull-left"><img class="aw-border-radius-5" src="/uploads/avatar/000/02/76/56_avatar_max.jpg?rand=561" alt="" id="avatar_src" /></dt>
+						<dd class="pull-left">
+							<h5>头像设置</h5>
+							<p>支持 jpg、gif、png 等格式的图片</p>
+							<a class="btn btn-mini btn-success" id="avatar_uploader" href="javascript:;">上传头像</a> <span id="avatar_uploading_status" class="collapse"><i class="aw-loading"></i> 文件上传中...</span>
+						</dd>
+					</dl>
+				</div>
+				<!-- end 上传头像 -->
+			</div>
+		</div>
+		<!-- end 基本信息 -->
+
+		
+	</div>
+	<div class="mod-footer clearfix">
+		<a href="javascript:;" class="btn btn-large btn-success pull-right" onclick="AWS.ajax_post($('#setting_form'));">保存</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+	$('.select_area').LocationSelect({
+        labels: ["请选择省份或直辖市", "请选择城市"],
+        elements: document.getElementsByTagName("select"),
+        detector: function () {
+            this.select(["", ""]);
+        },
+		dataUrl: G_BASE_URL.replace('/?', '') + '/static/js/areas.js'
+    });
+
+    var fileUpload = new FileUpload('avatar', $('#avatar_uploader'), $('#avatar_src'), G_BASE_URL + '/account/ajax/avatar_upload/', {'loading_status' : '#avatar_uploading_status'});
+});
+
+
+</script>
+
+<script type="text/javascript" src="/static/js/app/setting.js"></script>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><div class="aw-footer-wrap">
+	<div class="aw-footer">
+		Copyright © 2016<span class="hidden-xs"> - 粤ICP备14054802 官方QQ群：493577498, All Rights Reserved</span>
+
+		<span class="hidden-xs">Powered By <a href="http://www.wecenter.com/?copyright" target="blank">WeCenter 3.1.9</a></span>
+
+			</div>
+</div>
+
+<a class="aw-back-top hidden-xs" href="javascript:;" onclick="$.scrollTo(1, 600, {queue:true});"><i class="icon icon-up"></i></a>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6d30c149d6f00fa3f34dc482f264a080' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" src="https://dn-bughd-web.qbox.me/bughd.min.js" crossOrigin="anonymous"></script>
+
+<script type="text/javascript">
+  window.bughd = window.bughd || function(){};
+  bughd("create",{key:"d96d072cefc5ab3c6256af43ec8859bc"})
+</script>\
+<!-- DO NOT REMOVE -->
+<div id="aw-ajax-box" class="aw-ajax-box"></div>
+
+<div style="display:none;" id="__crond">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#__crond').html(unescape('%3Cimg%20src%3D%22' + G_BASE_URL + '/crond/run/1468798097%22%20width%3D%221%22%20height%3D%221%22%20/%3E'));
+		});
+	</script>
+</div>
+
+<!-- Escape time: 0.034345865249634 --><!-- / DO NOT REMOVE -->
+
+</body>
+</html>
